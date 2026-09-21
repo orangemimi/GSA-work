@@ -1,0 +1,37 @@
+Table S1.
+Global ET trends (mm year) of 32 CMIP6 ESMs in the historical scenario from 2000 to
+2022. Historical simulations end in 2014, The business-as-usual (SSP245) scenario was used to
+extend simulations to 2022. Trends significant at 0.05 level are bold. The Mann-Kendall test
+‘with Sen's slope was used for trend analysis.
+ae Sista Neath Trerniephore South Hemisphere
+“lope Pvahic ~~alope—-Pvalue = lope. —=Prvalue
+“ACCESS-CM2——~—“C*‘“‘“‘s*~S S:*SC*~«CUCSS”S*~CSSCi SC“‘<‘“C‘iSCO!;*«C UC
+ACCESS-ESMI-5 0.47 oor (042 0.09 0.62 010
+TAWHOMTTMRSC003.—CSS—=C=C<COTSC“(‘«iéiaSSSC*C*“C«i RSC(ité‘i
+TAWHESMI-IIR 16000003
+“ROCCSM2MR”~*=<“iTSC“(‘iéidSS:C“‘éi SCSC«iHC( CH
+“OAMS-CSMI0——=—~*~C«~C SC C(ié‘iai!SSCSC“‘éC ‘S!C
+“CASES ——~“ti“‘“‘=«C F:”:*C*CCOCD:CSC“(<‘Ci CO
+“CRSM2WACCM ——«CDs—Ci RS tC‘ T(t Ci
+“CMCC-CMZSRF  —(tiCCMS:*~“‘i SSC SC“‘«é‘i aC
+“CMCCESM2 ———~—~—C—~NSC“‘«é‘i SCC‘ TCSCSC*«t 075
+“CanESMS-—i“(‘éitMT OC OO CL
+“CmESMS  ———(i‘ésédtS]:*::«CO| CG) OOFSC«tSC“<«iéit SS
+“ECEaih3-CC———<“i‘“‘i OSC (ttTSC(t‘é‘i SCT
+ECEath}VeeIR ——s«STSCi sCTSCié‘i SSC(‘i CS
+“ECEanth-Veg (‘iSO CO SCCidC
+ECEaths 0 MC. 094022
+“FGOAISGL =  ——048——Ci00s—“‘<‘ié‘i:S*<“‘«é‘i ‘ CSC“‘<‘i HC
+‘FGOAISgs O14 020S”*é«~CS tC SC“<i‘“C SC
+“HOESM20 = -007.—«S087—”'—(“‘«‘C CSS TSCC«C
+TIMESM ——<Csti‘“ SSC(ti‘iSSC“‘<‘ aSCO;*‘iC(;‘(‘(C‘tSC
+TRMCM4$——“*i‘é‘SNS:*CO*#*«*U CS:O”!*C«é UCC lA
+TINMCMS0—————“‘éi‘:*:*C*«tSG: CM CTC ORC
+TIPSL-CM6ALRINCA——-027,—O0—ié‘—iC tC (tC OGSCi«i
+“KACEIO-G  ———(iCGs—“(iC(ti«étSCC“‘ié‘iSSC(‘i«‘“‘ TCD
+“wiroce——“‘éSO™SCOC‘étS:*#*;« ll
+“MPFESMI-2HR «SCC (st (tttCtHCi
+“MPFESMI-2IR Ol 079s”:t=‘ Ci (tC SC(‘«éi aC
+“MREESM20———~*«CSSCiCSCtiCTSCiSC(‘C TOC
+25
+

@@ -1,0 +1,51 @@
+186 future changes for both hemispheres are greatly altered. The constrained projected
+187 increase in the Northern Hemisphere is considerably larger than the raw projections; the
+188 constrained projected decrease in the Southem Hemisphere is substantially smaller than
+139 the raw projections. This suggests that the present asymimetric ET trends ate likely to
+190 persist in the future, Importantly, our analysis indicates that the raw ensemble of ESMs
+191 tends to underestimate the magnitude of this future hemispheric asymmetry (Fig. 4). This
+192 underestimation implies that climate risk assessments based directly on FSM outputs may
+193 understate the divergence in hydrological futures. As water availability stress in the
+194 Southern Hemisphere is increasing while land-atmosphere coupling in the Northem
+195 Hemisphere is intensified with important consequences for adaptation planning. While we
+196 focus on the SSP2-4.5 scenario for consistency with a central, moderate pathway, future
+197 ‘work could explore the sensitivity of this persistent asymmetry to other socioeconomic
+198 and cmission scenarios.
+199 Discussion
+200 ‘Our findings provide a new paradigm for the global intensification of the hydrological
+201 eycle under global warming (/, 39, 40). We demonstrate that the net increase in global
+202 terrestrial ET (2000-2022) masks a profound hemispheric asymmetry, with Northom
+203 Hemisphere greening driving robust BT increases while the Southem Hemisphere exhibits
+204 significant declines (Fig. 2). Importantly, the weak global mean trend arises from
+20s ‘compensation between strong and opposing hemispherie tesponses, rather than from an
+206 absence of ET change. Such asymmetry is unexpected. In the Southern Hemisphere, the
+207 observed decline in ET contradicts the expected acceleration of the water cycle, We
+208 further demonstrate that contrasting regional forcings drive a hemispheric redistribution of
+209 ‘water fluxes.
+210 Our finding on low sensitivity of global ET change to global air temperature change
+au indicates that terrestrial ET is only partially influenced by temperature-increased
+22 atmospheric demand, but strongly constrained by moisture supply and vegetation
+23 physiology. This reinforces the paradigm that over land, water availability, mediated by
+24 precipitation, plant responses, and land-atmosphere feedbacks, is the primary regulator of
+is the hydrological eyele's intensification, tempering the influence of rising temperatures
+216, alone.
+217 ‘The ineresse in ET across the Northern Hemisphere aligns with widespread vegetation
+218 ‘greening —notably duc to afforestation in China and India (47) (fig, $14), where
+219 increasing leaf area index has contributed >50% of the ET trend (Fig, 3). In contrast,
+220 atmospheric evaporation demand (.g. potential evapotranspiration) has shown little
+221 change in these strongly greening regions because of compensation effects between
+m2 increase in vapor pressurc deficit and decreases in net radiation and wind spced (figs. S14
+es and $16). Conversely, the decline in the Southern Hemisphere primarily reflects
+226 precipitation deficits, and complex atmospheric cvaporation demand and land surface
+ms changes (fig. $14). Specifically, moisture supply to South America and central Australia
+226 thas been suppressed over the last two decades, outweighing any radiation or
+at aerodynamically driven increases in evaporation potential. These contrasting hemispheric
+8 patterns are conceptualized in Fig. 5. Based on our projections (Fig. 4), these trends are
+m9 Tikely to persist in the future.
+230 ur results demonstrate that simple averaging of model outputs may introduce significant
+231 bias. Compared to our resulls, the five diagnostic ET madels used here showed smallor
+232 hemispheric ET trend differences and ovcrall averestimation of the global ET trend (fig.
+233 $17). This means that simple ensemble model output averaging would strongly
+
+“Tice vances Warp Template Pose Sof20
+

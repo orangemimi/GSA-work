@@ -1,0 +1,259 @@
+% !TeX program = xelatex
+\documentclass[a4paper,11pt]{article}
+\usepackage[fontset=none]{ctex}
+\setCJKmainfont{Songti SC}[BoldFont=Heiti SC, ItalicFont=Songti SC]
+\setCJKsansfont{Heiti SC}
+\setCJKmonofont{Heiti SC}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{etaremune}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{changepage}
+\usepackage{lastpage}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usepackage{geometry}
+\geometry{
+  left=0.68in,
+  right=0.68in,
+  top=0.58in,
+  bottom=0.72in,
+  footskip=15pt
+}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+% 主题色：参考简历中的明亮蓝色
+\definecolor{themeblue}{RGB}{29,126,220}
+\definecolor{themelight}{RGB}{157,205,245}
+
+% 页脚
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancyfoot[R]{%
+\ifthenelse{\value{page}=\pageref{LastPage}}%
+  {\small 更新于 \today}%
+  {}%
+}
+
+% 自定义 section 样式：蓝色方块 + 标题 + 横向分隔线
+\titleformat{\section}
+  {\normalfont}
+  {}
+  {0em}
+  {\sectionstyle}
+\titlespacing*{\section}{0pt}{13pt}{7pt}
+
+\newcommand{\sectionstyle}[1]{%
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}m{16pt}@{\hspace{7pt}}l@{\hspace{7pt}}m{2pt}@{\hspace{7pt}}X@{}}
+    {\color{themeblue}\rule{16pt}{16pt}} &
+    {\large\bfseries\color{themeblue}#1} &
+    {\color{themeblue}\rule{2pt}{17pt}} &
+    \raisebox{0.5ex}{\color{themelight}\rule{\linewidth}{1pt}}
+  \end{tabularx}%
+}
+
+% 列表项命令
+\newcommand{\cvitem}[1]{
+  \item {\small #1}
+}
+
+\setlist[itemize]{topsep=2pt,partopsep=0pt,parsep=0pt}
+\setlength{\parskip}{2pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+%----------标题----------
+\noindent
+\begin{tabularx}{\textwidth}{@{}X@{\hspace{15pt}}c@{\hspace{15pt}}X@{}}
+  \raisebox{0.7ex}{\color{themeblue}\rule{\linewidth}{1.4pt}} &
+  {\fontsize{24pt}{30pt}\selectfont\bfseries 个人简历} &
+  \raisebox{0.7ex}{\color{themeblue}\rule{\linewidth}{1.4pt}}
+\end{tabularx}
+\vspace{12pt}
+
+%----------基本信息----------
+{
+\def\and{\&}%
+\renewcommand{\arraystretch}{1.55}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{20pt}}>{\raggedright\arraybackslash}X@{}}
+\textbf{姓名：}朱之一  & \textbf{学历：}博士研究生 \\
+\textbf{毕业院校：}南京师范大学  & \textbf{专业：}地图学与地理信息系统 \\
+\textbf{邮箱：}\href{mailto:zhiyizhu7@gmail.com}{zhiyizhu7@gmail.com}  & \textbf{Google Scholar：}\href{https://scholar.google.com/citations?user=tPxDdY8AAAAJ\and hl=en}{链接} \\
+\multicolumn{2}{@{}l@{}}{\textbf{研究方向：}地球系统模型可复现性；不确定性量化；数据驱动知识发现；水文信息学}
+\end{tabularx}
+}
+\vspace{4pt}
+
+%----------个人简介----------
+\section{个人简介}
+\begin{adjustwidth}{0.1in}{0in}
+\justifying
+\small
+\setlength{\parindent}{2em}
+\linespread{1.18}\selectfont
+
+朱之一，博士，现为德国波茨坦大学博士后研究人员。博士毕业于南京师范大学地理科学学院，师从陈旻教授（OpenGMS课题组）。长期从事地球系统模型（ESM）可复现性理论与方法研究，围绕地理模拟实验的规范描述、计算过程复现、可复现性评价等方面开展了系统性工作。
+
+累计在\textit{Nature Machine Intelligence}、\textit{Nature Reviews Earth \& Environment}、\textit{International Journal of Applied Earth Observation and Geoinformation}、\textit{Environmental Modelling \& Software}、\textit{Journal of Hydrology}等国内外高水平期刊发表论文14篇，其中第一/共同第一作者4篇（含Nature子刊2篇）；Google Scholar引用369次，h指数9。主持江苏省研究生科研创新计划项目1项，作为骨干成员参与国家重点研发计划、国家自然科学基金面上项目等多项国家级课题。博士期间深度参与\href{http://geomodeling.njnu.edu.cn}{地理建模与模拟开放平台（OpenGMS）}研发工作，负责水文领域相关模块。研究成果入选\textbf{2024年度中国地理科学十大研究进展}，博士学位论文获\textbf{第十三届高校GIS论坛优秀博士学位论文}。
+
+现任\textit{Environmental Modelling \& Software}助理编辑，Open Modeling Foundation青年学者委员会委员。
+\end{adjustwidth}
+
+%----------工作经历----------
+\section{工作经历}
+\begin{itemize}[leftmargin=0.15in,label={},itemsep=4pt]
+  \item
+    \begin{tabularx}{\linewidth}{@{}lX@{\hspace{8pt}}r@{}}
+      \textbf{波茨坦大学}（University of Potsdam） & & 2026.04 -- 至今 \\
+    \end{tabularx}
+    \par\vspace{1pt}
+    {\small 博士后研究人员 $|$ 德国波茨坦}
+
+  \item
+    \begin{tabularx}{\linewidth}{@{}lX@{\hspace{8pt}}r@{}}
+      \textbf{南京师范大学} 地理科学学院 & & 2025.07 -- 2026.03 \\
+    \end{tabularx}
+    \par\vspace{1pt}
+    {\small 研究助理 $|$ 南京}
+\end{itemize}
+
+%----------教育经历----------
+\section{教育经历}
+\begin{itemize}[leftmargin=0.15in,label={$\bullet$},itemsep=3pt]
+  \cvitem{2021.09 -- 2025.06，南京师范大学，地图学与地理信息系统，博士研究生 \\ \quad\textit{导师：陈旻 教授}（GIS学科全国排名第一）}
+  \cvitem{2019.09 -- 2021.06，南京师范大学，地图学与地理信息系统，硕士研究生 \\ \quad\textit{导师：陈旻 教授}}
+  \cvitem{2015.09 -- 2019.06，南京信息工程大学，地理信息科学，学士 \\  \quad（气象学科全国排名第一）}
+\end{itemize}
+
+%----------科研项目----------
+\section{科研项目}
+\begin{itemize}[leftmargin=0.15in,label={$\bullet$},itemsep=5pt]
+  \cvitem{\textbf{国家重点研发计划}，地球表层系统科学数据挖掘与知识发现关键技术与应用（课题四：地球表层系统科学分析模型网络共享与模拟计算，2022YFF0711604），2022--2026，\textbf{骨干成员}。\\
+  负责地理分析模型共享与模型库构建方法研究及相关软件工具设计与开发；参与项目申报书撰写、答辩及组织实施等工作，与中国科学院地理科学与资源研究所、中国科学院南京地理与湖泊研究所、中国地质大学等单位开展协同研究。}
+
+  \cvitem{\textbf{国家自然科学基金面上项目}，面向地理模拟的可复现方法研究，2021--2024，\textbf{骨干成员、主要完成人}。\\
+  作为项目核心研究人员，独立承担并完成项目主体研究工作，围绕地理模拟实验的规范描述、计算过程复现与可复现性评价开展理论、方法及实验研究，形成系列论文和方法成果；参与项目全过程实施及结题材料凝练，项目最终获国家自然科学基金委员会\textbf{优秀结题评价}。}
+
+  \cvitem{\textbf{水利部重大科技项目}，全球水文气象预报与决策支持系统，2023--2025，\textbf{骨干成员}。\\
+  设计并集成水文气象集合预报模块至全球水文气象预报系统原型；开发决策支持平台，支持多种强迫条件和配置方案下的模型输出分析；开展集合预报的敏感性分析与评估，提升预测可靠性与系统鲁棒性。}
+
+  \cvitem{\textbf{江苏省研究生科研与实践创新计划项目}，面向地理模拟计算过程的可复现方法研究（KYCX22\_1566），2022--2023，\textbf{主持}。\\
+  围绕地理模拟计算过程复现中的过程表达、流程重构与复现评价开展系统研究，负责项目总体设计、方法研发、实验验证及成果凝练，形成博士论文计算复现方法体系的重要研究基础。}
+\end{itemize}
+
+%----------科研成果----------
+\section{科研成果}
+\small
+
+\hspace{0.1in}\textbf{引用情况}（截至2026年8月，来源：Google Scholar）：引用量 369；h指数 9；i10指数 8
+\vspace{6pt}
+
+\hspace{0.1in}\textbf{发表论文}（注："\#"表示共同第一作者，"*"表示通讯作者）
+
+\begin{etaremune}[leftmargin=0.3in]
+    \vspace{1pt} \item \textbf{Zhu, Z.}, Chen M.*, Ren G., He Y., Qian Z., Sun L., Wen Y., Yue S., Lv G. 2025. A framework for assessing the computational reproducibility of geo-simulation experiments. \textit{Environmental Modelling \& Software}, 186: 106323. (IF 4.6, JCR Q1) [\href{https://doi.org/10.1016/j.envsoft.2025.106323}{DOI}]
+
+    \vspace{1pt} \item \textbf{Zhu, Z.}, Chen, M.*, Sun, L., Qian, Z., He, Y., Ma, Z., Zhang, F., Wen, Y., Yue, S., and Lv, G. 2023. Reproducing computational processes in service-based geo-simulation experiments. \textit{International Journal of Applied Earth Observation and Geoinformation}, 124: 103520. (IF 8.6, JCR Q1) [\href{https://doi.org/10.1016/j.jag.2023.103520}{DOI}]
+
+    \vspace{1pt} \item \textbf{Zhu, Z.}, Chen, M.*, Qian, Z., Li, H., Wu, K., Ma, Z., Wen, Y., Yue, S., and Lv, G. 2023. Documentation strategy for facilitating the reproducibility of geo-simulation experiments. \textit{Environmental Modelling \& Software}, 163: 105687. (IF 4.6, JCR Q1) [\href{https://doi.org/10.1016/j.envsoft.2023.105687}{DOI}]
+
+    \vspace{1pt} \item Chen, M. \#*, \textbf{Zhu, Z.} \#, Wagener, T., Boers, N., M\"uller, R.D., Strobl, J., Camps-Valls, G., Batty, M., Jakeman, A.J., Kolditz, O., Nativi, S., Brovelli, M.A., Creutzig, F., Kumar, P., Whitehead, P., Barton, C.M., Liu, D., Ma, P., Ma, Z., Zhang, F., Zhang, B., Hou, P., and Lv, G.* 2026. Enhancing reproducibility in hybrid Earth system models. \textit{Nature Machine Intelligence}. (JCR Q1) [\href{https://doi.org/10.1038/s42256-026-01299-5}{DOI}]
+
+    \vspace{1pt} \item Chen, M. \#*, Qian, Z. \#, Boers, N., Jakeman, A.J., Kettner, A.J., Brandt, M., ..., \textbf{Zhu, Z.}, ..., and Lv, G.* 2023. Iterative integration of deep learning in hybrid Earth surface system modelling. \textit{Nature Reviews Earth \& Environment}, 4(8): 568--581. (IF 71.5, JCR Q1) [\href{https://doi.org/10.1038/s43017-023-00452-7}{DOI}]
+
+    \vspace{1pt} \item Ma P., Chen M.*, Zhang S., \textbf{Zhu, Z.}, Qian Z., Ma Z., Yue S., Wen Y., Lv G. 2025. Facilitating sensitivity analysis of hydrological models through knowledge-driven configuration and distributed online model services. \textit{Journal of Hydrology}. 660: 133406. (IF 6.3, JCR Q1) [\href{https://doi.org/10.1016/j.jhydrol.2025.133406}{DOI}]
+
+    \vspace{1pt} \item Li X., He Y.*, Zhang Z., \textbf{Zhu, Z.}, Yue S., Wen Y., Chen M. 2025. Constructing a Resource Network for Data--Model Associative Retrieval and Recommendation in Geographic Modeling. \textit{Transactions in GIS}, 29(7): e70148. (IF 2.4) [\href{https://doi.org/10.1111/tgis.70148}{DOI}]
+
+    \vspace{1pt} \item He Y., Wen Y.*, Tao R., \textbf{Zhu, Z.}, Li W., Zhang J., Yue S., Duan Q., Lv G., Chen M.* 2025. Advancing river flood forecasting with a collaborative integrated modeling method. \textit{Journal of Environmental Management}. 373: 123677. (IF 8.4, JCR Q1) [\href{https://www.sciencedirect.com/science/article/abs/pii/S0301479724036636}{DOI}]
+
+    \vspace{1pt} \item Ma, Z., Chen, M.*, Zheng, Z., Yue, S., \textbf{Zhu, Z.}, Zhang, B., Wang, J., Zhang, F., Wen, Y., and Lv, G. 2022. Customizable process design for collaborative geographic analysis. \textit{GIScience \& Remote Sensing}, 59(1): 914--935. (IF 6.9, JCR Q1) [\href{https://doi.org/10.1080/15481603.2022.2072625}{DOI}]
+
+    \vspace{1pt} \item Zhang B., Chen M.*, Ma Z., Zhang Z., Yue S., Xiao D., \textbf{Zhu, Z.}, Wen Y., Lv G. 2022. An online participatory system for SWMM-based flood modeling and simulation. \textit{Environmental Science and Pollution Research}, 29(5): 7322--7343. [\href{https://doi.org/10.1007/s11356-021-16120-6}{DOI}]
+
+    \vspace{1pt} \item Huang, R.*, Malik, A., Lenzen, M., Jin, Y., Wang, Y., Faturay, F., and \textbf{Zhu, Z.} 2021. Supply-chain impacts of Sichuan earthquake: a case study using disaster input--output analysis. \textit{Natural Hazards}, 110(3): 2227--2248. (IF 3.7, JCR Q1) [\href{https://doi.org/10.1007/s11069-021-05034-8}{DOI}]
+
+     \vspace{1pt} \item Chen, M., Lv, G.*, Zhou, C., Lin, H., Ma, Z., Yue, S., Wen, Y., Zhang, F., Wang, J., \textbf{Zhu, Z.}, Xu K. and He Y. 2021. Geographic modeling and simulation systems for geographic research in the new era: Some thoughts on their development and construction. \textit{Science China Earth Sciences}, 64(8): 1207--1223. (IF 5.8, JCR Q1) [\href{https://doi.org/10.1007/s11430-020-9759-0}{DOI}]
+
+    \vspace{1pt} \item Ma, Z., Chen, M.*, Yue, S., Zhang, B., \textbf{Zhu, Z.}, Wen, Y., Lv, G., and Lu, M. 2020. Activity-based process construction for participatory geo-analysis. \textit{GIScience \& Remote Sensing}, 58(2): 180--198. (IF 6.9, JCR Q1) [\href{https://doi.org/10.1080/15481603.2020.1868211}{DOI}]
+
+     \vspace{1pt} \item Huang, R., Lv, G.*, Chen, M., and \textbf{Zhu, Z.} 2019. CO2 emissions embodied in trade: Evidence for Hong Kong SAR. \textit{Journal of Cleaner Production}, 239: 117918. (IF 10, JCR Q1) [\href{https://doi.org/10.1016/j.jclepro.2019.117918}{DOI}]
+\end{etaremune}
+\vspace{5pt}
+
+\hspace{0.1in}\textbf{在投/在撰论文}（注："*"表示通讯作者）
+\begin{etaremune}[leftmargin=0.3in]
+    \vspace{1pt} \item \textbf{Zhu, Z.}, $\cdots$. Quantifying reproducibility to support reliable geo-modelling research. \textit{International Journal of Geographical Information Science}. \textcolor{blue}{Invitation to resubmit}
+    \vspace{1pt} \item \textbf{Zhu, Z.}, Ma, P., $\cdots$. DocumentBot: using Large Language Model to promote the hydrological model knowledge discovery. \textcolor{blue}{撰写中}
+    \vspace{1pt} \item \textbf{Zhu, Z.}, Qian, Z., $\cdots$. From principles to practice: A quantitative method for evaluating uncertainty in AI-enhanced Earth System Modeling. \textcolor{blue}{撰写中}
+\end{etaremune}
+\vspace{3pt}
+
+\hspace{0.1in}\textbf{专利}
+\begin{itemize}[leftmargin=0.3in,label={$\bullet$}]
+    \vspace{1pt} \item 陈旻，\textbf{朱之一}，乐松山，温永宁. 一种面向复现的地理模拟情景记录方法. 中国发明专利，公开号：CN 113608988 A
+\end{itemize}
+
+%----------获奖与荣誉----------
+\section{获奖与荣誉}
+\begin{itemize}[leftmargin=0.15in,label={$\bullet$},itemsep=2pt]
+  \cvitem{中国地理科学十大研究进展（2024年度）\hfill 2024}
+  \cvitem{第十三届高校GIS论坛"优秀博士学位论文" \hfill 2025}
+  \cvitem{Excellent Paper Award of The 2nd Workshop of Asian Young Geographers \hfill 2022}
+  \cvitem{研究生一等奖学金（前10\%） \hfill 2019, 2020, 2021, 2022}
+  \cvitem{研究生二等奖学金（前20\%） \hfill 2023}
+\end{itemize}
+
+%----------学术服务----------
+\section{学术服务}
+\begin{itemize}[leftmargin=0.15in,label={$\bullet$},itemsep=2pt]
+  \cvitem{\textbf{助理编辑}，\href{https://www.sciencedirect.com/journal/environmental-modelling-and-software/}{\textit{Environmental Modelling \& Software}} \hfill 2023年至今}
+  \cvitem{\textbf{委员会成员}，\href{https://www.openmodelingfoundation.org/governance/working-groups/}{\textit{Open Modeling Foundation Early Career Scholars}} \hfill 2022年至今}
+  \cvitem{\textbf{会议秘书}，第三届地理建模与模拟国际研讨会 \hfill 2024}
+  \cvitem{\textbf{会议秘书}，第四届全国地理分析模型培训班（超1000人参加）\hfill 2024}
+  \cvitem{\textbf{会议秘书}，第二届全国地理分析模型培训班暨首届"速度杯"竞赛（超2000人参加）\hfill 2022}
+  \cvitem{\textbf{会议秘书}，2022年中国地理学会地理模型与地理信息分析专业委员会年会（超780人参加）\hfill 2022}
+\end{itemize}
+
+%----------学术报告----------
+\section{学术报告}
+\begin{itemize}[leftmargin=0.15in,label={$\bullet$},itemsep=2pt]
+  \cvitem{EGU Fall Meeting, 维也纳 \hfill 2024.04 \\
+  \textit{题目：Reference description for recording a geographic simulation-based experiment}}
+  \cvitem{第九届虚拟地理环境学术会议, 延吉 \hfill 2023.08 \\
+  \textit{题目：基于服务的地理模拟实验计算过程可复现方法研究}}
+  \cvitem{The 2nd Workshop of Asian Young Geographers, 线上 \hfill 2022.12 \\
+  \textit{题目：Reproducing computational processes in service-based geo-simulation experiments}}
+  \cvitem{第十届全国地理信息科学博士生论坛, 线上 \hfill 2022.12 \\
+  \textit{题目：面向活动的地理模拟可复现方法研究}}
+  \cvitem{2022年中国地理学会地理模型与地理信息分析专业委员会年会, 南京 \hfill 2022.09 \\
+  \textit{题目：面向活动的地理模拟可复现方法研究}}
+  \cvitem{AGU Fall Meeting, 线上 \hfill 2021.12 \\
+  \textit{题目：An action-based conceptual framework for the reproduction of geographic simulation processes}}
+\end{itemize}
+
+%----------专业技能----------
+\section{专业技能}
+\begin{itemize}[leftmargin=0.15in,label={$\bullet$},itemsep=2pt]
+  \cvitem{\textbf{语言能力}：中文（母语），英语（工作语言水平）}
+  \cvitem{\textbf{编程与开发}：Python, R, Java, HTML/CSS, Javascript, Vue3, Springboot, Docker, \LaTeX}
+  \cvitem{\textbf{专业工具}：ArcGIS, QGIS, Google Earth Engine, UQ-PyL 等}
+\end{itemize}
+
+\end{document}

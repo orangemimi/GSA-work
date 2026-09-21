@@ -1,0 +1,344 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (1:06 - 2:23)
+Francesca is still not here, maybe I can briefly introduce my previous work. And for the week before last week, I have created such paired examples of relationship characteristics and I have also calculated the different matrix across these characteristics. And the feedback is that whether if we masked all the labels, how can the matrix combination map to the initial characteristics?
+
+And what I think is that currently we have a descriptive definition of the characteristics and then we calculated the scatter plots and then we calculated the matrix profile and then if we map here, I think that the matrix profile can be regarded as a quantitative definition for each characteristics. And...
+
+[说话人 2] (2:23 - 2:26)
+Sorry, do we see when Francesca will join or do we hear her?
+
+[说话人 1] (2:28 - 2:29)
+She's not here.
+
+[说话人 2] (2:30 - 2:42)
+Yeah, yeah, I'm just saying when she, you can hear, she's, the sound is on, no? If she comes in, we will hear her. Okay.
+
+Okay, yeah, yeah, keep trying. Okay.
+
+[说话人 1] (2:44 - 5:55)
+And I have also masked the labels of the 24 cases and attempt to test whether I can, whether the matrix combination can map to the known characteristics. I compared each row of the, each row represent one cases and here all the cells are used continuous colour graded. And here, what I do is to, I scan from the bottom, from the top to bottom to starting with some, with cases whose matrix profiles are most distinctive from others.
+
+And for the first ground, I see that there are some negative matrix. So I first see the case two, case four, case 14 and the case 24. And what can I see from the 20 case two is that it has some rather high Pearson Spearman and distance correlation.
+
+And it also has a low MAS, MIC minus R square. And this point, this matrix shows it has some strong and monotonic linear relationship. And the five points suggest that it has a strong linear and monotonic relationship.
+
+And what can we see from this matrix is that it has some, it has the negative Pearson Spearman and it shows the negative direction. We can also see this is a reference scatter plot. If we can get to this Pearson, we can imagine the plots are.
+
+So this can be assumed as a negative linear relationship. And actually it is, it really is. And I also do the case four, it's the five formal points shows that it has some functional dependence exists, but with weak linear and weak monotonic relationship.
+
+And what depends this characteristic is that the slope force and the zone arise, it may be the U shape. And it, the result of the real pattern is the U shape. And here is the U shape.
+
+It's similar. And what this is, what can we see from here is that it has a middle, lower R square. It shows that it could have the smooth curve fit poorly due to the heavy scatter.
+
+And it has a large buffer wide, so it can have the high spread. So what can I assume here is it has a high spread, but maybe positively near a shape. Okay.
+
+[说话人 2] (5:56 - 6:00)
+So here, why do you focus on the lowers?
+
+[说话人 1] (6:01 - 6:11)
+I have test, because the metrics are based on, these metrics are based on the curve and.
+
+[说话人 2] (6:11 - 6:12)
+I know, but.
+
+[说话人 1] (6:12 - 6:16)
+Hello. You mean why I choose the lowers?
+
+[说话人 2] (6:16 - 6:28)
+Yeah, no. If this is your conclusion, moderate monotonic relationship with some non-linear structure, you would already know this by looking at the first two.
+
+[说话人 1] (6:28 - 6:56)
+Yeah, exactly. And I think my family could support this. Guys.
+
+Yeah, because I have calculated so many metrics, I would like to get as more as information from these metrics. Hey, can you. Yeah, I understand your concern.
+
+And this is also one of my concern. I will later. Okay.
+
+[说话人 2] (6:56 - 7:02)
+So the question is, what is the minimum number of numbers we need?
+
+[说话人 1] (7:02 - 7:12)
+Yeah, exactly. This is also, maybe I can go to the conclusion directly. She is not.
+
+Oh, no.
+
+[说话人 2] (7:18 - 7:23)
+See, that's what I was trying to avoid. So where is she? Why do we not see her?
+
+[说话人 1] (7:23 - 7:23)
+Yeah.
+
+[说话人 2] (7:27 - 7:28)
+Is the answer that you're in?
+
+[说话人 1] (7:29 - 7:35)
+She is not here currently. Is there only one person? Hello, Francesca.
+
+[说话人 2] (7:37 - 7:37)
+We can't hear.
+
+[说话人 1] (7:37 - 7:39)
+We cannot hear? No. No.
+
+[说话人 2] (7:40 - 7:41)
+But your sound is on?
+
+[说话人 1] (7:41 - 7:42)
+Yes, it's set.
+
+[说话人 2] (7:43 - 7:43)
+Your sound.
+
+[说话人 3] (7:44 - 7:45)
+Hello, Snob.
+
+[说话人 2] (7:46 - 7:49)
+Yeah, we can. Now we can hear you. Yeah, yeah.
+
+[说话人 3] (7:50 - 7:52)
+Okay. But.
+
+[说话人 2] (7:53 - 7:58)
+We can hear. No. Sorry.
+
+[说话人 3] (7:58 - 8:00)
+Sorry. And now?
+
+[说话人 2] (8:00 - 8:01)
+Yeah.
+
+[说话人 3] (8:01 - 8:01)
+Okay.
+
+[说话人 1] (8:02 - 8:06)
+Yes. This is maybe I can go direct.
+
+[说话人 3] (8:06 - 8:31)
+It's been quite entertaining because you too look in the screen and it looks like you are looking at me and then you are like, oh, oh, and then, oh, and look at this and the correlation and, you know, and then I had the toaster like, like this, you know, trying to think and you were like, here, here. And I was like, okay, that's very fun. But yeah, I couldn't.
+
+And I was like, hello, hello.
+
+[说话人 2] (8:33 - 8:40)
+Yeah, but for some reason we could neither hear nor see you. That was, there was the text. So it was a bit strange.
+
+[说话人 3] (8:40 - 8:42)
+Well, then I left and rejoined, actually.
+
+[说话人 2] (8:42 - 8:43)
+Ah, okay.
+
+[说话人 3] (8:43 - 8:47)
+Okay. Because I was like, okay, let me see, you know, sometimes and that actually sorted it out.
+
+[说话人 2] (8:47 - 8:53)
+No, no, we, because we were in the beginning, I said, can, are you sure we can hear? And she said, yeah, yeah, we can hear. And then.
+
+[说话人 3] (8:55 - 8:55)
+Sorry.
+
+[说话人 2] (8:55 - 8:58)
+No, no, it wasn't your fault, but it was just funny because.
+
+[说话人 3] (8:59 - 9:01)
+Yeah, it was funny for a while and then I was okay.
+
+[说话人 2] (9:04 - 9:05)
+Sorry.
+
+[说话人 3] (9:05 - 9:07)
+I was like, okay. We were trying to ensure that that wouldn't happen. I had enough.
+
+[说话人 2] (9:08 - 9:09)
+Then it happened, so.
+
+[说话人 3] (9:10 - 9:11)
+Yeah, so maybe. Yeah.
+
+[说话人 2] (9:12 - 9:14)
+But I'm, I'm caught up now, so.
+
+[说话人 3] (9:14 - 9:17)
+Can you share the screen with me as well?
+
+[说话人 2] (9:17 - 9:18)
+Of course. Yeah, yeah, she's.
+
+[说话人 3] (9:19 - 9:19)
+Thank you.
+
+[说话人 2] (9:20 - 9:21)
+Just trying to find the right place to.
+
+[说话人 1] (9:21 - 9:33)
+Yeah. I will show here. If we can continue the former or just start with this week.
+
+[说话人 2] (9:33 - 9:37)
+Can I make a suggestion that you separate these into separate files?
+
+[说话人 1] (9:37 - 9:38)
+Yeah, yeah, yeah.
+
+[说话人 2] (9:40 - 9:44)
+Per, for each meeting, you, you combine them now today just for.
+
+[说话人 1] (9:44 - 9:57)
+Yeah, I combined them together because the former one as a week before the next, last week's presentation and here starting from here, yes, this week.
+
+[说话人 2] (9:57 - 10:01)
+Okay. Yeah, so probably ultimately you want to have each week in a separate.
+
+[说话人 1] (10:02 - 10:05)
+Yeah, yeah, yeah. Of course. I have also uploaded to the website.
+
+[说话人 2] (10:06 - 10:07)
+Good, good, good. Just to make sure.
+
+[说话人 1] (10:07 - 10:38)
+Yeah. This is also. Hi, Francesca.
+
+I would like to first do the recap. Torsten has seen this presentation just a few minutes. And what I do last week is to, I have masked the characteristics labels of the 24 cases.
+
+And I try to test whether the matrix combination alone can map to the known characteristics. And I'm sorry.
+
+[说话人 3] (10:39 - 10:43)
+Is this the one we saw last week? Me and you, the one you showed me?
+
+[说话人 2] (10:43 - 10:44)
+Yeah, yeah, yeah.
+
+[说话人 1] (10:44 - 10:44)
+Okay.
+
+[说话人 2] (10:44 - 10:45)
+Just very briefly, just to.
+
+[说话人 1] (10:45 - 15:58)
+Yeah, yeah, sure, sure. And what I get to the conclusion is that most cases can be manually mapped to their initial characteristics. But some characteristics are only depends on the key signal.
+
+For example, the situation maybe shows a very strong signal when we see the slope. Because it has a higher early slope and then slow down in the middle slope and then decrease to near zero. And last week, Francesca gave me the suggestion is that how can we diagnose the relationship automatically?
+
+Because we have now, we just map manually. Because the manual diagnosis of the assistant models relationships is very time consuming and difficult to scale. So this week's work aims to move one more step further by proposing possible plans for the automatic diagnosis of the characteristics.
+
+What we have already done is that we have, sorry, I need to use this. Oh, what we have already done is that we have defined several characteristics with descriptive description. And we have 24 laboured synthetic scatter plots.
+
+And we have calculated the matrix profile of the different scatter plots. And this can be seen as the quantitative description of each characteristics. And we subjectively mapping from the matrix to the characteristics.
+
+And from my perspective, when we would like to do the automatic diagnosis, the sample size of the 24 laboured scatter plots are too small to support that process. So I think that no matter what plan we need to do, the possible next step is to generate the diverse series of laboured synthetic scatter plots. And based on the scatter plots, I have proposed three possible plans we can do.
+
+The first plan is a statistic based route. Many use the statistic method to calculate the similarities of each matrix profiles. And both plan B and plan C are machine learning based routes.
+
+They train the machine learning models. And I will introduce each plan one by one. The first is a statistic based method.
+
+This plan uses the matrix profile to describe the characteristics of the scatter plots. This means that we can generate a lot of targeted characteristics related scatter plots. For example, here we can create a lot of situation related scatter plots.
+
+And then we can calculate the matrix profile of each situation related plot. And here we can get the combination of situation related scatter plots. And this combination can be regarded as a baseline of situation.
+
+And for other characteristics, we can also do this step. Here we can get a lot of baselines for each characteristic. And for the application of the assistant models, we can first calculate the matrix profile of the assistant models.
+
+And then we can calculate the similarity with each baseline. And we can compare the similarity between the target assistant model's relationship and this baseline based on the matrix values. And for this plan, one thing we need to attention because this plan assumes that the higher similarity indicates the same or similar characteristics.
+
+So if here the matrix profile contains some non-responsive matrix are included, so the similarity score may be driven by the irrelevant matrix values rather than the targeted characteristics. For example, the band-wide matrix are contained in the matrix profile for such situation. But the situation are not very relevant to the wide span.
+
+So if the band-wide matrix are contained here, it could make the similarity score relatively high. So it will make the mixture or the misleading of the similarity score. So this is the first plan.
+
+[说话人 2] (15:59 - 16:16)
+So before we go through the other plans, let's talk about first plan. So a few questions. So can you say again what exactly you mean by metric profile for me to understand?
+
+What is your...
+
+[说话人 1] (16:16 - 16:31)
+Matrix profile, yes. For example, do you remember that big table I have created at the early of this meeting? For each row, it is the matrix profile.
+
+[说话人 3] (16:31 - 18:07)
+Sorry, am I right? Maybe the problem is the word profile. So what you mean is every synthetic scatter plot is associated with the value of the matrix.
+
+So it's a vector of matrix. I think profile seems more than it actually is. It's just what you have those four squares, four coloured squares, are the four values of four metrics attached to that scatter plot.
+
+So every metric, every synthetic data set has a vector of metrics associated, which is in this drawing is four, in reality is way more, is all the columns you add in that table. And then you can, if a new, if you have a data set coming out of one of these system model data sets, then you can again associate that with a vector of all the metric values. Yeah.
+
+And then you say in this vector space, you know, which one is the closest to that one? Yeah, exactly. Yeah.
+
+So maybe, you know, as a suggestion now is just a matter of wording, profiles, I'm not sure I would call it profile. I would say like, you know, with the metric values and, you know, simpler terminology, but more obvious.
+
+[说话人 2] (18:08 - 21:29)
+Yeah. Can I say, yeah, it wasn't quite what I was asking. I mean, so now I understand that.
+
+My question is, is that really what we're looking for here? Because, so, in that initial case, we can say, okay, it's profile or whatever, vector 12, you know, and, but let's assume we're, we go to a new, an Earth system model with lots and lots of these relationships. You, we either then have to go with your 24 cases.
+
+Or not, you know, or we need something else, or we need a different one. And so this works if the assumption that we have these 24 cases and they cover everything we're looking for, then it's a good strategy, you know. And I'm not sure.
+
+I'm not sure they cover everything we're looking for. So that's one question I have, you know. So I understand the principle.
+
+You can then say, okay, if it's, if the pattern is similar in these x-dimensional space, then you can, you say it's most likely this. And what I wonder a little bit is whether that's the right way to go. I mean, for example, if you say, okay, in this Earth system model, there are a thousand different relationships, just, you know, and too many to look at.
+
+Then my first question would be, okay, how many of these scatterplots and how many of these relationships, there is practically no relationship between variables x and y. You know, how many can I say, I don't have to look at those because there's really nothing going on. And I can be sure that there's nothing going on because I look at it in four different ways, you know, or whatever, many different ways.
+
+So then you might find that, okay, in 400 of the thousand, there's really absolutely a negligible interaction between the variable and variables in any meaningful way. You know, and then you might say, okay, beyond that, then maybe I look on the, in the opposite direction and say, okay, we feel how many of these have a relationship that seems very easy and very straightforward. And how would I know that, you know, and then maybe you find that in a hundred cases, the relationship is very easy, very simple.
+
+You know, I mean, for me, it's more like a flowchart we're going through to figure out what cases do we have? Because otherwise we have to decide everything. We have to know all the cases we want to get out a priori, no?
+
+[说话人 1] (21:29 - 21:30)
+Yeah.
+
+[说话人 2] (21:30 - 21:43)
+I'm just, I'm just thinking out loud with this, with this statistical. So I guess I have a bit more of a, you know, Francesca is a bit like Linas, where, what kind of flood process do we have here most likely?
+
+[说话人 3] (21:47 - 24:05)
+Yeah, well, one comment I was going to make about this is that perhaps this, you know, one way to make this richer would be to think of this as a bit of a iterative process. So you could, as you begin to interrogate ESM, then add them to this, no? To the data set of these baselines, no?
+
+So you, if you choose to go down this plan, I would make sure that you do it in a, in a way that you allow for this to continuously learn, you know, as you use it. Once you get ESM relationships that you think the system is classifying correctly, because you then visually inspect and you say, oh yes, he got it right. Then, you know, you add them to your database that is used to assess the next ones.
+
+So I wouldn't do it as a static thing, no? So your labelled synthetic, your labelled scatterplots, no? Database keeps growing as you use it and add more example.
+
+And then also based on what Torsten was saying, you probably need to also include more example of nothing is going on. You know, you need to have some, no? A good number of example where there is nothing, no functional relationship, which you have to create synthetic data set for that.
+
+But also I would make it in a way that that can grow over time, the baseline, basically. And then I agree with you, there might be a bit of an issue with what, what similarity metrics you use and is it, no? And how do you make sure that it does work and does not do what you were pointing out at the end, this non-responsive metrics problem, yeah.
+
+But other than that, I think that it is in principle a possible approach. Oh, yeah, I think so.
+
+[说话人 2] (24:05 - 24:06)
+Yeah, I guess.
+
+[说话人 3] (24:06 - 24:09)
+You seem more unconvinced, Torsten, that this might work.
+
+[说话人 2] (24:13 - 25:58)
+Well, no, no, I mean, I see that it can work. I'm just at the moment contemplating whether it's the best thing to do, given that we are going to look at lots of data sets where we don't know what to expect, you know. And if you, the thing is, with a similarity metrics this way, it will always, any case will end up somewhere.
+
+You know, because it will be closest to something, you know. By definition. Yeah.
+
+And the, what I, kind of what I liked about this previous paper that we started with was that they said, okay, there, at some point at the end, you might want to do this mapping, you know, and say, okay, this is mostly likely this case. It was sort of a, they had a metric which said, okay, is this likely a relationship that we can characterise functionally or not? You know, or is this, is there any relationship between the variables?
+
+Or is there, is that relationship monotonic? For me, this is, one second, let me just say one more sentence. Is it, it's a bit more like a hierarchy of things, you know.
+
+And if we, if we map it onto this, on everything at once, then it means everything is equally relevant at once, you know. And I wonder whether, I don't have an answer, you know. I'm not saying this is the right way and this other is not the right way.
+
+I'm just saying this is what we have to think about. Sorry.
+
+[说话人 3] (26:00 - 26:17)
+So when you say hierarchical, you mean hierarchical, like there is a first, a first question that the algorithm needs to address, is there a relationship or is just too noisy? And then the second is, okay, if there is one, what is it? That's what I mean.
+
+[说话人 2] (26:17 - 26:32)
+Yeah, for example, for example, I mean, that for me, it seems a bit like, you know, because then, you know, and then of course, then of course the order would be what we have to discuss.
+
+[说话人 1] (26:33 - 26:38)
+Do you mean the order of the different metrics ranking?
+
+[说话人 2] (26:39 - 27:28)
+No, I mean, I mean more the order of the interpretation of it, you know. For example, let's say we say in the first instance, we want to take out all the things where, all the scatter where there's no relationship. Yeah.
+
+Yeah. So then of course, we have to define some criterion which says, okay, if you are in your vector of metrics, yeah, one, two, seven and eight, say the value is below 0.3, then we can ignore this. There is really, we looked at it in three different ways and there's clearly no, nothing scores high enough.
+
+So we can ignore all of these.
+
+[说话人 1] (27:28 - 27:40)
+So you mean that there are some different levels when we scan for different relationship, we can first see whether it has the non-relationship and then or the shape or not.
+
+[说话人 2] (27:40 - 27:52)
+Yeah. Just as an alternative to think through, that could be, you know, and then you could say, okay, are there any that are very, very simple and monotonic or so, you know.
+
+[说话人 3] (27:54 - 28:13)
+So basically what you're saying is, the algorithm is, if you say, oh, find the highest possible similarity, then you don't really assess how high that is. The algorithm is constrained to tell.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

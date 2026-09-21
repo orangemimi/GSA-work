@@ -1,0 +1,77 @@
+46 Teaser
+
+47 ‘Bvapotranspiration trends mask a split: Northern greening is offset by Southern drying
+48 with global warming over last two decades
+
+0
+
+so. MAIN TEXT
+
+31
+
+52 Introduction
+
+3
+
+54 An intensification of the global water cycle is widely expected under climate change, with
+38 rising temperatures leading to increased evapotranspiration (ET), the critical process
+
+56 whereby water is transferred from land (where is has the liquid phase) to the atmosphere
+37 (where is it a gas), controlling the large-scale terrestrial redistribution of water and energy
+58 and ultimately altering pattems of water availability (/). While some studies show signs of
+59 this acceleration in historical records (2-6), regional ET trends remain inconsistent and
+
+6o poorly constrained (3, 7-10). It is well recognized that existing ET products have large
+
+a uncertainties due to the complex interplay of climatic and biophysical drivers that
+
+a influence ET across spatial and temporal scales (11-14).
+
+63 Among the key components of the terrestrial hydrological cycle—precipitation, ET,
+
+w runoff, water storage changes—ET is particularly challenging to quantify due to its
+
+65 invisible nature and high spatial-temporal variability (J/, 15), and the most uncertain (6).
+66 Over the past decade, extraordinary efforis have been made to improve understanding of
+@ global ET’s magnitude, variability, and trends using eddy covariance flux network, remote
+8 sensing, land surface models, and reanalysis datasets (3, !4, 17-24). These approaches
+
+0 hhave advanced our ability to estimate ET locally, regionally, and globally, linking
+
+0 observed trends to global warming, land use and land cover changes, precipitation shifts,
+n and climate variability and change. Machine learning and ensemble modeling techniques
+2 have furthered ET science and trend assessments by merging diverse datasets, reducing
+
+B uncertainties (25-27), and determining how model area of applicability around the world
+” depends on choices of acceptable error or uncertainty level (28). Despite these
+
+8 advancenients, quantifying spatial and temporal ET patterns remains one of the most
+
+16 challenging tasks in global land hydrological studies. Direct compatison of various
+
+” datasets for the same period (1980-2010) and land area coverage (29) shows greater
+
+B dataset differences for global ET than precipitation and runoff. North-to-south
+
+~ hemispheric disparities in ET trends may also emerge since water availability shows large
+80, difference between the two hemispheres (/3). However, the ET trends and hemisphere
+
+a1 disparities remain poorly resolved and represent a critical uncertainty in projecting future
+82 water cycle intensification (11, 20, 30). Furthermore, emerging evidence suggests
+
+83 fundamental hemispheric asymmetries in other hydrological and climatic variables, such
+84 as water availability (13) and terrestrial water storage changes (31), raising the question of
+85 whether ET trends might also exhibit such a large-scale divergence.
+
+86 To address this challenge, we developed an ensemble machine-leaming approach that
+
+87 integrates five diagnostic ET products with water balance observational ET constructed
+88 using hydro-meteorological observations from 183 large basins that cover about half of
+89. the global land area. The trained model was then applied to 232 globally distributed river
+90, basins (> 10,000 km?) from the HydroSHEDS dataset for full global and hemispheric
+
+91 analysis (see Methods). Unlike previous global ET assessments relying on simulation
+
+92 model output ensembles or remote sensing data alone or estimating ET from ground data
+93 for precipitation and streamflow, our new framework uniquely harmonizes basin-scale
+

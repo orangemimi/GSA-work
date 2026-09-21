@@ -1,0 +1,413 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:00 - 0:02)
+...noise from left to right, no?
+
+[说话人 3] (0:02 - 0:12)
+Yeah. Yeah, yeah, but what I'm saying is that the... Here?
+
+The, yes, I am wondering why the people...
+
+[说话人 1] (0:12 - 0:15)
+Because it's more and more noise, and at some point...
+
+[说话人 3] (0:15 - 0:21)
+Yeah, yeah, but why, no, no, that they arrive later, yes, but why they are yellow to begin with?
+
+[说话人 2] (0:22 - 0:29)
+Francesca would like to ask why people would like to regard the two branches as no global relationship, right?
+
+[说话人 3] (0:29 - 1:41)
+Exactly, they never say it's a global, they say it's uncertain. Yeah. My question is, are they saying, I just want to make sure that they are not misinterpreted, so are they saying it's uncertain in the sense, oh, I'm not sure I'm seeing what I'm seeing, which could be, for example, the case, you know, if we look at the first row, yeah, the very top one, it's very, you know, people say yes, there is a relationship, and at some point it becomes noisy, and they say maybe yes, maybe no, and then in the end they say no. Yeah? Instead, that line is interesting because people never pick green, so are they saying I am uncertain in the sense I am not sure there is some noise, or are they saying I am uncertain, meaning I don't know if this should be classified as global or not, like, you know, I see it's branching, but I don't know if you consider that global or not.
+
+It's a different type of uncertainty, uncertainty about the instructions, not about what they see.
+
+[说话人 2] (1:42 - 2:07)
+Yeah. I asked some of them, they answered that they are not sure whether the two branches can be regarded as global because for the scatter plots, even when the X extended, they do not show whether the next scatter plot will be here or here, which branch would exactly lay in, so they provide the uncertainty.
+
+[说话人 3] (2:11 - 2:20)
+Did you, when you gave instruction to people, did you show them the deterministic relationship and told them how those deterministic relationships would be classified?
+
+[说话人 2] (2:20 - 2:29)
+Yeah, of course, but some of them still think that the two branches cannot be regarded as a global relationship.
+
+[说话人 3] (2:34 - 2:51)
+Sorry, I'm still a bit unclear. When they said uncertain, did they mean that they are not certain that that's a branching relationship, or do they mean they don't know whether a branching relationship should be classified as global?
+
+[说话人 1] (2:51 - 2:52)
+The latter.
+
+[说话人 3] (2:52 - 2:52)
+Yeah.
+
+[说话人 1] (2:54 - 3:11)
+It's the latter, so they, I think also the one above is even clearer because then there's really no difference and some are yellow and some are red. Is that what we want? Probably not, no.
+
+[说话人 3] (3:12 - 4:05)
+Because that seems to me is more a lack of consensus on the definition of global rather than is a global relationship visible from the data. So it's two different types of uncertainty. One is uncertainty about classification and labels, and one is uncertainty about, you know, given a shared classification, what belongs where.
+
+In my mind, this experiment was meant to only capture the second one. Instead, we are capturing also in some cases the lack of consensus on definitions. Yes.
+
+Are you happy with that, that we have both of those cases, or does this need to be fixed, or is it acceptable?
+
+[说话人 2] (4:06 - 4:49)
+Can I provide another example? Yes. Because for previous discussion, we also regarded this kind of situation as no global relationship.
+
+But for most of them, they also regarded this situation as a global relationship. This is also one very different thing from our discussion. And another is about the two branch and the window J and multi-region patterns.
+
+And the real labelling work is very different from our discussion.
+
+[说话人 1] (4:50 - 5:33)
+Yes, but it's what Francesca says. It's a problem that we need to define what we mean by global. And then if global, for example, the saturation one, if we say that, for example, global relationship has to be detectable over a large range of the global range, whereas here, if you take out the first 10%, there is no relationship left at all.
+
+And so that's a definition thing, that we must probably be clear what we mean by global.
+
+[说话人 2] (5:34 - 5:47)
+Yes, I also agree with this. But for currently, our definition is whether it expands of the whole X range, right?
+
+[说话人 1] (5:49 - 5:50)
+Sorry, say that again.
+
+[说话人 2] (5:50 - 5:58)
+The global means that the pattern can be detected by the whole X range.
+
+[说话人 1] (6:03 - 6:06)
+So that's what I'm wondering, what exactly our definition is.
+
+[说话人 2] (6:07 - 7:06)
+Yes, but the result of labour ratio is not very consistent with our definition. But if we change the definition, do we need to do, for example, as I asked previous, our colleagues, they decided if we detect another scatter plot here, whether it can be certain from the later pattern, from the whole pattern. For example, the linear, we can also detect if here as another X point, we can assume that it could appear here.
+
+And also for the saturation, it could appear here. But for the spike or the two branches, it could be ambiguous.
+
+[说话人 1] (7:07 - 7:55)
+Well, I guess the question is sort of, for example, with some of them, if you were to take 10% of the data away, any 10%, could it be that the relationship goes away? No, no, I'm just wondering how we define global or not. If the relationship is in a way that it only exists in, let's say we do 10 bins, and if you take any of the bins away, is there one bin that if we take it away, there's no relationship left?
+
+[说话人 2] (7:56 - 7:57)
+Yeah.
+
+[说话人 1] (7:57 - 8:03)
+So the one you have with saturation would be like that if you take the first bin away.
+
+[说话人 2] (8:04 - 8:04)
+Yeah.
+
+[说话人 1] (8:05 - 8:13)
+It would probably, there would be no relationship left. The same with the spike. If you take the middle bin away, there would be no relationship left.
+
+[说话人 3] (8:14 - 8:14)
+Yeah.
+
+[说话人 1] (8:14 - 8:16)
+It would just be completely zero.
+
+[说话人 3] (8:16 - 8:30)
+Yeah. Even if this definition is, I mean, there will be, maybe unavoidably, but there will be a lot of edge cases, no?
+
+[说话人 1] (8:31 - 8:31)
+Yeah, yeah.
+
+[说话人 3] (8:32 - 8:35)
+Because, for example, if you look at the third and the fourth row, no?
+
+[说话人 1] (8:36 - 8:37)
+Yeah.
+
+[说话人 3] (8:37 - 9:11)
+If there is a moment where a relationship that saturates slowly becomes almost indistinguishable from the polynomial relationship above. So this is my concern with this idea of defining a global versus local, that, yes, you can come up with a definition to distinguish the two, but also, yes, there will be a lot of edge cases.
+
+[说话人 1] (9:14 - 9:25)
+Yeah, but then, I mean, ultimately, we use one of these criteria to decide whether there's a global relationship or not, you know?
+
+[说话人 3] (9:25 - 9:26)
+Yeah.
+
+[说话人 1] (9:27 - 9:42)
+So what we really want to know is, are there, if we, let's say, we take a first threshold of, whatever, 0.7 for MIC, to say there is a potential relationship or not.
+
+[说话人 2] (9:42 - 9:42)
+Yeah.
+
+[说话人 1] (9:43 - 9:48)
+What are the chances that we actually include something that has no relationship at all?
+
+[说话人 2] (9:49 - 9:49)
+Yeah.
+
+[说话人 1] (9:49 - 10:08)
+Or do we exclude something that has a clear relationship but only in a small area? So maybe it doesn't matter that much as long as, subsequently, we still find what type of relationship it is.
+
+[说话人 2] (10:09 - 10:10)
+Yeah.
+
+[说话人 1] (10:11 - 10:27)
+Yeah, so if the one gets kicked out because we're saying, okay, most likely there is no global relationship, then we need to later think of some way to find localised relationships anyway.
+
+[说话人 2] (10:28 - 10:49)
+Yeah, so do you mean that we can make a very conservative threshold to detect it has a global relationship, for example, by MIC, and then the result can be also detected as local or no global relationship later? Yes. Yeah, I agree with this.
+
+[说话人 1] (10:51 - 10:57)
+Sorry Francesca, did you catch us or you were handing out bubble gum?
+
+[说话人 3] (10:58 - 10:59)
+No, I'm done with the bubble gum.
+
+[说话人 1] (11:00 - 11:02)
+It's not working anymore.
+
+[说话人 2] (11:02 - 12:22)
+Maybe I can show these slides to explain your idea. It's because here I have defined the two levels of colour for different families. Cold colour may be referred to a relatively simple relationship such as linear, concave, concave, S-curve, and threshold.
+
+And the warm colour refers to a more complex relationship. But if we define it at a very conservative threshold at first, for example, through 0.821, we can also find that this kind of function families can be detected even with high noise. And then we can also detect, for example, 0.6 to 0.8. This also contains some very complex or no global relationship. But we can also, through this bunch of trees, to detect the linear or concave or convex. If these different function families are fit for different branches, they could be divided into uncertain, and this uncertain branch can also be for further detection.
+
+[说话人 1] (12:24 - 13:17)
+For example, that's also the fuzzy thing again. If you say the fuzzy membership value is 1 at 0.8, we're pretty confident that everything that reaches that has a clear relationship. And then we say it maybe goes down to 0 when we go down to 0.6. And then anything below 0.6 is either so noisy or is so local that we think it shouldn't show up. And then we take it out. And then we later check whether it is a local relationship. So we don't lose it.
+
+But that's kind of what I was thinking how we would use the fuzzy.
+
+[说话人 3] (13:17 - 13:45)
+So your first branching actually would have three categories. Very clear and reasonably simple global relationship. Something that might be either a local relationship or a more complex type of global relationship.
+
+And something that is either very localised or too noisy to say.
+
+[说话人 1] (13:45 - 13:47)
+Something like that, yeah.
+
+[说话人 3] (13:48 - 13:52)
+So this would be at the very top, decision number one.
+
+[说话人 1] (13:52 - 13:52)
+Yes.
+
+[说话人 3] (13:54 - 14:01)
+Instead of being global yes or no, it would be three categories.
+
+[说话人 1] (14:01 - 15:20)
+Yeah, but that's what we had from the beginning. We decide at what level we say it's a membership of one. So it's clearly in.
+
+And let's say it's 0.8. And then we say, okay, we have a membership value that declines to zero. And let's put the zero, for example, at 0.6. Or we can put it lower. I don't care.
+
+And then we say, okay, if it's 0.6, then it's either very noisy or it's a function that is very local. Or it's an interaction that only happens very local. And you can then decide if in the first instance you say, okay, let's take a membership level of one.
+
+And you find, oh, there's only three interactions that we capture. Then we might loosen that and say, okay, maybe the data is more noisy than we thought. And let's go down to a membership level of 0.2 or so. So that's the flexibility. But if at the membership level of one, you already end up with 200 relationships, then you say, okay, let's stick to one. And we look at the ones that are quite clear.
+
+You know, like that.
+
+[说话人 2] (15:26 - 15:34)
+So also, I also agree with this. But with fuzzy range, I also... Can I move to...
+
+[说话人 1] (15:34 - 15:36)
+Oh, you're right, actually. Sorry.
+
+[说话人 2] (15:36 - 15:37)
+Okay.
+
+[说话人 1] (15:37 - 15:37)
+Where did it go?
+
+[说话人 2] (15:39 - 15:39)
+Yeah.
+
+[说话人 1] (15:39 - 15:42)
+Actually, I didn't see that you had 0.8 and 0.6 there.
+
+[说话人 2] (15:42 - 16:03)
+Yeah, this is... Yeah, yeah, yeah. Of course, I think that by the labouring work, the fuzzy range may not calculate it very well as expected.
+
+So I here list the 0.8 and the 0.6 based on the whole view of our scatter plot here. Can I?
+
+[说话人 1] (16:03 - 16:03)
+Yeah, sorry.
+
+[说话人 2] (16:03 - 17:06)
+This is output of the labouring work by fuzzy range. We can also find that it could... If some relationships were perceived as global, even at relatively low MIC values, for example, the linear, the convex, the concave, possibly because their characteristics patterns remained very easy to recognise.
+
+And for the uncertainty, for the S-curve and the threshold, the MIC range could be higher than others. So this could make that... There could be overlap of each range.
+
+So here, this is the main reason why I listed 0.6 and 0.8 here. So I think maybe we can start from the defined 0.8 and 0.6 at the start.
+
+[说话人 1] (17:09 - 17:33)
+Yeah, we could... I mean, maybe if we do it that way and then we could still use the others again at some point to actually analyse the result. You know, once we have organised it and then we say that this is organised, classified as this kind of scatter, is it correct?
+
+You know? Yeah.
+
+[说话人 3] (17:36 - 18:13)
+Can you go back to the violin plot one second? This one? Yeah.
+
+So this is now... Every dot is one of the scatter plot that the students have classified. Yeah.
+
+But, yeah, I'm not totally sure how to relate the distribution I see here to your choice of 0.8 and 0.6. It's not based on this, no?
+
+[说话人 1] (18:13 - 18:34)
+This is what came out. But this is still very much fuzzy. Yeah.
+
+That's good. I think what she is saying is that this is maybe not working so well to do it this way. Because we end up not too different from the last one we had.
+
+[说话人 2] (18:35 - 19:05)
+Yeah, because for some characteristics for the U-shape, like they could be very easily recognised as they have very distinct characteristics. So it could be a very low MIC value at here. So the global range could be very long.
+
+So this could make the fuzzy range not validate as we expected.
+
+[说话人 1] (19:06 - 19:23)
+Did you... One more question. On the samples that you gave them, are they completely randomly distributed?
+
+Or are they the same relationships with different noise levels next to each other? They're next to each other.
+
+[说话人 2] (19:27 - 19:35)
+I'm not sure. Do you mean because I have all put the randomness of the whole scatter plots?
+
+[说话人 1] (19:35 - 19:44)
+Okay, so no, they are randomly distributed. I was just wondering how much they are preconditioned for seeing saturation, you know?
+
+[说话人 2] (19:45 - 20:13)
+So this is a sheet for labelling their all randomness. So what I put here is that maybe we can directly put the different threshold for MIC to do the later analysis for further branch.
+
+[说话人 1] (20:14 - 20:36)
+Yeah, maybe, Francesca, what do you think? If we do it the other way around, if we define the thresholds and then use the students again to assess the result, the outcome, and whether that's more... leading to a more consistent result?
+
+[说话人 3] (20:42 - 20:47)
+Because instead the idea of changing the hierarchy of the tree...
+
+[说话人 1] (20:49 - 20:50)
+What do you mean?
+
+[说话人 3] (20:51 - 20:54)
+Do not start with that question, is it global or not?
+
+[说话人 2] (20:56 - 20:59)
+You mean we do not start with global or not?
+
+[说话人 1] (21:00 - 21:44)
+Well, but the main point was to take out things where there is no significant relationship, no? And the main thing, the main reason to ask this global question is that if we take out... We have to use some kind of threshold to implement it and if we implement it at some level, it's clear that very local relationships will also be taken out, you know?
+
+So we can't avoid... These will look the same for any of the metrics. So that was the reason for the first step.
+
+[说话人 3] (21:48 - 22:06)
+I'm just a bit worried, given these results, whether, you know, really NIC can do that job. Because it's difficult to see a fuzzy relationship going through these three classes, no?
+
+[说话人 1] (22:07 - 22:12)
+No, there is a clear trend, but it's a bit strange that the green is so widespread. No?
+
+[说话人 2] (22:14 - 22:19)
+I think this is mainly because of the different structure of different function families.
+
+[说话人 3] (22:20 - 22:36)
+I'm just following what you said, you know? These conclusions, you see that you have some relationship that can continue to be perceived as global even with a lot of noise, you know? Even with low NIC values.
+
+[说话人 2] (22:36 - 23:11)
+Do you want to see the scatter plots? I have also prepared, for example, here. This one is the situation.
+
+It's MIC is very low. It's about 0.2, but our colleagues label it as has global relationship. And for example, this is also the window J, and the MIC is also not very high.
+
+It's nearly 0.2, but we also regard it as a global relationship.
+
+[说话人 1] (23:12 - 23:37)
+Yeah, but I mean, I think, you know, like the top one, for example, I think it's more of a labelling problem than a problem with the metric, you know? Because the top one, I think we need to take out. Those are the kind of plots we, if you see...
+
+[说话人 3] (23:37 - 23:50)
+When you say it's green, does it mean that one person said it's green or more than one person said it's green?
+
+[说话人 2] (23:50 - 23:56)
+More than one person. And I calculated the score for all of the person labelled.
+
+[说话人 3] (23:56 - 24:01)
+How many person needs to be in agreement for something to become green?
+
+[说话人 2] (24:01 - 24:30)
+Okay, let me check it. Which one is... Oh, this one?
+
+Maybe I think this is this one, and two regarded as global relationship, and one is uncertain.
+
+[说话人 1] (24:31 - 24:39)
+Yeah, but look at the one next to it. It's hardly any different. And there you have two said no.
+
+[说话人 2] (24:39 - 24:44)
+Yeah, and one has uncertain and one labelled yes.
+
+[说话人 3] (24:44 - 25:21)
+Basically, what I'm saying is, if we go back to the plot that causes us trouble, the one with the green dots, no, sorry, the other one, the one where we're trying to... Yeah, so I'm wondering if some of those green dots that we see on the left, with low MIC, I wonder if those are dots that have been seen by few people. Does every plot get seen by as many people as by all six or maybe just two?
+
+[说话人 2] (25:21 - 25:29)
+Two, at least one times, but not too many as six or seven times.
+
+[说话人 1] (25:29 - 25:30)
+Yeah, it's not too many people.
+
+[说话人 3] (25:32 - 26:07)
+Because maybe we should also weight these dots by consensus. What I'm trying to say is we need to have confidence that as many people have seen a green, and if one scatter plot has been seen by five people and all five say it's green, that weighs more than a scatter plot that has been seen by one person and they say it's green. Are these dots now considering this?
+
+[说话人 1] (26:10 - 26:14)
+You said at least two people have seen it, but not more.
+
+[说话人 3] (26:14 - 26:16)
+Yeah, but two is not much.
+
+[说话人 1] (26:16 - 26:41)
+Yeah, no, that's the point. It's clear. But the thing is we're not going to be able to do this very differently with the group we have because we don't have enough people to do it much larger.
+
+But what about if we... I mean, we also don't want to spend weeks on doing this experiment. What about if we do it the other way around?
+
+[说话人 3] (26:42 - 26:44)
+So we try a threshold and...
+
+[说话人 1] (26:45 - 26:58)
+Ah, it just started raining, really. I wanted to cycle home in a moment. Damn it.
+
+Yeah, but if we do it the other way around, we categorise it and then we use the students to...
+
+[说话人 3] (26:58 - 27:13)
+I'm just saying that this plot maybe is now being a bit misleading. And if you had the chance to, for example, make, I don't know, those dots bigger or smaller depending on how many people have, you know...
+
+[说话人 1] (27:13 - 27:21)
+Yeah, but we don't... I like the idea, it's just we probably don't have enough people who see the same plot to make it useful.
+
+[说话人 3] (27:22 - 27:33)
+But maybe it would be good if anything to take notes of all the mistakes that we did in this experiment and that we realise how to do the experiment in a better way for future reference.
+
+[说话人 1] (27:34 - 27:51)
+But Francesca, I think that what we can learn is that if we do it the other way around, if we take the result and have them classified, then we can give everybody the same result. And then we have like 10 people to look at the same result and then we can actually do this.
+
+[说话人 3] (27:51 - 27:54)
+And then the question to people is do you agree or disagree?
+
+[说话人 1] (27:56 - 27:58)
+Or are you unsure maybe?
+
+[说话人 3] (27:58 - 27:59)
+Yeah, yeah.
+
+[说话人 2] (27:59 - 28:03)
+It could be more clear for their selection. Yeah.
+
+[说话人 1] (28:03 - 28:20)
+Then it's also this confusion how... Because it's a problem, as you said rightly, that if some people say, I think this is a global relationship and the next person for the same plot says, I don't think that's a global relationship. That also is a problem.
+
+[说话人 2] (28:20 - 28:20)
+Yeah.
+
+[说话人 1] (28:22 - 28:25)
+There's a great sum of the overlap that we see there.
+
+[说话人 2] (28:26 - 28:31)
+Yeah. So, can I go through?
+
+[说话人 1] (28:31 - 28:37)
+Sure. Francesca, do you need to go or you said half an hour? What's your...
+
+[说话人 3] (28:37 - 28:39)
+Well, now he's happily playing.
+
+[说话人 1] (28:40 - 28:41)
+Oh, quick, come on.
+
+[说话人 3] (28:42 - 28:47)
+Let's do as much as we can. Yeah.
+
+[说话人 2] (28:48 - 29:39)
+Okay, this plot, what I would like to say is that also MIC can reflect whether it could have the global relationship or not, but it also impacts the noise and also the complexity of the whole relationship, and this is two main cases about the same MIC value. This coded column refers that they could have relatively recognisable relationship, but even with they have the same MIC, they could have more noise than the warm colour, because this could have some local relationship or more complex ones, and this is MIC near 0.8, and this is... Five minutes.
+
+Sorry, can I...
+
+[说话人 3] (29:39 - 29:52)
+So, can you give me a second? Because I'm just reading the value of MIC on the plots. Yeah.
+
+(该文件长度超过30分钟。 在https://turboscribe.ai/zh-CN/点击升级到无限，以转录长达10小时的文件。)

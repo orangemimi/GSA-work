@@ -1,0 +1,462 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:02 - 0:08)
+Maybe you organised already. Can you hear me? Hello.
+
+[说话人 2] (0:09 - 0:16)
+Yes, yes. Yes. Good.
+
+Okay, I will share my screen.
+
+[说话人 3] (0:18 - 0:18)
+Yes.
+
+[说话人 2] (0:25 - 3:00)
+And this week, I would like to talk about some three problems. What should the final tool look like based on starting from various input and output pairings in one-assisted models? And the second is how would it be applied to this tool, applied to these pairings?
+
+And what kind of output should we expect? And the first is I have designed a potential diagnosis framework. And I designed this decision tree based on the three principles.
+
+The first is that the relationship existence is a root gate. Only if we can detect it has a relationship, then we can define whether it has some different characteristics. And secondly, there are some exclusive characteristics.
+
+For example, if it has very strong monotonicity, it would not have the greater possibility to have the turning point. And there are also some different hierarchical priorities to define the parent and the children ordering. For example, if we have the greater linearity, it could be strictly choose the line shape.
+
+And if it has a weak or medium linearity, so we can also detect whether it has a curvature. So the current tree is just shape-related characteristics only because some characteristics like the spread and distribution, they are not included in this tree because they can add it directly or separately as some stackable descriptors. And I also did not include the strength in this current tree because I think it is more like it can be included while it has a comparison with different pairings.
+
+So we can start from whether it has a relationship using some metrics. And if it has some relationship, we can then define whether it has a simple or complex relationship. Here I use the turning point.
+
+[说话人 1] (3:02 - 4:07)
+So we stop there and discuss this a little bit before we go. So maybe just one thought before we go in all of the details. One thing we could include here is the idea of global and local or something like that.
+
+Because initially we're looking for if we have pairings of variables, we're looking is there a global relationship. So is there a relationship over the range that is detectable over the range of the variable or variables? No, because there could be that there is a relationship there, but it's maybe only over a fraction of the possible range.
+
+So it's more a local or regional relationship. But I guess in the initial one, we would be looking for whether there is a global relationship in the defined ranges.
+
+[说话人 2] (4:08 - 4:20)
+So I first try to define whether it's simple or complex. If it's complex, I think it could have some more different relationships in its sub-range.
+
+[说话人 1] (4:21 - 5:21)
+What I wonder is if we say no, could that still be that there is a local relationship? Because we somehow have to define metrics and say, okay, if it's above or below. And if we say, let's say we take correlation, linear correlation, just as an example.
+
+And we say, okay, if it's above 0.7, then there is a relationship. Potentially, if it's below 0.7, there is none. But there could probably be parameter interactions between two or variable interactions where the overall value is below 0.7. But maybe still in a fraction, in a part of it, it's still much higher. What I mean?
+
+[说话人 2] (5:22 - 5:33)
+Yeah, I understand. So you mean that we have a global relationship, but we can also detect the local instead of choose one.
+
+[说话人 1] (5:34 - 5:46)
+Yeah. So we could say, for example, if we start by asking, is there a global relationship? And you say, no, there is no global relationship.
+
+So that's one group. And the other one is potentially there is a global relationship.
+
+[说话人 3] (5:47 - 6:09)
+Yeah, yeah, yeah. Sorry, global means, because we are analysing anyway, pairs, no? Yeah.
+
+Okay. So by global, you mean along the entire x-axis? Yeah.
+
+Because you could have that, I don't know, up to a point, it's a bit of a cloud. And then instead a relationship emerge. Exactly.
+
+Okay.
+
+[说话人 1] (6:09 - 6:53)
+And I'm just saying, I'm not sure that if we first look at over the whole range, and we say, okay, because we somehow need to define thresholds for metrics somehow. And then we say, okay, with this metric, we say there is unlikely to be a relationship that is detectable over the full range. But that might not preclude there to be more of a local relationship, you know?
+
+That is, so then we have, we say, okay, we start first by global relationship, and we say yes, and then we analyse this further. Or we say global relationship, no.
+
+[说话人 3] (6:53 - 6:54)
+Yeah.
+
+[说话人 1] (6:54 - 7:03)
+And then we have a group there. But in that group, there might well be still smaller scale relationships that are locally relevant.
+
+[说话人 2] (7:03 - 7:28)
+Yeah. I understand. So I think maybe they are similar, because I just used simple represent as a global or complex represent as a, it may contain some different local relationships.
+
+Because when it does not have the global relationship, it has some local relationships, it could be the complex.
+
+[说话人 1] (7:29 - 7:34)
+Yeah, but I'm not sure whether simple and complex is the same as local and global.
+
+[说话人 2] (7:35 - 7:37)
+Yeah, maybe I can change the words.
+
+[说话人 1] (7:38 - 8:03)
+Because I like the simple and complex. But if we first separate out saying global and local, or global relationship, yes, and then we go simple and complex, because some of the relationships might be, I don't know, going up and down, and then it is a complex relationship. But it's a global relationship.
+
+[说话人 3] (8:03 - 8:20)
+Sorry, but you're saying that basically, maybe the question, the very top question has relationship. Yeah. So we have three answers.
+
+No, nothing anywhere. Yes, along the full range. Or yes, but only locally, no?
+
+[说话人 1] (8:21 - 8:26)
+Yeah, I guess I'm suggesting to say first, is there a global relationship? Yes or no?
+
+[说话人 3] (8:27 - 8:27)
+Yeah.
+
+[说话人 1] (8:28 - 8:34)
+And then if there is no global relationship, then you might still ask, is there a local relationship? Yes or no?
+
+[说话人 3] (8:34 - 8:35)
+Or nothing at all.
+
+[说话人 1] (8:35 - 8:36)
+Or nothing at all, you know?
+
+[说话人 3] (8:37 - 8:37)
+Okay.
+
+[说话人 1] (8:37 - 8:46)
+But then we could say, okay, yes, there is likely, there's evidence for a global relationship. So is that relationship simple or complex?
+
+[说话人 2] (8:47 - 8:47)
+Yeah.
+
+[说话人 1] (8:47 - 8:54)
+You know, and so forth. And then, because the other one, when it's local, will be a lot more effort to find.
+
+[说话人 2] (8:54 - 8:55)
+Yeah.
+
+[说话人 1] (8:55 - 9:08)
+Yeah. So we, but we separate out and say, okay, let's start with the ones where there is a global relationship. And that terminology is there anyway, because we, it's the same as with sensitivity analysis, no?
+
+We can use that kind of.
+
+[说话人 2] (9:09 - 9:25)
+Yeah. I understand. So maybe we can add one more layer between here or not to change the health relationship to whether we have, whether it has a global relationship.
+
+If not, we can check whether it has a local relationship.
+
+[说话人 1] (9:26 - 9:29)
+Exactly. And then we can do later. So we can, so we have.
+
+[说话人 2] (9:29 - 9:31)
+Yeah. Maybe we can start from this.
+
+[说话人 1] (9:31 - 9:40)
+And then for the global, maybe for simplicity, start there and then organise. Okay. So how would we then process on the, for the global relationships?
+
+[说话人 2] (9:40 - 9:41)
+Yeah.
+
+[说话人 1] (9:43 - 9:46)
+Yeah. And there you have simple or complex.
+
+[说话人 2] (9:47 - 9:47)
+Yeah.
+
+[说话人 1] (9:48 - 9:52)
+And that's a turning point. So if it's a simple means.
+
+[说话人 2] (9:53 - 9:56)
+So it do not have the turning point.
+
+[说话人 1] (9:56 - 9:58)
+Okay. So it's some monotonic or non-monotonic.
+
+[说话人 2] (9:58 - 10:22)
+Yeah. So we can use such kind of tree here to detect its different characteristics. And if it is very complex, we can also determine whether the number of turning point and to characterise its shape.
+
+And then we can divide it into different segments and to do the detection also like such kind of tree.
+
+[说话人 3] (10:23 - 10:39)
+Sorry. Can I ask the question? When you say simple or complex.
+
+Yeah. And then in parentheses, you say monotonic, non-monotonic. So is does simple means monotonic and complex means non-monotonic?
+
+[说话人 2] (10:40 - 10:42)
+Yes. I think they are similar.
+
+[说话人 3] (10:44 - 11:26)
+I wonder if then you want to say monotonic or not, because simplex and complex are very, you know. Yeah. They are words that people will use with different meaning.
+
+Yeah. I agree with this. So if instead like in your what you are actually saying is the left hand side is the monotonic and the right hand side is non-monotonic, then I would.
+
+Yeah. Yeah. I think the second question, the second yellow box should be rather than asking simplex or complex should be monotonic or not.
+
+Yes. If that's what you mean. Yeah.
+
+[说话人 1] (11:26 - 12:05)
+Can we discuss? So I agree with what you're saying. The question is just whether that is actually a good.
+
+Whether monotonic or not is actually the important part at this point, because, for example, if you have something like this, you know, there are other options like. Sorry, let me find here. You see these kind of patterns where you have two.
+
+No, these are also complex patterns, but they're not necessarily captured by monotonic or not monotonic.
+
+[说话人 3] (12:05 - 12:21)
+OK, then, though, I wouldn't put then that then it means that that is not actually what you are. So, for example, on the right hand side between the complex, you could have something like how would you call that a branching behaviour?
+
+[说话人 1] (12:22 - 12:36)
+Well, I'm just I'm just looking at this because this had. Wasn't this one of these metrics was about simple or complex? No.
+
+Was this.
+
+[说话人 2] (12:36 - 12:44)
+Simple? No, there isn't. I think there are no metrics about the simple, but they just add some noise about.
+
+[说话人 1] (12:45 - 13:49)
+But here, you know, the thing with this information criterion was. So I'm not sure about the turning point as simple or complex, because, for example, we could say has relationship. Yeah.
+
+Is if. You know, this mutually from it is the maximum information criteria. No, it's M.I.C. was maximum information criteria. Yeah. Maximal information criteria. For example, the idea there was that if you have that and you compare it to linear correlation and Spearman correlation.
+
+If the M.I.C., this maximal information criterion is high, but the other two are low. Then it suggests a complex relationship. You know, because even a circle, a circle would be a perfect circle would be an M.I.C. value of one, but a linear relationship and a rank based relationship of zero.
+
+[说话人 2] (13:50 - 14:10)
+I think maybe. Sorry. This is not for M.I.C. I think M.I.C. is just to say whether it has a direct relationship. But they also the M.C. is to describe the complexity of the relationship. It's also the matrix in my family.
+
+[说话人 1] (14:11 - 14:14)
+Yeah. So that's where I think the.
+
+[说话人 2] (14:15 - 14:17)
+Maybe we can change the matrix here.
+
+[说话人 1] (14:17 - 14:42)
+Yeah, because then the thing is, if we have that, we can actually use in some combination as simple or complex, because then the simple will be something that is somehow monotonic. You know, it must be. And then we can and the other one would be more complicated to figure out what it actually looks like.
+
+[说话人 3] (14:42 - 14:43)
+Yeah.
+
+[说话人 1] (14:43 - 14:54)
+But we if we only say it has a turning point or not, then if we have something that, you know, where you have a branching pattern, for example, it would not show up, you know.
+
+[说话人 2] (14:54 - 15:00)
+Yeah, I understand. So maybe we can change the or add some more matrix in this layer.
+
+[说话人 1] (15:01 - 15:43)
+Well, no, we want to keep it to one. So we don't want it to too many. But the thing is, that's why I think the order is important.
+
+So it has relationship means that. These simple correlation. Well, not necessarily simple, but the M.I.C. or Pearson or or or rank based have a high value. And then simple or complex, that separation is that if it has a high value M.I.C. or something else from that group and not in the others.
+
+[说话人 3] (15:43 - 15:43)
+Yeah.
+
+[说话人 1] (15:44 - 15:48)
+And if it has a high value in the others, then we know it's a simple relation.
+
+[说话人 3] (15:48 - 15:48)
+Yeah.
+
+[说话人 1] (15:48 - 16:04)
+You know, so. And then the turning point can come later. Yeah.
+
+Because that but that's only one option. You know, of how why it's something is complex.
+
+[说话人 2] (16:04 - 16:06)
+Yeah, I understand.
+
+[说话人 1] (16:07 - 16:09)
+So does it make sense, Francesca? I'm going to.
+
+[说话人 3] (16:12 - 17:16)
+Yeah, I got a bit lost, but so on the so this simple is monotonic. And then the complex instead is more nuanced, is non monotonic plus other stuff which gets broken up. Progressively, I got lost of what you would put before the turning point, but I believe you.
+
+My only question on that is like, how do you think? Because I can see. So I was thinking in terms of, you know, the data sets that we work with, I can see very well why, you know, I can think of loads of example where you see that the relationship as a branching.
+
+No, I haven't. I think that's quite common in our field that, you know, maybe beginning it goes like this and then there are two different not changing slopes. I'm not sure we would have a circle or a cross.
+
+[说话人 1] (17:16 - 17:20)
+No, no. This is just what they used to demonstrate.
+
+[说话人 3] (17:21 - 17:22)
+Yeah, yeah, yeah, yeah, yeah.
+
+[说话人 1] (17:22 - 17:39)
+You know, because that's the advantage of the information criteria. That's why it's important to have them is because they capture any kind of clear relationship between two variables. You know.
+
+It doesn't have to be unique, you know, or anything like in.
+
+[说话人 2] (17:39 - 17:56)
+Yeah, I think maybe the idea is also some monotonic can represent as a symbol, but the complex may need some more metrics to define it. Yes, it is indeed complex. I think maybe the idea is.
+
+[说话人 1] (17:57 - 18:15)
+Yeah. Complex can mean more things, you know, and we need to. It's not just does it go up and down.
+
+That's why this is really important. And that's why. So if we start with the we're looking initially for the group that has a global interaction.
+
+So the action that is detectable over the full range.
+
+[说话人 3] (18:16 - 18:16)
+Yeah.
+
+[说话人 1] (18:18 - 18:41)
+And then simple or complex, if it's simple, then we know, OK, we can go with our simple metrics. If it's complex, we have to figure out, OK, what does that mean? Is it because it's going up and down or because it has a branching or something else?
+
+And that's I think you you capture both. And so the complex we have might have to add more.
+
+[说话人 2] (18:42 - 18:42)
+Yeah.
+
+[说话人 1] (18:42 - 19:13)
+And then we have another group where there is no global relationship, but that does not mean that there couldn't be a local relationship. So that's. But we can think about that later.
+
+So. No, does that work or. And then we can try which metrics work here.
+
+These. I think the in this in this paper on information criteria, they have a few. I think this is maybe the central one.
+
+[说话人 2] (19:13 - 19:13)
+Yeah.
+
+[说话人 1] (19:14 - 19:26)
+And that might be the easiest to use. Yes, because I think the other one is then also a question of whether a relationship between two variables can be placed in a functional form.
+
+[说话人 3] (19:26 - 19:26)
+Yeah.
+
+[说话人 1] (19:27 - 19:32)
+You know, so if you have. And that might be more complicated, you know.
+
+[说话人 2] (19:32 - 19:43)
+Yeah. I have also consulted David and he said maybe currently the metrics of my family we have added is is for my family. It's enough.
+
+[说话人 1] (19:44 - 19:45)
+Which family?
+
+[说话人 2] (19:45 - 19:47)
+The information family.
+
+[说话人 1] (19:48 - 19:50)
+You have the MIC in there or not?
+
+[说话人 2] (19:50 - 19:56)
+I have added. MIC is such kind of MIC, MASM, EVMC.
+
+[说话人 1] (19:56 - 20:04)
+Yeah, not all of them are equally useful. So but we what we need to figure out now is which of those do we need to use when?
+
+[说话人 2] (20:04 - 20:05)
+Yes, exactly.
+
+[说话人 1] (20:05 - 20:12)
+Yeah. But I think these normally these that's that's sort of how they also demonstrated here.
+
+[说话人 3] (20:12 - 20:12)
+Yeah.
+
+[说话人 1] (20:13 - 21:02)
+Because they have Pearson and Spearman and then there are some others. But this the others are basically overwritten by this MIC criteria. I mean, another option could be, for example.
+
+That we say as global relationship. Yes. If MIC, this information criterion is high because it should capture all of it.
+
+It should also be high when it's linear, when it's monotonic or when it's complex. And then the next step could be to say, OK, but there is also a Spearman and Pearson high. If that's yes, then it must be a simple relationship.
+
+If no, it must be a complex relationship.
+
+[说话人 2] (21:02 - 21:03)
+Yeah. Yeah.
+
+[说话人 1] (21:04 - 21:08)
+So we could start global relationship with this MIC criterion.
+
+[说话人 3] (21:08 - 21:09)
+Yeah.
+
+[说话人 1] (21:09 - 21:13)
+Because it's a it's more generic. You know, it will capture all of it.
+
+[说话人 3] (21:13 - 21:13)
+Yeah.
+
+[说话人 1] (21:16 - 21:18)
+Francesca, you're following or.
+
+[说话人 2] (21:20 - 21:48)
+Maybe I can also introduce maybe I'm not sure whether this is accepted progress of later of application. And for example, we have different pairs of input and output and then we can maybe have defined it whether it has a global relationship or no global relationship. And we can add some local relationship with this that we can do later.
+
+[说话人 1] (21:48 - 21:49)
+Yeah. Yeah. Yeah.
+
+[说话人 2] (21:50 - 22:39)
+And then we can find whether it has divided these plots into whether it's a it's has a simple relationship or complex relationship using different metrics. And then we can also using using this branch, we can find whether it has different directions and whether it has a different degree of monotonicity and whether it has linear linearity and defined it, whether it has a line shape or if it goes this branch, whether we can evaluate its curvature and see it's maybe it has a situation shape. And if it's a complex, maybe here I would add some more detection.
+
+Yeah.
+
+[说话人 1] (22:40 - 22:40)
+Sorry.
+
+[说话人 2] (22:42 - 23:16)
+So I think that one point here is that for different level or different characteristics, we need to select a different related metrics and different metrics will define the different characteristics and all of these pairings can be divided into different groups or more groups through this this tree. Yeah. I'm not sure if this is expected progress later.
+
+[说话人 1] (23:18 - 24:05)
+No, no. I think I think that's very good. So the question is then.
+
+So your first level, as you show, I have to use this. The mouse is too fast for me. Sorry.
+
+So up here we might see whether M.I.C. or one of those is enough to say. Whether there is a potential relationship or not, and then the next one is then probably not the turning points, but probably the simple linear experiment or Pearson, which would indicate a simple relationship. And the others would indicate a low value for those would indicate a complex relationship.
+
+No. So and we shift this turning points maybe further down and use it then here.
+
+[说话人 3] (24:05 - 24:05)
+Yeah.
+
+[说话人 1] (24:10 - 24:11)
+Francesca, what do you think?
+
+[说话人 3] (24:13 - 24:43)
+Yeah. When you when you have a situation where you have like this, these other options that branches from no relationship, like is there a local one? Yeah.
+
+Yeah. Will you then will you then kind of apply then the same structure, simplex, complex, positive turning points to the local one? Right.
+
+[说话人 1] (24:45 - 24:49)
+Perhaps we'll have to think about how we find the local ones.
+
+[说话人 3] (24:49 - 25:05)
+Yes. But once you have identified the sub range where a local relationship exists, you basically then like reapply the exact same methodology that we define now at global level, but just for the local level. Right.
+
+So.
+
+[说话人 1] (25:05 - 25:05)
+Yeah.
+
+[说话人 3] (25:06 - 25:43)
+OK. That's that's the assumption. Yeah.
+
+Yeah. The assumption is you can do that. Is there.
+
+Is there. What is it. That we measure in the same density, like the scatter, the how well defined the relationship is.
+
+I remember we discussed this also not as one of the things you wanted to get out. Was it as very clear, obvious relationship or is it scattered?
+
+[说话人 2] (25:43 - 26:05)
+Yes. The reason it does not include here is that I think that this kind of characteristics may added directly based on this. They are not exclusive.
+
+So I think maybe based on this tree, we can add some more characteristics like the spread, like the density and some strength.
+
+[说话人 3] (26:06 - 26:31)
+So they will be a subsequent step. Yeah. Once you get to the end, to the leaf of this tree.
+
+Yeah. Then there is a further step of how strong is this relationship. And and the clustering.
+
+OK. So there are like some more levels coming after. Yeah.
+
+[说话人 2] (26:31 - 26:34)
+This is my assumption.
+
+[说话人 3] (26:34 - 26:34)
+OK.
+
+[说话人 2] (26:36 - 26:36)
+OK.
+
+[说话人 1] (26:38 - 27:13)
+So probably there will be. Yeah. I think there will be not just one piece of information coming from one.
+
+So and so we might. But that depending on what order we do this, I mean, given, let's say that the first one already implies that there is a certain that there can't be too much scatter because otherwise it wouldn't show up. You know?
+
+And then the question is what we need. So complex, for example, you have turning points, but there could also be thresholds.
+
+[说话人 2] (27:13 - 27:14)
+Yeah.
+
+[说话人 1] (27:14 - 27:59)
+And so so those are the things we then need to look for step by step. And it might be also that complex might not be might be one branch of complex with turning points and another one with thresholds and another one with bisections or something. So so maybe it doesn't it doesn't have to be just one or the other.
+
+It could be. That it goes into more options. Yeah.
+
+But then with this, every relation pair, relationship pairing that we find, we should be able to end up somewhere.
+
+[说话人 3] (27:59 - 27:59)
+Yeah.
+
+[说话人 1] (28:00 - 28:10)
+And that should tell us, you know, what what we can learn from that. And then we we group these in this way and then can say, OK, now let's look at.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

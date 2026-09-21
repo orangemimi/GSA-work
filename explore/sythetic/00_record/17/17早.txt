@@ -1,0 +1,600 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:06 - 4:19)
+Okay, first I would like to do the clear recap. First, we have meet three issues. The first is we have seen the MIC value in some real cases is very low, causing the potential meaningful relationship to be classified as no relationship.
+
+And the second is the branch structures may be classified as a simple relationship. And the third issue is the boundary between the linear situation and acceleration relationships are still not very clear in real cases because you have provided some problems for this classification. So this week I may need to solve this issue.
+
+First, I have analysed why this issue exists. First is why does MIC fail to detect the global relationship? I have seen that a relationship may still exist even when the MIC is very low because you can see that these are all scatter plots with relationships although it has different relationships.
+
+And a low MIC only means that the relationship is difficult to distinguish. For example, if the MIC approximate 0.2 represents the non-level while the MIC larger than 0.2 could be considered as a detectable global relationship. And second is why the HD test failed to reliably detect the branch.
+
+There are two reasons. The first is the HD test is too sensitive to multimodality caused by the real cases. And the second is the branch would be misclassified as a simple relationship based on the path of the previous tree.
+
+And the third is why the linear situation and acceleration relationships are misclassified. The reason is that they are very similar relationships and they may be assigned to different types when they are value for on the opposite side of a fixed threshold. For example, 0.49 and 0.51 is very close but they could be separated into two classifications. This week I managed to revise the tree. At first, I revised the MIC larger than 0.2 as an intermediate global relationship. And second, I changed the branch group detection at here after the MIC detection and earlier than the simple or complex relationship.
+
+And if it has a branch, it could be divided into branch group here. And if do not have the branch, it go to the simple or complex relationship detection. And here I also divided into three groups, simple, intermediate and complex.
+
+Because in real cases, their Pearson matrix is not always very good, larger than 0.7. So I here set an intermediate classification here. And for the detection of the linear situation and acceleration group here, I have deleted the previous branch and added the new method here. I managed to detect the linear score of the curvature strength.
+
+It could like the fuzzy range. This means that if its score equals 1, it could be divided into the linear. And if its score is 0, it could be divided into curvature.
+
+And it is from 0 to 1 and it could be divided into linear group, near linear group. And later, if we analyse the different group and this group can be analysed together and this group can also be analysed together. And would you make some comments here?
+
+[说话人 2] (4:20 - 4:24)
+One question with the linearity score.
+
+[说话人 1] (4:25 - 4:25)
+Yeah.
+
+[说话人 2] (4:28 - 4:44)
+So, I mean, there is a... So we get a consistent number out of this that varies between minus 1 and positive 1.
+
+[说话人 1] (4:44 - 4:45)
+Yeah.
+
+[说话人 2] (4:45 - 4:54)
+And then, I mean, there is a 0 curvature.
+
+[说话人 1] (4:55 - 5:04)
+It could be more clearly because when it's a B equals to 1, it could be the... Okay.
+
+[说话人 2] (5:04 - 5:14)
+So, yeah, I was just wondering because whether it's linear or near linear, is that so important? I mean, what's the separation?
+
+[说话人 1] (5:15 - 5:29)
+Yeah, because I think for this classification, you are all so confused because here we divided into saturation. Here is the acceleration and here is linear also. It looks like very similar.
+
+[说话人 2] (5:30 - 5:34)
+Yeah, but I think it has more to do with the spread than the fit of a line.
+
+[说话人 1] (5:35 - 5:42)
+Yeah. So you mean that you prefer to use the fixed threshold instead of using...
+
+[说话人 2] (5:42 - 5:54)
+I'm just saying we try to... I mean, one criterion is to make it as simple as possible. And then the...
+
+So here at the moment, you know, everything is about the fit.
+
+[说话人 1] (5:55 - 5:55)
+Yeah.
+
+[说话人 2] (5:56 - 6:11)
+But it could... Sorry, the exponent we get from the fit. But it could also be that another...
+
+Maybe we need the scatter as the criterion to decide between...
+
+[说话人 1] (6:12 - 6:14)
+Between using such kind of score.
+
+[说话人 2] (6:15 - 6:24)
+Yeah. So, but it's okay for now. We just need to always think, can we do it a bit simpler?
+
+And is that really giving us more information?
+
+[说话人 1] (6:25 - 6:30)
+Okay. Francesca, do you have some comments here?
+
+[说话人 3] (6:31 - 6:40)
+No, I mean, are you going to show examples of all these changes and how they work? Yeah, okay. Okay.
+
+So then, yeah, I'll give comments as they come.
+
+[说话人 1] (6:40 - 8:13)
+Yeah, okay. Here, I would like to introduce the branch detection. Actually, I have seen a lot of methods here.
+
+Some are not applicable. Some works very well. I have used the dynamic bifurcation and multi-curve regression and multi-modality analysis.
+
+And even the topology analysis and the causal discovery. And some performs well. Some are not applicable.
+
+And finally, I have used the methods I will introduce to you. Here, I would like to introduce three different but similar branch-like relationships. Here, it's like a fan-like shape.
+
+But it does not have the valley here. And so, I do not think that it's a branch. And here, it has two lines here.
+
+But I think it mainly focusses on x equals to zero. And I also do not think it is branch-like. And so, I think this one is branch-like.
+
+It has multi peaks of y across within a different local x range. And the peaks are sufficiently separated by a clear valley. And their separation also expands across x.
+
+And this peak and valley exist across several x-range beams. So, this method, I think, is simple but maybe not very elegant.
+
+[说话人 2] (8:14 - 8:46)
+Can I say one thing? So, one thing we might have regularly is that there is a concentration of points around zero. So, either on the horizontal axis or on the vertical axis.
+
+So, that might be something to detect. Because it's different than branching that has values, let's say. You know?
+
+When it just remains zero wherever it is. And that might be a special case of branching.
+
+[说话人 1] (8:47 - 8:58)
+Yeah. So, you mean that we could analyse if x equals zero or y equals zero as specific cases as branch?
+
+[说话人 2] (8:58 - 9:19)
+Yeah. Because we had this also when we looked at some of the model results when Shahan looked at. Then, I think also in Sebastian's paper, it was that some of the models have problems, for example, at the coast or so.
+
+And they make some assumption. And what it produces are lots of zeros at the coast.
+
+[说话人 1] (9:19 - 9:19)
+Yeah.
+
+[说话人 2] (9:20 - 9:49)
+And so, that's not a physical process. It's a consequence of some choices they made in the model. Yeah.
+
+And presumably, if something stays zero, it's not a relationship at all. There's no influence. Yes.
+
+Which is different from a branching that is away from the zero line. Yeah. So, it might be good to separate that out.
+
+[说话人 1] (9:49 - 10:00)
+Yeah. I also think so. Maybe later I can also try to separate that values near zero and to see how the remaining looks like.
+
+[说话人 3] (10:01 - 10:15)
+So, this is about the case where you have a lot of zeros like y equals zero. Yeah. Yeah.
+
+The one you're talking about now.
+
+[说话人 1] (10:16 - 10:16)
+Yeah.
+
+[说话人 3] (10:16 - 11:16)
+You also have the other case where there is a situation where the x, there are loads of x equals zero. And then the behaviour is all over the place. It's like the example on this slide.
+
+Yeah. I was thinking the same whether that should almost be a category in itself. Because say that you have a case where it looks like the one in the middle here.
+
+And instead another model has a relationship like the one on the left. Yeah. Then, you know, it's a completely different, these two models are not doing something completely different.
+
+No. In one case, the model is for some reason unable to attach a relationship when x equals zero. And the other model instead is capable of not seeing that relationship.
+
+So, yeah, it should probably be a category in itself.
+
+[说话人 2] (11:17 - 11:29)
+Yeah. Yeah. And it shouldn't, it's in either direction x or y axis, you know, exactly.
+
+Because it suggests that there is, there are lots of locations where.
+
+[说话人 3] (11:31 - 11:32)
+The fact that the variable is.
+
+[说话人 2] (11:33 - 11:37)
+Uncorrelated. There's no relationship between the variables at all. Yeah.
+
+[说话人 1] (11:38 - 11:44)
+Yeah. Okay. I will try to delete this and to see the remaining relationship later.
+
+[说话人 2] (11:45 - 11:50)
+Yeah. So, we have to find a good way because it's clearly in the model.
+
+[说话人 1] (11:50 - 11:50)
+Yeah.
+
+[说话人 2] (11:50 - 11:55)
+So, it's something important to detect, but what does it mean, you know?
+
+[说话人 1] (11:56 - 13:00)
+Yes. Okay. I will do this later and try to find how this remaining data looks like or classified.
+
+And for the branch detection, I managed to use these four steps. The first is to estimate the conditional density with kernel density estimator. And secondly, for each window, I run the KDE at five bandwidths and take the mean, median of the valley depth and the peak position and the peak separation.
+
+And later I check whether the peaks are sufficiently separated with a valley and show a clear change in separation across x. So, the two branches are separated very clearly. And I checked whether the two branches persist in several windows.
+
+This is the main method. I think it's very corresponding to its feature, but not very elegant.
+
+[说话人 2] (13:01 - 13:08)
+But that's the one from this ecology. Is that a strategy similar to the ecology paper that you…
+
+[说话人 1] (13:08 - 13:09)
+Do you mean this paper?
+
+[说话人 2] (13:10 - 13:10)
+Yeah.
+
+[说话人 1] (13:10 - 13:15)
+Actually, it uses HD test, but HD test is too sensitive.
+
+[说话人 2] (13:15 - 13:24)
+Okay. Okay. So, it just…
+
+Yeah. Because it was… Okay.
+
+Yeah. So, this is… You created this yourself?
+
+[说话人 1] (13:24 - 13:25)
+Yeah, of course.
+
+[说话人 2] (13:25 - 13:37)
+Okay. Yeah, yeah. No, no.
+
+I'm asking. I'm asking. No, I think it's good.
+
+I mean, elegant is nice. Elegant is not always helpful. You know?
+
+Yeah. So, mainly it's robust is more important than…
+
+[说话人 1] (13:37 - 13:38)
+Yeah.
+
+[说话人 2] (13:38 - 13:38)
+You know?
+
+[说话人 1] (13:38 - 13:49)
+Yeah. And this is the main method. And later I try to see the results, how it works well first.
+
+[说话人 2] (13:49 - 13:56)
+Sorry. Before we… Can I ask about the…
+
+Did you try the… You had here this Peter Clark algorithm. Did you try this?
+
+[说话人 1] (13:56 - 13:58)
+Yeah, of course I tried. It's…
+
+[说话人 2] (13:58 - 14:09)
+Because that's… So, we have one other student, David, who works on causality, causal inference. And so, that's the kind of algorithm he uses.
+
+At least in theory.
+
+[说话人 1] (14:10 - 14:10)
+Yeah.
+
+[说话人 2] (14:10 - 14:11)
+It seems promising.
+
+[说话人 1] (14:11 - 14:28)
+Yeah. I tried to see the method because this one. And it needed to add the third variable into the relationship.
+
+And I… Currently, it's just X and Y. So…
+
+[说话人 2] (14:28 - 14:37)
+Yeah. What we could actually think about is it might not be good for detecting it, but it might be the way to explain it.
+
+[说话人 1] (14:37 - 14:37)
+Yeah.
+
+[说话人 2] (14:38 - 14:43)
+This might be the good strategy to explain why we see the branching. Because it looks…
+
+[说话人 3] (14:43 - 14:49)
+You mean because there is a third variable that causes the Y to go on one branch or the other.
+
+[说话人 2] (14:50 - 14:52)
+Yeah. The relationship depends on the third variable.
+
+[说话人 3] (14:53 - 14:55)
+Yeah. But then it's more, yeah, explanation.
+
+[说话人 2] (14:55 - 14:58)
+So, maybe it's sort of an analysis step later.
+
+[说话人 1] (14:58 - 15:01)
+Yeah. Yeah. I think this can be done later.
+
+[说话人 2] (15:02 - 15:02)
+Yeah.
+
+[说话人 1] (15:04 - 15:12)
+And… Can you show us that it works? Sorry, I do not post the picture here.
+
+And maybe next…
+
+[说话人 2] (15:12 - 15:15)
+No, no. Your method. Your method works, I think.
+
+It just came inside.
+
+[说话人 1] (15:16 - 15:51)
+Okay. This is what my method works. And I do not delete the value near zero, but I think it works very well.
+
+This is hex bin density. And, for example, I think this one looks like the branch. And here, these two are all detected as branch.
+
+And this is a candidate branch. And I also would like to show you the raw data. And I think it fits to the expectation of the branch.
+
+[说话人 2] (15:51 - 15:52)
+The red and these are…
+
+[说话人 1] (15:52 - 15:57)
+Sorry. Each row represents a different model.
+
+[说话人 2] (15:57 - 16:00)
+Yeah, yeah. No, no. I just mean the colour.
+
+You drew on it? Or you…
+
+[说话人 1] (16:00 - 16:08)
+The two peaks. Here, the red is also the peak. Okay.
+
+The blue is the peak. And this black is the valley.
+
+[说话人 2] (16:08 - 16:09)
+Okay.
+
+[说话人 1] (16:09 - 16:12)
+And I think it would be precise. Uh-huh.
+
+[说话人 3] (16:14 - 16:21)
+Have you tried on the synthetic data? You had some… I think you had created a case where you had a relationship like this.
+
+[说话人 1] (16:23 - 16:26)
+Do you mean that one is straight and one is this one?
+
+[说话人 2] (16:26 - 16:26)
+This one?
+
+[说话人 1] (16:28 - 16:29)
+I think this one.
+
+[说话人 2] (16:29 - 16:30)
+Yeah, yeah, yeah.
+
+[说话人 1] (16:30 - 16:39)
+No, I didn't try the synthetic data. Because I guess it would work very well because…
+
+[说话人 3] (16:40 - 16:42)
+Yeah, I mean, because you have them already, no?
+
+[说话人 1] (16:42 - 16:43)
+Yeah.
+
+[说话人 3] (16:44 - 16:54)
+Yeah, it's always good to have them, no? Yeah. Just a stress test, given that you have already the data to try.
+
+[说话人 1] (16:54 - 16:54)
+Yeah.
+
+[说话人 3] (16:55 - 16:56)
+Yeah. Good.
+
+[说话人 1] (16:57 - 17:10)
+And this is another data pairing of selfie runoff and to the total runoff. I think although it here looks like the branch, but actually…
+
+[说话人 2] (17:10 - 17:11)
+Yeah, maybe not. That's also…
+
+[说话人 1] (17:11 - 17:16)
+This is no branch. Sorry, I do not delete the label. And…
+
+[说话人 2] (17:16 - 17:17)
+Doesn't it look…
+
+[说话人 1] (17:17 - 17:25)
+Because you can also see the density plot. It's not a very clear peak and valley. And also here, it's many focal…
+
+[说话人 2] (17:26 - 17:27)
+So it has the zero problem.
+
+[说话人 1] (17:27 - 17:27)
+Yeah.
+
+[说话人 2] (17:27 - 17:30)
+So it's a question of how we deal with the zero.
+
+[说话人 1] (17:30 - 17:40)
+Yeah, exactly. Okay. And also here, maybe you think that it has a peak here, but I think it does not persist very long.
+
+Yeah.
+
+[说话人 2] (17:40 - 17:43)
+But I think if you go one forward, it's…
+
+[说话人 1] (17:43 - 17:43)
+One forward?
+
+[说话人 2] (17:44 - 17:55)
+This one, yeah. I mean, I think maybe as an initial step, the zeros on the horizontal or vertical axis, we should include as a branch, no?
+
+[说话人 1] (17:56 - 18:01)
+Yeah. But we can detect it as specialised cases.
+
+[说话人 2] (18:02 - 18:04)
+But first we have it.
+
+[说话人 1] (18:04 - 18:04)
+Yeah.
+
+[说话人 2] (18:04 - 18:10)
+And then it's sort of a sub-branch of the… Yeah. Sub-branch of the branch.
+
+Yeah, I see.
+
+[说话人 1] (18:10 - 18:18)
+So we can detect it at first and then to analyse when we delete it, how the remaining scatter plots behave.
+
+[说话人 2] (18:19 - 18:44)
+Yeah, because we want to find… I think in terms of categorisation, I imagine when we say we want to define… Find all the branching, then we include the ones with zero initially.
+
+And then say within the branching examples, there are X who have zero values. And that's why they create branching. Rather than from the beginning say that's something completely different.
+
+[说话人 1] (18:44 - 18:44)
+Yeah.
+
+[说话人 2] (18:46 - 18:47)
+Yeah, so…
+
+[说话人 1] (18:51 - 19:15)
+And another example is a snowfall flux to the total runoff relationship. It looks quite interesting because here I think this one looks like the branch, and this one also looks like the branch. And the green ones are detected as branch, and the yellow one is candidate.
+
+And here it's…
+
+[说话人 2] (19:15 - 19:16)
+Lots of zeros, yeah.
+
+[说话人 1] (19:16 - 19:34)
+Yeah, a lot of zero value. And actually I think here also looks like the branch, but it does not detect it. And here, I think here, this one is…
+
+Maybe it is not spread very clearly. And… Sorry.
+
+[说话人 2] (19:34 - 19:58)
+Yeah, I think there will be… You know, like this one up here, you see a bit better in these plots, the density different. They will probably look like a single line.
+
+But I think, you know, these patterns here and also this where you have zeros along both axes, that will be very common. We will see that for a lot of processes.
+
+[说话人 1] (19:59 - 19:59)
+Yeah.
+
+[说话人 2] (20:00 - 20:08)
+And therefore, it would be good. So what is this, for example? This is…
+
+What am I looking at? Q versus…
+
+[说话人 1] (20:09 - 20:11)
+Yeah, this is total runoff.
+
+[说话人 2] (20:12 - 20:12)
+Against…
+
+[说话人 1] (20:12 - 20:15)
+Against the snowfall flux.
+
+[说话人 2] (20:15 - 20:19)
+Yeah, so for example, we have… These are all the places where there is no snow.
+
+[说话人 1] (20:19 - 20:19)
+Yeah.
+
+[说话人 2] (20:19 - 20:28)
+So then it makes sense that they are stacked here. It's interesting that you have lots of places with snow and no runoff.
+
+[说话人 1] (20:29 - 20:29)
+Yeah.
+
+[说话人 2] (20:29 - 20:53)
+So that's a bit more questionable in terms of the modelling. Yeah. So we have to…
+
+But that's very good, no? If it detects these. But I would initially group them also in branching, and then we can say, okay, which in the zero categories, some of them might be totally sensible, and others might be just showing an error in the model, you know?
+
+Or a problem in the model.
+
+[说话人 1] (20:53 - 20:55)
+Yeah, I also think so.
+
+[说话人 2] (20:55 - 20:56)
+Yeah, very cool.
+
+[说话人 1] (20:56 - 20:58)
+Yep. And…
+
+[说话人 2] (20:58 - 21:02)
+I also like these density plots. I think they're…
+
+[说话人 1] (21:02 - 21:05)
+I also like this one. It looks very clearly for us.
+
+[说话人 3] (21:07 - 21:21)
+And… It's interesting, because if you compare the original plot with the density plot, you sometimes realise that the original plot potentially was misleading at times.
+
+[说话人 2] (21:22 - 21:22)
+Yeah.
+
+[说话人 3] (21:22 - 21:40)
+Yeah. So this seems to be… Yeah, that it's probably a threshold that when you have more than a certain number of points, yeah, it's not a good idea to look at the original scatter plot.
+
+It's best to look at the density plot, yeah.
+
+[说话人 1] (21:40 - 21:40)
+Yeah.
+
+[说话人 2] (21:41 - 21:53)
+Yeah, and we might use this as… I mean, the assumption we make, at least in this analysis, that we always have a lot of points, no? Yeah.
+
+And that density differences matter, so it's probably a good way for us to…
+
+[说话人 3] (21:53 - 22:17)
+Yeah, yeah. What I'm saying is that when… If we make an argument that we test the method based on comparing with our visual…
+
+Our classification based on visual inspection, maybe the visual inspection should be on this density plot, not on the original one, because on the original one, our brain might make mistakes.
+
+[说话人 2] (22:19 - 22:19)
+Yeah, exactly.
+
+[说话人 3] (22:20 - 22:21)
+Yeah.
+
+[说话人 1] (22:21 - 23:04)
+And here, I would also like to introduce the pairing of raw data and removing the extreme values. Removing extreme values means that I deleted the first percent and the upper 99 percent of the scatter plots to see how the branch detected. And actually, I think removing extreme values makes the main patterns more clear, but it also makes…
+
+Cause some relationships to be misclassified. We can see here, in the raw data, it does not look like the branch, but for deleting the extreme value, it's like the branch.
+
+[说话人 3] (23:05 - 23:18)
+And… Sorry, what does removing extreme values mean? That you take the extreme values of what?
+
+Of the vertical… For… The variables in the vertical axis, or what?
+
+No.
+
+[说话人 1] (23:19 - 23:30)
+For each zoom, I deleted the first percent and the upper 99 percent of the value of both X and Y.
+
+[说话人 3] (23:31 - 23:46)
+So, every data point where either X or Y, or both, is in the lower and upper quantile, you remove that data point. Yeah. Yeah.
+
+[说话人 1] (23:49 - 24:04)
+Because I think maybe the raw data looks like some could have some noise, because it's spread very deeply. And so I would like to see, if I delete the extreme values, how the classification change.
+
+[说话人 2] (24:05 - 24:23)
+But in most of the data we have, it's probably the upper that matters, no? The upper extreme. Because a lot of these values would be zero, or…
+
+And they tend to cluster in the bottom left, simply because of the nature of the…
+
+[说话人 1] (24:23 - 24:23)
+Yeah.
+
+[说话人 2] (24:24 - 24:33)
+Mass balance thing. But, okay, it doesn't always have to be the case. But it…
+
+So, the top one percent means how many points do you take out?
+
+[说话人 1] (24:33 - 24:35)
+It's about two percent.
+
+[说话人 2] (24:36 - 24:42)
+And from how many points do we have? Two thousand, or… Just the order of magnitudes.
+
+[说话人 1] (24:42 - 25:00)
+Yeah, I forget the detailed number, sorry, because it has different numbers for each model. But the point is, I do not want to say removing extreme value is good. I also would like to preserve the raw data analysis.
+
+[说话人 2] (25:00 - 25:07)
+But it shows you how sensitive the result is to the extremes. Yeah. Okay.
+
+That's probably good.
+
+[说话人 3] (25:08 - 25:15)
+Yeah. Well, it is, but then at the same time, it isn't in the sense that the classification is not really substantially changing.
+
+[说话人 2] (25:16 - 25:17)
+Not here.
+
+[说话人 3] (25:17 - 25:22)
+The plot looks different, but… Yeah, yeah.
+
+[说话人 2] (25:22 - 25:25)
+No, I'm not saying it does. I'm saying that's a test for sensitivity.
+
+[说话人 3] (25:26 - 26:34)
+Yeah. The one thing I was thinking, going back to the topic of this density plot, if we ever want to explore the other approach of this problem, which is the approach where you say all of these are pictures, and I use some image classification system to come up, then on the one hand, probably the image classification system should be fed with the density plot, rather than the original data scatter plot.
+
+But also, this is showing you that maybe the image classification system instead would be rather sensitive to the inclusion of outliers, no? Because the classification based on your metric does not seem to be very much affected. But just visually, the figures, the images are quite different from left to right.
+
+So, maybe this topic of extreme values will become more important if we explore that way than it seems to be at the moment. Just, yeah.
+
+[说话人 2] (26:34 - 26:38)
+Do you want to tell her about the student, bachelor student?
+
+[说话人 1] (26:40 - 27:11)
+Actually, Thorsten has got a bachelor student who is also focused on using machine learning to detect the relationship we plan to let him to select a suitable machine learning method to detect how this relationship be classified. As images? Yeah, yeah, yeah.
+
+One aspect is from the image classification, another is also about the metrics classification.
+
+[说话人 3] (27:12 - 27:25)
+So, basically, you have already started now building your own group of people who work with you, for you. Very good. That's, you know, that is a very good achievement.
+
+[说话人 2] (27:27 - 27:41)
+So, we have this, I teach this bachelor hydrology course. Yes. And for reasons that are completely unclear to me, this is an option for students in computer science.
+
+[说话人 3] (27:42 - 27:42)
+Okay.
+
+[说话人 2] (27:42 - 27:46)
+And every year I have like two or three computer science students.
+
+[说话人 3] (27:46 - 27:49)
+Yeah, like that student that you, I remember we...
+
+[说话人 2] (27:49 - 27:56)
+Yeah, I had one before. And I had one last year, so that was okay.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

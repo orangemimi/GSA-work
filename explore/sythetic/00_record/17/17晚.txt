@@ -1,0 +1,327 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 2] (0:00 - 0:28)
+didn't work so well. But I have a new one, and it seems quite promising. And it's a good connection, because there's at least one person in computer science, she does explainable AI as her main topic.
+
+And she does lots of image classification. So she works with people who look at images, you know, from, well, cats, there's a lot of cats. But also mainly for remote sensing stuff.
+
+[说话人 1] (0:28 - 0:53)
+But I think this is a good topic, because you really don't need to understand very much the hydrology and what's not differently for that student, we supervise together, the problem was that, you know, we took for granted some hydrological understanding. Instead, in this case is literally like, you know, I give you a bunch of images, and I want you to be able to find a way to Exactly.
+
+[说话人 2] (0:53 - 1:06)
+And I learned, I learned from that supervision of this other bachelor student that it's not a very good idea to give them projects, but they have to understand hydrology very well. Because they simply have not enough background.
+
+[说话人 1] (1:07 - 1:09)
+And so this is not enough time.
+
+[说话人 2] (1:09 - 1:24)
+Yeah, and they don't have enough time. And so so but this one could be nice. So it would be particular, the main the main thing is, we would get input from the Marina.
+
+What method we should look at?
+
+[说话人 1] (1:24 - 1:26)
+Yeah. Very good. Yeah.
+
+[说话人 3] (1:29 - 1:58)
+And this is also some comparison of raw data and delete extreme data. The relationships look like quite complex and for here, if we delete some data, and this one looks like the branch because here, it looks like it but I think we can be conservative to using the raw data and to see Awesome.
+
+[说话人 2] (1:59 - 2:15)
+Look at this. What is going on here? You know, this is what is this is Q against surface runoff flux against what is this is surface runoff flux of x y is total runoff.
+
+[说话人 3] (2:15 - 2:17)
+I think so. Yeah.
+
+[说话人 2] (2:17 - 2:17)
+Okay.
+
+[说话人 3] (2:18 - 2:21)
+I think here, this is a model's problem.
+
+[说话人 2] (2:22 - 2:42)
+Yeah. Or maybe not a problem. Well, some of it is simply how they define the variables.
+
+Sometimes it's a bit strange how they define variables, and then they get these odd patterns. Yeah. And then we really have to look at what does surface runoff mean in this in this model, you know, total runoff, they add things together, and then they get these weird patterns.
+
+[说话人 1] (2:43 - 3:16)
+Can I ask the, so the one that is yellow, on the right, no? Yeah, yeah. The on the if we look back at the original on the left, you know, there are these two clouds, basically, yeah, quite disconnected from one another.
+
+Yeah. What would that be in your classification? This one?
+
+No, yeah. Well, that one is a branch, but we said it's maybe an artefact of having removed the extreme. But let's go back to the original that one.
+
+Yes.
+
+[说话人 2] (3:16 - 3:19)
+Right next to it. No, it's the same. It's interesting.
+
+[说话人 1] (3:20 - 3:24)
+What would that be? Is there a category for that? What would it be?
+
+[说话人 3] (3:25 - 3:41)
+Currently, I think it's I forgot to the detail the classification of it, I think it could be uncertain or complex, because the complex path also needs to be adjusted by some threshold for real data.
+
+[说话人 1] (3:42 - 4:42)
+Yeah, maybe it's something to take a note and get back to because, for example, I mean, the easy way to get away with it is to say no clear relationship. But there is something that is more not than just saying, oh, no, it's a scatter, because actually, there are clearly two clusters. And they have a slightly different shape.
+
+So, you know, yeah, I wouldn't be happy with a classification system that would say simply no relationship here. Yeah. So, yeah, maybe is, you know, I think as you go along in your work, when you bump into cases like this, which are not a bit interesting and less obvious what they are, it's good to take note.
+
+So later on, when you further validate your final classification, you look how it behaves on this kind of cases.
+
+[说话人 2] (4:42 - 4:47)
+I mean, that those figures were one reason why we looked at this MIC.
+
+[说话人 3] (4:48 - 4:52)
+Yeah, but MIC does not work very well here.
+
+[说话人 2] (4:53 - 4:58)
+No, it doesn't look like it. Because it's one of these that, you know, picks up patterns, you know.
+
+[说话人 3] (4:58 - 4:58)
+Yeah.
+
+[说话人 2] (4:58 - 5:03)
+I mean, I was looking at this, this is 0.42, but this is 0.45. Yeah.
+
+[说话人 3] (5:03 - 5:22)
+I also tested the distance correlation. I think they are very similar. So I think if we detect whether it has a global relationship or not, we can use MIC currently, but we can later replace it with some more effective metrics or methods.
+
+[说话人 2] (5:23 - 7:07)
+But this is maybe not something to, for now, but to think about generally that, I mean, if we, if we look back at this MIC, how this MIC metric is done, it organises the space in essentially parts that have data and parts that do not have data. And as a clever way of doing that, or maybe clever way. And one of the things we might, and then it looks inside these spaces, subspaces that have data, whether there are relationships in there.
+
+Yeah. Yeah. Between the variables.
+
+And one of the things we might also consider is whether if we, if we disaggregate the space into areas that are very sparse, have very sparse data and one that have data, how, whether they are, how do you say this? Essentially, whether there's a clustering in, you know, is areas with strong density and lots of empty space would suggest there is some pattern. It might still be zero interaction between the variables.
+
+But, you know, if you, if you look at things like that here, you know, it has huge empty space in contrast to this. Yeah. And it has a lot of density here.
+
+So it has some, it has some pattern in the, in space. Sorry.
+
+[说话人 3] (7:08 - 7:11)
+Do you mean it has a mean response here?
+
+[说话人 2] (7:12 - 7:22)
+Yeah. It has, it has a pattern that might be interesting to look at, you know, because it's different from the relationship, even though all our metrics say there is no relationship.
+
+[说话人 3] (7:23 - 7:23)
+Yeah.
+
+[说话人 2] (7:23 - 7:31)
+You know, it's different when the points are uniformly distributed or if they are, have a very clear pattern, you know.
+
+[说话人 3] (7:31 - 7:31)
+Yeah.
+
+[说话人 2] (7:32 - 7:48)
+And this, there might be, I mean, it's like a kernel density plot that you add to this would show that there are, that the difference in distribution of probability is very large.
+
+[说话人 3] (7:48 - 7:48)
+Yeah.
+
+[说话人 2] (7:48 - 7:59)
+Whereas for some of these other plots, like the top left here, it would be very small or much smaller, you know. So, so there might be a simple way to also find interesting patterns.
+
+[说话人 3] (8:02 - 8:06)
+By analysing its x distribution here.
+
+[说话人 2] (8:07 - 8:25)
+The density of coverage over the x, y axis. Yeah. Not for now.
+
+It's just something that occurred to me that, you know, even, because at the moment we're looking at relationships and that's good, but there might even be patterns that have no relationship, but still might be very interesting.
+
+[说话人 3] (8:25 - 8:46)
+Yeah. And this is another pattern of the radiation to the total runoff. And I think it's also meets the suggestions you have also provided.
+
+Also, it looks like very non-relationship, but maybe.
+
+[说话人 2] (8:46 - 8:49)
+We have negative values. So, are these negative values here?
+
+[说话人 3] (8:50 - 8:55)
+Yeah. It has some negative values. I do not analyse why it has.
+
+[说话人 2] (8:55 - 9:05)
+No, it's okay. It's not important right now, but it's just interesting that, but that's what I mean with the definition sometimes are a bit odd.
+
+[说话人 3] (9:05 - 9:06)
+Yeah.
+
+[说话人 2] (9:06 - 9:12)
+But these are things that should show us where, you know, where there's ice and snow, essentially.
+
+[说话人 3] (9:12 - 9:13)
+Yeah.
+
+[说话人 2] (9:13 - 9:16)
+No, as you see with the land ice, it shows very nicely.
+
+[说话人 3] (9:17 - 9:25)
+Yeah. And they also have some data around the zero value and later we can delete it to analyse it.
+
+[说话人 2] (9:26 - 9:37)
+But these are, sorry, these are interesting threshold examples, no? So, you have something where up to a certain point, nothing happens and then it goes up.
+
+[说话人 3] (9:38 - 9:47)
+But if we delete the zero values and it's just remaining is like the acceleration.
+
+[说话人 2] (9:48 - 9:51)
+It is, but it's the acceleration doesn't start from zero.
+
+[说话人 3] (9:51 - 9:55)
+Yeah, exactly. And here it's not start from zero.
+
+[说话人 2] (9:55 - 10:19)
+Exactly. So, and it shouldn't, but you have other models like this one up here. Yeah.
+
+Where it is more or less starting right away, no? Yeah. That's interesting.
+
+So, the way it starts, the starting point is very different from this model and years, a lot lower years twice. So, it's effective, it's not quite effective. But whatever that is exactly.
+
+I mean.
+
+[说话人 1] (10:19 - 10:21)
+So, every row is a different model.
+
+[说话人 3] (10:23 - 10:24)
+Sorry, what do you mean?
+
+[说话人 2] (10:24 - 10:25)
+Every row is a.
+
+[说话人 3] (10:25 - 10:28)
+Yeah, every row is a different model.
+
+[说话人 1] (10:31 - 11:27)
+Yeah, because I think, you know, as you go, yeah, as you also go through this, it would be good, yeah, as Torsten was saying, to take note of a few, where you find behaviour that you would really want your, no, your classification system to do well with. And because ultimately, no, here, one of our key goal is to have a methodology that go, can go through a lot of data and identify significant discrepancies between model, no? Yeah.
+
+This is the, you know, this last column is a very good example of something that really is, you know, like here you really have a, you really want your method to tell you, no? Yeah. That the top row and the two bottom ones are different from, for example, the second row.
+
+[说话人 2] (11:28 - 11:39)
+Yeah, but for example, I mean, you, if you, let's say you take one of these last regressions to fit a line, then if you do it for this one, it has probably a starting point at zero.
+
+[说话人 1] (11:40 - 11:40)
+Yeah.
+
+[说话人 2] (11:40 - 11:42)
+If you do it for this one, it probably has a starting point.
+
+[说话人 1] (11:42 - 11:53)
+Yeah, yeah, yeah, yeah. I'm sure there are points in your classification system where this will be picked up. I'm just saying, you know, these are good examples of where really we want to show success.
+
+[说话人 2] (11:53 - 12:23)
+Yeah, yeah, exactly. My point is, we probably already have information that we're extracting that we can use to tell us that. No, we just have to use it.
+
+And so it's one of the comparisons. So not just the shape, but also the, you know, the initial value or what's it called? The intersection with the y-axis, y-axis, x-axis.
+
+[说话人 3] (12:24 - 12:31)
+I think Francesco means that if we can add some pre-expectation, sorry.
+
+[说话人 2] (12:31 - 12:41)
+Sorry, I got to go. Sorry, I just realised I was so excited about all of this. Good to see you, Francesca.
+
+Yeah, I'll see you.
+
+[说话人 3] (12:42 - 12:43)
+Yeah, yeah, okay, see you.
+
+[说话人 1] (12:46 - 12:53)
+Okay. I'm happy to continue another 15 minutes if you have more things that you want to discuss.
+
+[说话人 3] (12:53 - 13:16)
+Yeah, I would like to determine one thing is that do you mean that if I can predefine the expected pattern of different variables, for example, the precipitation to the transpiration could be the situation like relationship and to see how the classification meet?
+
+[说话人 1] (13:16 - 14:02)
+Yeah, yeah, I'm saying something very simple. I'm just saying that, you know, remember that, for example, you know, this particular five scatterplot of land, ice and case are not maybe among the ones that you will show in your, that you will include in your paper, for example, or in any presentation, because this is a very obvious example where an hydrologist would look at this and say, oh, this is not okay that these models are so different.
+
+And then if you can show that your algorithm picks on this difference, then you have shown that it's valuable. Yeah.
+
+[说话人 3] (14:03 - 14:22)
+Yeah, I agree with you, but I think that maybe I can do this a bit later, because I think more important thing is to finish the tree, because there are also a lot of these new Yeah, I'm just saying, take note, you know, of these ones are good examples that you can go back to later on.
+
+[说话人 1] (14:23 - 14:23)
+Yeah.
+
+[说话人 3] (14:23 - 14:36)
+Yeah. And I think this is not, seems too much important, because I have introduced this score before and make some classifications. This is the main result.
+
+[说话人 1] (14:37 - 14:47)
+Yeah. Okay, can you, so are you, are these results good?
+
+[说话人 3] (14:47 - 15:01)
+Yeah, I think it looks like good and maybe we can see how the, when we, when I adjust the tree based on your suggestions next week to see how the result will change.
+
+[说话人 1] (15:03 - 15:12)
+So you have linear, near linear. Yeah. And then you have saturation.
+
+[说话人 3] (15:13 - 15:15)
+Yeah, and acceleration.
+
+[说话人 1] (15:16 - 15:16)
+Okay.
+
+[说话人 3] (15:18 - 15:51)
+And the possible next step is first I maybe do the parameter calibration for the branch detection, because it has some threshold there. And the second is to test the loss regression to see the main response structure as Torsten has. Yes.
+
+Yeah. And maybe I can also test the complex relationship detection because current tree is here based on the synthetic data of complex relationship. Yeah.
+
+[说话人 1] (15:51 - 16:04)
+Yeah. I think about the branch detection, as we said today, maybe add to that task also that when you do the branch detection, maybe the ability to distinguish also the case of many zeros.
+
+[说话人 3] (16:04 - 16:13)
+Yeah, I will try to separate the classification of this. Yeah, yeah. Okay, that's all.
+
+Thank you very much.
+
+[说话人 1] (16:13 - 16:34)
+Yeah, yeah. Just one comment, if we go back to the previous case instead. This one?
+
+Yeah, I think it will be interesting to see then when you put everything together. Yeah. How much emphasis is then given to these differences?
+
+[说话人 3] (16:35 - 16:35)
+Yeah.
+
+[说话人 1] (16:36 - 16:56)
+Because again, for example, if I look at the bottom left, yeah, you have here the bottom left. Oh, sorry, this one? Yeah, exactly.
+
+For example, in this case, one is near linear and the other is linear.
+
+[说话人 3] (16:57 - 16:57)
+Yeah.
+
+[说话人 1] (16:57 - 18:11)
+Yeah. So that is a very small difference. Yeah, yeah.
+
+So then, you know, when the algorithm is all composed together and we will have to think about also how results are presented and, you know, maybe the order of importance with which things are presented. So say that you apply it to, I don't know, 10 different possible functional relationships across five models. Yeah.
+
+You then will want your algorithm to also not only do the classification of the response function for every model and every pair of variables, but then you will also want it to present a synthetic result of, okay, you know, the most important differences is between this model and this model between, you know, this relation, functional relationship and this. And then it would be, yeah, we need to make sure that these kind of differences remain at the very end of the hierarchy because they are very minor. Yeah.
+
+Yeah.
+
+[说话人 3] (18:12 - 18:17)
+Okay. Thank you very much for your suggestions. Good.
+
+[说话人 1] (18:18 - 18:38)
+I think so. Yeah, I have started accepting the meetings that you put in for the coming weeks, but we have no meeting next week. Okay.
+
+Yeah, because I think Dawson is away and I am at a conference.
+
+[说话人 3] (18:39 - 18:43)
+Yeah. So maybe next week the meeting will be cancelled.
+
+[说话人 1] (18:43 - 19:05)
+Yeah. I have said no to the invite, but I wanted to tell you I'm at a conference. So yeah, it's very difficult to find time and instead I am available.
+
+Yeah, I'm back on the 10th of September so we can meet then.
+
+[说话人 3] (19:06 - 19:08)
+Yeah. Okay. Thank you.
+
+Thank you very much.
+
+[说话人 1] (19:08 - 19:16)
+Good. Good. See you in two weeks then.
+
+Yeah. Okay. Bye-bye.
+
+See you. Bye.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

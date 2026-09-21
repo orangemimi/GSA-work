@@ -1,0 +1,32 @@
+# macOS / Python / Jupyter
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.matplotlib/
+
+# Temporary files
+.tmp*/
+*.tmp
+
+# Raw/local CMIP6 data
+case/caseA/data/*
+!case/caseA/data/cmip6_run_plan.csv
+!case/caseA/data/global_climatology_qc_summary.csv
+
+# Generated datasets
+generated_scatterplot_data/
+
+# Generated outputs
+A/output/
+B/output/
+C/output/
+D/output/
+D/Global/output/
+D/others-10/output/
+E/output/
+F/output/
+case/caseA/output/
+case/case_future2609/output/
+other-version/*/output/
+output/

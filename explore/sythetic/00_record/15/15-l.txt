@@ -1,0 +1,492 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:00 - 0:48)
+For me to understand, if it's along the x-axis, you have 1, 2 and so forth, then isn't this limited by the overlap with the next? So if we had a scatter plot like this, and there's a trend or whatever, and you say, okay, this is a bandwidth is around this, but if I have that here as well, isn't there at some point then some overlap between?
+
+[说话人 2] (0:48 - 0:50)
+Yeah, I think so.
+
+[说话人 1] (0:50 - 0:51)
+But that's okay.
+
+[说话人 2] (0:51 - 1:04)
+I haven't detected whether it's okay to have the overlap because the main idea is just to use different bandwidths to calculate. I haven't detected this situation.
+
+[说话人 1] (1:04 - 1:30)
+Yeah, because the bandwidth, you know, if you have 3 and 4 and so forth, I mean, there's a symmetry here. Now you have the point, and then that means this range is essentially the same as the distance between these two. So that's the maximum bandwidth you can have without overlapping with the next one.
+
+[说话人 2] (1:33 - 1:39)
+Do you mean that whether I have measured the bandwidth and the calculation?
+
+[说话人 1] (1:39 - 1:51)
+No, no. I'm just curious in terms of the methodology, because let's say if you have a lot of overlap, then wouldn't you count points twice?
+
+[说话人 2] (1:53 - 2:00)
+Yes, I think they may have some overlap because it's using the Gaussian kernel width.
+
+[说话人 1] (2:00 - 2:02)
+Yeah, and that's usually...
+
+[说话人 2] (2:02 - 2:07)
+Yeah, it becomes zero for the point to stay away from the x grid.
+
+[说话人 1] (2:08 - 2:26)
+Right, but it's either, because that's the part I don't quite understand, because you either have something very narrow, let's say, but then you would exclude points, you know. And then the next one is here. What about the points in between?
+
+[说话人 2] (2:29 - 2:39)
+Ah, you mean that if this bandwidth does not overlap this one? Then you just... I just, they have the overlap.
+
+[说话人 1] (2:41 - 2:42)
+They have the overlap?
+
+[说话人 2] (2:43 - 2:57)
+Yeah. This means maybe I can translate it to, because for the x range, I have separated them as 200 of the x grid.
+
+[说话人 1] (2:57 - 2:58)
+Yeah.
+
+[说话人 2] (2:58 - 3:15)
+And for each x here, I'm using this to calculate the regression equation. Yeah. Yeah, so and this bandwidth, I think they will overlap.
+
+[说话人 1] (3:16 - 3:27)
+Okay, but we're not... But then if you, you know, if there is a turning point here, do I count it twice?
+
+[说话人 2] (3:29 - 3:35)
+Sorry, do you mean you can count here twice, this one times here and one times here? Yeah.
+
+[说话人 1] (3:36 - 3:38)
+But that's not a problem here.
+
+[说话人 2] (3:38 - 3:42)
+I think it is not a problem, because the output is very good.
+
+[说话人 1] (3:44 - 3:48)
+Okay. It's just, I'm just curious, because, you know, you must overlap these.
+
+[说话人 2] (3:48 - 3:49)
+Yeah, yeah, yeah.
+
+[说话人 1] (3:51 - 3:51)
+Okay.
+
+[说话人 2] (3:51 - 4:04)
+And here, this is just one situation of one bandwidth, and I calculated several times, and finally I used four bandwidths, and the minimum support is larger than two.
+
+[说话人 1] (4:05 - 4:07)
+And what does support mean again? Support means...
+
+[说话人 2] (4:07 - 5:12)
+Support means that, for example, I have four bandwidths here. For example, for this situation, the turning point it detects is for one. And for the bandwidth two, it can also detect the turning point of one.
+
+And for the bandwidth three, it can get to the turning point of two. And if I think that the minimum support is, for example, I can also calculate all the turning point votes. For example, the turning point one, two, three, and the vote is, for example, here is two, and here is one, and here is zero, right?
+
+And if I suggest that the minimum support is to one, it means that both of them can be regarded as great. So it will make some mixture. So this would make these cases defined as uncertain.
+
+[说话人 1] (5:12 - 5:15)
+So it needs to say twice like this?
+
+[说话人 2] (5:15 - 5:16)
+Yeah.
+
+[说话人 1] (5:16 - 5:25)
+But how many results do you get? How many votes?
+
+[说话人 2] (5:26 - 5:27)
+How many?
+
+[说话人 1] (5:28 - 5:40)
+Because you have there three, but it means... So now here you have there three.
+
+[说话人 2] (5:41 - 5:46)
+Yeah, because here it's three bandwidths all vote for one, one turning point.
+
+[说话人 1] (5:46 - 5:50)
+Right, but it can't be that you have three twice.
+
+[说话人 2] (5:51 - 5:53)
+Three? Twice?
+
+[说话人 1] (5:54 - 5:56)
+Now at the moment you have three blue and one red.
+
+[说话人 2] (5:56 - 5:57)
+Yeah.
+
+[说话人 1] (5:57 - 6:02)
+But what if you had two blue and two red? Could that happen?
+
+[说话人 2] (6:03 - 6:18)
+Yeah, of course it happened. So this is the main revision here. If they have the same votes, it can be regarded as uncertain.
+
+Okay. I think you may see this case.
+
+[说话人 1] (6:18 - 6:18)
+Okay, sorry.
+
+[说话人 2] (6:20 - 6:27)
+No problem. And so finally I have to see this situation.
+
+[说话人 1] (6:27 - 6:27)
+Okay.
+
+[说话人 2] (6:28 - 8:21)
+And we can see that the output is very well, so later I do not show the detail of the classification. And next I have you here using, if it has no turning point, I have also detected whether it's a transition group. And it is also using the HD test, but it didn't separate different bins.
+
+Oh, sorry. And so finally this output is very similar to our last discussion because for the MIC larger than 0.8 it performs very well. And for this MIC belong to here, it also makes some mistakes for the S-curve and the threshold curve because with the noise added it looks not very like the transition.
+
+So I have also calculated the whole output of the current tree and actually I think it performs very well, but also it has some mixed in families. And I have seen one oscillation has been divided as branch, this is this one, and one multi-region threshold has been regarded as cubic, this is this one. And here as one, five threshold as see as oscillation, but I think this is very acceptable because it's real, yeah it looks like.
+
+And for the MIC belong to 0.6 to 0.8 it also functions very well because only five, this one has been divided into cubic and the threshold is.
+
+[说话人 1] (8:21 - 8:30)
+Yeah, and as I said, I mean as we said before that some of them are just very difficult to get, so it's okay if they are wrong.
+
+[说话人 2] (8:30 - 10:00)
+Yeah, so I think this whole decision tree functions very well, I think it's better than I expected. And so I think that I also listed the examples of output from the decision tree and these are all represented the mean response pattern. This is also I have divided into the eight group and it may have some features here, whether it has the global relationship, it's simple, it's branch structure, and whether it has a turning point, this is a potential table we may have.
+
+And I have also think about what can we also detect within each group. First is the detailed relationship feature, for example the direction and the slope stress as you mentioned at our first discussion, and the curvature stress and the position of each threshold position. And what can we also detect is the spread pattern of noise, whether it's constant.
+
+And whether it's input distribution, whether it's focused on the left or the right or the center part. And I think this may conclude all the missed characteristics we discussed before. Do you want to have some comments here?
+
+[说话人 1] (10:00 - 10:02)
+No, no, no, I think it's very good.
+
+[说话人 2] (10:02 - 10:43)
+Yeah, and for the potential application I have think about the papers, I think it may produce two papers. The first is about the methodological paper, and this may focus on detecting the diversity of the relationship structure. And another is about the application paper.
+
+I think it can more focus on assessing the model agreement and the structure uncertainties to the different system models. We can also use the real data, satellite data, to test whether the model and the data are very consistent. These are the two applications I think.
+
+[说话人 1] (10:43 - 11:31)
+Yeah, I think that's very good. I think it would be good to try some of the similar models and just to see what it looks like. And then the application paper, that might also be something maybe to do jointly with Shahan, given that he looks at similar things.
+
+The comparison with the empirical data or satellite data, I have to just think about what that means, because a lot of the satellite data are really not that different from the models themselves, because you need a big model to turn the satellite signal into a variable. I'm not so convinced that they're really separate observations.
+
+[说话人 2] (11:31 - 11:53)
+Yeah, exactly. And for this paper, I think we can consider some papers you have sent to me. The nature paper, this paper can also give us guidance.
+
+And this paper, the three papers, I think these are methodological related.
+
+[说话人 1] (11:53 - 12:03)
+Yeah, exactly. I think what will be good is, we'll have to try a little bit what these similar models, how diverse the results actually are.
+
+[说话人 2] (12:03 - 12:04)
+Yeah, exactly.
+
+[说话人 1] (12:04 - 12:08)
+And then we can make a good decision of what the story could be in the paper.
+
+[说话人 2] (12:09 - 12:09)
+Yes.
+
+[说话人 1] (12:10 - 12:16)
+Because if we find 90% non-linear relationships, then it's not very interesting.
+
+[说话人 2] (12:17 - 12:17)
+Yeah.
+
+[说话人 1] (12:17 - 12:22)
+And I don't know what it is going to be, so that's interesting to see.
+
+[说话人 2] (12:22 - 12:22)
+Yeah.
+
+[说话人 1] (12:22 - 12:26)
+I mean, hopefully it's diverse and different from each other, and then that would be very good.
+
+[说话人 2] (12:27 - 12:32)
+Yeah. But if they are all similar, it is also very interesting to see.
+
+[说话人 1] (12:32 - 12:43)
+That is also very interesting to see. Yeah. It would be a bit disappointing, I think, you know, because the...
+
+But then we can also see there are, of course, different kinds of groups of models.
+
+[说话人 2] (12:43 - 12:43)
+Yeah.
+
+[说话人 1] (12:44 - 12:52)
+And then, let's say, if the similar models all look the same, and maybe we look at the training model, and maybe they are more diverse, and then we have a bit more to say.
+
+[说话人 2] (12:52 - 13:16)
+Yeah, I also think so. And first, I also would like to try, based on the water balance equation, and to see how does long-term runoff frictions and their functional relationship with different climate and land surface conditions differ. This is the main background of the later work.
+
+[说话人 1] (13:16 - 13:17)
+Okay, yeah.
+
+[说话人 2] (13:17 - 13:33)
+And I think I can detect from two levels. Firstly, as to how can see the precipitation to the runoff and to the precipitation to the runoff friction. Okay.
+
+It's just a small try.
+
+[说话人 1] (13:34 - 13:36)
+Yeah, we can try.
+
+[说话人 2] (13:36 - 13:48)
+Yeah, and later we can also see whether other energy conditions and the vegetation provide some more information for runoff friction.
+
+[说话人 1] (13:50 - 13:51)
+Runoff ratio, do you mean?
+
+[说话人 2] (13:51 - 13:51)
+Yeah.
+
+[说话人 1] (13:52 - 13:53)
+Oh, runoff friction. Okay, yeah.
+
+[说话人 2] (13:56 - 14:03)
+And this is my whole plan for the application. Do you think this try can be okay?
+
+[说话人 1] (14:04 - 14:20)
+Yeah, I need to think a little bit more about it, but I think something like that. Yeah. So I think we need to do a little bit of exploration with the actual models to see.
+
+[说话人 2] (14:24 - 14:38)
+But maybe I can try from this one. The different powering of precipitation to runoff and the precipitation to the runoff friction.
+
+[说话人 1] (14:38 - 14:42)
+Sorry, what do you actually mean by that? So does the relationship between precipitation and runoff differ?
+
+[说话人 2] (14:43 - 14:57)
+Yeah, yeah. Using our decision to detect the relationship between precipitation to runoff and see what they may behave in different climatic regions.
+
+[说话人 1] (15:00 - 15:14)
+Yeah, I mean the initial thing could be, of course there are lots of relationships in these models. The question is which one we want to separate out.
+
+[说话人 2] (15:14 - 15:14)
+Yeah.
+
+[说话人 1] (15:14 - 15:22)
+Depends a bit on how interesting the result is. So I mean there is also evapotranspiration, the different evaporative fluxes.
+
+[说话人 2] (15:22 - 15:22)
+Yeah.
+
+[说话人 1] (15:26 - 15:41)
+And yeah, so I think it's perfectly fine if we look for that. But at the same time, the analysis in the models would be sort of agnostic. We would look at all of them.
+
+[说话人 2] (15:41 - 15:41)
+Yeah, okay.
+
+[说话人 1] (15:42 - 15:50)
+A large number to just see. Because we can always look at specific ones.
+
+[说话人 2] (15:50 - 15:50)
+Yeah.
+
+[说话人 1] (15:52 - 16:00)
+But we also want to, I mean the whole advantage of your decision tree is also that we can look at all of them.
+
+[说话人 2] (16:00 - 16:03)
+Yeah, okay. No problem. I will try this.
+
+[说话人 1] (16:03 - 16:05)
+Yeah, so at least methodologically.
+
+[说话人 2] (16:05 - 16:05)
+Yeah.
+
+[说话人 1] (16:06 - 16:19)
+And then we might find that, for example, all the PR relationships are quite linear, but the LAI ET relationships are actually very non-linear.
+
+[说话人 2] (16:20 - 16:20)
+Yeah.
+
+[说话人 1] (16:20 - 16:27)
+Or we find that some of them have a threshold maybe related to recharge and others do not.
+
+[说话人 2] (16:28 - 16:37)
+So you mean that maybe I can try diversity of the different pairings and to see what the relationship looks like.
+
+[说话人 1] (16:38 - 17:02)
+Yeah, so I don't think we need to choose a pairing. Yeah. So we want to say, okay, what are, let's say we might say, okay, it's the separation of precipitation into various fluxes.
+
+Yeah. And we want to see whether these models do that in a similar way over large domains.
+
+[说话人 2] (17:03 - 17:03)
+Yeah.
+
+[说话人 1] (17:03 - 17:09)
+A global domain or different climatic regions. And then we can compare it and we can see how.
+
+[说话人 2] (17:09 - 17:36)
+Yeah, okay, no problem. I see. And this is a different scenario of the CMAP6.
+
+Currently I just downloaded some related variabilities of historical scenario. And currently I just choose two variability, the precipitation and evapotranspiration. And later I will try more.
+
+And currently I'm still doing the data preprocessing work.
+
+[说话人 1] (17:37 - 17:54)
+Yeah. So, for example, let me just give you two more questions to think about. So with this, so one hypothesis is that the result that you find actually doesn't change for any of the scenarios.
+
+[说话人 2] (17:55 - 17:55)
+Yeah.
+
+[说话人 1] (17:55 - 17:56)
+That would be very interesting.
+
+[说话人 2] (17:57 - 17:58)
+Yes, exactly.
+
+[说话人 1] (17:58 - 18:14)
+So if the models, as long as, I mean, the only thing that could happen is that if you have more variability, that the models start behaving differently at the large scale. So the emergent behavior is different. That would be very interesting.
+
+[说话人 2] (18:15 - 18:19)
+So do you mean that in the same scenario or in the different scenario?
+
+[说话人 1] (18:22 - 18:34)
+So my basic assumption as a hypothesis would be you run any of those. Yeah. And the classification of interaction will not change.
+
+[说话人 2] (18:35 - 18:37)
+Yeah, I understand. Yeah.
+
+[说话人 1] (18:38 - 18:41)
+If that's the case, that would be very, very interesting.
+
+[说话人 2] (18:41 - 18:41)
+Yeah.
+
+[说话人 1] (18:42 - 18:55)
+I mean, probably more likely would be that it's sort of a range is similar and the other range is maybe similar. And then, you know, if it gets more and more extreme, maybe then some differences occur.
+
+[说话人 2] (18:56 - 18:56)
+Yeah.
+
+[说话人 1] (18:58 - 19:11)
+But the point would be in order to do this kind of analysis, can we just run the historical and we would learn as much as if we would run any of the scenarios, you know?
+
+[说话人 2] (19:11 - 19:12)
+Yeah, I understand.
+
+[说话人 1] (19:13 - 19:20)
+So that would be very interesting. The other thing – no, the other thing was two things. There was one.
+
+[说话人 2] (19:21 - 19:23)
+Ah, the other thing. No problem.
+
+[说话人 1] (19:23 - 19:55)
+Sorry. The other thing would be to say we have – or let me start differently. One of the unresolved questions is a little bit trading – it's called trading space for time.
+
+And that is whether the variability in space looks the same as the variability in time.
+
+[说话人 2] (19:56 - 19:58)
+Ah, very interesting.
+
+[说话人 1] (19:58 - 20:23)
+So would you – if you plot for the global – at the global scale, the pattern of, I don't know, LAI versus ET, does that look the same as if you plot for – or under what conditions does it look the same if you plot LAI changes in time versus ET?
+
+[说话人 2] (20:23 - 20:34)
+Yeah. So do you mean that maybe we can also detect one variability will change in time and space?
+
+[说话人 1] (20:36 - 20:51)
+Yeah, the idea is a bit – can we – if we analyze – let's say we analyze the historical. Now there is one difference because the change in CO2 is not, of course, in the historical as much as it is in the future.
+
+[说话人 2] (20:51 - 20:52)
+Yeah, I understand.
+
+[说话人 1] (20:53 - 21:13)
+So but could you – and let's say if you take sort of lots of grid cells in space and you organize them by, let's say, precipitation versus runoff.
+
+[说话人 2] (21:13 - 21:13)
+Yeah.
+
+[说话人 1] (21:13 - 21:31)
+And you say, okay, I assume that the variability is in a certain way and that it, of course, should go up somehow. Yeah. Yeah, and that's your space.
+
+What if I organize in a particular place?
+
+[说话人 2] (21:31 - 21:35)
+Yeah. It's more like from the 2D to the 3D.
+
+[说话人 1] (21:35 - 21:39)
+Exactly, exactly. And maybe I find, no, but that's very different.
+
+[说话人 2] (21:40 - 21:42)
+Yeah, it's very interesting.
+
+[说话人 1] (21:42 - 22:00)
+Yeah? Because it's sort of one of the questions where it's not clear to me how this works. There are some papers that sort of – where we tried this or debated this, you know?
+
+Yeah. But those are things we can do with your method.
+
+[说话人 2] (22:01 - 22:01)
+Yeah.
+
+[说话人 1] (22:01 - 22:23)
+Because we can look at – there we have to think a little bit more. Yeah, yeah, yeah. But this one, for example, if you run your analysis for two, four, six, eight, nine different cases.
+
+If we were to find that maybe apart from very extreme behavior, the results look the same.
+
+[说话人 2] (22:23 - 22:24)
+Yeah.
+
+[说话人 1] (22:24 - 22:38)
+That means we can actually use very well the historical to learn about model behavior and we don't have to run all the scenarios to learn more. Yeah. Yeah?
+
+In this case, the only thing, of course, that varies is the CO2.
+
+[说话人 2] (22:39 - 22:39)
+Yeah.
+
+[说话人 1] (22:40 - 22:48)
+So there is more variability potentially and the CO2 changes. And so that might cause differences, but maybe not. I don't know.
+
+[说话人 2] (22:49 - 23:02)
+Yeah, I understand. So you mean that maybe we can also compare the same variability with different scenarios to see whether it's consistent or different.
+
+[说话人 1] (23:03 - 23:17)
+Yeah, exactly. Because what we found in the paper with Sebastian in the Nature Water paper is, for example, that for the long-term averages or 30-year averages, it doesn't really matter whether you use human activity or not.
+
+[说话人 2] (23:17 - 23:18)
+Yeah.
+
+[说话人 1] (23:18 - 23:24)
+It doesn't make any difference. It's so controlled by climate that the results look basically identical.
+
+[说话人 2] (23:25 - 23:36)
+Yeah. Maybe we can try this. And I will try from the historical data set to expand the different scenarios.
+
+Yeah.
+
+[说话人 1] (23:37 - 23:48)
+Because if we find that it's the same, then that's a really good news because it means we can learn a lot from one analysis and we don't have to run this eight times or nine times to learn new things.
+
+[说话人 2] (23:48 - 23:54)
+Yeah. Yes, exactly. And if there are differences more, it's also very interesting.
+
+[说话人 1] (23:54 - 23:56)
+Yeah. Very interesting.
+
+[说话人 2] (23:56 - 24:05)
+And for the next work, I will start from the historical data set and to see how the different variabilities change.
+
+[说话人 1] (24:06 - 24:27)
+Yeah. And it's perfectly fine if you start with one variable or so. You don't have to do everything at once.
+
+So you can use runoff as suggested. Just for the example, we want to probably use a relatively large data set to show the value of somehow formalizing the organization. Yeah.
+
+[说话人 2] (24:27 - 24:50)
+Okay. No problem. And for – no problem.
+
+I have no questions about this. And for the next meeting, I would like to mention is Francesca will join us next group meeting. Maybe I will do a long reverse feedback of the previous progress.
+
+[说话人 1] (24:52 - 25:07)
+Yeah. That sounds good. I mean, one – you can also say, okay, here are a few – here's sort of the summary of what I did.
+
+And then leave it a bit to Francesca to say what do you want to learn more about.
+
+[说话人 2] (25:07 - 25:08)
+Yeah, okay.
+
+[说话人 1] (25:08 - 25:22)
+Because – so you don't have to repeat everything. Yes, okay. She wasn't there because if – she might say, okay, no, I understand.
+
+No, I don't need to.
+
+[说话人 2] (25:22 - 25:29)
+Yeah, okay. No problem. Yeah, so – yeah.
+
+Okay, thank you. Thank you very much. Very good.
+
+[说话人 1] (25:34 - 25:35)
+Thank you.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

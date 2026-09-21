@@ -1,0 +1,20 @@
+A B _ -
+"! Tetoae | > ‘lam
+| | wl |
+es 7 es y
+By h, ;
+fut , % i Lo
+al 3
+ju c- fai
+* af
+eR
+ee ee So ‘= ae ee a
+‘Observed trend (mm year) Observed trend mm year")
+Fig. S4.
+Same as Fig. $2, but for the Southern Hemisphere. (A) The calibration mode. The
+‘Calibrated’ refers to the training results. (B) The validation mode. ‘Validated’ refers to S-fold
+cross-validation results. (C) Spatial location of the selected basins across the globe. This analysis
+includes 46 basins in the Souther Hemisphere with more than 10 years of streamflow
+observations. Trends are assessed using Sen's slope and Mann-Kendall P value tests.
+7
+

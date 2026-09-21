@@ -1,0 +1,389 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 2] (0:00 - 0:08)
+I do too much, you know, it gets a bit stressed and then I have to take a day off and cycling and doing a lot of things and then it's fine again.
+
+[说话人 1] (0:08 - 0:09)
+Yeah, okay, no problem.
+
+[说话人 2] (0:12 - 0:24)
+I used to play football a long time ago and I had a knee injury when I was playing football and occasionally when I, you know, when I stress my knee too much then it doesn't like it.
+
+[说话人 1] (0:24 - 0:40)
+Yeah, I thought you must be a great player. And regarding this science advance paper and maybe I can give you feedback at next week.
+
+[说话人 2] (0:41 - 0:52)
+Yeah, yeah, that sounds good. You can also maybe write down the key points of your feedback and then we can talk about it. So I should be in most, if not every day, next week.
+
+[说话人 1] (0:53 - 1:05)
+Yeah, okay, no problem. I will write the comments point by point and maybe I will also provide the possible ideas based on this paper you have given to us.
+
+[说话人 2] (1:05 - 1:06)
+Yeah, that sounds very good.
+
+[说话人 1] (1:09 - 1:14)
+Is this paper sent for review and you are one of the reviewers of this paper?
+
+[说话人 2] (1:15 - 1:43)
+Yes, yeah, exactly. So that's why. And I do this from time to time now because journals now often even invite you to include early career scientists in the review.
+
+And I think it's quite useful because if it's something that relates to one of you or one of the students' work or so then it's useful to see it because it's unpublished so it's useful.
+
+[说话人 1] (1:43 - 1:53)
+Yeah, I found one thing very interesting is that one of my previous supervisors Nature Review paper, you have reviewed it.
+
+[说话人 2] (1:54 - 1:55)
+Yes, I remember, yes.
+
+[说话人 1] (1:57 - 1:58)
+This is one, yeah.
+
+[说话人 2] (1:58 - 2:13)
+Yeah, it's not a very large community, you know, so I often, and it's a bit tricky, I always have to think about whether I'm, it's okay to review it. So if I know people too well, I will not review it.
+
+[说话人 1] (2:13 - 2:14)
+Ah, yeah, I understand.
+
+[说话人 2] (2:15 - 2:25)
+You know, if I work with them directly then. So if I would now get a paper from your former supervisor, I would probably not, I would say no because we just published a paper together.
+
+[说话人 1] (2:25 - 2:31)
+Yeah, I understand. To avoid as a conflict of interest to science.
+
+[说话人 2] (2:32 - 2:45)
+Exactly, exactly, exactly. And here, but also, I mean, Duan is on it and Hoshi Gupta is on it, so we worked together a long time ago. And we have no projects at the moment, so that's fine.
+
+[说话人 1] (2:47 - 2:57)
+No problem. And I think that this paper looks very interesting, but I also think that for the topic, okay, we can...
+
+[说话人 2] (2:57 - 3:05)
+Yeah, that's okay. Yeah, I think it has some justified criticism of the paper, so we can talk about it next week. Yeah.
+
+[说话人 1] (3:08 - 3:09)
+Hi.
+
+[说话人 2] (3:10 - 3:10)
+Hello.
+
+[说话人 1] (3:10 - 3:25)
+Hi. How are you? Nice.
+
+Okay. Can I start my PowerPoint? Do you mind if I record the meeting?
+
+Okay.
+
+[说话人 3] (3:27 - 3:28)
+Recording in progress.
+
+[说话人 1] (3:35 - 5:25)
+Okay. I will start this week's work from the recap. First, last week I have presented this, such kind of decision tree, and you have provided me a lot of constructive suggestions.
+
+And this week's work, I mainly focus on this. The first thing is Francesca asked whether the simple or complex refers to the monotonicity. And here I put the one example of cubic scatter plot.
+
+It passes a global relationship and passes a simple relationship, but it's not monotonic. So this is one example. And the second very constructive suggestion is maybe we prefer not to use segmented slopes, and we can use a polynomial regression to detect some shape.
+
+And the third suggestion is about the fuzzy gates, and maybe we can replace the hard threshold with fuzzy intervals. And first is about the shape classification revision. This will appear in two positions.
+
+The first is about the linear and the nonlinear. Here I use three polynomial regression models to fit each scatter plot to distinguish whether it's linear or nonlinear. And here I also use the BIC to distinguish the relationship.
+
+And when the regression models are fitted to the same scatter plot, the model with the lowest BIC receives the strongest support. This is the main criteria I use to detect the linear and the nonlinear. And do you want to, yeah?
+
+[说话人 2] (5:26 - 5:46)
+Let's think about that for a second. Why, why do you, how do you come up with these three regression models?
+
+[说话人 1] (5:48 - 5:54)
+Because from the last decision tree, I needed to detect whether they have the...
+
+[说话人 2] (5:54 - 5:58)
+No, no, I know, I know why you're doing it. I'm asking why these three?
+
+[说话人 1] (5:59 - 6:15)
+Because I think that the most scatter plots can be fitted as the three, yeah. And when even the higher, higher level of regression models, I think it would be more overfit.
+
+[说话人 3] (6:20 - 7:06)
+But sorry, can we see if you go back one slide, how does this fit in the context of your tree? So when you get there, you do the regression. So if the lowest BIC is with the linear one, you go into linear.
+
+If instead it's a second or third order, you go to the other, to the other, and you don't retain the information that it was fitted to a, necessarily to a, to a second order or third order, then you keep going with your test of curvature.
+
+[说话人 1] (7:07 - 7:07)
+Yeah, okay.
+
+[说话人 3] (7:10 - 7:15)
+Okay, because now inflected basically is in the case you have a third order, no?
+
+[说话人 1] (7:18 - 7:20)
+Do you mean here?
+
+[说话人 3] (7:21 - 7:21)
+Yes.
+
+[说话人 1] (7:22 - 7:36)
+Yeah, it is inflected is also here, but I deleted this branch and removed the uncertain here. And later I will show you the revised decision tree.
+
+[说话人 3] (7:36 - 7:40)
+Okay, but then maybe let's see it later when you have the revised one.
+
+[说话人 2] (7:41 - 7:53)
+Is there, I mean it could also be, what about a power law?
+
+[说话人 1] (7:54 - 7:55)
+Power law?
+
+[说话人 2] (7:56 - 8:27)
+You know, if you just say f of x equals axe to the power of b, is that not more flexible and suitable for us? Because if it's, I mean it can be positive or negative, it can be one, it can be, you know, smaller than one, larger than one, and all of these would give us information about the kind of interaction.
+
+[说话人 1] (8:28 - 8:37)
+Yes, but I think from this branch it has shown very strong monotonicity. Maybe we can, do not need to calculate too much.
+
+[说话人 2] (8:39 - 8:46)
+No, but the thing is, rather than three different equations, we would only have one equation.
+
+[说话人 1] (8:47 - 8:51)
+Yeah, maybe we can do this.
+
+[说话人 2] (8:55 - 9:20)
+No, that's kind of what I was, what I had in mind, sort of, you know, just a power law, because if it's, you know, it can be a linear relationship, it can be more exponential, it can be something which we would immediately get out of this, and it would be, then you don't have three different equations we have to apply.
+
+[说话人 1] (9:21 - 9:36)
+Yeah, maybe I can try it later, but maybe I still need to search for the parameter it's most suitable for, or calculate the delta BIC. Yeah, no problem, I will do the test.
+
+[说话人 2] (9:36 - 9:48)
+Yeah, you still have to fit it somehow, you know, but I wonder whether it's a less, yeah, whether we can get everything with one equation.
+
+[说话人 1] (9:48 - 10:00)
+Yeah, I understand that. Yeah, for this equation, maybe I can also do some tests about only one equation, Pauli-Long, yeah.
+
+[说话人 2] (10:02 - 10:14)
+Yeah, so just a power law would be the simplest I can think of. No, Francesca, what do you think?
+
+[说话人 3] (10:14 - 10:33)
+A power law where if the power is then one, it boils down to a linear, and if it's significantly different from one, it can be already, you know, above one or below one, then it's concave or convex.
+
+[说话人 2] (10:34 - 10:41)
+Yes, and if it's positive or negative, then it's an increasing or declining.
+
+[说话人 3] (10:43 - 10:49)
+So from the value of that coefficient, you already answer the subsequent questions.
+
+[说话人 2] (10:51 - 11:05)
+Well, it's an indicator depending on how well it works, you know, how well it fits. So it's just here, I mean, I like the idea, it just seems like three equations is a bit…
+
+[说话人 1] (11:05 - 11:10)
+Too many equations here?
+
+[说话人 2] (11:10 - 11:24)
+Well, it's a bit less elegant than just having one, you know, as a solution, that's what I was wondering. Because we're not trying to really get the best fit, we're just trying to get the information, no?
+
+[说话人 3] (11:25 - 11:50)
+Yeah, because if you had a power law, then basically from the value of the coefficient, you would extract all the information. Yeah. Yeah.
+
+Okay. So you would have that one parameter as the one to discriminate linear or not, and then concave or convex.
+
+[说话人 2] (11:50 - 11:53)
+Concave or convex, and positive increasing and decreasing as well.
+
+[说话人 3] (11:54 - 11:58)
+Yeah, because it can go negative. Yeah. Yeah.
+
+[说话人 1] (11:58 - 12:35)
+Yeah, so, but I think here, we will combine the two branches together, because the polar norm can all contain the possible information to detect the lines, the curvature. But we can use a different criteria to detect, for example, we can detect whether it fits the linear most using the delta BIC to detect if it fits the linear best.
+
+[说话人 2] (12:38 - 12:51)
+Well, normally, it might be. I mean, normally, something like an R squared or so would be tell you whether it is a reasonable model to describe the data.
+
+[说话人 1] (12:52 - 12:52)
+Yeah.
+
+[说话人 2] (12:53 - 13:04)
+And if it is, you could say that the value, the size of the value gives you an indication of what kind of relationship it is, no?
+
+[说话人 1] (13:04 - 14:10)
+Yeah, I understand this. Yeah. Maybe I will do the test later.
+
+Okay. Can I go next slide? Yes.
+
+Here is the shape classification about the curvature type. Here, I only use the cubic regression, because it can capture both single direction curvature and the curvature reservoir. So here, I mainly use the pattern of the signed second derivative to classify the convex, concave, and the inflected.
+
+And for the signed second derivative, the convex may be more than zero, and the concave less than zero, and the inflected has sign changes. And here, I mainly use these methods to detect the curvature type. Would you have some comments here?
+
+[说话人 2] (14:10 - 14:26)
+Oh, yeah. So only that you could link it again to the power law, then it would be similar. I'm not sure about the inflected.
+
+[说话人 1] (14:31 - 18:56)
+I can combine here and the last slide together to do some tests. Yeah. And for the second part is about the fuzzy range you have mentioned.
+
+I replace single hard threshold with fuzzy range, which maps each matrix value to a fuzzy membership from zero to one, and using alpha line to obtain the final decision. Here, this is fuzzy membership function. Here, x refers to the calculated matrix value, and the l means that is a lower matrix boundary, and u refers to the upper matrix boundary, and the mu x refers to the fuzzy membership value, and the range of the l and u refers to the fuzzy transition range in the matrix space.
+
+And this is fuzzy membership function. And if we set the alpha, and we can also make the decision whether it fits, it can go through the decision gate or not. And this is fuzzy range calibration and validation workflow at each decision gate.
+
+And first, what we already have is has a lot of scatter plots, and this is a sample plot here, and each row refers to the functional family, and each column refers to the different noise. And I first labelled all of the scatter plots at each decision gate, and the green one refers, it has these characteristics. For example, here, it has a global relationship.
+
+And the red one refers to that the scatter plots do not have this global relationship. And the orange one refers to the uncertain relationship, whether it has. So for each scatter plot, it will have a visual label and observe the matrix value.
+
+And we can also record the observed matrix and the visual label for each scatter plot. And then we can test the candidate matrix boundaries from L2, U2 across the whole matrix range and convert the matrix value into the fuzzy membership value and calculate the lowest MSE. And we can select this L2, UPL with the lowest MSE as fixed matrix boundaries.
+
+And this is the training progress, and here is the validation progress. This is I applied the matrix boundaries selected from training process, and I applied this matrix boundary to each validation scatter plots and computed the predicted fuzzy membership. And then I applied the alpha to obtain the final decision and evaluate the performance.
+
+And this is one example I have through the fuzzy range at the global or no global gate. The left one is a visual label indicate whether a global relationship is present. And this plot is all the labelled scatter plots I have made.
+
+The green one also link to here, the green one. It has a global relationship. And the orange one refers to the uncertain relationship.
+
+And the red one refers to they do not have the global relationship. And I search for each pairing and finally I get to the matrix boundary here. And I also set to the alpha equals 0.5. And this means that once MSE more than 0.495, it could have the global relationship.
+
+[说话人 3] (18:58 - 19:11)
+Sorry, can I ask a couple of questions on this? So on the left-hand side, the colour code in green, orange, and red, you did that manually? Yeah.
+
+So it's your visual assessment, yeah?
+
+[说话人 1] (19:11 - 19:12)
+Yeah, yeah, yeah.
+
+[说话人 3] (19:12 - 19:37)
+Okay. So which is similar to the approach you had before, but now you have an orange class. Yeah.
+
+Which you didn't have before, yeah? Yeah. Okay.
+
+I am not clear what are all the crosses in the plot on the right. So because you have a lot, they seem more.
+
+[说话人 1] (19:37 - 19:44)
+Yeah, because there are a lot of families and noise. So I just give a whole view of the plots.
+
+[说话人 3] (19:44 - 19:50)
+But so every, that's the value of MIC for every scatter plot?
+
+[说话人 1] (19:50 - 19:53)
+This is only the matrix of MIC.
+
+[说话人 3] (19:54 - 19:54)
+Yeah.
+
+[说话人 1] (19:55 - 20:26)
+Yeah. Because the cross here means that I just use a different signal to represent the different scatter plots here. So orange, the red is also linked with the cross.
+
+And the orange links with the circle. And the circle links to the green one, just as a different representation of scatter plot.
+
+[说话人 3] (20:28 - 21:29)
+But what I mean is every point, every point in this graph corresponds to one scatter plot. It's the value of MIC for one scatter plot. Yeah, yeah, yeah.
+
+Maybe it's the way it's represented that it doesn't show the density very clearly. Because from this is not very obvious that the red are all on the left and the green are all on the right. Yes.
+
+They basically all seem. Yeah, yeah, yeah. Almost equally spread.
+
+Maybe, maybe if you had a distribution, then it would be more obvious that the majority of the red point are actually on the left. Maybe it's because the density is so many points and they just overlap on one another. And I don't see, like, maybe if you were to use a violin plot or something like that, it would be more obvious that the orange are in the middle, the green are on the right and the red on the left.
+
+[说话人 1] (21:29 - 21:30)
+Yeah, yeah, yeah. I understand.
+
+[说话人 3] (21:30 - 21:43)
+Is it like that? So it's just a visual impression that they are all equally spread. In reality, actually, the red ones are much more on the left and the green one much more on the right.
+
+[说话人 1] (21:43 - 21:48)
+Yeah, but I think I haven't visualised it very well.
+
+[说话人 3] (21:48 - 21:51)
+Because if I look at this, they all seem to overlap.
+
+[说话人 1] (21:51 - 21:51)
+Yeah, yeah, yeah.
+
+[说话人 3] (21:52 - 21:57)
+But they don't. Okay, okay. Because you have so many points.
+
+Okay.
+
+[说话人 2] (21:57 - 22:11)
+Can we, so, thanks, that was the same. I mean, I had the same question. At the top one, so, let's say, just take the green one at the top, no?
+
+[说话人 1] (22:12 - 22:12)
+Yeah.
+
+[说话人 2] (22:12 - 22:32)
+So then it varies between 1 and 0.2 almost. Yeah. But you're saying that any, so it suggests that MIC can have any value along that range and it still is a global relationship.
+
+[说话人 3] (22:33 - 22:33)
+Yeah.
+
+[说话人 2] (22:34 - 22:45)
+And what changes between a value of 0.9 and a value of 0.22? Is it that it's the level of noise or what is the?
+
+[说话人 1] (22:46 - 22:50)
+You mean this one and this?
+
+[说话人 2] (22:51 - 22:53)
+No, no, I mean just the right scatter plot.
+
+[说话人 1] (22:53 - 22:54)
+Okay.
+
+[说话人 2] (22:54 - 23:05)
+The one on the left is a bit too small for me. But, you know, you have at the top the green range, the yes range.
+
+[说话人 3] (23:05 - 23:06)
+Yeah.
+
+[说话人 2] (23:06 - 23:19)
+Let's assume that around 0.8 or close to 0.8 and higher, the majority of points lie or there's a bigger population. But that doesn't take away that there are points that are very much to the left.
+
+[说话人 1] (23:20 - 23:20)
+Yeah.
+
+[说话人 2] (23:21 - 24:08)
+Yeah, and so that might be very few in relation to the overall number, but why, what changes, you know, if I go from right to left in the green population? Does it, are the ones on the left, are these points with a lot more noise? Is it just the noise level that made it, makes it at some point difficult to see?
+
+Because if it's that, maybe the question is, is your, you know, your manual classification of scatter plots, is it too generous or is it too, you know?
+
+[说话人 3] (24:08 - 24:38)
+Sorry, Torsten, your point is that you stay on the green one, that you would have hoped to really see no green points, not so distributed, like to see no green points around 0.2 or 0.3. Yeah, it's the same for the red population in the other way, so it's, but my point is. You were hoping them to be a bit more distinct from each other.
+
+[说话人 2] (24:39 - 24:39)
+Yes.
+
+[说话人 1] (24:40 - 25:21)
+Yes, I also know this point, but for me, if I do the visualisation labour, for example, the point is that I know what expected, but for actual labouring, it shows for the scatter plots and one way is about the noise add, and another is a different structure of different function families. It also impacts the lower of the MIC.
+
+[说话人 3] (25:21 - 25:58)
+Yeah, but can I ask you again, because I'm a bit not totally sure I'm following how this plot was produced, because if I look at the legend there, it seems that the total number of points on this plot is 30,970 plus 6,220 plus 18,160. So it's several tens, dozens, I don't know.
+
+[说话人 2] (25:59 - 26:01)
+55,000 plots.
+
+[说话人 3] (26:01 - 26:03)
+Yes, you didn't label all of them.
+
+[说话人 1] (26:04 - 26:20)
+Yeah, because for some scatter plots, it's just to do the replication of the same noise and the same function family, so I make them all the same as the same label.
+
+[说话人 3] (26:21 - 26:53)
+So you take a generating function and a level of noise, you produce one plot, classify it as green, orange, or red, and then you say, now I generate another 100 with the same level of noise and with the same family, but I'm not going to relabel them, of course. If the original one I said was orange, all of this will be orange.
+
+[说话人 1] (26:53 - 26:54)
+Yeah.
+
+[说话人 3] (26:54 - 27:14)
+Okay. So I wonder if, I wonder though, maybe all this overlap is being created by the cases where you have a high level of noise.
+
+[说话人 2] (27:14 - 27:16)
+Right, that was my...
+
+[说话人 3] (27:16 - 27:31)
+Well, actually, no, when you have an intermediate level of noise, so that, you know, by chance, the original one you classified as orange or green or red, but then when you produce another 100, they go a bit, no?
+
+[说话人 2] (27:31 - 27:37)
+Right, but you should see, no, that to the left, from right to left, it should be an increasing level of noise.
+
+[说话人 3] (27:38 - 28:03)
+Yes, yes, yes. I just wonder if this is the right way to do it, because if you, the ones that are on the edge, no, the orange one, then if there is sufficient noise, they will easily be then, no? You would want to relabel them, no?
+
+Before you...
+
+[说话人 1] (28:05 - 28:07)
+So, sorry, what do you mean?
+
+[说话人 3] (28:11 - 28:31)
+So say that you have a high level of noise. Yeah. You produce something and you say, oh, this must be orange.
+
+Yeah. Because I cannot really tell, yeah? Yeah.
+
+Now, because it's a high level of noise, when you redo it, it might look...
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

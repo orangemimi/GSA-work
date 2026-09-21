@@ -1,0 +1,374 @@
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)
+
+[Speaker 2] (0:00 - 0:18)
+Interesting information in there, because the models do very different things. And I mean, even if they are all, let's say in wet wall, they're all accelerating. But they're accelerating at quite some different scales, different, very different slopes.
+
+[Speaker 1] (0:20 - 0:26)
+Do you calculate the slope also as an additional? Not yet.
+
+[Speaker 2] (0:28 - 0:32)
+No, that's the additional now characterization you have planned.
+
+[Speaker 1] (0:34 - 1:08)
+Because again, now, for example, in a case like this, it's a very relevant information. And the fact that the majority of the models agree on the shape is, okay, is, you know, almost the minimum we would expect, given that this is a rather basic relationship. And then instead, what is striking is how then the slope though is quite different.
+
+[Speaker 2] (1:08 - 1:29)
+Yes, yes, which is which is very consistent with the other models we looked at before. And here, as you already showed, I mean, there are vastly more models to look at. So that makes it really interesting.
+
+The other thing for us to think about is, you did this on your laptop now?
+
+[Speaker 3] (1:30 - 1:31)
+Yeah, my laptop.
+
+[Speaker 2] (1:31 - 1:36)
+Okay, because we can also run it on the analysis, do the analysis on the cluster.
+
+[Speaker 3] (1:36 - 1:37)
+Ah, yeah, okay.
+
+[Speaker 2] (1:38 - 1:41)
+So then it should be a lot more, a lot faster.
+
+[Speaker 3] (1:41 - 1:47)
+Yeah, but currently it's enough because I just analyzed five models.
+
+[Speaker 2] (1:47 - 1:53)
+Yeah, I know, but in order to do all of them, we can do that on the cluster.
+
+[Speaker 1] (1:54 - 2:10)
+It's interesting that land ice instead, you know, that is very different from each other. It would be even more if the last one was properly captured as branching, because it is actually branching.
+
+[Speaker 2] (2:10 - 2:22)
+The top one looks a bit like there is initially also a similar kind of branching, no? There's also a huge density at the bottom and then one going up.
+
+[Speaker 1] (2:23 - 2:24)
+Yeah, you mean this?
+
+[Speaker 2] (2:24 - 2:24)
+Yeah.
+
+[Speaker 1] (2:25 - 3:30)
+Yeah, it could be a branching. Yeah, which makes me think, so two general remarks are, one is, I wonder if the classification system should allow for like a, instead of saying uncertain, maybe not like allow for a double, possible double interpretation, no? Occasionally, like the top right, you know, the one on the top right, you could say is either no global relationship or branching.
+
+Like, what I mean is that more often you will probably have a situation where it's uncertain in the sense that it could be interpreted in two different ways, not uncertain like anything can go, but more, you know, there are two possibilities. And so maybe it would be interesting to know which ones they are. Because in this case, for example, one possibility for the top right is branching, which would be consistent with the top bottom one, no?
+
+[Speaker 3] (3:32 - 3:39)
+Yeah, so do you mean that we can provide more information even if it is uncertain?
+
+[Speaker 1] (3:39 - 4:08)
+What I mean is, yes, if the answer of the algorithm is that this is uncertain because I cannot make my mind up between two possibilities, this is way more information than just saying this is uncertain. Because if you say uncertain, it means that any of my, I don't know, 15 different classes is possible. Instead, that's not the truth where you are at.
+
+The algorithm is uncertain between two classes, which is a much more refined information.
+
+[Speaker 3] (4:09 - 4:10)
+Yeah, okay.
+
+[Speaker 1] (4:10 - 5:16)
+And the other thing that I was thinking, so at the moment, you are still, the way you do this is still like you have defined the hierarchy, no? And then you have thresholds. And then you are making manual adjustment to those thresholds.
+
+Yeah. By testing on different cases and seeing what you get. Yeah.
+
+I think we had this discussion, but I don't remember where we left it. That another possible approach instead is that you label some of this. Yeah.
+
+And then you let the machine learning algorithm to produce that hierarchy and the threshold. Or maybe you could have intermediate things where you set the hierarchy, the tree, and then use a optimizer to find the threshold that best fit some data that you have classified.
+
+[Speaker 3] (5:16 - 5:33)
+Yes, actually, based on that synthetic data, I have to use a different parameter calibration, but the synthetic data when applied to these real cases, it do not function, do not evaluate.
+
+[Speaker 1] (5:33 - 5:39)
+So the threshold that were good for the synthetic data set are not good anymore now?
+
+[Speaker 3] (5:39 - 5:39)
+Yeah.
+
+[Speaker 1] (5:40 - 5:51)
+But my question is, do you plan to do that again now? Or do you think it's better to go ahead with this manual tuning of the tree?
+
+[Speaker 3] (5:52 - 6:19)
+I'm not sure. Maybe we can also... So one problem is that, first, the MIC does not show great performance.
+
+So maybe we can need to adjust the whole tree or to some parameter, to some criteria. And then we can consider whether we will do the parameter sensitivities based on these real cases.
+
+[Speaker 2] (6:20 - 6:59)
+Yeah, so we need to change the criteria because if the first MIC gate doesn't work, then it's not a question of number. It's a question of what index should be there. So I think we'll have to rethink that.
+
+So that's a bit disappointing. I didn't think it was that sensitive to this. But the other thing, I think the other thing is whether we use AI.
+
+Because one thing that is striking now is the visual aspect of this.
+
+[Speaker 1] (7:01 - 7:02)
+What do you mean?
+
+[Speaker 2] (7:03 - 8:00)
+Well, that it's still... Like, let's say the bottom right, this branching is something that you see, but it's very difficult to capture in any metric. So the question is...
+
+This is this question we thought about with... We have one professor here, Marina Rune, who's a professor for explainable AI. And she does mainly image stuff, image processing, all that stuff seems to be about images.
+
+And that might be worth then having a discussion with her to see whether there is something that we could use that is sort of... Can sort of digest this kind of data to be trained as a visual interpretation, maybe in a different way.
+
+[Speaker 1] (8:04 - 8:07)
+Yeah, I think that would be a completely alternative approach that...
+
+[Speaker 2] (8:07 - 8:10)
+Yeah, that's the one from the beginning you said.
+
+[Speaker 1] (8:11 - 10:09)
+That you could see this as images and then you would have... You would basically define a set of shapes that represent the functional relationships. And then you ask an algorithm, which one of these shapes is this scatterplot closest to?
+
+And that's the end of the classification, which is more or less what happens in our brain, no? We have those shapes in our mind and somehow our brain is capable of saying this scatterplot is similar to this and... Or this scatterplot is not similar to any of this.
+
+And I mean, surely there must be some algorithm that can do that. I still wonder if there is a intermediate step where is like instead a machine learning, like a classification problem where you just feed all the characteristics that you have. So all the metrics that you have defined and just let the ML algorithm to tell you which ones to use.
+
+So maybe I would end up discarding this MIC or maybe not, I don't know. And also figure out what thresholds or combinations should be used. I just want, you know, yes, or you have this more expert level.
+
+Approach that you are using now where you've just been thinking about it and making your hierarchy and then tuning the thresholds. I don't know which one is best.
+
+[Speaker 2] (10:11 - 10:46)
+No, no, I think both are interesting. I mean, as you said, the other approach is an alternative. There is a bachelor student, I actually forgot to set up a date for the meeting, from computer science who wants to look at this.
+
+But that is probably a bit longer. I mean, I don't think you'll be very fast. But we might have a conversation with Marina in any way.
+
+She gives us a bit of a pointer towards the right kind of algorithm that we can use.
+
+[Speaker 1] (10:46 - 11:24)
+But I think that using now, I think it's good that you now move to looking at some real dataset because it was important to establish at least some fundamentals using the synthetic dataset to just prove that this works in principle. But then as you already found out, you know, what works on synthetic data will not exactly work the same on real data because you must be much more relaxed because these relationships are much less evident. So, yeah.
+
+[Speaker 2] (11:25 - 11:29)
+Yeah, we're also learning what kind of relationships we might actually find in reality.
+
+[Speaker 3] (11:33 - 13:00)
+In previous experiments, I do the toy experiment based on the random forest tree and using this kind of synthetic data to test whether it goes very well. And the result shows it very well, but it will need us to predefine some relationships. And previously, what I do is to calculate a lot of metrics to describe the scatter plots or describe the whole relationship and using these different metrics to train the machine learning model and then to use that trained machine learning model to test whether it goes very well and the result shows very well.
+
+But I'm not sure whether it can validate good in real cases. And for this page, I think it's a surface runoff to the total runoff relationship. And the surface runoff is one part of the total runoff.
+
+And it also shows some great relationships as we see. And these two kind of relationships is the most clear relationship it can be detect. Are those variables to runoff?
+
+Sorry, sorry, can you go back to the previous one?
+
+[Speaker 1] (13:01 - 13:40)
+No, I just wanted to, yeah, can we spend just a second here? Because I was looking at, for example, there is another example where I think I'm on the third line and the wet cold. Yeah, and there again, I would say there is a branching that is not being picked.
+
+So you definitely have a problem with the branching happening in the data and not being seen that much.
+
+[Speaker 2] (13:41 - 13:53)
+Yeah, it's the same up here, no? The land ice for the second one. But again, it will be, yeah, so that's interesting.
+
+I mean, there's, yeah, so there are people like that.
+
+[Speaker 1] (13:53 - 14:47)
+And the other thing I wanted to say is if we look at the fourth line now, yeah? So you get quite, it seems to me that maybe this is a little bit, the algorithm seems a little bit too sensitive. Yeah, you have three different categories, which suggest a lot of difference.
+
+Whereas visually, I wouldn't say there is, you know, actually visually, these are strikingly similar compared to the variability that you find in other areas. So it's a bit funny that they get, you know, like, if you were to now produce this, show us these results without the scatter plot, we would get the impression that that model shows a lot more variability than it actually does, no?
+
+[Speaker 3] (14:48 - 14:48)
+Yeah.
+
+[Speaker 1] (14:49 - 15:27)
+You have three different categories where probably they are all the same. So, which is also making me think that, yeah. Um, yes, if maybe, yeah, I'm wondering, so either there is, maybe there is a problem also with the saturation categories, because the two that here gets classified as saturation, they don't seem to saturate at all to me.
+
+Like by saturation, I mean, something that really flattens.
+
+[Speaker 2] (15:27 - 15:34)
+Yeah, but because it's the spread produces, no, from left to right. So it's somehow that produces the same.
+
+[Speaker 1] (15:35 - 15:35)
+Yeah.
+
+[Speaker 2] (15:36 - 15:38)
+The same pattern or the same indication.
+
+[Speaker 1] (15:39 - 15:39)
+Yeah.
+
+[Speaker 2] (15:39 - 15:45)
+But like the R value is very high. So it suggests that it's a very, that linear is a very good description.
+
+[Speaker 1] (15:46 - 15:50)
+Yeah. So again, there is something there.
+
+[Speaker 2] (15:52 - 16:23)
+But it's, I think in all of these, you know, I mean, you could, again, you could for you, maybe have a look at what the density differences mean for this kind of analysis, because that I think is a, is a problem. You see it also in the bottom, right? For example, you know, you have like huge number of data points, 7,000.
+
+Yeah. And you see that the black line is only in the very beginning. Yeah.
+
+Because the vast majority of points is in the bottom left corner.
+
+[Speaker 3] (16:23 - 16:23)
+Yeah.
+
+[Speaker 2] (16:24 - 16:33)
+And even though you would manually, you know, visually you would draw a line going up. The algorithm says where there's so few points on the right.
+
+[Speaker 3] (16:33 - 16:34)
+Yeah.
+
+[Speaker 2] (16:35 - 16:38)
+It doesn't detect the relationship. So it's.
+
+[Speaker 3] (16:40 - 16:42)
+We can detect the density.
+
+[Speaker 2] (16:42 - 16:46)
+Yeah. Yeah. So we have to think.
+
+[Speaker 3] (16:46 - 16:46)
+Yeah.
+
+[Speaker 2] (16:47 - 16:50)
+Given the characteristics of the actual data.
+
+[Speaker 1] (16:53 - 17:07)
+Yeah. I think probably this is a structural problem, no? Like what we do visually, it seems, you know, like the algorithm is really conditioned by the density of points, no?
+
+[Speaker 3] (17:08 - 17:08)
+Yeah.
+
+[Speaker 1] (17:08 - 17:59)
+And we really discard anything that. Yeah. If you have a part that has a lot of points and a part that has much less, it will really discard the information in the part that has much less, no?
+
+Yeah. Whereas in our brain, we have this ability to still kind of distinguish whether the less density is still meaningful or not, no? Yeah.
+
+And so the question is, how do you do automatize that process? Because we are able in our mind to distinguish when really is one or two outliers and then we just don't pay attention. Or when it's, you know, still few points, but somehow we are instinctively able to say, but they still telling me something, no?
+
+Okay. And that is lost at the moment.
+
+[Speaker 2] (18:01 - 18:33)
+So is there, I mean, I'm just thinking out loud. So one thing we used in the past, I think you looked at this already, are these kind of less regression? No, local regression where you do a, and I mean, that would be, it wouldn't take care of the bifurcation.
+
+So it probably would fail there. Yeah. But it could be a way that you have the less type regression and then analyze the line that you get from the regression.
+
+[Speaker 3] (18:34 - 18:42)
+So do you mean I can use more or less regression relationships to test whether they fit or not?
+
+[Speaker 2] (18:42 - 19:27)
+Well, it's the less regression would adjust the data from left to right, rather than trying to draw a line through it. So it actually makes very little assumptions. So you have to decide a little bit, but it wouldn't, it wouldn't be bothered by the density being high on the right, high on the left and low on the right, because it would just move along.
+
+And then maybe that's not a solution. I'm just trying to think. Let me just finish.
+
+So then, because then you had, let's say in the bottom right, I would assume you get more of a connection further. And then you could see whether the resulting regression is actually has a shape.
+
+[Speaker 3] (19:27 - 19:27)
+Yeah.
+
+[Speaker 2] (19:28 - 19:31)
+You know, that might be more robust.
+
+[Speaker 3] (19:31 - 19:31)
+Yeah.
+
+[Speaker 2] (19:32 - 19:41)
+Then the density and the points, because now we get sort of, you have the gravity pull from the density.
+
+[Speaker 1] (19:43 - 20:47)
+Yeah, I was thinking that otherwise, a different approach would be, again, I don't know if this exists already implemented or what, but could be like that you have a initial step of pruning, reducing your data set basically, where it's very dense. So if you have, you know, if you have, I don't know, 100 cells that basically map exactly in the same point here, now that you could say, OK, this is now redundant information. Yeah.
+
+So if you have like, I don't know, 10 or even 50 or even 100 data points that basically overlap with one another, very, very close to one another in this plane. Yeah, you discard 80% of them, for example.
+
+[Speaker 3] (20:47 - 20:55)
+So do you mean that we can manually or automatically change the density of the data points?
+
+[Speaker 1] (20:56 - 21:30)
+Yes, that you say, if I have, no, if I have, because these are, now these are different cells that are contributing, no? So what you find, for example, what you are having here, I don't know, on the, let's say the bottom right one. Yeah.
+
+You basically, what you are saying is that you have loads of points where, I don't know, around 100 and, no, where the x value is 100 and the y value is 500, no?
+
+[Speaker 3] (21:31 - 21:32)
+Yeah.
+
+[Speaker 1] (21:32 - 22:25)
+You have loads of points that fall, that basically, so you could say some of these are redundant now, no? They are multiple realisation of the same thing. So if you reduce, if you discard some of them, then you rebalance, no?
+
+You basically have an unbalanced data set. Yeah. Where certain region of this, no, of this space have loads of points and other regions have loads less.
+
+Yeah. Maybe there is a legitimate way to rebalance the data set by reducing the density, where you have essentially the same point again and again and again.
+
+[Speaker 2] (22:26 - 22:28)
+Yeah, though, sorry.
+
+[Speaker 3] (22:30 - 22:32)
+Yeah, you can.
+
+[Speaker 2] (22:33 - 22:58)
+I mean, but is it in effect, would the loss regression do the same thing without us changing the data? Because it would also take things, you know, it doesn't consider whether there is more data on the left than on the right, because it treats the left and the right independently.
+
+[Speaker 1] (22:58 - 22:59)
+Yeah, yeah, yeah, yeah.
+
+[Speaker 3] (23:02 - 23:16)
+Yeah, it's a different local regression for each point, and it can fit a very relatively great line, and we can detect how the line looks like. Do you mean this?
+
+[Speaker 2] (23:16 - 23:25)
+Yes, that's what I mean. So I thought, I mean, Francesca, changing the densities is an alternative.
+
+[Speaker 1] (23:26 - 23:26)
+Yeah.
+
+[Speaker 2] (23:26 - 23:43)
+Just wondering, because then we're changing the actual data, and I wonder how easy that is for, you know, if you take the bottom right figure here, you probably have like 90% of the points in the bottom left, you know?
+
+[Speaker 1] (23:44 - 23:44)
+Yeah.
+
+[Speaker 2] (23:44 - 23:47)
+So you would take out the vast majority of data points.
+
+[Speaker 1] (23:50 - 24:01)
+Yeah, yeah, yeah, that's why, as I said, it's an alternative in case the local regression proves to be, to have some extra challenges that we didn't think of.
+
+[Speaker 2] (24:05 - 24:06)
+But, yeah, no, but I think...
+
+[Speaker 1] (24:06 - 24:18)
+If the local regression is easy enough to apply and works, then absolutely, I think, you know, ultimately, it's the best way to condense information to, you know?
+
+[Speaker 2] (24:19 - 24:22)
+Is there a wonder whether the... Sorry.
+
+[Speaker 3] (24:22 - 24:23)
+No, no problem.
+
+[Speaker 2] (24:23 - 24:25)
+No, no, I don't want to always jump into...
+
+[Speaker 3] (24:25 - 25:09)
+Yeah, because previously, I have seen one kind of scatterplot. I can show it to you because I do not remember the detailed plot. Looks like it's based on the density of the plot.
+
+Maybe this kind of, the green plot. And maybe this is based on the Gaussian kernel regression. I'm not quite sure, but I have seen this kind of plot before.
+
+Maybe we can base it on this kind of shape and to do some classification because this is based on the density. So here means that it will become darker if the density becomes bigger.
+
+[Speaker 2] (25:10 - 25:13)
+What do you want to do? You want to...
+
+[Speaker 3] (25:13 - 25:22)
+First, we can calculate the different level of density, and it will have the whole range of the whole shape.
+
+[Speaker 2] (25:23 - 25:45)
+Yeah, but I wonder whether we need to do that, you know? So I wonder whether... I mean, maybe because I was looking at other papers again for inspiration, and I thought actually this loss regression is really maybe very useful because I saw it for other papers who wanted to quantify this kind of variability.
+
+[Speaker 3] (25:45 - 25:45)
+Yeah.
+
+[Speaker 2] (25:46 - 26:46)
+And because do you have... So you have the regression line, so that because it's independent blocks, essentially you don't have the problem with density differences. And the other thing is there's additional information, no?
+
+You have like a fit, for example, that goes from left to right. So if you have your areas where there is an... Like, let's say this one here, so the dry-cold at the bottom, where you have the scatters increasing from left to right, then would that in the loss regression, would it actually show that the R-squared fit gets worse from left to right, which would indicate that it's much denser on the left than it is on the right?
+
+So, you know?
+
+[Speaker 3] (26:47 - 26:47)
+So is there...
+
+[Speaker 2] (26:47 - 26:48)
+I know this one.
+
+[Speaker 3] (26:48 - 26:53)
+Do you remember I have to do this loss fit at the early discussion?
+
+[Speaker 2] (26:53 - 26:57)
+Yeah, yeah, yeah. I think it works very well. Maybe it is a much better solution than we thought.
+
+[Speaker 3] (26:58 - 27:08)
+Yeah, I think so. Do you remember that loss regression, it makes a different sample data?
+
+(Transcribed by TurboScribe. Go Unlimited to remove this message.)

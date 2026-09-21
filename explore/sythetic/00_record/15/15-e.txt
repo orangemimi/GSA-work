@@ -1,0 +1,388 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 3] (0:00 - 0:05)
+So is that actually your cat, or? Yeah, my cat. Okay.
+
+Yes, it looks very cute.
+
+[说话人 1] (0:06 - 0:21)
+Yeah, it has very dark eyes, you know, like that he's in the picture. Yeah, it's blue, but you picture it as black. Okay, let's start.
+
+Okay, this is... Ah, sorry, sorry. Let me say one thing so I don't forget.
+
+[说话人 2] (0:23 - 0:41)
+So the bachelor's student from computer science that I mentioned, so it probably is good if the three of us have a Zoom chat to define what he could do. So we talked about him looking a bit at explainable AI, no?
+
+[说话人 1] (0:42 - 0:42)
+Yeah, yeah.
+
+[说话人 2] (0:42 - 0:46)
+For doing this kind of classification that you...
+
+[说话人 1] (0:46 - 0:48)
+Yeah, you have mentioned it, yeah. I remember.
+
+[说话人 2] (0:49 - 0:52)
+So maybe you can think a little bit about what he could do.
+
+[说话人 1] (0:53 - 0:53)
+Yeah.
+
+[说话人 2] (0:56 - 1:06)
+It's practically something a bit extra to what you're doing. So it's a bachelor's student. Some of them are quite good, others are not so good, so I don't know this one.
+
+[说话人 1] (1:06 - 1:30)
+Yeah, maybe I think... Sorry, you're doing it. No, no, no.
+
+Maybe I think maybe he can use explainable AI to try to test the decision tree based on some predefined characteristics and see how the AI can do and how accurate the AI can do for us.
+
+[说话人 2] (1:30 - 2:06)
+Yeah, that would be good. The other advantage is that he has to have a second supervisor from computer science. And there are a few people.
+
+There's one woman, Marina Huerner, and she does explainable AI. I mean, she doesn't look at water issues. She mainly does sort of classification and stuff.
+
+A lot of the explainable AI examples are in that. Yeah, exactly. And so she looks at that.
+
+But there might be an opportunity to ask her a little bit for suggestions.
+
+[说话人 1] (2:07 - 2:08)
+Yeah, of course.
+
+[说话人 2] (2:08 - 2:23)
+You know, in that sense, it's quite useful. It's just we don't want to give the student things that you absolutely need to have. Yeah.
+
+So it might not take very long. Yeah, no problem. So it's a bit like trying things out is great.
+
+[说话人 1] (2:23 - 2:40)
+Yeah. So maybe I think I can also make a brief presentation to three of us to introduce our current work and what he maybe needs to do and give some opportunities to select for him.
+
+[说话人 2] (2:40 - 3:11)
+Yes, that would be good. And maybe also a starting point or so. So we'll find out.
+
+But I think he has a bit of time. He would then say, okay, that interests me or that's what I want to do. And I suggest that he then has to write a paper or so, a bit of a night proposal.
+
+And also then he has to go to the other faculty member in computer science to say this is what I want to do. Okay, no problem.
+
+[说话人 1] (3:11 - 3:19)
+And may I ask when will we have that meeting because I think I can do some preparation.
+
+[说话人 2] (3:19 - 3:24)
+Next week sometime. So I will send him an email and suggest something.
+
+[说话人 1] (3:25 - 3:26)
+Yeah, okay, no problem.
+
+[说话人 2] (3:26 - 3:29)
+Do you have any days next week when you're not here?
+
+[说话人 1] (3:29 - 3:34)
+I'm very available. Okay, good. Okay, so can I start?
+
+[说话人 2] (3:35 - 3:35)
+Yeah, yeah.
+
+[说话人 1] (3:37 - 5:15)
+This is the decision tree of last week. And for this week I first extended the synthetic data set across three signal stress settings because I previously just do the strong signal of characteristics. And first I extended the cases.
+
+And second, I revised the decision tree, not only but refined the simple path classification because I found that when I use the extended synthetic data set, some metrics are not performed very well. And additionally, these are two work about the complex decision tree. So I have to do some methods to test the branch relationship and see how it works well and do some calibration work for some decision gates through the complex paths.
+
+And the three work is I have also based on the output of these cases, I have explored some potential extensions of within-group diagnosis. And the last part is about I have think about the potential cases. Okay.
+
+The first is extended synthetic data sets. And previously I just do the very strong signal. And here when I change the parameters of different family equation and it changes a lot, it has a standard signal and a very mild signal.
+
+[说话人 2] (5:16 - 5:24)
+So these are the different – what did you change? So I see – some I see very clearly, some I don't see so clearly.
+
+[说话人 1] (5:24 - 5:38)
+Yeah, for example, actually I have changed the strength of linear slope. But – yeah, yeah, yeah. The number is very different but it shows very similar as the x and y.
+
+[说话人 2] (5:39 - 5:41)
+So what is the number exactly?
+
+[说话人 1] (5:41 - 5:57)
+Here is 3.5 and here is 0.5. Sorry, the range? Yeah, the range is very different. But I just not using the same y range.
+
+[说话人 2] (5:57 - 6:06)
+I think you need to use the same y range for it to be visible. Because otherwise it's difficult to see. Because you have to look at every plot individually.
+
+[说话人 1] (6:06 - 6:14)
+Yeah, yeah, yeah. I will change this. And for example, we can also see this kind of situation.
+
+It becomes more flat.
+
+[说话人 2] (6:14 - 6:19)
+That I do see, yeah. So with some I can see something, but with others it looks exactly the same plot.
+
+[说话人 1] (6:19 - 6:22)
+Ah, yeah. So I will change the visualization.
+
+[说话人 2] (6:23 - 6:23)
+Yeah.
+
+[说话人 1] (6:23 - 8:44)
+And this is the first version of the revised decision tree. And I potentially – I am using these cases to test whether the simple gate is present very well. So actually for the linear and the situation it's separated very clearly.
+
+But for the acceleration – sorry, I also would like to do one clarification. Because actually last meeting we have using the transition group to describe these four. And the situation group using the four.
+
+And actually it also has left some convex related characteristics. So here I named the acceleration group. Because I think it mainly depends on the end of x range.
+
+Yeah. Okay. So here I tested all the cases.
+
+And I found that for the acceleration group it's present not very well. As only 14% is the correct family through the acceleration separation. And so this means that these are all wrong mixed in this group.
+
+So I think that cases with very weak curvature strengths will be included in this group. So I think that is there any some simple methods to separate them. And first I think that they may perform very different because they have very different curvature strengths.
+
+This is because the linear and the s-curve and the threshold will be cancelled out keeping the whole curvature strengths related to one. So I also calculated these four families and their range of curvature strengths.
+
+[说话人 2] (8:45 - 8:46)
+Okay.
+
+[说话人 1] (8:46 - 8:57)
+So I found that actually the accelerating families are, yes, it's very higher than these three families.
+
+[说话人 2] (8:57 - 9:01)
+So what does curvature strength mean? What is the difference? What is the meaning?
+
+[说话人 1] (9:02 - 9:09)
+It means that how far away to stay away from the linear.
+
+[说话人 2] (9:12 - 9:13)
+Okay.
+
+[说话人 1] (9:13 - 9:20)
+So for the accelerating it will show great strengths.
+
+[说话人 2] (9:22 - 9:42)
+Yeah, but isn't this, I mean if I look at this, why is there a difference between those two in terms of linear? I don't understand. Shouldn't they be the same pretty much?
+
+[说话人 1] (9:42 - 9:44)
+Do you mean these two are the same?
+
+[说话人 2] (9:44 - 9:47)
+For example, in terms of deviation from linear.
+
+[说话人 1] (9:49 - 10:13)
+Yeah, they can separate from linear. But the problem is that, okay, let's see here. Okay, sorry.
+
+Actually if we use the coefficient less than 0.05 we can separate linear and here is the curvature pole. But it will mix the saturation accelerating.
+
+[说话人 2] (10:13 - 10:23)
+No, no, I understand that part. But then you say, if I understand it right, you're saying, oh no, this is true acceleration. But where is the saturation?
+
+[说话人 1] (10:23 - 10:38)
+Yeah, because saturation has been, I just tested here, because it has been mixed here, this group. So I just tested this one.
+
+[说话人 2] (10:38 - 10:56)
+Okay, because the other thing here between those two is that, you know, if you go from left to right and you fit a curve to it, there is a change in variability around the curve, no?
+
+[说话人 1] (10:56 - 10:58)
+Yes, exactly.
+
+[说话人 2] (10:59 - 11:06)
+So in the saturation group that variance grows and in the acceleration group it declines.
+
+[说话人 1] (11:06 - 11:17)
+Yeah, I understand this. But I think currently I just want to separate the two and apart from the S curve and the threshold.
+
+[说话人 2] (11:17 - 11:17)
+Okay.
+
+[说话人 1] (11:18 - 11:27)
+And later we can also use some coefficient of that power law to test whether it's saturation and acceleration.
+
+[说话人 2] (11:27 - 11:33)
+Because in your decision tree you separate them out, no? At the moment, saturation and acceleration.
+
+[说话人 1] (11:33 - 11:40)
+Yeah, I have revised the decision tree of the simple path after this page, after this method.
+
+[说话人 2] (11:40 - 11:43)
+And what is the criteria to separate saturation and acceleration?
+
+[说话人 1] (11:46 - 11:53)
+Here? No, sorry. Okay, this is using the A and B.
+
+[说话人 2] (11:57 - 12:09)
+So if A, no, if A and B are larger than 0, then it's saturation and it's smaller than 0?
+
+[说话人 1] (12:10 - 12:48)
+Yeah, because it will firstly, it's larger than 0 and here is smaller than 0. Okay. Okay, maybe I can make some more explanations later.
+
+[说话人 2] (12:48 - 12:49)
+Yeah, yeah, yeah.
+
+[说话人 1] (12:55 - 15:07)
+So these methods are mainly to separate the accelerating and the saturation apart from S curve threshold and the linear. And it can make the curvature poor more clearly. And this is the output of the, if I use this gate here.
+
+So the decision tree here we can see if when we use the power law and using the R square, and then we can use the B to detect, B minus 1 to detect whether it's linear because linear is very small. And if it has the curvature strength and larger than 0.5, and we can detect it as the curvature poor, and using the signal of the power law to detect whether it's saturation or accelerating. And if it isn't have this curvature signal, this means that it may have the very weak curvature signal.
+
+So it can be separated as uncertain. So this is the true output of MIC larger than 0.8 and MIC belong to 0.6 to 0.8. It's performed very well. And next we can see that it can go through to the complex path.
+
+And for the complex path, I first would like to detect whether it has branch. And if it has branch, it can go to the branch group. And if not, we can also detect its number of turning point.
+
+And for the branch, I here use HD test. It is also the method I use to detect here whether it has multimodality. And what's different is it separates the x-range into several bins.
+
+And to detect whether it has a very signal, bins has multimodality.
+
+[说话人 2] (15:10 - 15:12)
+How does it do it?
+
+[说话人 1] (15:13 - 15:30)
+For example, for each bin, it ignores the x-range and arranges each sample of the y from small to large. And then to detect whether it has a multimodality.
+
+[说话人 2] (15:34 - 15:39)
+So it essentially takes in each bin its distribution.
+
+[说话人 1] (15:40 - 15:40)
+Yeah.
+
+[说话人 2] (15:40 - 15:43)
+And sees whether it's a multimodal distribution. Okay.
+
+[说话人 1] (15:44 - 17:37)
+And this also here, it also has some... For example, there are some bins can be seen as very significant and some are not. And it calculates the proportion to see whether the whole scatterplot can be regarded as branch.
+
+And so what's important to detect is to determine first the number of bins. And another is the proportion of whether the significant bins can be regarded as multimodality. And so I do the calibration of bin count and the proportion threshold.
+
+And there are two plots here. The first is MIC larger than 0.8, and here is the MIC between 0.6 to 0.8. And each row represents a different bin number. The bin is from 6 to 50.
+
+And for the column, it represents the threshold of the minimal bin number. For example, we can see this one. It has a bin number of 40 and it has a threshold of 50.
+
+It means that at least 20 bins, because it has 50%, must show the significant multimodality to classify the cases as branch. And 81% represents the correctly classified 81% of cases as branch or non-branch.
+
+[说话人 2] (17:37 - 17:48)
+Okay, so single branch accuracy. So this is only one branch. It detects specific cases.
+
+[说话人 1] (17:49 - 17:52)
+Let me calculate. You mean this one?
+
+[说话人 2] (17:52 - 18:13)
+No, no. I'm asking. So it's a single scale branch.
+
+Okay, so what do we want? We probably want the number of bins to be small.
+
+[说话人 1] (18:13 - 18:14)
+Yes, small and significant.
+
+[说话人 2] (18:15 - 18:20)
+Right. So 20 seems already a lot of bins.
+
+[说话人 1] (18:22 - 18:25)
+You think the 20 could be too large?
+
+[说话人 2] (18:26 - 19:03)
+Well, there's already a lot of bins for analysis. So my question is, do we really need 20? Normally, in a lot of the other things, we start with 10 or so.
+
+But what I don't quite understand is, why is it dark green here and then it becomes lighter? Why is it so perfect for 8 bins suddenly? If you take the 8 out, it would give the pattern I would expect.
+
+But the 8 is a bit of an outlier. Why is it suddenly so good with 8?
+
+[说话人 1] (19:04 - 19:10)
+I think this could be some special of the synthetic data.
+
+[说话人 2] (19:11 - 19:13)
+Have you repeated this many times?
+
+[说话人 1] (19:13 - 19:16)
+Yes, I repeated this many times.
+
+[说话人 2] (19:16 - 19:21)
+Okay, it's just because then it must be very consistent with such a high number, which is interesting.
+
+[说话人 1] (19:22 - 19:44)
+Yes, because I think this could also be the synthetic data set could not be too representative because I have made it myself. So this output could be not representative. But if the 20 is too large, maybe you can also give smaller numbers of bins.
+
+[说话人 2] (19:44 - 20:00)
+Yes, so in the sensitivity analysis where we usually use like 10 bins, 10 bins is usually enough to get an idea of variability. So I don't know, maybe it's too small here. But it seems, from my perspective, this seems very high, this seems very low.
+
+[说话人 1] (20:00 - 20:24)
+Yes, I also think that this one is very low. I think the main reason is that, may I change the slide for you? For this F25, this multi-region scatter plot, it's an overlap J.
+
+So this is the main reason, I think, why the threshold becomes more.
+
+[说话人 2] (20:24 - 20:35)
+Yes, but we probably don't want it. I mean, this is a very odd distribution, you know. So we probably don't want to use that to define the parameters.
+
+[说话人 1] (20:35 - 20:40)
+Yes, okay, so I will also make some revision here.
+
+[说话人 2] (20:40 - 21:01)
+Yes, because in principle up here, if you tell me it's 10 and 25 percent, I would find that more expected. Like I would expect that a quarter of the bins have to be bimodal, which is only like three. So it's not many.
+
+[说话人 1] (21:01 - 21:11)
+Yes, I understand. So maybe I can change the numbers of bins to 10 and change the threshold as 25 or 30.
+
+[说话人 2] (21:12 - 21:21)
+Yes, exactly. So I feel more convinced if the bin number is smaller and the significant bin threshold is higher.
+
+[说话人 1] (21:21 - 21:22)
+Yes, okay, no problem.
+
+[说话人 2] (21:22 - 21:23)
+Yes.
+
+[说话人 1] (21:25 - 21:37)
+Okay, and so this is output because I have put very large long bins and a very small threshold, but it functions very well.
+
+[说话人 2] (21:37 - 21:38)
+Okay, okay.
+
+[说话人 1] (21:39 - 23:35)
+And so the next step is to, when I detect that there has no branch, I try to detect the turning point, as I mentioned in the last discussion. And this is using the sizer to detect whether it has a turning point. And what it actually does is it uses different bandwidth to make the vote to detect whether it has a very significant turning point.
+
+So I have also used calibration. I have tested the bandwidth and the minimum support of the bandwidth. And it performs very different through different bandwidth number and the minimum support.
+
+And here, as some cases defined it as characterized as uncertain, I think it is also very good information to calculate the accuracy. So I here using another weighted accuracy as I have used the 0.5 and using this one as the weighted score. And I using this as the main criteria to decide which bandwidth number and the minimum support I can use.
+
+So we can find that if I use the bandwidth number of 4 and the minimum support is larger than 2, it performs very well at the MIC belong to here. And also this one performs very well, but it has more bandwidth. So I use the bandwidth number of 4 and the minimum support is 2 to detect the later relationship.
+
+[说话人 2] (23:35 - 23:43)
+Can you quickly say again what bandwidth and what support mean? What's there in the figure or something? Can you show me?
+
+[说话人 1] (23:43 - 24:23)
+Yeah, of course. This means that if I use one bandwidth to detect the scatter plots and at each X grid, it will use the lowest method to have the regression and have the first derivative. And using that different derivative, I can calculate whether it has different numbers of turning points.
+
+And this is the first bandwidth of the turning point. And for the second bandwidth, it can also calculate another.
+
+[说话人 2] (24:24 - 24:30)
+What is the bandwidth? Can you show me in the figure? Is there a sketch what bandwidth means?
+
+[说话人 1] (24:30 - 25:00)
+So this means that here I have a lot of scatter plots and points here, and here it's using the Gaussian kernel weight to calculate its local linear regression. So this here is the bandwidth used here. I need to detect...
+
+[说话人 2] (25:00 - 25:07)
+It's the area now. What is it defined? So h in the plot?
+
+Can you show me in the figure what h would be?
+
+[说话人 1] (25:07 - 25:13)
+It's the length of the region. It can be used to calculate the regression.
+
+[说话人 2] (25:14 - 25:14)
+Okay.
+
+[说话人 1] (25:17 - 25:28)
+So if I use different bandwidths, it can use different numbers of the different X to calculate the linear regression.
+
+[说话人 2] (25:30 - 25:33)
+And a bandwidth of, you said, 4?
+
+[说话人 1] (25:35 - 25:35)
+Yeah.
+
+[说话人 2] (25:35 - 25:40)
+So what does 4 mean then? A bandwidth of 4 means it...
+
+[说话人 1] (25:40 - 25:57)
+4 means that, firstly, I use one bandwidth to calculate the different number of turning points with the same case. And here I use another bandwidth to calculate whether it has a different number of turning points.
+
+[说话人 2] (25:57 - 26:00)
+So you do it four times with four different...
+
+[说话人 1] (26:01 - 26:15)
+Okay. And the four bandwidths can vote for the turning point because they may have the same or different. For example, here it can vote for one turning point, and here it can vote for two turning points.
+
+[说话人 2] (26:16 - 26:17)
+Okay. But...
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

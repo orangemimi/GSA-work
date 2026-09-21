@@ -1,0 +1,481 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 2] (0:00 - 0:09)
+But if we need to, for example, detect these three types, we also need to mix them.
+
+[说话人 3] (0:10 - 0:45)
+But that's my point. If we say the relationship is y equals x to the power of a value between minus one and one, and fit this, then it would come out as an exponent of minus one or positive, plus one or minus one or zero. Zero would mean it's a linear relationship.
+
+And I can't remember now whether positive one would be concave or convex. But do you know what I mean?
+
+[说话人 2] (0:45 - 0:55)
+Do you mean that if we do this segment, it's maybe no global relationship detection? Do you mean this?
+
+[说话人 3] (0:56 - 1:36)
+Yes, I think that the segmentation, I think we should keep to the local, because it's an approach to figure out what happens in different parts. But here we're saying we still have a global relationship. And if we use a simple polynomial regression, we get the answer as well, because it would come out as plus one, minus one, not exactly, or zero.
+
+But we fit a low global relationship. We're looking for a global relationship rather than looking at how locally it's changing.
+
+[说话人 2] (1:36 - 1:45)
+Yeah, I understand that. So you mean that if we detect a global relationship, we prefer not to use a segment for each?
+
+[说话人 3] (1:45 - 2:21)
+Yes, because I think that's what we should use the other branch for, by figuring out, at least if we can. Because here, if you have three segments, you might miss this. We might still miss a line.
+
+I mean, it might not be enough, for example, to figure out the threshold-based one, so that might be different. But I think, I wonder whether on the global branch we can stick to global metrics, rather than local metrics.
+
+[说话人 1] (2:22 - 4:04)
+Yeah, I think, and maybe that would be a better way to streamline this discussion of what goes on the simple branch and what goes on the complex branch. Because basically what you're saying is, if it is possible to extract a line from the scatter plot, one line, if it is possible to build one regression line, then this line can be straight, and then it's linear, or it can be curved, and then it has a curvature, convex or concave, or it can be more complicated than that, and then you go on the other branch. And the other reason why I think that would be good is because I think later on you also want to have, at the very end of the classification, on top of the classification, you said you wanted to have a statement of strength of the relationship, that you want to say how clearly visible that is.
+
+So if you do an interpolation here, that measure of strength you already have as a by-product of the interpolation, because the root-mean-square error of your interpolator line is already telling you, effectively, how much scatter you have around that line, so how strong that relationship is. So I think it's kind of nice because in a way, I'm just looking forward to the other few things you want to extract from this tree, on top of the classification, you also said you wanted to have a measure of strength, no?
+
+[说话人 3] (4:05 - 4:08)
+Yes, so some r-squared or something like that, no?
+
+[说话人 1] (4:08 - 4:24)
+Exactly. If you use interpolation as a way to do the classification, a by-product of that is how well the interpolation works, which is exactly a measure of how strong that relationship is.
+
+[说话人 2] (4:25 - 5:10)
+Yeah, I agree with this, but I also agree with your first point, is that if we, for example, detect the global relationship, because there are some different definitions of different relationships, for example, the S-curve could have a relatively high slope to the middle range, so this could be divided into the global relationship, so I think one point is we need to maybe define more clearly which kind of relationship can be regarded as global relationship.
+
+[说话人 3] (5:11 - 5:38)
+Yeah, I think, I mean, in the first instance, global is one we can characterise, as Francesca suggested, one we can characterise globally, you know, in principle, with the simple and with a global function, and so that's a linear, that's a curve in some shape. The threshold we might have to think about, because it, of course, will approximate it with a polynomial again.
+
+[说话人 2] (5:41 - 6:06)
+Yeah, so the point is that maybe we can set this kind of, this branch more border, not just such narrow. For example, we have to detect the convex, concave or inflected, and these types of shape are defined really by the different magnitude of slope.
+
+[说话人 3] (6:07 - 6:14)
+Yeah, but if you use slope, you need to break it up, no?
+
+[说话人 2] (6:14 - 6:15)
+Yeah, yeah, yeah.
+
+[说话人 3] (6:15 - 6:16)
+And that we don't want to do.
+
+[说话人 2] (6:16 - 6:16)
+Yeah.
+
+[说话人 3] (6:16 - 6:28)
+So if we have a polynomial, a simple regression, we get the global relationship and we get a measure of strength of that relationship.
+
+[说话人 2] (6:28 - 6:32)
+Yeah, I understand that. So we maybe need to…
+
+[说话人 1] (6:32 - 6:45)
+For me, strength, I meant the scatter around the interpolating line. Yeah, I understand. Because in my mind, if you have less scatter, it means the relationship is more evident, is more strong.
+
+Yeah.
+
+[说话人 3] (6:45 - 6:47)
+No, no, absolutely, you're right.
+
+[说话人 1] (6:47 - 7:35)
+Yeah, that's what I mean. This said, you know, again, now the more we look at these scatter plots, the more I'm thinking that… Anyway, you have to accept that there will be some fuzziness also in this classification.
+
+Because, for example, if I look at the number 3 and number 4 on the first row, no? If only you stress them a little bit more, they will become the local relationship on the second line. Yeah.
+
+The saturating one. You know, there is a moment when you say, oh, this is a curve, a concave curve, versus, oh no, this is a saturating process and, you know… Yeah.
+
+There will be cases on the edge, no? Yeah. That end up being one way or the other quite…
+
+[说话人 3] (7:35 - 7:36)
+Yeah, but that's…
+
+[说话人 1] (7:36 - 7:37)
+Yeah.
+
+[说话人 3] (7:37 - 7:47)
+That's why, I mean, if we have some kind of fuzzy criteria that we carry through, it might help us to consider that a little bit, so it's not quite as harsh.
+
+[说话人 1] (7:47 - 8:07)
+Yeah, yeah, yeah, yeah, yeah. Yeah, there are some cases that really, you know, kind of transform into other cases through a gradient, no? Through a continuous gradient, and then at some point you put a threshold and say, okay, this goes this side and this goes this side, but…
+
+[说话人 3] (8:07 - 8:07)
+Yeah.
+
+[说话人 1] (8:08 - 8:08)
+Yeah.
+
+[说话人 2] (8:09 - 10:12)
+Yeah, maybe I can try to test these different metrics and add to the decision tree. And the last is about the direction detection, and I think this is very obvious and clear. And so the experiment B is I have based on the 27 function families and generate under the 200 noise level and with 10 replicates per noise level.
+
+And at first I have also detected whether it has a global or local relationship, and we can find that some families are divided into the global relationship while they are not. And I found that no global relationship cases mainly arise from the situation. First, it has local structures, and second, it has a very strong noise effect.
+
+But one good thing is that a clear global relationship can still be separated into the decision tree. And this is the simple and complex detection, and I think this is one question Francesca has mentioned, whether it just means monotonicity. And we can find that, for example, it has improved your question.
+
+I think that here we have detected a simple and complex relationship, and based on the results, it's more like the monotonicity relationship.
+
+[说话人 1] (10:12 - 10:24)
+And to be honest with you, you know, these tables are fascinating. Yeah. I'm not sure I understand what's going on.
+
+[说话人 2] (10:24 - 11:48)
+I mean, you have a… How do I read this table? Oh, sorry.
+
+For example… I mean, it's a lot of numbers. Yeah, the first column is different families, and the second column is when the cases are larger than 0.7. And here, these are the three rules I have designed. And this column means that this means that if it is detected as the proportion and the number of cases detected as simple, and here is the number and proportion, it is detected as complex. And here is the total number of cases based on the previous classification. And we can find that most of the, for example, linear, the concave, convex, and S-shaped like under the threshold are divided into the simple relationship.
+
+And some, for example, the situation, the U-shaped like is a cubic, and the two lines are divided into the complex relationship. But the proportion is, for example, here is very small.
+
+[说话人 3] (11:49 - 11:55)
+But why do you have so few for separated? It's 3 and 5. Why is it 3 and 5?
+
+[说话人 2] (11:56 - 12:05)
+Because based on this detection, there are three cases are divided into the global relationship.
+
+[说话人 3] (12:05 - 12:07)
+Ah, but it's 0% because it's so small.
+
+[说话人 2] (12:07 - 12:10)
+Yeah, it's very small. 0.00 something.
+
+[说话人 3] (12:10 - 12:15)
+Yeah, yeah, yeah. Okay. That's why I was confused, but okay.
+
+[说话人 2] (12:15 - 12:20)
+Because I have a mix of detects one by one, one step by one.
+
+[说话人 3] (12:20 - 12:25)
+Yeah, so maybe you need to say about 0%. Okay. Yeah, but you're just not.
+
+[说话人 1] (12:25 - 12:26)
+Yeah, okay.
+
+[说话人 3] (12:26 - 12:29)
+Yeah, because it's not quite correct. It's not exactly 0%.
+
+[说话人 1] (12:29 - 12:53)
+My problem also is like, so for example, not, so here, the first line. So you say this is the linear relationship. Yeah.
+
+And then you apply the criterion and see whether your approach can classify that as global.
+
+[说话人 2] (12:54 - 12:55)
+Yeah, yeah, yeah, yeah.
+
+[说话人 1] (12:55 - 12:59)
+And it does so in 35% of the cases.
+
+[说话人 2] (13:00 - 13:12)
+Yeah. This is mainly because there are also some different level of noise, and when the noise becomes larger, and the MIC will get lower.
+
+[说话人 1] (13:14 - 13:29)
+Yeah, but then, you know, if you do the statistics overall without telling me how, if you do the statistics over all the attempts, which include some with the low noise and some with high noise.
+
+[说话人 2] (13:30 - 13:30)
+Yeah.
+
+[说话人 1] (13:31 - 14:02)
+It's a bit like, I'm not sure I am learning much. Because everything is in there. So, you know, what I want to see is that basically it retains its ability with low noise ones.
+
+And then, of course, there will be a point where the noise is so big that it breaks. But maybe it's more interesting to see these transitions rather than putting everything together and averaging, no?
+
+[说话人 3] (14:03 - 14:05)
+Yeah. Can you maybe go back a couple of slides?
+
+[说话人 1] (14:05 - 14:06)
+This one?
+
+[说话人 3] (14:06 - 14:08)
+So this one is what this shows, no?
+
+[说话人 1] (14:08 - 14:08)
+Yeah.
+
+[说话人 3] (14:08 - 14:23)
+This is the bottom one is really how the decline of the noise goes with. So increasing noise to the right and declining metric on the vertical axis.
+
+[说话人 2] (14:23 - 14:23)
+Yeah.
+
+[说话人 3] (14:24 - 14:29)
+So that's what you mean, no, Francesca? That's really what we're looking for. When does it break down?
+
+[说话人 1] (14:29 - 14:47)
+What I'm saying is if these are what you pass on, I would expect your methodology to classify everything as no signal in the bottom line. Yeah. The bottom row.
+
+[说话人 3] (14:47 - 14:48)
+Yeah, yeah. Exactly.
+
+[说话人 1] (14:48 - 14:54)
+I mean, there is so much noise there, you know, if the methodology says, you know, that there is nothing.
+
+[说话人 2] (14:55 - 15:18)
+Yeah. I have to agree with that, you know? Yeah, yeah, yeah.
+
+I mean, I know what you mean. I have also done this experiment. This means that they do not have noise.
+
+And some relationship, it can be derived as MIC can be equal to 1. But I do not put the plot here.
+
+[说话人 1] (15:18 - 16:58)
+What I mean is, like, you know, essentially in this plot, I would be, I would, well, I think you need to pick up a pattern before you run the experiment, how you will define success of the experiment. Yeah, yeah, yeah. So for me, the classification is, your classification tree is good if, I would want it ideally to classify correctly all the cases on the second line.
+
+Yeah, on the second row, because yes, there is noise, but, you know, if I analyse this visually, I'm able to see through the noise. So I would want the cart to also be able to see through the noise. And then actually, maybe I would also want to do well on most repetition of line three, because there is more noise in line three, but for me, the signal is still very clear.
+
+Yeah. If it begins to really not classify things well on line four, I am kind of fine with it because, you know, visually, if you didn't tell me, you know, if you didn't tell me that, I don't know, the plot number four is produced by taking oscillation and adding noise, I wouldn't be able to say that that's oscillation, you know, or if you say that the next one was originally two lines and then you added noise, but you added so much noise, I'm not able to see that it's two lines, you know.
+
+[说话人 2] (16:58 - 17:11)
+Yeah, so you mean that I need to give one detailed limitation of the noise and to see which range of noise can be detected?
+
+[说话人 1] (17:12 - 17:42)
+What I'm saying is, if you pass on to your algorithm the first row, it should classify perfectly. The second row, I think if you give it, I don't know, 100 repetitions of that, ideally, I would still want it to classify well all 100, because the level of noise is still, no? Yeah.
+
+The third, maybe, I'm not, sorry, Torsten.
+
+[说话人 3] (17:43 - 20:18)
+I have to leave in a few minutes. Now, I agree with you. Can I just make one suggestion and whether you see whether that would work?
+
+Yeah. Could we, so we want, this goes down with increasing noise level or with decreasing signal to noise ratio, we want the algorithm eventually has to become more uncertain, you know, in its classification and eventually decline. But if we use, back to the fuzzy criteria, could we use this to calibrate these?
+
+You know, could we use the signal to noise ratio to actually calibrate these a little bit, because there is going to be a period where it's a bit tricky. Sometimes you might see something, sometimes you might not see something. So, but we could use this to actually define it, as Francesca says, because you, you know, in the top row, all the values are above 0.8, where it's relevant, and then they slowly go down. And at some point, we're not so clear anymore. And at some point at the bottom, you're clear that it's out, you know, and then there is an area in between where we say, okay, let's assume it's linear, or whatever, you know, the simplest, and that it declines. And we say, okay, above 0.8 is always in, above, below 0.6 is always out. And in between, we calibrate it and it might be 0.65. But you can use all these cases to calibrate this factor, you know, this gate function to accept that there is a linear relationship or whatever relationship, you know. So, and this is a nice way of, because I was wondering how you can calibrate it, essentially, what the range is over which we want to potentially accept things, you know, and then you can say, okay, but I want to be absolutely certain that it's a linear relationship. And then you say, okay, I take only the ones that have a fuzzy value of one.
+
+Or I want to be absolutely certain that there's nothing in there, then it's a value of zero. And in between, you can decide, you know, how much noise do you want to accept in the relationship, you know. And that might be a good way of finding these values, you know, because you can do it sort of semi-manually with all these different cases that you have.
+
+[说话人 2] (20:18 - 20:21)
+Yeah, I understand that. Maybe I can do this.
+
+[说话人 3] (20:21 - 20:23)
+No, Francesca, does that...
+
+[说话人 1] (20:26 - 20:30)
+I... Sorry, big noise in here. Did you hear it?
+
+[说话人 2] (20:30 - 20:30)
+No.
+
+[说话人 1] (20:31 - 21:05)
+No, yeah. Yeah, I think. Yeah, I couldn't follow the details, but I understand the logic.
+
+And I think I... It's still a bit fuzzy. I was actually thinking, you know, what is the outcome of the tree that you will have, like, instead, in some cases, the tree will tell you, you know, it's this type of relationship, CRISP, or in some other cases, it will tell you it's 40% this relationship, 60% this relationship.
+
+[说话人 3] (21:06 - 21:33)
+No, it's always... I mean, presumably... Sorry, can I...
+
+So, I assume that it will be something like this, you know, and this is maybe one, and this is zero, and this is... So, maybe it's the wrong way around, but this is 0.8 and this is 0.6, for example, you know, something like this.
+
+[说话人 1] (21:36 - 21:37)
+Wait a second.
+
+[说话人 3] (21:38 - 21:39)
+You know, like a...
+
+[说话人 1] (21:39 - 21:40)
+Let's say a fuzzy rule.
+
+[说话人 3] (21:40 - 22:09)
+Yeah, so a fuzzy rule. And then what you then have to decide is you then have to say, okay, you have to make... I mean, like in all of these things, you have to make a choice and say, okay, I want to accept a fuzzy...
+
+I want to be very conservative, I want to be very open for accepting things. And then you say, okay, let's pick a fuzzy threshold of 0.5. And then you say, okay, and then I use that as the criteria.
+
+[说话人 1] (22:09 - 22:17)
+You mean when you interrogate the tree, you specify the level of fuzziness to move from one to the other?
+
+[说话人 3] (22:17 - 22:25)
+Yeah. Okay. And then we can use the noise levels, the signal to noise ratio...
+
+[说话人 1] (22:25 - 22:27)
+To define that 0.6, 0.8...
+
+[说话人 3] (22:27 - 22:34)
+Exactly. Exactly. And it's essentially we're calibrating your opinion.
+
+[说话人 2] (22:34 - 22:35)
+Yeah, yeah, yeah.
+
+[说话人 3] (22:35 - 22:36)
+In this, you know.
+
+[说话人 1] (22:37 - 22:37)
+Yeah.
+
+[说话人 2] (22:38 - 22:47)
+I think it's more like the evaluation of the detailed value we decided in the input matrix.
+
+[说话人 3] (22:47 - 22:47)
+Yeah.
+
+[说话人 1] (22:47 - 23:21)
+I think, so, again, in terms of the outcome of the tree, because you also... I didn't think of... So, because the tree will provide the classification.
+
+Yeah. Okay. And then it will also provide a measure of strength of that relationship.
+
+But additionally, if you have fuzzy rules, you can also provide a measure of fuzziness. Yeah. So, you can say it's concave, but, you know, with some fuzziness meaning it could also be classified as, I don't know, sigmoid.
+
+Yeah.
+
+[说话人 3] (23:21 - 23:21)
+Yeah.
+
+[说话人 1] (23:22 - 23:52)
+And then the strength is 0.4, which means it's... So, you will have, which I like. So, the classification tree will give a, you know, in the end it will give an answer.
+
+It's a sigmoid function. But with two additional pieces of information, how clear is that sigmoid? But also, is that on the edge of maybe also being classified as another category instead, no?
+
+Which is what the fuzzy rule can tell you.
+
+[说话人 2] (23:53 - 23:53)
+Yeah.
+
+[说话人 3] (23:54 - 23:54)
+Yeah.
+
+[说话人 1] (23:54 - 24:15)
+Because, you know, you can always tell, is this now falling in the two extremes where there is no fuzziness or is it falling in the, no? Yeah. In the fuzzy part.
+
+And that would mean that then, you know, there is some uncertainty where that particular label is correct and there is another label that would be picked.
+
+[说话人 3] (24:16 - 24:16)
+Yeah.
+
+[说话人 1] (24:16 - 24:22)
+So, you have this more comprehensive view of how much you can trust these results.
+
+[说话人 3] (24:23 - 24:28)
+Yeah. Yeah. And you can then, I mean, that's, at the end of the day, a sensitivity analysis of the tree.
+
+[说话人 1] (24:29 - 24:29)
+Yeah.
+
+[说话人 3] (24:29 - 24:35)
+Where you say, okay, how much does the result actually change if I'm less strict with my rules?
+
+[说话人 1] (24:36 - 24:44)
+Yeah, yeah. But instead of doing it a posteriori, you already integrate it into the tree, which is probably better because then it's done and it's done.
+
+[说话人 3] (24:44 - 24:46)
+Exactly. Yeah. Exactly.
+
+[说话人 2] (24:46 - 25:00)
+But I have one problem about the idea is that how can we define the truth of the detection or do we need to define the truth of the detection?
+
+[说话人 3] (25:01 - 25:01)
+The truth?
+
+[说话人 2] (25:01 - 25:03)
+The truth, yeah.
+
+[说话人 3] (25:03 - 25:16)
+I mean, I think that's now what you have to train the tree on. And there is, like here in your third row, it becomes a bit subjective at some point.
+
+[说话人 2] (25:16 - 25:17)
+Yeah, yeah, yeah. Exactly.
+
+[说话人 3] (25:17 - 25:21)
+And you will have to say, okay, here I'm convinced that it's out.
+
+[说话人 2] (25:21 - 25:21)
+Yeah.
+
+[说话人 3] (25:22 - 25:23)
+Here I'm convinced that it's in.
+
+[说话人 2] (25:23 - 25:24)
+Yeah.
+
+[说话人 3] (25:24 - 25:24)
+Here I'm not sure.
+
+[说话人 2] (25:25 - 25:25)
+Yeah.
+
+[说话人 3] (25:25 - 25:29)
+And that not sure is the range over which the fuzzy boot carries.
+
+[说话人 2] (25:30 - 25:30)
+Yeah. Yeah.
+
+[说话人 1] (25:30 - 25:31)
+Yeah, I understand that.
+
+[说话人 2] (25:31 - 25:32)
+Yeah.
+
+[说话人 1] (25:32 - 25:50)
+Of course, you're basically acknowledging that not all cases, the tree will be confident in the classification, but you are making it explicit. Yeah. And because you have a fuzzy rule, you can tell straight away.
+
+Yeah. Okay, this is actually a case that is borderline. Yeah.
+
+Or not.
+
+[说话人 3] (25:50 - 26:02)
+And it's okay that it might be a little bit different if Francesca would do it or if I would do it. That's just the nature of the thing because at some point it's not objectively classified.
+
+[说话人 2] (26:03 - 26:04)
+Yeah, I understand that.
+
+[说话人 3] (26:04 - 26:10)
+I'm sorry, I have to go because I have to meet these students. Yeah, but I think we're – See you next week.
+
+[说话人 2] (26:10 - 26:10)
+See you.
+
+[说话人 3] (26:10 - 26:11)
+Bye. Bye.
+
+[说话人 2] (26:12 - 26:17)
+Yeah, I understand that. Maybe I will – I can do this later this week.
+
+[说话人 1] (26:20 - 26:42)
+Yeah. Can I just ask you one thing? Actually, Thursday afternoon, maybe next week I cannot do it, the meeting?
+
+Yeah. Can you check with Tolstany, for example, if he had any time on Friday, for example?
+
+[说话人 2] (26:42 - 26:47)
+Yeah, of course. This means that we change the time of the regular meeting later?
+
+[说话人 1] (26:48 - 26:49)
+Yeah, just next week.
+
+[说话人 2] (26:50 - 27:06)
+Oh, just next week. But for next week I'm also not sure because I plan to go to Dublin for IEMS meeting. But my visa hasn't been issued so I also would like to check.
+
+[说话人 1] (27:06 - 27:24)
+Okay. Well, see with Tolstany, you know, I hope you get the visa and go to Dublin and we cancel the meeting. Yeah.
+
+If you don't get the visa, I'm very sorry, and you want to meet, maybe can we see whether there is another time on Friday?
+
+[说话人 2] (27:24 - 27:30)
+Yeah, yeah, yeah. He is go to see the student, maybe I will check with him.
+
+[说话人 1] (27:30 - 27:34)
+Yeah, yeah, ask him, yeah, if it was possible to meet Friday morning, for example.
+
+[说话人 2] (27:35 - 28:08)
+Which time do you exactly have time, are free? The morning? Yeah, the morning.
+
+Can you ask which detailed time? Between 10 and 11. Okay, what about afternoon, the detailed time I would like to check?
+
+No. Just the morning of next Friday? If possible, yeah.
+
+Okay, okay, I will check it with him later. Yeah, but I hope you get your visa and can go to Dublin. Yeah, hope I can get the visa.
+
+[说话人 1] (28:08 - 28:15)
+And I'm very sorry that you have to go through all these difficulties. Yeah, yeah, yeah.
+
+[说话人 2] (28:15 - 28:43)
+Okay, I agree with your suggestions, and I will do these experiments later. And the later experiment is whether I have detected this different kind of relationship, and I list the proportion of each relationship, whether I can be detected here, yes, global or local.
+
+[说话人 1] (28:44 - 28:48)
+Actually, I also have to go because I also have another meeting now.
+
+[说话人 2] (28:48 - 28:49)
+Okay, no problem.
+
+[说话人 1] (28:50 - 28:50)
+Yeah.
+
+[说话人 2] (28:50 - 28:51)
+Okay, thank you very much.
+
+[说话人 1] (28:51 - 28:53)
+So if you don't mind, we can stop here for today.
+
+[说话人 2] (28:53 - 29:01)
+Yeah, okay, no problem. Okay. Thank you very much.
+
+Also, thank you for your feedback. Okay, bye. Bye, see you.
+
+Bye-bye.
+
+[说话人 1] (29:01 - 29:11)
+Recording stopped.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

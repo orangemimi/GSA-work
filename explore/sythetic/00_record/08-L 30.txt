@@ -1,0 +1,270 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:00 - 0:32)
+...showed that an uncertain threshold, but it would be meaning for us, we say, okay, how do we ensure if there is any kind of relationship between two variables, it needs to show up either in Pearson or in Spearman or in MIC or together or not. So it can be that MIC, if it's a very complex relationship, it might show a high value for even though Pearson and Spearman show there's nothing there.
+
+[说话人 2] (0:33 - 0:48)
+So this means that when we say a targeted characteristics, we can see several distinct metrics with its relevant magnitude, right? I think it's what I understand.
+
+[说话人 1] (0:48 - 1:13)
+Yeah, exactly. And then we can test the magnitude and see where it matches with our, with the synthetic data that you create or with later with a machine learning tool and see, yeah, because then you can say, okay, and if it's, and then we can say it's simple, but we probably want to say it's simple if it's monotonic and if it doesn't have thresholds.
+
+[说话人 2] (1:13 - 1:21)
+Yeah. So I think that this is also the validation to see whether the manual diagnose is reliable.
+
+[说话人 1] (1:22 - 1:22)
+Yeah.
+
+[说话人 2] (1:22 - 4:42)
+Right. And Francesca, do you mind if I check to the last week's presentations, I would like to introduce some of the methods to Torsten. Yeah.
+
+This is also, I would like to say from the next, last meeting is that maybe we need to quantify the weather first. So we need to quantify whether the metrics have some, can reflect the target characteristics. And the next step is the magnitude.
+
+First, we needed to see whether the characteristics contained or not contained impact to the metrics. So this is a workflow I have designed. First is we need to, for each target characteristics, we can do some theoretical manifestation.
+
+This means that we can predict what's the accepted affected metrics it might be. And then we can generate the laboured synthetic scatter plots. This means that we can fix targeted characteristics and make some noise to, for example, we can calculate 1,000 times data sets for further analysis.
+
+And yeah, this is similar like that. Yeah, yeah, yeah. And here we can also calculate how much the metrics fluctuates when the target characteristics does not change.
+
+This is, we can also calculate the difference A. And we can also then, we can calculate the generated from the targeted characteristics and other data structure. This means that how much the metrics would change when the target characteristics is present or not.
+
+And then we can compare the distribution or the length of the two differences. And this is also the simple case I have to, because here I mix the situation as the target characteristics and I fix the situation to around 1,000 times. And we can see the blue bar represents each metrics variability under the noise alone.
+
+And this is 25% wide across 1,000 resampling of the situation fixed. And I can see that this is, this blue bar represents the, how much this one, how much the metrics fluctuate when the target characteristics does not change. And the orange dot represents the preserved metrics, metrics different from the original situation and no situation case.
+
+So this has two lengths of the difference. So we can compare the length of the each, because we can see that here there are some extra line. This means that this differences may have been explained by the target characteristics.
+
+This is a simple test case I would like to.
+
+[说话人 1] (4:42 - 4:59)
+So the upper one is good because the metric difference is larger than the variability for the noise. If you go further down, then the noise overtakes the metrics, then you can't say anything. Okay.
+
+Yeah, no, that's great.
+
+[说话人 3] (4:59 - 5:20)
+Yeah. But so basically you are showing this because you're saying that maybe this could also be an approach to determine threshold of what is measured, that you are actually measuring something and when instead is not. Yeah.
+
+Is that the idea? Yeah.
+
+[说话人 2] (5:20 - 5:29)
+Yeah, exactly. I think that this is a simple test case and some important things we also needed to contain through this workflow.
+
+[说话人 3] (5:30 - 5:51)
+So the idea would be instead of you come up with a threshold, you basically derive what is the range of variability of a metric based on this kind of resampling where you say, okay, if it falls in this range, then we are actually picking up something. If it's outside of the range, we're not picking up something. Yeah?
+
+[说话人 2] (5:52 - 5:57)
+Yes. But I think it is not the threshold, it's the length of the range.
+
+[说话人 3] (5:57 - 6:12)
+No, no, exactly. Instead of having, instead of you saying here is the threshold, you say, okay, when it falls within this range, it means that, you know, that metric is being activated. When it's outside of that range, then instead, no, it's not.
+
+[说话人 2] (6:12 - 6:13)
+Yeah.
+
+[说话人 3] (6:13 - 6:19)
+I think it's a much nicer way to do it than just say above 0.7. Yeah.
+
+[说话人 1] (6:20 - 7:00)
+And we probably have to connect it with some of the metrics with numbers that people expect to see or so, you know, so then we can test. That's what I meant sort of by Spearman or by Pearson. People, I mean, it's a bit like the problem we have with level of significance, statistical level of significance, because you have a correlation of 0.4 and it says it's statistically significant and everybody says, yeah, but it's totally meaningless to have a correlation of 0.4. So that's the interaction now between these two that we have to explore.
+
+[说话人 2] (7:00 - 7:09)
+So I think that the first next step is to whether the metrics can reflect and then what's the magnitude of the impact.
+
+[说话人 1] (7:10 - 7:42)
+Yeah. And a bit of the, how do we organise that? And because I would find that again, it doesn't change the end goal.
+
+So the end goal is still the same. We have these metrics combined and tell us something, but we, it helps. I mean, at least it would help me to think through, you know, how would we then disaggregate this, a large set of these relationships in a meaningful way so that there is an organisation in there, you know, that we can.
+
+[说话人 3] (7:44 - 8:50)
+And especially, I guess what you were saying earlier, Torsten, that perhaps the ability to screen in the first place a large number of scatter plots to say, okay, which ones are just clouds and which one shows something is very important because in practical application, the cloud meaningless case will be the most common. So you want to make sure that first of all, you get all of those out of the window and you don't spend also, you know, the time of training or running a complex machine learning method on noise. Because there is also that problem that you don't want to know that will, in theory, these machine learning methods can crunch anything.
+
+But in practise, we know very well that if you don't, if you remove some of the noise from the training data set, it's much better. So, you know, it's better if you, yeah.
+
+[说话人 2] (8:50 - 8:55)
+So, currently, we need to do is to make the training data better.
+
+[说话人 3] (8:55 - 9:45)
+What I'm saying is that you could say, okay, I will create a class that is the class or there is no functional relationship. And I will let the machine learning algorithm to learn when a case fall into that class. I think that's very inefficient, because it's probably easy enough to, without using a complex ML algorithm, to define based on the metrics, what is the, or some of them, what is the case of, oh, this is just a cloud.
+
+And then it would be better to have, no, first you identify those, take them out, and then your ML method is just trained on the cases where a functional relationship exists. No?
+
+[说话人 1] (9:47 - 10:17)
+Yeah, certainly, I think for us, it will be good to understand how we organise these, you know, and then end up in your 24 or however many. But, but we go there step by step. And then I think that would be interesting, because it would already be once you then later, let's say you compare three different Earth system models.
+
+And you say, in the first Earth system model from the 1000 scatterplots, 600 are interesting.
+
+[说话人 2] (10:17 - 10:17)
+Yeah.
+
+[说话人 1] (10:18 - 10:28)
+Or 600 are not interesting, let's say, going with Francesca, the majority is not interesting. And then we go to the next model. And the next model says 800 are not interesting.
+
+[说话人 3] (10:29 - 10:29)
+Yeah.
+
+[说话人 1] (10:29 - 10:54)
+That's already really relevant result, you know, that says there's much more going on in the one model than in the other model, you know, and so that's already meaningful. So every step, there's meaningful information that we can use. And if we, I find it much harder to get back to that information, if you immediately jump to the end result, and then have to go back and figure out what does it all mean?
+
+So yeah, that's fine.
+
+[说话人 3] (10:55 - 11:23)
+This was, this is why I was thinking, now, if you think of what would be, you know, a summary figure of a paper that was using this method to learn about, you know, her system model, and then maybe, you know, it would bring up as very, very first question that one or as very second. Yeah, so that would help us to define, you know, what would be a hierarchy of questions that people might be interested in.
+
+[说话人 2] (11:24 - 11:56)
+So I think that, for example, if we obey this workflow, and we can use the quantitative definition of each characteristics, and we can, here we have different characteristics definition, and calculate each system model's relationship, and then we can compare the different characteristics, because the characteristics can also form the characteristics vector.
+
+[说话人 1] (11:58 - 12:34)
+Yeah, and that, so I, but I think we should, we should, let's assume we, the model comparison, we can always do by saying we do this three times, so we're doing it five times, and then compare across. So I think let's, let's assume we have one data set that we want to analyse, and we want to find all the interesting interactions or non-interactions in the data set. How would we do that, you know?
+
+And then the model comparison is a logical consequence. If we can do that, then we can, we can also do the second one.
+
+[说话人 2] (12:34 - 13:15)
+But, but, but I also, based on this, I also have the question is some metrics could be comparison dependent, for example, the strength. I think that maybe it's, here is very steep, or here is very flat, but when they have the two here, how can we regard it, but we can compare the two models and see, oh, this slope is, oh, sorry, which strength is much higher. I think that this, or some metrics could be comparison dependent.
+
+[说话人 1] (13:18 - 13:24)
+So I compare, I mean, maybe, yeah, so you, but you can look at the different slopes. No, sorry, is that not what you mean?
+
+[说话人 2] (13:24 - 13:33)
+This means that if we just say one scatterplot, as you mentioned, and we cannot define the, what's the strength of the...
+
+[说话人 1] (13:33 - 14:45)
+No, no, my point is, if you take one Earth system model, we're going to have at least hundreds of scatterplots, if not thousands, you know? So we have lots of variability that we can compare and quantify and organise. We don't need five Earth system models to have enough data.
+
+I think one model will be plenty of data. And if we can figure out how to organise the data for one model, then we can think about now, how do we sensibly compare it to the next one, just to keep it manageable and not to start with everything at once. Because even what I was trying to say earlier, even the basic questions are already very interesting.
+
+You know, if we say model A has a hundred relationships that are threshold based, and model B only has five. That's a huge difference in behaviour. So that's why I think we should do it stepwise.
+
+But I think we'll certainly, when we go to real data, we pick one model example that is large enough to have lots and lots of cases.
+
+[说话人 2] (14:46 - 15:01)
+Yeah, exactly. So I think that's for next step I need to do is to continue this step and to, or we can, I need to make the decision tree of the each characteristics and...
+
+[说话人 1] (15:02 - 15:09)
+Yeah, it's that very simple. I mean, even if you for next week say, okay, here's how I decide that there is no relationship.
+
+[说话人 2] (15:10 - 15:10)
+Yeah.
+
+[说话人 1] (15:10 - 15:13)
+That would be, you know, it would be a good start.
+
+[说话人 3] (15:13 - 15:13)
+Okay.
+
+[说话人 1] (15:15 - 15:15)
+And...
+
+[说话人 3] (15:16 - 15:33)
+And if you have created synthetic dataset of not the case of, oh, there is very weak relationship of no relationship at all, you can also test your approach and show us that it says that those 24 have a relationship and the others have not.
+
+[说话人 2] (15:34 - 15:34)
+Yeah.
+
+[说话人 3] (15:34 - 15:46)
+You can use the same approach of creating synthetic dataset to also test whatever method you come up with for just this basic question. Is there something or not? I understand.
+
+[说话人 2] (15:47 - 16:18)
+So the next step possible for me is to, for example, I can explore the non-relationship and to test whether the related or unrelated matrix could be, and what the level or magnitude or the threshold of the detail. And I can calculate the characteristics one by one. And we also would like to see if there are any characteristics we might missing.
+
+[说话人 1] (16:19 - 16:22)
+Yeah, let's, I mean, let's do it step by step.
+
+[说话人 2] (16:22 - 16:23)
+That is a bit, yeah.
+
+[说话人 1] (16:24 - 16:45)
+Let's not try to do too many things. So let's, I mean, because you, I mean, this is, this is back to this older paper that we look at now. I mean, you can have relationships that are circular or, you know, that are very large and the rest zero.
+
+So there are lots of complicated cases that we could have.
+
+[说话人 3] (16:47 - 16:49)
+And let's leave it for later, maybe, no?
+
+[说话人 1] (16:50 - 17:03)
+Yeah. Or, I mean, my point is that just that simple step is a complicated step if you want to do it properly. So let's not try to do too many things.
+
+If you get done by Sunday morning, you can do more.
+
+[说话人 3] (17:04 - 17:23)
+Yeah. And I think when you create these synthetic case studies to test just this, no? Step now of establishing is there a relationship or not?
+
+It would be interesting to also include some data sets that are a little bit in the middle. Yeah.
+
+[说话人 1] (17:23 - 17:24)
+Yeah, exactly.
+
+[说话人 3] (17:24 - 18:23)
+Where there is something, but maybe there is not, you know, because if you always do create synthetic data sets that cover the extreme cases, you know, of course, for sure, as a minimum, your algorithm should be able to distinguish the extreme cases, because if it fails at that, then of course, it's not working. But then if you can establish that, you know, it can handle the very obvious case, then the question is a bit, you know, what does it do in a case that is a bit of a grey area that maybe visually you're like, is there something or is there not? What does the algorithm says in that case?
+
+Yeah. I understand. Yeah.
+
+I am not available next week. So I will have to, did I decline the invite? Let me check.
+
+Yes, I did. So I will see you in two weeks time.
+
+[说话人 1] (18:24 - 18:34)
+That sounds good. We'll go with the first case relationship or no relationship and see where we can do this. Yeah.
+
+And then we'll take it.
+
+[说话人 3] (18:34 - 18:45)
+Yeah. Yeah. Yeah.
+
+Just don't wait for me. If you're not seeing me, I'm not in the background spying on you like today. I'm just not there.
+
+[说话人 1] (18:48 - 18:50)
+We're used to you sitting in the background staring.
+
+[说话人 3] (18:51 - 18:51)
+Exactly.
+
+[说话人 1] (18:51 - 18:53)
+No, I'm not trying to. Hello.
+
+[说话人 3] (18:54 - 19:01)
+Yeah. Not next week. Not next week.
+
+Torsten, do you have five minutes to ask you about one thing about Sidong?
+
+[说话人 1] (19:02 - 19:06)
+Yeah, absolutely. Can we do it here or do we? Yeah.
+
+Yeah. Yeah. Okay.
+
+[说话人 3] (19:06 - 19:21)
+Online. Yeah. It's just that I wanted to ask you about his examiner, if you have any suggestions.
+
+But yeah. Are you on the phone? Are you on the Zoom on the computer of Zee?
+
+Yeah.
+
+[说话人 1] (19:21 - 19:24)
+Yeah. Yeah. Shall I?
+
+I can go to my office and.
+
+[说话人 3] (19:25 - 19:28)
+And yeah. And send me a Zoom. Yeah.
+
+[说话人 1] (19:28 - 19:33)
+Okay. That's okay. Perfect.
+
+Thank you.
+
+[说话人 3] (19:33 - 19:38)
+And see you in a couple of weeks. See you. Ciao.
+
+Bye.
+
+[说话人 1] (19:39 - 19:41)
+Thank you. Thank you.
+
+[说话人 2] (19:41 - 19:44)
+Bye. See you next. I'll see you tomorrow.
+
+Yeah.
+
+[说话人 1] (19:44 - 19:46)
+I'll see you probably Tuesday. I won't be here tomorrow.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

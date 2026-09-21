@@ -1,0 +1,64 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
+  <diagram name="Page-1" id="EVAPm98cbj2j2aJPZgzS">
+    <mxGraphModel dx="1557" dy="1172" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-1" value="Is there a dominant direction?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-2" value="Which direction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eo6EkZMPS_pOXD6_gj5H-3" target="eo6EkZMPS_pOXD6_gj5H-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eo6EkZMPS_pOXD6_gj5H-3" target="eo6EkZMPS_pOXD6_gj5H-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-3" value="Is there a dominant direction?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="250" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-4" value="Mixed/None" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-7" value="Positive/negative" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="829" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="eo6EkZMPS_pOXD6_gj5H-10" target="eo6EkZMPS_pOXD6_gj5H-7" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="eo6EkZMPS_pOXD6_gj5H-10" target="eo6EkZMPS_pOXD6_gj5H-11" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-10" value="Is the response monotonic?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="899" y="320" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-11" value="Mixed/None" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1049" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-12" value="Positive" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-13" value="Negative" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="eo6EkZMPS_pOXD6_gj5H-16" target="eo6EkZMPS_pOXD6_gj5H-18" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="eo6EkZMPS_pOXD6_gj5H-16" target="eo6EkZMPS_pOXD6_gj5H-17" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-16" value="Is the response monotonic?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="400" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-17" value="Mixed/None" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eo6EkZMPS_pOXD6_gj5H-18" value="Positive/negative" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

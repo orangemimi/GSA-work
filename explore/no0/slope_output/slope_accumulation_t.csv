@@ -1,0 +1,29 @@
+target_output,model,x,y,relationship,method,n_curve_points_accum,signed_slope_accumulation,absolute_slope_accumulation,slope_accumulation_ratio,amplitude_curve_norm,net_to_amplitude_ratio,path_to_amplitude_ratio,mean_abs_local_slope,mean_signed_local_slope,slope_accumulation_scale
+T,CLASSIC,P,T,CLASSIC | P→T,Equal-width bins,10,1.0,1.1803,1.1803,1.0,1.0,1.1803,1.1916,1.0097,normalized
+T,CLASSIC,P,T,CLASSIC | P→T,Equal-count bins,10,0.985,1.015,1.0305,1.0,0.985,1.015,1.3838,1.3717,normalized
+T,CLASSIC,P,T,CLASSIC | P→T,LOWESS,12035,0.9787,1.0216,1.0439,1.0,0.9787,1.0216,1.817,1.8005,normalized
+T,CLASSIC,P,T,CLASSIC | P→T,Polynomial degree 3,300,0.9754,1.0374,1.0636,1.0,0.9754,1.0374,1.0374,0.9754,normalized
+T,CLASSIC,P,T,CLASSIC | P→T,GAM,300,1.0,1.1311,1.1311,1.0,1.0,1.1311,1.1311,1.0,normalized
+T,CLASSIC,P,T,CLASSIC | P→T,Piecewise linear,300,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,normalized
+T,CLASSIC,P,T,CLASSIC | P→T,Symbolic regression,300,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,normalized
+T,LPJ-GUESS,P,T,LPJ-GUESS | P→T,Equal-width bins,10,1.0,1.0558,1.0558,1.0,1.0,1.0558,1.0665,1.0108,normalized
+T,LPJ-GUESS,P,T,LPJ-GUESS | P→T,Equal-count bins,10,1.0,1.0,1.0,1.0,1.0,1.0,1.2662,1.2662,normalized
+T,LPJ-GUESS,P,T,LPJ-GUESS | P→T,LOWESS,12139,0.9769,1.0234,1.0476,1.0,0.9769,1.0234,1.6373,1.6296,normalized
+T,LPJ-GUESS,P,T,LPJ-GUESS | P→T,Polynomial degree 3,300,0.7342,1.2658,1.724,1.0,0.7342,1.2658,1.2658,0.7342,normalized
+T,LPJ-GUESS,P,T,LPJ-GUESS | P→T,GAM,300,0.9919,1.2113,1.2212,1.0,0.9919,1.2113,1.2113,0.9919,normalized
+T,LPJ-GUESS,P,T,LPJ-GUESS | P→T,Piecewise linear,300,0.9998,1.0002,1.0003,1.0,0.9998,1.0002,1.0002,0.9998,normalized
+T,LPJ-GUESS,P,T,LPJ-GUESS | P→T,Symbolic regression,300,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,normalized
+T,CLASSIC,LAI,T,CLASSIC | LAI→T,Equal-width bins,10,0.9956,1.0044,1.0089,1.0,0.9956,1.0044,0.9956,0.9818,normalized
+T,CLASSIC,LAI,T,CLASSIC | LAI→T,Equal-count bins,10,0.9304,1.0696,1.1497,1.0,0.9304,1.0696,1.079,0.8958,normalized
+T,CLASSIC,LAI,T,CLASSIC | LAI→T,LOWESS,12040,1.0,1.0269,1.0269,1.0,1.0,1.0269,0.9258,0.8846,normalized
+T,CLASSIC,LAI,T,CLASSIC | LAI→T,Polynomial degree 3,300,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,normalized
+T,CLASSIC,LAI,T,CLASSIC | LAI→T,GAM,300,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,normalized
+T,CLASSIC,LAI,T,CLASSIC | LAI→T,Piecewise linear,300,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,normalized
+T,CLASSIC,LAI,T,CLASSIC | LAI→T,Symbolic regression,300,1.0,1.0131,1.0131,1.0,1.0,1.0131,1.0131,1.0,normalized
+T,LPJ-GUESS,LAI,T,LPJ-GUESS | LAI→T,Equal-width bins,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0154,1.0154,normalized
+T,LPJ-GUESS,LAI,T,LPJ-GUESS | LAI→T,Equal-count bins,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0468,1.0468,normalized
+T,LPJ-GUESS,LAI,T,LPJ-GUESS | LAI→T,LOWESS,12146,1.0,1.0,1.0,1.0,1.0,1.0,1.0483,1.0483,normalized
+T,LPJ-GUESS,LAI,T,LPJ-GUESS | LAI→T,Polynomial degree 3,300,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,normalized
+T,LPJ-GUESS,LAI,T,LPJ-GUESS | LAI→T,GAM,300,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,normalized
+T,LPJ-GUESS,LAI,T,LPJ-GUESS | LAI→T,Piecewise linear,300,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,normalized
+T,LPJ-GUESS,LAI,T,LPJ-GUESS | LAI→T,Symbolic regression,300,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,normalized

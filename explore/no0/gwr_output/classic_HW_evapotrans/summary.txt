@@ -1,0 +1,18 @@
+target: evapotrans
+n_sample: 3000
+features: ['precipitation', 'lai']
+kernel: bisquare (adaptive=True)
+
+=== GWR ===
+bandwidth (#neighbors): 47.0
+AICc: 31778.817
+R2:   0.9624
+adj_R2: 0.9569
+elapsed: 8.4s
+
+=== MGWR ===
+bandwidths: intercept=41.0, precip=41.0, lai=41.0
+AICc: 31363.241
+R2:   0.9674
+adj_R2: 0.9626
+elapsed: 108.1s

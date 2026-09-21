@@ -1,0 +1,581 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:04 - 0:35)
+You see, I think we need to make sure it's not too complicated. So that's why I thought if we say, okay, if it's below 0.6, then it's out for global relationships. For the rest, we decide where we want to put the threshold.
+
+And if it is above the threshold, it's in. If it is below the threshold, it gets added to the no relationship, noisy category.
+
+[说话人 2] (0:36 - 0:58)
+Yeah, yeah, yeah. I also mean to this, do you mean why I need to put this branch here? Because I think that this is uncertain.
+
+And later we can also go through this using this because it's a fuzzy range. We cannot determine it's global or not. Maybe we can go through this range and also...
+
+[说话人 1] (0:59 - 1:03)
+Okay, okay. Maybe it's just a visualization. But we, yeah, okay.
+
+No, I think we agree.
+
+[说话人 2] (1:03 - 2:01)
+We are the same. And based on that global relationship, we also need to detect whether it's simple or complex. And here I use the Pearson and Spearman.
+
+And if it is simple and I first detect whether it has a strong monotonicity using the Spearman larger than 0.9. Based on that strong monotonicity, we can also detect whether it's linear or non-linear. And here I use the power law fit using here to fit the candidate cases. And if here the coefficient less than 0 or near 0, sorry, less than 1 and near 1, and we can regard it as linear.
+
+[说话人 1] (2:05 - 2:22)
+Okay, I'm a little bit... So maybe, I mean one option, I'm just thinking whether that could be slightly simpler. If up here we say, okay, if Pearson is very high, Spearman should be very high as well.
+
+No?
+
+[说话人 2] (2:22 - 2:23)
+Yeah.
+
+[说话人 1] (2:25 - 2:33)
+So are there cases where Pearson is 0.75 and Spearman is 0.5 or something like that?
+
+[说话人 2] (2:34 - 2:40)
+They are different, although they are close, but different. No, no, I know that they are different.
+
+[说话人 1] (2:41 - 2:46)
+But are there cases when Spearman could be significantly lower than Pearson?
+
+[说话人 2] (2:47 - 2:47)
+Oh, yeah.
+
+[说话人 1] (2:48 - 2:48)
+Yes?
+
+[说话人 2] (2:48 - 2:49)
+Yes.
+
+[说话人 1] (2:49 - 2:58)
+Okay. Because I was assuming that if Pearson is high, that Spearman is also high.
+
+[说话人 2] (2:59 - 2:59)
+Yeah.
+
+[说话人 1] (3:01 - 3:02)
+Which one is it?
+
+[说话人 2] (3:03 - 3:13)
+I didn't show the case, but I just calculated the rate of the candidate families, but maybe next I will show the cases.
+
+[说话人 1] (3:13 - 3:37)
+Well, the question is, if you look at the correlation between Pearson and Spearman, for Pearson values above 0.7. Yeah. If that's very high, my point is simply, then we could say here that it's only Spearman, because if Spearman is... You mean...
+
+Actually, no, it doesn't work, because we... Do you mean...
+
+[说话人 2] (3:37 - 3:38)
+No, no.
+
+[说话人 1] (3:38 - 3:51)
+Okay. Sorry, that made no sense, because... Okay, but I'm confused here by this part.
+
+So that's why I'm confused, because you say simple, so if Pearson is high and Spearman is low...
+
+[说话人 2] (3:52 - 3:52)
+Yeah.
+
+[说话人 1] (3:52 - 3:56)
+No, if Pearson is high, above 0.7, then it's simple.
+
+[说话人 2] (3:57 - 4:00)
+Do you mean we just need one...
+
+[说话人 1] (4:00 - 4:12)
+No, maybe this... Sorry, I'm just thinking out loud. But my point is something else.
+
+So let's assume it's simple. Simple means Pearson is high, but Spearman is...
+
+[说话人 2] (4:13 - 4:14)
+Not so high.
+
+[说话人 1] (4:14 - 4:30)
+Well, Spearman might be high or low, it doesn't matter, but Pearson is high. So then I'm confused why we then here look at Spearman again. If it's linear, why if it's...
+
+[说话人 2] (4:32 - 4:48)
+Because I think the main point here is I would like to detect the different characteristics, so I think the stream monotonicity is also the characteristics for one input and output pair.
+
+[说话人 1] (4:49 - 5:05)
+But okay, if you say it's simple, then why don't we just fit a power law? What are you trying to learn from this category?
+
+[说话人 2] (5:06 - 5:18)
+Do you mean that if we detect it is simple, we can directly use the power law to do the fit? This is also the plan B I would like to show.
+
+[说话人 1] (5:20 - 5:32)
+It seems a bit too an extra step that I don't understand. Because we could say if it's a power law, then if the value... But it doesn't necessarily mean linear, no?
+
+[说话人 2] (5:32 - 6:43)
+Yeah, I also do the test, maybe I can show the plan B directly. These two can be directly combined together. The reason why I want to put this part is because when I do also...
+
+For example, we do the simple and do the power law fit for all the candidate cases, and first we can separate the linear directly. This is no problem. And we use the sign of this coefficient.
+
+We can also separate the preliminary concave or convex, but there is some problems here. I can show you. Sorry, please wait a minute.
+
+This is what I do in the case when I do the power law directly and using the evidence of power law for the concave or convex. But it will make the cubic threshold curve to be combined together as the concave or convex.
+
+[说话人 1] (6:53 - 7:00)
+But why is that a problem? Because it separates out concave and convex.
+
+[说话人 2] (7:01 - 7:15)
+Yeah, it also makes the cubic as concave as the convex. But I also do the extra detection based on this table.
+
+[说话人 1] (7:16 - 7:46)
+Yeah, I think... I mean... So, can't we...
+
+If you say, okay, simple, yeah? And then you say, okay... Power law?
+
+Power law, exactly. Power law. And then we say, okay, if it's one, then it's linear.
+
+Yeah, exactly. If it is smaller one or if it... No, what is it?
+
+[说话人 2] (7:46 - 7:48)
+Zero point and minus five.
+
+[说话人 1] (7:49 - 7:51)
+Smaller than one or larger than one, no?
+
+[说话人 2] (7:52 - 7:53)
+Yeah, exactly.
+
+[说话人 1] (7:54 - 7:57)
+And then this is concave?
+
+[说话人 2] (7:58 - 8:07)
+Convex. It's concave.
+
+[说话人 1] (8:08 - 8:08)
+Concave.
+
+[说话人 2] (8:08 - 8:09)
+Yeah.
+
+[说话人 1] (8:10 - 8:29)
+Yeah, and this is convex. Yeah. And then you could simply say in the concave you also have to check for cubic.
+
+[说话人 2] (8:29 - 8:29)
+Yeah.
+
+[说话人 1] (8:31 - 8:35)
+And in the convex you have to check for S or for...
+
+[说话人 2] (8:35 - 8:37)
+Threshold. Threshold. Yeah.
+
+[说话人 1] (8:38 - 8:39)
+Yeah?
+
+[说话人 2] (8:39 - 8:39)
+Yeah.
+
+[说话人 1] (8:39 - 8:46)
+I think we need to make this not too complicated. So the figure needs to be as simple as we can make it.
+
+[说话人 2] (8:47 - 8:52)
+Yeah, so you think this workflow, this decision tree could be better. Yeah, this is...
+
+[说话人 1] (8:52 - 8:56)
+Or maybe you can put the one here, so it's in the middle.
+
+[说话人 2] (8:57 - 9:00)
+It's... I think it's plan B black.
+
+[说话人 1] (9:01 - 9:03)
+Yeah, so just... I would make it a bit simpler.
+
+[说话人 2] (9:04 - 9:06)
+Yeah, I will combine here together.
+
+[说话人 1] (9:06 - 9:08)
+Yeah, so there are few, too many...
+
+[说话人 2] (9:08 - 9:16)
+Yeah, and here we... this means that we go simple and we here combine the power law for all the candidate cases and...
+
+[说话人 1] (9:16 - 9:17)
+And then there are three options.
+
+[说话人 2] (9:17 - 9:42)
+Yeah, exactly. And we can first separate the line because it's very simple to detect. And we can also get to the two branches of preliminary concave and convex.
+
+And it will also... we can detect whether it's concave or cubic. And convex with S or threshold.
+
+And for this one, I use a polynomial fit.
+
+[说话人 1] (9:42 - 9:42)
+Hmm?
+
+[说话人 2] (9:43 - 9:44)
+I'm...
+
+[说话人 1] (9:44 - 9:48)
+Ah. Yeah. So this is for what...
+
+for which one is now the polynomial fit?
+
+[说话人 2] (9:48 - 9:58)
+I can show you the... It looks like... For example, this one, I need to separate the cubic from the concave.
+
+[说话人 1] (9:58 - 10:05)
+But if you have something that is cubic... Yeah. So what does cubic look like exactly?
+
+It's a...
+
+[说话人 2] (10:05 - 10:09)
+It's this one. This is...
+
+[说话人 1] (10:09 - 10:11)
+So how is it different from an S-curve?
+
+[说话人 2] (10:12 - 10:18)
+Yeah. It's very... They are similar.
+
+They are using the same equation.
+
+[说话人 1] (10:19 - 10:22)
+But why is S-curve over here and cubic over here?
+
+[说话人 2] (10:23 - 10:30)
+This depends on the output of here. But they can be separated directly with S-curve.
+
+[说话人 1] (10:30 - 10:40)
+But is it... My point is... Is something...
+
+If it is an S-curve, is it always here? And if it's cubic, it's always here? Or could a cubic one be here?
+
+[说话人 2] (10:41 - 10:47)
+I'm not sure. But it depends on this output. This output of cases, cubic is here.
+
+[说话人 1] (10:47 - 10:52)
+Yeah, there is 100%. But it seems a bit odd if cubic and S-curve are very, very similar.
+
+[说话人 2] (10:53 - 11:06)
+Yeah. I agree with this. So we also...
+
+I think we can go this branch. We can separate concave and convex at first. And then we can detect how these three separate together.
+
+[说话人 1] (11:06 - 11:10)
+Yeah, exactly. And we have to do it from these two groups, no?
+
+[说话人 2] (11:10 - 11:11)
+Yeah, yeah, yeah, exactly.
+
+[说话人 1] (11:11 - 11:23)
+The other thing is, is there... I mean, when you fit a polynomial, a power law, for example, you have also an R-squared value.
+
+[说话人 2] (11:23 - 11:23)
+Yeah.
+
+[说话人 1] (11:25 - 11:38)
+So is the R-squared value an indicator of whether a power law is enough? Or whether we have something more complicated?
+
+[说话人 2] (11:42 - 11:46)
+I'm not sure. Maybe I don't calculate this one.
+
+[说话人 1] (11:47 - 12:10)
+So, yeah, because if it's a power law and it works well as a power law, it should be a good fit, a reasonable fit. Ah. Yeah?
+
+Yeah. But if it's an S-curve, then it might be reflected in that even though it is something like a power law, it's not good enough because the R-squared is not.
+
+[说话人 2] (12:10 - 12:37)
+Yes. I calculated the R-squared of these two points and to detect whether the rate could be increased, but I think also the power law, the R-squared added to 0.9, there are also some mistakes in classification. Do you mean this one?
+
+[说话人 1] (12:39 - 12:43)
+Something like this, yeah, but...
+
+[说话人 2] (12:43 - 12:47)
+This is just the R-squared for the power law.
+
+[说话人 1] (12:47 - 12:54)
+Yeah, my point is if you have something, let's say, that is power-convex positive...
+
+[说话人 2] (12:54 - 12:55)
+Yeah.
+
+[说话人 1] (12:58 - 13:11)
+...and something that is S-curve positive... Yeah. ...would they separate out because one has a higher R-squared than the other? Of course, you have to consider also the noise level, but...
+
+[说话人 2] (13:17 - 13:22)
+You mean I can add the R-squared as a matrix or...
+
+[说话人 1] (13:22 - 13:26)
+Well, I was wondering whether it was another decision criteria.
+
+[说话人 2] (13:26 - 13:26)
+Yeah.
+
+[说话人 1] (13:27 - 13:36)
+You know, that you say, okay, if it is just concave or convex, then the power law works with quite a high R-squared value.
+
+[说话人 2] (13:37 - 13:51)
+Yes, I think that this slide also shows that although the R-squared is very high, there are also – yes, it indeed increases the accuracy, but also has some...
+
+[说话人 1] (13:52 - 13:55)
+Yeah, we will – I mean there will be cases where it's not so clear.
+
+[说话人 2] (13:56 - 13:56)
+Yeah.
+
+[说话人 1] (13:56 - 14:05)
+But the point is if we say, okay, we use the R-squared with a high threshold...
+
+[说话人 2] (14:05 - 14:05)
+Yeah.
+
+[说话人 1] (14:06 - 14:10)
+...then, you know, if we use 0.9, we have a 90% chance basically, more or less...
+
+[说话人 2] (14:11 - 14:11)
+Yeah.
+
+[说话人 1] (14:12 - 14:34)
+...of getting it right. Yeah. And that's probably more than good enough, you know.
+
+So we can do it like that. Yeah. Use the R-squared as a...
+
+Yeah. ...metric, and if the R-squared is low, then we know we have to try something else, and that's these other categories, these three more, cubic, S, or threshold.
+
+[说话人 2] (14:35 - 15:15)
+Good idea. I can add this to the – to test what will the output show. Yeah.
+
+Yeah, and for cubic S or threshold, I use a cubic polynomial to fit, whether it fits better than the power law or the polynomial, using the BIDC to test which fits better. Okay. To see if the power law fits better, it could be the concave or the convex, and if the polynomial fits better, it could be the cubic S or the threshold for this branch.
+
+So...
+
+[说话人 1] (15:15 - 15:21)
+Yeah, but I don't think we need to test again whether it's concave or convex, because if we have...
+
+[说话人 2] (15:21 - 15:21)
+Yeah, yeah, yeah.
+
+[说话人 1] (15:21 - 15:23)
+...a high R-squared, we already know.
+
+[说话人 2] (15:23 - 15:24)
+Yes.
+
+[说话人 1] (15:24 - 15:32)
+And everything else is either one of these three, or maybe there's a fourth group, which is none of those.
+
+[说话人 2] (15:32 - 15:32)
+Uncertain.
+
+[说话人 1] (15:33 - 15:34)
+Yeah, uncertain, exactly.
+
+[说话人 2] (15:34 - 15:37)
+But I think this could separate one of these.
+
+[说话人 1] (15:38 - 15:41)
+Yeah, yeah, yeah, exactly. Or these four, that's what we need to do.
+
+[说话人 2] (15:41 - 15:41)
+Yeah, yeah, these four.
+
+[说话人 1] (15:41 - 15:44)
+But we don't need to check again whether it's the power law.
+
+[说话人 2] (15:44 - 15:45)
+Yeah, exactly.
+
+[说话人 1] (15:45 - 15:56)
+So the power law we can leave off, because we already looked at that. Why do you need to check whether cubic is higher than power law?
+
+[说话人 2] (15:57 - 16:03)
+Do you mean, this means that if we use the R-squared, we do not need to use this cubic?
+
+[说话人 1] (16:03 - 16:22)
+You could also use R-squared here, you know, because it's a measure of fit. If we know the power law is not a good fit, so if cubic is a good fit, then we know it's something else. It's more or less the same as what you're doing.
+
+[说话人 2] (16:22 - 16:35)
+Yeah, so you mean that here we can separate the cubic S and the threshold out based on the R-squared of the polynomial?
+
+[说话人 1] (16:36 - 16:36)
+Yeah.
+
+[说话人 2] (16:36 - 16:39)
+I agree with this, and also the uncertainty here.
+
+[说话人 1] (16:39 - 16:44)
+Yeah, exactly, and if nothing fits, then we put it in this uncertain category we just don't know.
+
+[说话人 2] (16:44 - 17:03)
+Yeah, I agree with this. But I also have one question, it's because there is also some linear only detected as power law. Is that the problem, or it can be acceptable?
+
+But very small proportion.
+
+[说话人 1] (17:05 - 17:22)
+Well, you know, all of this, any classification is uncertain, because, you know, if the value is never going to be exactly 1, so what if it's 1.1? Is it linear still, or is it, you know, I don't know.
+
+[说话人 2] (17:22 - 17:23)
+Yeah, okay.
+
+[说话人 1] (17:23 - 17:25)
+So that's just...
+
+[说话人 2] (17:25 - 17:56)
+Yeah, I understand. So this week has been done is to revise the tree, and to give the true value. Now I have decided we can use Plan B.
+
+And then I can also evaluate the moderate M-IC range to detect where it goes very well. And also you have provided this paper for me, and I think it could be a very good function to...
+
+[说话人 1] (17:56 - 17:58)
+If I understand again, remind me, this is threshold.
+
+[说话人 2] (17:58 - 18:03)
+Yeah, yeah, I can detect separate thresholds to that branch.
+
+[说话人 1] (18:03 - 18:09)
+Yeah, yeah, yeah. I mean, it's good because it's nice because it's actually natural ecology.
+
+[说话人 2] (18:10 - 18:10)
+Yeah.
+
+[说话人 1] (18:11 - 18:19)
+And it's so we can see whether some of these statistical tools work for us as well.
+
+[说话人 2] (18:19 - 18:28)
+Yeah. I think we can also do such kind of plots like this because it detects the effectiveness of the...
+
+[说话人 1] (18:28 - 18:30)
+Yeah, yeah, yeah, exactly. Yeah, that's a great idea.
+
+[说话人 2] (18:32 - 18:49)
+Okay, so next week I will do the two parts. Mm-hmm. Yeah.
+
+May I, this week has been done, and may I ask, do you have time to talk about this work about the large range model?
+
+[说话人 1] (18:49 - 18:58)
+That's the idea. Yeah, let's do a little bit. I don't, I need to go home a little bit early because I need to pick up.
+
+Oh, okay. No, no, it's okay. I just need to pick up another pair of glasses today.
+
+[说话人 2] (19:00 - 19:39)
+I have also talked to this lab postdoctoral in computer science before earlier this time, and she said this workflow could go very smoothly if I use a prompt and the knowledge base to train the large language models to extract the code to assumption. But the possible workflow could be extract the code, and then we could get the equation or the physical process behind the code. Mm-hmm, yeah.
+
+And then based on that process, we can assume the assumption.
+
+[说话人 1] (19:39 - 19:41)
+Uh-huh, yeah, no, I agree.
+
+[说话人 2] (19:41 - 19:55)
+Yeah, so the workflow could be we detect the code, and then we can get the assumption. This I think we would need to determine the object.
+
+[说话人 1] (19:55 - 20:03)
+Sorry, I'm not quite sure what you mean. So code directly to assumptions or code via equations or something? Is that the question?
+
+[说话人 2] (20:04 - 20:19)
+Yeah. I'm not sure what the question is. Yes, the question is that is the object correct?
+
+We could detect the code, and then we can get to the possible equation or the physical process, and then we can get to the assumption.
+
+[说话人 1] (20:22 - 20:29)
+Sorry, I'm still not clear what the question is. Are you asking me is this the right way or is there an alternative?
+
+[说话人 2] (20:31 - 20:38)
+What I ask is what we exactly would like to extract from the code. Is that right?
+
+[说话人 1] (20:39 - 22:35)
+Yeah, so there – okay, now I understand. Okay, so that we have to define a bit better, so there are different options. So we could – and that we might have to try out because I'm not clear how that works.
+
+So for example, we might take a model and say, okay, we could – in the most general sense, we could say to the LLM, okay, take out of this code all the assumptions related to hydrologic variables and here are the variables of how they are calculated. Or we might say, okay, how does – what are the assumptions and choices related to the evaporation process? But I don't know, honestly, how we do this, how specific we have to be or how generic we have to be because the – yeah, because I'm simply not clear how good it works.
+
+So what might be a good way to do this is to take a few simple examples like HPV or so and because the LLM has to extract information from the code, but it has to combine it with something else. Yeah, exactly. Yeah, so it has to have some idea of what this variable is and what it means and what – yeah?
+
+[说话人 2] (22:35 - 22:36)
+Yeah, exactly.
+
+[说话人 1] (22:36 - 22:57)
+And that's the part I'm unclear about, how well it does that. Oh, okay. So – and how – the better it does that, the less specific we have to be when we ask.
+
+But if it is – do we – how much context do we have to provide, for example?
+
+[说话人 2] (22:58 - 23:28)
+Yeah, exactly. I also think about this if we focus on the specific models such as that science advance paper, focus on trust model, and it doesn't need to provide the parameters related to trust model. And if we would like to focus more, for example, assistive models or hybrid assistive models, we maybe need to provide more common physical equations like this or the parameters.
+
+[说话人 1] (23:28 - 23:53)
+Yeah, or we simply refer to basic information on the physics. Yeah. Yeah.
+
+Exactly. And I think maybe we just try it out and pick an example because it's – yeah, it's okay to be how – Yeah, no problem.
+
+[说话人 2] (23:53 - 24:39)
+And my previous professor has also asked if we can have some ideas to talk about regarding this work and maybe after your vocation or next week or next week, we can introduce the current previous work I have drawn onto the large-angle models because one of my previous colleagues has – gets a lot of numbers of paper from Scopes and Weibull Science, the whole paper, and he has database for the publications and he tries to use the large-angle models to extract information from that kind of papers and he has currently a large database for publications.
+
+[说话人 1] (24:40 - 24:49)
+Okay. Yeah. Yeah, we've done a little bit with Lina when she was here on this and also Shahan has done a bit of work on this as well.
+
+[说话人 2] (24:49 - 24:50)
+Yeah.
+
+[说话人 1] (24:50 - 24:58)
+So, no, I think it sounds very good. The question is how well does it work?
+
+[说话人 2] (24:59 - 24:59)
+Yeah, exactly.
+
+[说话人 1] (25:00 - 25:04)
+I don't have a good enough idea of what to expect.
+
+[说话人 2] (25:04 - 25:13)
+Yeah, no problem. Maybe I can, with my previous colleagues, do a small test to see how it works with, for example, with HPV.
+
+[说话人 1] (25:14 - 25:34)
+Yeah, I would start with a very simple model just to see how easy it is. Yeah, yeah, yeah. And if that works very well, I assume it works very well.
+
+So, you know, then we can pick more complex versions and see, okay, how do we have to do this. Importantly, we need to start with models where we know how they work.
+
+[说话人 2] (25:34 - 25:35)
+Yeah, yeah, yeah.
+
+[说话人 1] (25:35 - 25:38)
+So we can actually see whether it makes sense what we get.
+
+[说话人 2] (25:38 - 26:21)
+Yeah, yeah, I agree with this. And another point about talking with her, I have one more idea. For example, currently AI is very popular in assistant models and in climate change and also in hydrology.
+
+And our group expertise focuses on evaluation. And maybe we can think about more how we evaluate AI-related models, not only about the hybrid assistant models, but also the large-language models related. Because it will have a lot of uncertainties through that training or validation process.
+
+[说话人 1] (26:22 - 27:12)
+Yeah, that's where I want to go with this. I mean, that's basically already the starting point. So we can understand, for example, if we, you know, this kind of emergent behavior at a larger scale, can we find the assumptions that relate to this?
+
+And can we, so from the model code, already anticipate what that might look like? Because at the moment, I don't know how to do this. And so that's where we can use this.
+
+And so with our new colleague, we're trying to build a bit more differentiable models so that we can also start building our models. And then we can build that immediately into the evaluation process.
+
+[说话人 2] (27:12 - 27:13)
+Yeah, exactly.
+
+[说话人 1] (27:13 - 28:14)
+And also in physics, Caro and her group, they look a lot at neural network models at the moment and try to understand how they learn and how they can attribute the output variability to input variability. So we can also link with them. So yeah, I think that would be very good.
+
+So it's just that from the – so the evaluation angle for us is a bit to set us apart from what most people do. Yeah, I agree with this. You know, because if you just make another model and do something, there's like a million papers on this now every day.
+
+So it feels like it's very difficult. But if we, from the evaluation point of view, then we should always have also something to say that relates to all the models out there, not just one specific model.
+
+[说话人 2] (28:14 - 28:26)
+Yeah, I agree with this. And if that's possible too, there is a chance to write a related paper for the model evaluation for AI related.
+
+[说话人 1] (28:27 - 28:57)
+Absolutely, yeah. And that's why I also gave you this paper. Essentially what they were trying to do is to do something that we've done a long time ago in not using large language models or other tools like that, but simply having – assuming that each parameter of the model doesn't just need a number, but they need to have a – they have to have a physical meaning.
+
+And therefore, how do we preserve the physical meaning when we can't write the model?
+
+[说话人 2] (28:57 - 28:58)
+Yeah, I agree with this.
+
+[说话人 1] (28:59 - 29:18)
+So it's very interesting. And so it's very interesting to see how can we use these tools. And because it's so different, the way we have to think about these tools, it's very interesting, but it's also not so easy to say, okay, what do I expect to – Yeah, yeah, yeah.
+
+[说话人 2] (29:18 - 29:23)
+Maybe I will start with very simple model to see how it works very well.
+
+[说话人 1] (29:24 - 29:52)
+Yeah, then we can add and we can also add neural network models, of course, and then we can think about it. Or it would also be interesting – so these pins or so, you know, physically inspired models. So where there is a physical element plus the neural network model, that's probably most interesting to use because they are probably where people – Yeah, I was also curious.
+
+[说话人 2] (29:53 - 29:53)
+Yeah.
+
+[说话人 1] (29:53 - 29:54)
+Okay, thank you.
+
+[说话人 2] (29:55 - 29:59)
+Very good. Okay, thank you very much. And next week I will –
+
+(该文件长度超过30分钟。 在https://turboscribe.ai/zh-CN/点击升级到无限，以转录长达10小时的文件。)

@@ -1,0 +1,50 @@
+an determination (R?), ensuring robustness in both variability and trend representation. The
+478 final model configuration (150 trees and minimum leaf size of 10) was selected because it
+479 consistently provided optimal and stable performance across all nine independent water-
+480 balance BT ensemble members (table $4), rather than being tuned to a single realisation.
+481 The training, validation, and ensemble-weighted aggregation procedures are implemented
+482 explicitly in the modelling code, ensuring that the reported results are directly
+483 reproducible.
+484 ‘The model was trained on the 183 basins (fig. $1) to predict moving annual ET from
+485 February 2002 (where the GRACE terrestrial water storage data became available) to
+486 January 2022, as described previously, leveraging the spatial and temporal variability of
+487 the diagnostic ET products. Basin-specific trends were analyzed using Sen's slope for
+488 observed, calibrated, aind validated ET. Model validation was carried out using five-fold
+489 cross-validation to assess robustness. This means that all the samples were randomly split
+490 into five groups, each one of the five groups was in-tum left out for cross-validation with
+491 the other four groups used for training model. In this way, all the five groups were looped
+492 and all the samples for the 183 basins were then used for cross-validation. The optimized
+493 RF model achieved high R-values (reported between observed and simulated tronds) and
+494 improved diagnostic ET accuracy, demonstrating effective integration of multi-source ET
+495 data and geospatial aitributes for large-scale hydrological modeling (figs. S2 to $7). The
+496 ‘optimized RF model was finally used for simulations in all large river basins across global
+497 land area (excluding Greenland and Antarctica), enabling a comprehensive analysis of
+498 global ET trends. fig. 20 summarizes data preparation, training and simulation of the
+499 Random Forest machine-leamning model for annual ET at a basin scale.
+500 Attribution Analysis
+501 ‘We explored three drivers for attribution analysis, including two atmospheric variables—
+502 (i Pr (mm year"); (i) potential evapotranspiration (PET, mm year") and one land surface
+503 variable: leaf area index (LAI; unitless being m? green leaf per m* ground). These three
+304 drivers are key to influence ET changes since Pr, PET and LAI represent watet supply,
+505 ‘water demand, land vegetation condition, respectively (11, 21). The temporal resolution
+506 for the thrce drivers is the same as the simulated ET. Pr and PET were aggregated to
+307 annual scales. PET was calculated using Shuttleworth’s simplification (75) of Penman
+508 1948 Equation:
+e act y_ saci +0sa6u,)D
+509 Per = a, + eee @
+510 where A is the slope of the saturation vapor pressure curve to air temperature (KPa °C), y
+si is the psychrometric constant (kPa °C"), Ry is net radiation (mm d™), A is the latent heat
+512 of vaporization (MJ kg"). U, is wind speed at 2-meter height (m 5"). D is vapor pressure
+513 deficit (kPa).
+si4 ‘The input data for calculating PET include incoming solar radiation, incoming longwave
+sis radiation, vapor pressured deficit, wind speed and air temperature that were generated
+si6 from GLDAS-2.1 product (76), and albedo. The albedo and LAI time scries data were
+si7 obtained from the MODIS MCD43A3 and MOD15A2H products, respectively. Before
+58 their use, the raw albedo time series were gap-filled by lincar interpolation, while LAT
+519 time series were smoothed by Google Earth Engine Whittaker smoother (77). To address
+520 uncertainty, three precipitation products (CRU, GPCP, MSWEP) were averaged and then
+521 analyzed with other drivers for the final attribution. Model performance was assessed
+522 using basin-specific R? values (fig. S21). In 95% of the 232 river basins, the three
+
+‘Science vances ——SCS~SCn pe Toglnw Page 11 of 20
+

@@ -1,0 +1,197 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 3] (0:00 - 0:58)
+how high that is. The algorithm is constrained to tell you in the end is one of these, I don't know, 24 baseline, for example. And maybe actually the value of the similarity itself is actually not that high.
+
+But it's just because he has no other way, no other exit point. Instead, we should allow also the algorithm to be able to say, actually, it's not similar to any of these. Yeah, so maybe there is another functional relationship that is not currently in our database, no?
+
+Or maybe the relationship is just too noisy to be found, no? So basically, at the moment, you don't contemplate these two cases. Yeah, the way it's done, no?
+
+That there could be new relationships that are not defined and that, yeah.
+
+[说话人 1] (1:00 - 1:14)
+Yeah, and the difference is whether, you know, you could also imagine whether you have a, sorry, I just told it here, Francesca, whether there's a flowchart, you know, whether you go through, sorry?
+
+[说话人 3] (1:14 - 1:16)
+Okay, yeah, yeah, yeah, it's good.
+
+[说话人 1] (1:16 - 2:02)
+Yeah, whether it's more like a decision tree, where you end up in the classes, or whether you say immediately in the first instance, I immediately map everything on these classes. Yeah. And for me, it's the classes I like.
+
+I mean, I'm just wondering whether we should have this decision tree where we move through to end up in the classes, you know, so that we also see where do things separate? What is it that separates it out that defines a little bit in order? But it also, for me, is something very interesting to discuss.
+
+What is, you know, what do we actually want to learn here? Yeah, no, go ahead.
+
+[说话人 3] (2:02 - 3:08)
+Based on this discussion, I also think maybe you should also think a little bit about like, what will be some, you know, what are some requirements that you have for this algorithm, no? So for example, you know, one requirement based on this discussion we are having now, is that it needs to contemplate and allow the possibility that to generate, to admit new relationships unseen before, yeah. Or another requirement is that it needs to be able to acknowledge, actually, there is no functional relationship here.
+
+It's just too noisy. Yeah. No, so I think you need to think a bit, you know, what are your requirements?
+
+So then when you compare plan A, plan B and plan C, you can also say, oh, plan B is capable of doing this, this and this, and plan C is not. You see what I mean? Like thinking about, you know.
+
+[说话人 2] (3:09 - 3:45)
+I think, I think that the, the Torsten mentioned the decision tree is not exclusive with both three plans, because I think that if we see the decision tree must depend on the specific metrics very obviously different from others. So we can also, whether we can define different levels for, we can, of different metrics and we can calculate the similarity one by one and each can also get to the decision.
+
+[说话人 1] (3:46 - 4:49)
+Yeah, and it's also a little bit, I mean it, I, you know, the, if you, if you go down the decision tree and each node at the end would be one of your rows in the vector. It would be a vector, you know, would be a combination of metrics that would say, okay, we have case 12 or case 15, you know, but we're, I think we, we lose in information if we jump immediately and put everything in the end, you know, because we, we, and, and it's, it's of course subjective and a little bit if we have a hierarchy of in which order we go through things, but it's, it's a little bit for us a way to, to interrogate the data and see where, where things, where things go, no? I mean, in this, in this previous paper that we started off with, they were mainly interested in is there a relationship or is there no relationship between the data?
+
+[说话人 2] (4:49 - 4:50)
+Yeah, exactly.
+
+[说话人 1] (4:50 - 4:54)
+You know, and we're saying that might still be our first question.
+
+[说话人 2] (4:55 - 4:55)
+Yeah.
+
+[说话人 1] (4:55 - 5:31)
+And then we say, okay, but if there is one, is it a very simple one? Is it, is it very complicated? If it's complicated, is it because it's non-monotonic because it has thresholds because it, you know?
+
+It has different, and then at least, at least in my head, that's a little bit more how I would do this. Maybe that's because I'm slower than the machine learning algorithm that goes to the end, but the, you know, so it's not changing the end result. It's just defining a way in how we get there a little bit more, you know?
+
+[说话人 2] (5:34 - 5:48)
+Yes. Do you mean that we also needed to create more different types of relationship? For example, the no relationship was unexpected at first.
+
+[说话人 1] (5:49 - 5:54)
+Yeah, but it helps us to decide, can we actually say, when can we say that there is no relationship?
+
+[说话人 2] (5:55 - 5:55)
+Yeah.
+
+[说话人 1] (5:56 - 6:00)
+You know, for example, that would be a relevant question because those are the things we don't have to look at.
+
+[说话人 2] (6:00 - 6:28)
+Yeah. This is also, I have also created several plots and because I think what I mentioned here is that the possible next step is to generate diverse scatter plots and at the later of this part of slides, I have also created the no relationship scatter plots, and I think that
+
+[说话人 1] (6:32 - 6:51)
+can be, so maybe just for my understanding, could you, if that's okay with you, Francesca, briefly say what you mean by using machine learning, just so we have an idea of what you're thinking is, without necessarily discussing that in detail, but just so we have an idea of what else you were suggesting.
+
+[说话人 2] (6:52 - 9:16)
+Yeah, of course. Do you mind if I start from this? I think that what machine learning used to do is to learn the relationship patterns, and the different metrics can represent the relationship patterns.
+
+This is what we have to calculate now, and for each scatter plots, so we can calculate the matrix vector, and then we can also give some labels of them, and here we have various scatter plots, and so this means that we have various pairs of vector and the labels, so this can be, the combination of these vectors with labels can be formed as a training dataset, and the machine learning methods can learn the mapping from the matrix vector and the labels, and for applications, then we can use a system models relationship directly with the trained machine learning models, and what's different from the plan C is that I think that the purpose is to learn the relationship patterns, although we have calculated the metrics, but the raw data point can already reflect the patterns directly, so here I just use different scatter plots and give them labels directly, and here I have the combination of different pairs of scatter plots and the labels, and I use the machine learning models to train this training dataset directly, and here what we need to attention is that because this, the datasets are point, so we can, sometimes we can use more structured machine learning methods, such as the CNN or point net or deep set, because the CNN can transfer further scatter plot to the images and the train, and point net and the deep set are used for point training, so this is, and then we can apply it to the system models relationships, these are the two ideas.
+
+[说话人 3] (9:17 - 9:39)
+So this one would take, so the input to the, when you train the ML, the output is still the labels and the input instead is the data points, or is it an image? Yeah. Which one, is the image or the data points?
+
+[说话人 2] (9:39 - 9:47)
+The data points, but we can use the CNN to transfer the point to the images to train, but the main idea is the point.
+
+[说话人 3] (9:48 - 10:05)
+This is interesting, so then plan C would also be a bit of a validation of do you use the metric, do you need the metrics or not in the first place, are the metrics useful or not, no? Because this is keeping the metrics basically.
+
+[说话人 2] (10:06 - 10:06)
+Yeah.
+
+[说话人 3] (10:07 - 10:08)
+Yeah, you just don't.
+
+[说话人 2] (10:08 - 10:12)
+Here I do not use metrics. Exactly, yeah.
+
+[说话人 3] (10:12 - 10:31)
+So in a way, you know, if this was, if this plan was working, it would tell you that you don't even need to go through the metrics, you just take the raw data and pass it on to the algorithm to figure out. Yeah. Yeah.
+
+Okay.
+
+[说话人 1] (10:32 - 11:24)
+Yeah, I mean, we could, I mean, these are sort of alternative ways to get to the end point. I mean, my, I think my, I would still probably like a little bit for us to discuss about how we want to get to the end point. I mean, not methodologically, but conceptually to, because at least in my mind, it's sort of organising the data in a meaningful way and having different groupings along the way, rather than just one at the end.
+
+We can go from the end back and group it together, but that would get us to the same place, but.
+
+[说话人 2] (11:29 - 11:42)
+So this means that we still need to make the detailed workflow to how can we start from the scatterplot.
+
+[说话人 1] (11:42 - 13:37)
+Yeah. I mean, my suggestion is we can use this, as Francesca says, later to test this, whether we can get there much quicker in a different way. My, I mean, I'm thinking about what if we do this later to write a paper, for example, you know, at least in my head, there is sort of a storyline we would like to tell when we say, okay, we have a model with a hundred parameters and 10 outputs and, or 10, let's say a hundred input factors, doesn't matter whether they're parameters or something else and 10 outputs.
+
+And we run this model over a hundred thousand grid cells over the world. And that's the data set we have. So the first question is how many, how many relationships are in this data set?
+
+You know, how many places in how many of these interactions are just scattered? You know, there is nothing there and how many, how many are left and, you know, and so clearly we want to eventually sort of make this as efficient as possible. So, and this might be exactly through these methods that you show here.
+
+Um, but I would be a little bit hesitant to immediately jump to the end result. Uh, cause I would find that a much less interesting story to tell, you know, um, because then you could say, okay, from maybe, I don't know, 60% have interesting relationships, or I have some relationship and then how many are simple and how many are complex. And then we have to think about what is it means to, you know, simple might be if it's just a monotonic relationship, for example.
+
+[说话人 3] (13:38 - 14:39)
+I'm thinking if it would help if you, for example, talked about, like, if you have a paper where you present this, there will be like a first result figure that basically show like, I don't know, visually what the interface, not the interface, but like what is the visual output that you get when you, uh, run this methodology, no? What would be there? And it wouldn't be one response, no?
+
+It would be, I don't know, you have, for example, interrogated this algorithm to compare three different models across, uh, no, I don't know, 20 possible, uh, functional relationship, no? Why are you giving me a thumb up?
+
+[说话人 1] (14:40 - 14:43)
+Uh, sorry, that was just, it does this now automatically, no?
+
+[说话人 3] (14:43 - 14:44)
+Okay.
+
+[说话人 1] (14:44 - 14:46)
+We can talk Italian and...
+
+[说话人 3] (14:46 - 15:38)
+Okay. And so, no, so probably you will want to have a bit, something more synthetic, no? Like, I don't know, a comparison of number of meaningful relationship, uh, across three different models.
+
+Yes. Or so, so maybe if you think about, no, what would be finally the, the summary results that a user get when they use this, uh, uh, algorithm that will tell you also, no, um, what are those requirements, no? Of, uh, of, uh, and maybe as Dawson was saying, maybe it will be organised in a hierarchical manner, starting from simpler question and then not going deeper into more nuanced question, no?
+
+[说话人 1] (15:39 - 15:53)
+Um, no, I think, I think it's a good idea. I wonder, I mean, we don't even need model comparison or so, no? We could just ask, let's take one, I mean, like you would do a sensitivity analysis, you know?
+
+The comparison you can do.
+
+[说话人 3] (15:54 - 15:54)
+Yeah.
+
+[说话人 1] (15:54 - 15:58)
+But, but the result is also interesting just for...
+
+[说话人 3] (15:58 - 16:46)
+Yeah, yeah. I was thinking about the comparison in the sense that, no, if, if at some point you will also probably use this to compare different models, obviously you can't have a extremely detailed result for every single model, otherwise it becomes cumbersome to, to compare. So you will want to maybe organise it into, no, okay, uh, for this particular, no, through simple questions of like, okay, how many of the relationship are meaningless to analyse further because they are too weak?
+
+And then, you know, how many of the remaining ones are simple enough that we explain them in one word and that's it. And then, you know, like where are the ones that, yeah.
+
+[说话人 2] (16:47 - 17:47)
+I, I have two questions. Yeah. The first thing is that currently we define the characteristic definition very subjectively.
+
+Yeah. And we calculated the matrix and we mapped the matrix to the definition. It is also subjectively.
+
+And for example, Tosun just said, how can we say a simple relationship? What's the definition of simple? We need to define it very quantitatively.
+
+So I think this is also the question I would like to say that if we could make some matrix range or some detailed matrix with some specific range of each matrix as the definition of the relationship, for example, the simple relation or the monotonic relationship or the situation relationship, is that necessary? We need to do, because currently it's too subjective.
+
+[说话人 1] (17:48 - 19:20)
+Yeah, because I mean, if you, maybe just as an example, if I, if I can go back here to your, to your table here, you know, so what it would, what it would mean, you're absolutely right. We need to quantify thresholds, but the thing is in a, in a, in a graph, in a flowchart, we can then define thresholds and then test whether these thresholds work and are sensible, you know? So we can do this as a, and, but for example, we might say, okay, when, when is there a relationship between two variables, do you know?
+
+And there might be on here, there might be several variables where we say, if these variables are above 0.7 or whatever we decide, then we think there is a relationship. It doesn't mean that they all have to be above 0.7, just one of them. So for example, if you say Pearson and Spearman, if one of them is above 0.7, we assume, or let's say the other direction, if, if either of them is below 0.7 or 0.6 or whatever we want to test, then we assume there is no relationship. And then we can add MIC and we can add maybe something else and say we have four characteristics, if none of them show up significantly high, we assume there is no relationship.
+
+[说话人 2] (19:21 - 20:06)
+Ah, this is also, I would like to say is that, because currently we are, many see just some several metrics to see whether it has characteristics. So this means that we can test whether these characteristics or not containing these characteristics impact the metrics and we can test, we can see whether these metrics can reflect the characteristics and what is the magnitude of the metrics can reflect the different levels of each characteristics. Am I understanding that?
+
+[说话人 1] (20:06 - 21:00)
+Yes. Yes. And I mean, it's, it's, I mean, you have to realise, and I think, I mean, we looked at this multiple times, like with things like Pearson or Spearman, there isn't an absolute value that you can say, if it's this and it's above, then it's perfectly correlated.
+
+And if it's below, then there's no correlation. So it is a bit of a threshold that an uncertain threshold, but it would be meaning for us, we say, okay, how do we ensure if, if there is any kind of relationship between two variables, it needs to show up either in Pearson or in Spearman or in MIC or in, or together or not. So it can be that MIC, if it's a very complex relationship, it might show a high value for MIC, even though Pearson and Spearman show there's nothing there.
+
+[说话人 2] (21:01 - 21:16)
+So this means that when we say a targeted characteristics, we can see several distinct metrics with its relevant magnitude, right? I think it's what I understand.
+
+[说话人 1] (21:16 - 21:42)
+Yeah, exactly. And then we can test the magnitude and see where it matches with our, with the synthetic data that you create or with later with a machine learning tool and see, yeah, because then you can say, okay, and if it's, and then we can say it's simple. Well, we probably want to say it's simple if it's monotonic and if it's doesn't have thresholds.
+
+[说话人 2] (21:42 - 21:49)
+Yeah. So I think that this is also the validation to say whether the manual diagnose is reliable.
+
+[说话人 1] (21:50 - 21:50)
+Yeah.
+
+[说话人 2] (21:50 - 23:18)
+Right. And Francesca, do you mind if I check to the last week's presentations, I would like to introduce some of the methods to Torsten. Yeah.
+
+This is also, I would like to say from the next, last meeting is that maybe we needed to quantify the weather first. So we need to quantify whether the metrics has, has, can, can reflect the target characteristics. And the next step is the magnitude.
+
+First, we needed to see whether the characteristics contained or not contained impact the metrics. So this is a workflow I have designed. First is we needed to, for each target characteristics, we can do some theoretical manifestation.
+
+This means that we can predict what's accepted, affected metrics it might be. And then we can generate the laboured synthetic scatter plots. This means that we can fix targeted characteristics and make some noise to, for example, we can calculate the 1000 times data set for further analysis.
+
+And yeah, this is similar like that one. Yeah. Yeah.
+
+Yeah. Yeah. And
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

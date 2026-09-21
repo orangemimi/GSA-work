@@ -1,0 +1,408 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 3] (0:00 - 0:16)
+within very local region to make the regression and link the different samples together to fit a curve. I think it may be a solution to solve these kind of problems.
+
+[说话人 1] (0:17 - 0:44)
+Because then we could fit the line that you get out, the regression line, and that would be maybe nonlinear and has different shapes. And then the one thing to look for would be whether there is a less regression that detects bifurcation. So what do you call this?
+
+A split. So if you have two, like this one here or so.
+
+[说话人 2] (0:45 - 0:50)
+Because the risk there is that the regression would just draw something in the middle. Yeah, exactly.
+
+[说话人 1] (0:51 - 0:57)
+But then maybe we can have a look at the literature and see whether there is something for that.
+
+[说话人 3] (0:58 - 0:59)
+A loss regression?
+
+[说话人 2] (1:00 - 1:05)
+Well, how loss regression handled bifurcation.
+
+[说话人 1] (1:06 - 1:07)
+Sorry, you go ahead.
+
+[说话人 2] (1:08 - 1:08)
+Sorry.
+
+[说话人 1] (1:09 - 1:12)
+We were talking at the same time. You go ahead, Francesca.
+
+[说话人 2] (1:13 - 1:37)
+I think the question is, if there is a adjustment that can be made for the loss regression to handle the case of bifurcation. Because if you apply it to a data set with a bifurcation, I suppose that a regression will draw a line between the two clouds of point because it's trying to be as close as possible to both.
+
+[说话人 3] (1:37 - 1:45)
+Yeah. I'm not sure whether it works currently, but I can test it later. Test whether it can fit to the branch.
+
+[说话人 1] (1:46 - 1:50)
+Yeah, but I was wondering whether there is maybe a solution in the literature.
+
+[说话人 3] (1:50 - 1:51)
+Already.
+
+[说话人 1] (1:51 - 1:55)
+Somebody might have already thought about that and found a clever solution.
+
+[说话人 3] (1:56 - 1:57)
+Yeah, I'm not sure.
+
+[说话人 1] (1:57 - 2:03)
+I can't tell. I'm not sure either, but there are lots of clever people out there. Somebody must have thought about this.
+
+Yeah.
+
+[说话人 2] (2:05 - 2:32)
+But then the idea there would be then that, like, if you do that, then would you still calculate then all these statistics on the data points, or you would use the loss regression to do the classification of linear, non-linear, concave, and so on?
+
+[说话人 3] (2:37 - 2:48)
+I'm not quite sure. Maybe we can see the result of loss regression and to see whether we need to follow the current decision tree or change it.
+
+[说话人 1] (2:50 - 4:05)
+Yeah, because there is value in some of these metrics because they quantify, for example, the amount of scatter or not. There might be a mixture of using a global value or a local variability or something like that. How we combine the local and the global information would then be the question.
+
+Because if you, so for example, if you have something that has a clear nonlinear shape and you fit it with a polynomial, then the exponent would be very meaningful. And the same with the r or r squared, doesn't really matter. This would capture the scatter, the amount of scatter.
+
+And as well as the variability from left to right would capture changes in the scatter, no? Like your saturation or acceleration kind of patterns.
+
+[说话人 3] (4:05 - 4:25)
+Yeah. So then we can do lower regression to see the results and to see how we can combine these metrics together to redefine this decision tree.
+
+[说话人 1] (4:25 - 4:36)
+Yeah, because it might, I mean, the hope would be that it makes it robust against the density differences. Yeah, yeah, yeah. And then we just have to find a solution for the bifurcation problem.
+
+[说话人 3] (4:36 - 4:36)
+Yeah.
+
+[说话人 1] (4:37 - 4:59)
+Because we might have this, like the top right examples here of land ice are actually quite good. Because we might have a regular case where there are either values at zero in the vertical or at zero in the horizontal. Yeah.
+
+You know? So that might be a typical bifurcation problem that we might see.
+
+[说话人 3] (4:59 - 5:08)
+Yeah. Maybe we can, Francesca, would you also make some comments?
+
+[说话人 2] (5:11 - 6:34)
+No, no, I think this is good. The other comment I was thinking about is that, but maybe we need to first get this to work a bit better. Because, yeah, I mean, the two you show us now, I mean, aside of the issues of not being able to find a bifurcation or so and so, but it seems here that perhaps what is more striking is not that much if the type of relationship is significantly different, but really just this information about the slope, no?
+
+So I'm wondering if maybe with other data sets it will be different. With the data sets we found so far, actually, no? Like it seems maybe we went even too far into measuring loads of different possibilities, no?
+
+For those shapes when actually maybe, no, is less shapes, options, and more additional information about that shape that, no, matters so far. Maybe the other examples will be more varied.
+
+[说话人 1] (6:35 - 6:49)
+Yeah, I think I wouldn't, I mean, these are, here for this it is, but these are also examples where you simply expect it to go up from left to right. Also, there are other examples where we'll have more.
+
+[说话人 2] (6:49 - 6:54)
+Do you have any examples where you have more surprising relationships?
+
+[说话人 1] (6:56 - 7:02)
+So far? Yeah. What's, is there one more?
+
+You had these, yeah. So here you see.
+
+[说话人 3] (7:03 - 7:29)
+Yeah, this tree doesn't detect, doesn't detect a lot of relationships, although we can see it may have relationships by this plot, but also this is mainly because MIC is less than 0.6. But this is also, I think the other plots were sort of volume, input-output volume.
+
+[说话人 1] (7:29 - 7:39)
+Yeah. And so they essentially have no choice to go up, but to go up from left to right. So here this is, for example, more the energy part.
+
+[说话人 2] (7:40 - 7:40)
+Yeah.
+
+[说话人 1] (7:41 - 7:51)
+And that's a lot more variable in that sense because it's an interaction. It's probably the interaction with moisture availability that plays a big role.
+
+[说话人 2] (7:51 - 7:52)
+Yes.
+
+[说话人 1] (7:52 - 8:04)
+And you see, like here, you know, these are quite nice. So you see that it's going up and then going down. And this is like almost, you know, sinusoidal.
+
+So.
+
+[说话人 2] (8:07 - 8:17)
+Looking at this though, do we have, I'm looking at, for example, you know, the first two on the top left.
+
+[说话人 1] (8:18 - 8:19)
+These two?
+
+[说话人 2] (8:19 - 8:38)
+Yeah. Do we have anything to just quickly capture the range of variability? Because perhaps what is striking about these two is that the vertical axis, not in one case goes up to 4000 and in the other case goes up to 8000, no?
+
+[说话人 3] (8:38 - 8:39)
+Yeah.
+
+[说话人 2] (8:40 - 8:50)
+So basically, the most obvious difference is not even the relationship, but just the range that are covered, no?
+
+[说话人 3] (8:51 - 8:51)
+Yeah.
+
+[说话人 2] (8:51 - 9:06)
+So basically, in wet worm, you produce a double runoff than in, well, if I compare wet worm to dry worm, in wet worm you compare, you produce four times more.
+
+[说话人 1] (9:06 - 9:07)
+Yeah.
+
+[说话人 2] (9:07 - 9:13)
+Total runoff than in dry worm, given the same things on the horizontal axis, no?
+
+[说话人 1] (9:14 - 9:18)
+Yeah. So it's another aspect of this that we should capture.
+
+[说话人 2] (9:18 - 9:20)
+Yeah. It's another aspect that, yeah.
+
+[说话人 1] (9:21 - 9:27)
+I guess that's more typical what we normally capture, no? Because we normally look at the magnitudes.
+
+[说话人 2] (9:28 - 9:28)
+Yeah.
+
+[说话人 1] (9:29 - 9:41)
+Okay. And so here it's to say, okay, maybe the magnitude varies, but maybe the shape is exactly the same, it's just sort of scaled. But yeah, it's something we also need to capture somehow.
+
+[说话人 2] (9:42 - 9:42)
+Yeah.
+
+[说话人 1] (9:45 - 9:46)
+But if you look at, you know...
+
+[说话人 2] (9:46 - 9:48)
+And in this case, yeah, sorry.
+
+[说话人 1] (9:48 - 10:08)
+Just to look at, you know, some of these shapes here have very different, the shapes look very similar, even though the magnitude and the variability is very different, you know, whereas this one has a bit of a different shape. This one seems to be increasing, the other one have a more sinusoidal shape.
+
+[说话人 2] (10:08 - 10:08)
+Yeah.
+
+[说话人 1] (10:09 - 10:19)
+So that, I think, is now the interesting part. And then the scaling, the same here. So these have all sort of a central point in the middle.
+
+[说话人 3] (10:19 - 10:19)
+Yeah.
+
+[说话人 1] (10:20 - 10:25)
+But this one is different. But it might just be a data problem. Maybe it has too few points.
+
+[说话人 2] (10:25 - 10:33)
+Yes. So the idea would be to now, if you were using this local interpolator, you could produce a better, let's say, a better black line.
+
+[说话人 1] (10:34 - 10:35)
+Yeah, exactly.
+
+[说话人 2] (10:35 - 10:43)
+And then you could use that black line to say, are these similar or not, potentially. Yeah.
+
+[说话人 1] (10:44 - 10:51)
+And we can quantify some characteristics of the black line as being, you know, nonlinear or straight or whatever.
+
+[说话人 2] (10:52 - 10:52)
+Yep.
+
+[说话人 1] (10:53 - 10:59)
+And that might be more robust to understand what is going on.
+
+[说话人 3] (11:00 - 11:10)
+And for after the classification of different group, we can also detect the different magnitude slope or different characteristics of within each group.
+
+[说话人 1] (11:11 - 11:13)
+Yeah, yeah, yeah, absolutely. Yeah.
+
+[说话人 3] (11:14 - 11:36)
+And this is one thing I would like to mention, is here the branch is always detected as all land and land ice zoom. And I think the branch, it will exist mainly in all land here and in land ice.
+
+[说话人 2] (11:37 - 11:37)
+Yeah.
+
+[说话人 1] (11:38 - 11:40)
+The bifurcation of the branching.
+
+[说话人 2] (11:40 - 11:46)
+Yeah, yeah, yeah. Though in that case, I'm not sure why it classified that as branch. I can't see where the branch.
+
+[说话人 3] (11:46 - 11:49)
+Yeah, Michio, this is also one reason.
+
+[说话人 1] (11:50 - 12:04)
+I think, again, it's density differences. Yeah. Because there could be that if you, yeah, if you look at it in terms of density, you might perfectly have two lines.
+
+[说话人 3] (12:04 - 12:05)
+Yeah.
+
+[说话人 1] (12:05 - 12:16)
+But it's here because density doesn't, you can't see density in these scatter plots. You can only see where it's very sparse, but the rest is invisible.
+
+[说话人 2] (12:17 - 12:17)
+Yes.
+
+[说话人 1] (12:17 - 12:37)
+So that's why that's also interesting because that means for us, let's say if you were to train an AI algorithm to look at this, you know, it doesn't work unless we have a way to also visualize density differences.
+
+[说话人 3] (12:37 - 14:07)
+Yes, exactly. And yeah, this is also, it detects as branch at the land ice zone, although for visualization, it doesn't look like the branch. And I think maybe the main point is I use this deep test and maybe it could be too sensitive to the density of the Y distribution.
+
+So this is main reason it be divided into branch. And this is also the reason why they divided into transition because transition has to, it need to define it as a turning point as zero with a significant deep test. So I think this is the main reason why they are maybe misclassification or not.
+
+I'm not sure. And this is potential solution I think about first is maybe we can first analyze just the four climate zones separately because the branch currently and the transition just appear in the ore zone and the land ice zone. But this has been separated because you have provided a lot of great suggestions for me.
+
+And I think this solution is not very good currently.
+
+[说话人 1] (14:08 - 14:30)
+Yeah. But I think if you try the less regression and then look for whether there is already a solution for branching in less regression and then see whether that takes care of our problem of density differences, which seems to dominate the results very much.
+
+[说话人 3] (14:31 - 14:37)
+Yeah. Maybe we can try and see the result and to do some revealed about.
+
+[说话人 1] (14:38 - 14:40)
+Is that okay, Jessica? What do you think?
+
+[说话人 3] (14:46 - 14:55)
+Yeah. Okay. So the next week I will try the lowest regression and to see how the result goes.
+
+[说话人 1] (14:56 - 15:04)
+Yeah. And if you find something in the literature where they already look at branching as part of it, then that would be interesting to maybe send around.
+
+[说话人 2] (15:04 - 15:28)
+Yeah. Or if there is anything on branching itself, because the other option is that you have so one option is there is an adjusted version of local interpolation that finds that for you that handle that. Or the other option is the very first check you do is for branching.
+
+[说话人 3] (15:28 - 15:29)
+Yeah.
+
+[说话人 1] (15:30 - 15:32)
+Branching or bifurcation, no?
+
+[说话人 2] (15:32 - 15:52)
+Yes. And then if a bifurcation is detected, then you have like, I don't know, maybe you have two local interpolation to be done on the two branches. Yeah.
+
+And if it's not, instead, the whole dataset goes to the local interpolation, no? Yeah.
+
+[说话人 3] (15:54 - 15:59)
+Okay. Next week I will try and mix some literature to see.
+
+[说话人 2] (16:01 - 16:04)
+Good. Okay. Thank you.
+
+Very nice.
+
+[说话人 3] (16:04 - 16:05)
+Thank you.
+
+[说话人 2] (16:05 - 16:15)
+And yeah, I will see you next week. Torsten, you wanted to discuss how is your proposal going?
+
+[说话人 1] (16:16 - 16:31)
+Yeah, I will make an adjustment and I will submit something, probably not this one, but a smaller one which has a two-stage thing, which is a German thing, but I will send you this tomorrow or hopefully.
+
+[说话人 2] (16:32 - 16:32)
+Okay.
+
+[说话人 1] (16:33 - 16:43)
+It's only four pages long, so. Yeah. But it has the same deadline, end of next week.
+
+But that seems more sensible.
+
+[说话人 2] (16:44 - 16:46)
+You have decided to...
+
+[说话人 1] (16:46 - 16:51)
+I can't find a good, comfortable place for myself in this other proposal right now, so.
+
+[说话人 2] (16:51 - 16:51)
+Okay.
+
+[说话人 1] (16:51 - 17:03)
+So, this one might be more, yeah, a better stepwise thing. It's a bit less money, but it would still be very good, so.
+
+[说话人 3] (17:04 - 17:04)
+Okay.
+
+[说话人 1] (17:05 - 17:08)
+Yeah. So, I'll send you that and it would still be great to get your... No problem.
+
+[说话人 2] (17:10 - 17:12)
+All right. Okay.
+
+[说话人 1] (17:12 - 17:12)
+Thank you.
+
+[说话人 2] (17:12 - 17:13)
+Thank you very much.
+
+[说话人 3] (17:13 - 17:13)
+See you next week.
+
+[说话人 1] (17:13 - 17:15)
+Thank you. Bye. Bye-bye.
+
+[说话人 3] (17:19 - 17:20)
+Thank you.
+
+[说话人 1] (17:21 - 17:31)
+Right, right. Maybe still some of the basic solutions are the best, you know. So, something like that.
+
+[说话人 3] (17:31 - 17:36)
+In the meantime, we still need to re-walk it. Yeah. We've gone through this.
+
+[说话人 1] (17:36 - 17:49)
+Yeah, but if it... I mean, all the other things we have, you can still use. It's just we...
+
+Maybe it's not so good to actually look at the raw data, but the resulting relationship, you know, that we can solve. Okay. Thank you.
+
+[说话人 3] (17:50 - 17:50)
+Bye-bye. Okay.
+
+[说话人 1] (18:09 - 18:29)
+If you open Google Scholar...
+
+[说话人 2] (18:29 - 18:29)
+Yeah.
+
+[说话人 1] (18:30 - 18:54)
+I mean, if you look for my Google Scholar page, it's in the end.
+
+[说话人 3] (18:54 - 18:54)
+I'm sorry.
+
+[说话人 1] (18:55 - 19:03)
+It's okay. So, you know, it's simple.
+
+[说话人 3] (19:16 - 19:17)
+I'm sorry. Yeah, no, it's fine.
+
+[说话人 2] (19:23 - 19:24)
+On this paper?
+
+[说话人 1] (19:24 - 19:50)
+Yeah. So, here. So, this was a visualization paper I wrote with a PhD student and one of the things she had done...
+
+It's not very... Actually, maybe it looks better in the PDF.
+
+[说话人 3] (19:57 - 20:00)
+Sorry, my mind went too quick.
+
+[说话人 1] (20:01 - 20:02)
+See here?
+
+[说话人 3] (20:03 - 20:03)
+Yeah.
+
+[说话人 1] (20:03 - 20:54)
+It's not... So, here you see density differences. So, it might not be the best visualization we can use, but there are ways to show density differences.
+
+The other option is actually, which I just saw, if you have this and you break everything up in some kind of pattern shape, you know, so that's what people do and then you can present the density of the points in here visually, you know, and then you can see where there is more density and there is less, for example. And there should be a couple of references in here to ways to show density differences in data.
+
+[说话人 3] (20:54 - 21:05)
+Do you mean that if we can... For example, there are a lot of grid and if there are a lot of points here, this could be dark and this could be lighter and we can... Exactly.
+
+[说话人 1] (21:05 - 21:30)
+Or different shapes. So, it doesn't have to be a grid. It can be different ways.
+
+So, guideline six. Guideline six, plot overlapping points in a way that density difference become apparent in scatter plots. And then there are some examples here.
+
+Yeah. Few in Cleveland. Actually, few...
+
+Actually, can we go a little bit to the second?
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

@@ -1,0 +1,141 @@
+zone,model,x_label,y_label,method,shape_label,count
+CD,CLASSIC,LAI,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+CD,CLASSIC,LAI,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+CD,CLASSIC,LAI,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+CD,CLASSIC,LAI,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+CD,CLASSIC,LAI,E_soil,Piecewise linear,Monotonic nonlinear,1
+CD,CLASSIC,LAI,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+CD,CLASSIC,LAI,E_soil,Symbolic regression,Non-monotonic: U-shaped / inverted-U,1
+CD,CLASSIC,P,E_soil,Equal-count bins,Monotonic nonlinear,1
+CD,CLASSIC,P,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+CD,CLASSIC,P,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+CD,CLASSIC,P,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+CD,CLASSIC,P,E_soil,Piecewise linear,Non-monotonic: U-shaped / inverted-U,1
+CD,CLASSIC,P,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+CD,CLASSIC,P,E_soil,Symbolic regression,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,LAI,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,LAI,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,LAI,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,LAI,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,LAI,E_soil,Piecewise linear,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,LAI,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,LAI,E_soil,Symbolic regression,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,P,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,P,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,P,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,P,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,P,E_soil,Piecewise linear,Linear,1
+CD,LPJ-GUESS,P,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+CD,LPJ-GUESS,P,E_soil,Symbolic regression,Linear,1
+CW,CLASSIC,LAI,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+CW,CLASSIC,LAI,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+CW,CLASSIC,LAI,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+CW,CLASSIC,LAI,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+CW,CLASSIC,LAI,E_soil,Piecewise linear,Linear,1
+CW,CLASSIC,LAI,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+CW,CLASSIC,LAI,E_soil,Symbolic regression,Linear,1
+CW,CLASSIC,P,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+CW,CLASSIC,P,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+CW,CLASSIC,P,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+CW,CLASSIC,P,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+CW,CLASSIC,P,E_soil,Piecewise linear,Monotonic nonlinear,1
+CW,CLASSIC,P,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+CW,CLASSIC,P,E_soil,Symbolic regression,Monotonic nonlinear,1
+CW,LPJ-GUESS,LAI,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,LAI,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,LAI,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,LAI,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,LAI,E_soil,Piecewise linear,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,LAI,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,LAI,E_soil,Symbolic regression,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,P,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,P,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,P,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,P,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,P,E_soil,Piecewise linear,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,P,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+CW,LPJ-GUESS,P,E_soil,Symbolic regression,Linear,1
+HD,CLASSIC,LAI,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+HD,CLASSIC,LAI,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+HD,CLASSIC,LAI,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+HD,CLASSIC,LAI,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+HD,CLASSIC,LAI,E_soil,Piecewise linear,Linear,1
+HD,CLASSIC,LAI,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+HD,CLASSIC,LAI,E_soil,Symbolic regression,Non-monotonic: U-shaped / inverted-U,1
+HD,CLASSIC,P,E_soil,Equal-count bins,Monotonic nonlinear,1
+HD,CLASSIC,P,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+HD,CLASSIC,P,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+HD,CLASSIC,P,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+HD,CLASSIC,P,E_soil,Piecewise linear,Monotonic nonlinear,1
+HD,CLASSIC,P,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+HD,CLASSIC,P,E_soil,Symbolic regression,Non-monotonic: U-shaped / inverted-U,1
+HD,LPJ-GUESS,LAI,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+HD,LPJ-GUESS,LAI,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+HD,LPJ-GUESS,LAI,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+HD,LPJ-GUESS,LAI,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+HD,LPJ-GUESS,LAI,E_soil,Piecewise linear,Monotonic nonlinear,1
+HD,LPJ-GUESS,LAI,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+HD,LPJ-GUESS,LAI,E_soil,Symbolic regression,Non-monotonic: U-shaped / inverted-U,1
+HD,LPJ-GUESS,P,E_soil,Equal-count bins,Monotonic nonlinear,1
+HD,LPJ-GUESS,P,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+HD,LPJ-GUESS,P,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+HD,LPJ-GUESS,P,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+HD,LPJ-GUESS,P,E_soil,Piecewise linear,Linear,1
+HD,LPJ-GUESS,P,E_soil,Polynomial degree 3,Monotonic nonlinear,1
+HD,LPJ-GUESS,P,E_soil,Symbolic regression,Monotonic nonlinear,1
+HW,CLASSIC,LAI,E_soil,Equal-count bins,Monotonic nonlinear,1
+HW,CLASSIC,LAI,E_soil,Equal-width bins,Monotonic nonlinear,1
+HW,CLASSIC,LAI,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,LAI,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,LAI,E_soil,Piecewise linear,Linear,1
+HW,CLASSIC,LAI,E_soil,Polynomial degree 3,Linear,1
+HW,CLASSIC,LAI,E_soil,Symbolic regression,Linear,1
+HW,CLASSIC,LAI,T,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,LAI,T,Equal-width bins,Monotonic nonlinear,1
+HW,CLASSIC,LAI,T,GAM,Monotonic nonlinear,1
+HW,CLASSIC,LAI,T,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,LAI,T,Piecewise linear,Linear,1
+HW,CLASSIC,LAI,T,Polynomial degree 3,Monotonic nonlinear,1
+HW,CLASSIC,LAI,T,Symbolic regression,Monotonic nonlinear,1
+HW,CLASSIC,P,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,E_soil,Piecewise linear,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,E_soil,Symbolic regression,Monotonic nonlinear,1
+HW,CLASSIC,P,T,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,T,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,T,GAM,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,T,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,T,Piecewise linear,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,T,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+HW,CLASSIC,P,T,Symbolic regression,Monotonic nonlinear,1
+HW,LPJ-GUESS,LAI,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,LAI,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,LAI,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,LAI,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,LAI,E_soil,Piecewise linear,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,LAI,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,LAI,E_soil,Symbolic regression,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,LAI,T,Equal-count bins,Monotonic nonlinear,1
+HW,LPJ-GUESS,LAI,T,Equal-width bins,Monotonic nonlinear,1
+HW,LPJ-GUESS,LAI,T,GAM,Monotonic nonlinear,1
+HW,LPJ-GUESS,LAI,T,LOWESS,Monotonic nonlinear,1
+HW,LPJ-GUESS,LAI,T,Piecewise linear,Monotonic nonlinear,1
+HW,LPJ-GUESS,LAI,T,Polynomial degree 3,Monotonic nonlinear,1
+HW,LPJ-GUESS,LAI,T,Symbolic regression,Linear,1
+HW,LPJ-GUESS,P,E_soil,Equal-count bins,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,P,E_soil,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,P,E_soil,GAM,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,P,E_soil,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,P,E_soil,Piecewise linear,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,P,E_soil,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,P,E_soil,Symbolic regression,Linear,1
+HW,LPJ-GUESS,P,T,Equal-count bins,Monotonic nonlinear,1
+HW,LPJ-GUESS,P,T,Equal-width bins,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,P,T,GAM,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,P,T,LOWESS,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,P,T,Piecewise linear,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,P,T,Polynomial degree 3,Non-monotonic: U-shaped / inverted-U,1
+HW,LPJ-GUESS,P,T,Symbolic regression,Monotonic nonlinear,1

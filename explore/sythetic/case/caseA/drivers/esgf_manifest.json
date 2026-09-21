@@ -1,0 +1,448 @@
+{
+  "selection": {
+    "project": "CMIP6",
+    "activity_id": "CMIP",
+    "institution_id": "MPI-M",
+    "source_id": "MPI-ESM1-2-LR",
+    "experiment_id": "historical",
+    "variant_label": "r1i1p1f1",
+    "grid_label": "gn"
+  },
+  "start_year": 1985,
+  "end_year": 2014,
+  "search_url": "https://esgf-node.llnl.gov/esg-search/search/",
+  "records": [
+    {
+      "variable": "tas",
+      "table": "Amon",
+      "title": "tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "start_year": 1970,
+      "end_year": 1989,
+      "size": 8034078,
+      "checksum": "b5e5ed60b1fd3ca3ec854eced2479412e3975f809ef29d200cedcb1395a1a884",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/tas/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "tas",
+      "table": "Amon",
+      "title": "tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "start_year": 1990,
+      "end_year": 2009,
+      "size": 8029080,
+      "checksum": "1ac59e6111ee29b7209ebcf321619d2c7dceb4b7d91c5fb387a8f0dbec599c87",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/tas/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "tas",
+      "table": "Amon",
+      "title": "tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "start_year": 2010,
+      "end_year": 2014,
+      "size": 2040094,
+      "checksum": "6296fb12871b41b6a0aecce6db606338e66afe654a2626b01d2a043791602aa5",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/tas/tas_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rsds",
+      "table": "Amon",
+      "title": "rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "start_year": 1970,
+      "end_year": 1989,
+      "size": 8862921,
+      "checksum": "c447d823945b1b4a77628e95b12768a27c9f2be56fd5bf2af9e63bf3561e82ed",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsds/gn/v20190710/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsds/gn/v20190710/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsds/gn/v20190710/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rsds/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rsds",
+      "table": "Amon",
+      "title": "rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "start_year": 1990,
+      "end_year": 2009,
+      "size": 8852422,
+      "checksum": "a81d4181db290723ddde07830d873d6082ce0b91e757d81e014be712254e0b31",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsds/gn/v20190710/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsds/gn/v20190710/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsds/gn/v20190710/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rsds/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rsds",
+      "table": "Amon",
+      "title": "rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "start_year": 2010,
+      "end_year": 2014,
+      "size": 2249106,
+      "checksum": "3d31604e373cf488dec55c24d494da35da58c604017d2bdacca93d6f58071441",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsds/gn/v20190710/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsds/gn/v20190710/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsds/gn/v20190710/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rsds/rsds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rsus",
+      "table": "Amon",
+      "title": "rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "start_year": 1970,
+      "end_year": 1989,
+      "size": 8295890,
+      "checksum": "e45daaaa1f3c63c160c9475a6349639f47aa285b572559adad076b17d9abf82d",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsus/gn/v20190710/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsus/gn/v20190710/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsus/gn/v20190710/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rsus/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rsus",
+      "table": "Amon",
+      "title": "rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "start_year": 1990,
+      "end_year": 2009,
+      "size": 8268523,
+      "checksum": "81a21d3f564fcb904046c0768acb66d54157c1263d0f93282387fc892e28b886",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsus/gn/v20190710/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsus/gn/v20190710/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsus/gn/v20190710/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rsus/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rsus",
+      "table": "Amon",
+      "title": "rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "start_year": 2010,
+      "end_year": 2014,
+      "size": 2111428,
+      "checksum": "0bf39cb0911e260ec0b8233105aa0ad6ce8ed5151c673b21c8b5b394e4bcd564",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsus/gn/v20190710/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsus/gn/v20190710/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rsus/gn/v20190710/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rsus/rsus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rlds",
+      "table": "Amon",
+      "title": "rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "start_year": 1970,
+      "end_year": 1989,
+      "size": 9159175,
+      "checksum": "e2193079c52eab28f42af12eada27c5f9fb596cf04f84511a02fbf9a9a097bde",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlds/gn/v20190710/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlds/gn/v20190710/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlds/gn/v20190710/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rlds/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rlds",
+      "table": "Amon",
+      "title": "rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "start_year": 1990,
+      "end_year": 2009,
+      "size": 9142303,
+      "checksum": "e64ec045a4fd2939499fc8a46c8b0d4710256bd89797adacf135032c56516774",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlds/gn/v20190710/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlds/gn/v20190710/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlds/gn/v20190710/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rlds/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rlds",
+      "table": "Amon",
+      "title": "rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "start_year": 2010,
+      "end_year": 2014,
+      "size": 2320914,
+      "checksum": "e29da6f0e647fb9c7b13dabe2c700c1ed6d4435f52ee19a19038484d2597cdb0",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlds/gn/v20190710/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlds/gn/v20190710/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlds/gn/v20190710/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rlds/rlds_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rlus",
+      "table": "Amon",
+      "title": "rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "start_year": 1970,
+      "end_year": 1989,
+      "size": 7613504,
+      "checksum": "c4308a7d4412858d7693f12c85798a56e748db21622375049200689a2cd7e732",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlus/gn/v20190710/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlus/gn/v20190710/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlus/gn/v20190710/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rlus/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rlus",
+      "table": "Amon",
+      "title": "rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "start_year": 1990,
+      "end_year": 2009,
+      "size": 7603002,
+      "checksum": "846f73eaa13aed3b6b690c7a744d0eef590e06a065629c5eb55fdecf45cd7976",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlus/gn/v20190710/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlus/gn/v20190710/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlus/gn/v20190710/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rlus/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "rlus",
+      "table": "Amon",
+      "title": "rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "start_year": 2010,
+      "end_year": 2014,
+      "size": 1933429,
+      "checksum": "9261106b30c83e5be6e1587dd5649e5770e850354fa31382f9aa19d865bb81ba",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlus/gn/v20190710/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlus/gn/v20190710/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/rlus/gn/v20190710/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/rlus/rlus_Amon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "mrso",
+      "table": "Lmon",
+      "title": "mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "start_year": 1970,
+      "end_year": 1989,
+      "size": 4689938,
+      "checksum": "2f7e748521ab3ea346d391d240b70d225bd97effb816b86a36296741d4c34183",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrso/gn/v20190710/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrso/gn/v20190710/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrso/gn/v20190710/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/mrso/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "mrso",
+      "table": "Lmon",
+      "title": "mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "start_year": 1990,
+      "end_year": 2009,
+      "size": 4690497,
+      "checksum": "81474b4148b330604217ad73afaac111e99637dd2e6a6982d76623fafe0ba3d1",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrso/gn/v20190710/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrso/gn/v20190710/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrso/gn/v20190710/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/mrso/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "mrso",
+      "table": "Lmon",
+      "title": "mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "start_year": 2010,
+      "end_year": 2014,
+      "size": 1204450,
+      "checksum": "5fb0bf4f1f03472e1f526ffc1134c12f0b6564752a9910c64ad3cffabbfa42de",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrso/gn/v20190710/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrso/gn/v20190710/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrso/gn/v20190710/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/mrso/mrso_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "mrsos",
+      "table": "Lmon",
+      "title": "mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "start_year": 1970,
+      "end_year": 1989,
+      "size": 4547475,
+      "checksum": "585bf02078c7d2c91f662c6b29ffe6d8e0315b52b46eef7604b6498381720a7d",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrsos/gn/v20190710/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrsos/gn/v20190710/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrsos/gn/v20190710/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/mrsos/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "mrsos",
+      "table": "Lmon",
+      "title": "mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "start_year": 1990,
+      "end_year": 2009,
+      "size": 4547720,
+      "checksum": "58a8fc80cc2d321c30062a6707e96820fe5fe6b48ee5c18e393323e8c51cfab9",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrsos/gn/v20190710/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrsos/gn/v20190710/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrsos/gn/v20190710/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/mrsos/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "mrsos",
+      "table": "Lmon",
+      "title": "mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "start_year": 2010,
+      "end_year": 2014,
+      "size": 1170216,
+      "checksum": "bf111b4d2b5a59735ceb4e300d9681fc0180c365636898b0a5a23c256526118d",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrsos/gn/v20190710/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrsos/gn/v20190710/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Lmon/mrsos/gn/v20190710/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/mrsos/mrsos_Lmon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "snw",
+      "table": "LImon",
+      "title": "snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "start_year": 1970,
+      "end_year": 1989,
+      "size": 1571733,
+      "checksum": "0e616637bca176e90ecca5e3ef0b9d2c865469d4999c35d1a21eca67d224d3db",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/LImon/snw/gn/v20190710/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/LImon/snw/gn/v20190710/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/LImon/snw/gn/v20190710/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/snw/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_197001-198912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "snw",
+      "table": "LImon",
+      "title": "snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "start_year": 1990,
+      "end_year": 2009,
+      "size": 1527677,
+      "checksum": "d6f012d67e90ce8d19050a5e26a6a3f1c4ebeb8f74ff3b93f7f80bcdba0186db",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/LImon/snw/gn/v20190710/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/LImon/snw/gn/v20190710/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/LImon/snw/gn/v20190710/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/snw/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+      "status": "existing-verified"
+    },
+    {
+      "variable": "snw",
+      "table": "LImon",
+      "title": "snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "start_year": 2010,
+      "end_year": 2014,
+      "size": 415802,
+      "checksum": "529df08122fed2b9db61d65c3f55545a558e5ebafaaaf3e516843d691e269b19",
+      "checksum_type": "SHA256",
+      "version": "20190710",
+      "candidate_urls": [
+        "https://g-52ba3.fd635.8443.data.globus.org/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/LImon/snw/gn/v20190710/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-data04.diasjp.net/thredds/fileServer/esg_dataroot/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/LImon/snw/gn/v20190710/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+        "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/LImon/snw/gn/v20190710/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc"
+      ],
+      "local_path": "/Users/mimi/Documents/Code/Github/GSA-work/explore/sythetic/case/caseA/drivers/raw/snw/snw_LImon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_201001-201412.nc",
+      "status": "existing-verified"
+    }
+  ]
+}

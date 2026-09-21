@@ -1,0 +1,53 @@
+‘Supplementary Text
+‘Summaty of figures and tables
+
+This section provides validation analyses, and extended results supporting the main study
+on hemispheric asyminetry in global evapotranspiration (ET) trends. Supplementary Figures and
+Tables are structured as follows:
+
+Figures SI-S7 validate the ensemble machine learning framework. Figure SI maps the 183
+large basins (=30,000 km?) used for model training and their area distribution. Figures $2-S4
+demonstrate the accuracy of our model in reproducing trends in observed annual ET across the
+basins actoss globe, the Southern Hemisphere and Northem Hemisphere, respectively. Under the
+validation mode, our model can get high accuracy, with R? being 0.83, 0.81 and 0.79 for globe,
+the Southem Hemisphere and Northern Hemisphere, respectively. This demonstrates the
+robustness of our machine learning model. Figures S3S7 further demonstrate good agreement
+between water balance-derived ET trends and machine learning-simulated trends across all
+combinations of precipitation (CRU, GPCP, MSWEP) and terrestrial water storage change (CSR,
+GSFC, JPL) datasets.
+
+Figure S8 shows the spatial patterns of simulated amual ETT trends derived from models
+trained on different water-balance ET combinations. Each simulation reveals a clear hemispheric
+contrast between the Northem and Southern Hemispheres,
+
+Figure $9 compares annual ET derived from the original JPL-GRACE dataset with that
+from two downscaled JPL-GRACE products across the 183 sclocted basins. The original and
+downscaled datasets are highly consistent, with an R? of 0.98 or higher. Figures $10 and S11
+illustrate the agreement between water-balance-derived ET trends (obtained from downscaled
+JPL terrestrial water storage change datasets) and machine-learning-simulated ET trends. Using
+the downscaled datasets yielded similar cross-validation performance to using the original
+datasets (see the JPL-based comparisons in Figures S5-S7).
+
+Figure S12 analyzes the trend contributions and training data coverage for the Southern
+Hemisphere. South Americaand the Amazon basin in particular—is a major contributor to the
+recent ET decline in the Southern Hemisphere. Amazon River Basin accounted for more than
+40% of the total trend. We also assessed the completeness of the streamflow (Q) records for the
+‘basins used to train the machine leaning models. For most observed basins in the Southern
+Hemisphere, the percentage of missing data during the 2000-2022 analysis period is below 20%,
+lending high confidence to the modeling results based on this dataset.
+
+Figure $13 reveals the spatially heterogeneous influence of ENSO (Nilo 3.4 index) on ET
+anomalies, with strong negative correlations in Australia and southern Africa and positive
+correlations in western North Ametica and Central Asia,
+
+Figure $14 shows spatial patterns of trends in precipitition (Pr), potential
+evapotranspiration (PET), and leaf area index (LAI). Figure 15 compares times series of annual-
+‘mean air temperature (Ta) and precipitation (Pr) alongside annual ET. Figures $16 show spatial
+patterns of trends in individual ancillary variables (net radiation, vapor pressure deficit, and wind
+speed), contextualizing the mechanistic drivers of hemispheric asyrametry.
+
+Figure $17 contrasts our hemispheric ET trends against five diagnostic BT products and 32
+CMIP6 Earth System Models (ESMS), highlighting systematic biases in conventional
+
+2:
+

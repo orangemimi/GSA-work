@@ -1,0 +1,23 @@
+approaches. Figures $18-S19 demonstrate that individual diagnostic models show weaker
+agreement with water balance-derived ET anomalies than our integrated approach,
+
+Figure $20 summarizes the methodological workflow, including data preparation, Random
+Forest model training, and global prediction.
+
+Figure S21 confirms the robustness of the attribution model (GAM-SHAP),
+explaining >98% of ET anomalics in 90% of basins.
+
+‘Tables S1-S3 provide key metadata and performance metrics. Table SI lists ET trends
+(2000-2022) for 32 CMIP6 ESMSs, revealing their skills in capturing hemispheric asymmetry.
+Table S2 details the 183 river basins used for training, including locations, areas, and streamflow
+data sources. Table $3 summarizes water diverted from Yangtze River Basin to lower Hai River
+Basin through the South-to-North Water Transfer Project, Table $4 quantifies the machine
+earning model’s performance (NSE > 0.93, R? > 0.93 across all input combinations and at their
+validations mode).
+
+In summary, these supplements underscore the rigor of our observation-constrained
+framework, validate the contrasting hemispheric ET trends, and highlight limitations in curcent
+diagnostic products and ESMs.
+
+3
+

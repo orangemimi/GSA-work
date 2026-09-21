@@ -1,0 +1,44 @@
+A
+2 oy g £8 an Oy
+a) BS 8 SES AL beg
+Sogcag hE ee BI
+a oo en bge “hy
+er mm 3 eas
+a3 Re
+a Biss € Q
+5 Pod p
+: pty a
+\ og \
+C8 4
+*, et
+os Jy S ete
+. ie 3 wh
+a o
+aM 1
+Loran
+B
+S700 B80? ssa01 7 ine
+38 '
+| 1 [ [Eiiiiibssins sotocted])
+' EP |-==10th percentie |
+20 ' | |e neaian oem
+' | sam percentte
+E15 ‘ |
+Z10- i
+mf I
+| :
+5} [
+°
+10% 10° 10° 107
+Basin area (km, Log scale)
+Fig. SI.
+
+“The 183 large basins (> 30,000 km) selected for training the random forest machine-
+learning model and cross-validations. (A) Spatial location. (B) Statistical distribution of basin
+area. Basin IDs are consistent to those shown in Table 82, The training basins represent 42.7%
+and 58.8% of the total basin area (excluding Greenland and Antarctica) in the Northern and
+Souther Hemispheres, respectively, providing broad spatial coverage across major
+hydroclimatic regions.
+
+4
+

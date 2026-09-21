@@ -1,0 +1,97 @@
+229 reasonably large basins, including a total of 275 basins. To ensure that the training the
+
+430 machine-leaming model could be appropriately extrapolated, we only sclected basins that
+
+431 exceeded 10,000 km?, As a result, 232 basins were retained for the final analysis, Note
+
+4a that the excluded 43 small basins (ic., < £0, 000 km?) only accounts for 0.075% of the
+
+433 HydroSHEDS global basins by area. It is noted that the 183 training basins were selected
+
+20 based on streamflow gauge availability and rigorous data quality criteria, whereas the 232,
+
+438 river basins globally used for global and hemispheric analysis were derived solely from,
+
+436 HydroSHEDS. This distinction ensures that the training basins reflect observational
+
+a7 constraints, while the HydroSHEDS basins provide comprehensive spatial coverage for
+
+438 global and hemispheric assessments,
+
+439 Of the 232 basins used for global analysis, 173 are in the Northern Hemisphere and 59 in.
+
+440 the Southem Hemisphere, While the number of basins differs between hemispheres, the
+
+aat area-weighted aggregation cnsures that large basins (c.g., Amazon, Congo, Murray-
+
+442 Darling) dominate the hemispheric signal. The robusiness of the asymmetry is supported
+
+443 by the consistency of trends within each hemisphere (Fig. 1b) and their physical
+
+444 plausibility with observed driver trends (figs. $14 S15).
+
+445 Climate index data
+
+446 To account for the influence of El Nitio-Southem Oscillation (ENSO) on global ET
+
+“7 variability, we incorporated the monthly Nino 3.4 index into our analysis. The Nino 3.4
+
+448 index is derived from sea surface temperature (SST) anomalies in the equatorial Pacific
+
+449 Ocean averaged over the region bounded by 5°N-5°S and 170°W-120°W. The Nino 3.4
+
+450 dataset (35) for Jan/1870 to Dec/2024 was obtained from NOAA website
+
+451 (https://psl.noaa.gov/gcos_wgsp/Timeseries/Nino34/; Inst accessed on 23 January 2025),
+
+452 Positive Nino 3.4 index values indivatc El Nifio conditions, characterized by warmer-than-
+
+453 average SST in this region, while negative values indicate La Niiia conditions,
+
+484 characterized by cooler-than-average regional SSTs. The Nino 3.4 index was used to
+
+485 examine the relationship between ENSO phases and ET anomalies at global and
+
+486 hemispheric scales.
+
+457 Machine-learning model
+
+458 “We employed a Random Forest (RF) ensemble leaming approach to generate ET, which
+
+459 used the five diagnostic ET estimates as inputs and the water balance-derived ET as the
+
+460 target variable, an approach widely used in global hydrology (/3). Specifically, this
+
+461 process harmonizes basin-scale water budgets (Equation 1) with gridded diagnostic ET
+
+482 products by leveraging the water-balance-derived BT as a physically constrained ‘pscudo-
+
+468 ‘observation’ target for training. The basin-seale water budget integrates ground and
+
+464 salellite observations of precipitation, streamflow, and terrestrial water storage changes to
+
+465, provide an independent, spatially ageregated ET estimate. This target is then reconciled
+
+466 with five gridded diagnostic ET products (PML_V2, MOD16A2, GLEAM ¥3.8a,
+
+467 GLEAM4.1a, CR_v1), which offer high-resolution spatial pattems but lack direct,
+
+468 observational constraints at basin scales. The Random Forest model acts as a
+
+469 reconciliation framework, and the harmonization ensures the final ET estimates are
+
+470 simultaneously consistent with basin-scale mass balance and gridded process
+
+a representations.
+
+an The five diagnostic ET products as described above, basin centroid coordinates (x
+
+3 longitude), y (latitude)), and basin arca were integrated as predictors. Hyperparameter
+
+414 ‘tuning was conducted through systematic grid testing of tree numbers (50, 100, 150, 200)
+
+45 and minimum leaf sizes (5, 10, 15, 20). Model performance was evaluated using five-fold
+
+476 cross-validation based on both the Nash-Sutclifié Bfficiency (NSE) and the coefficicnt of
+‘Sience Advances Manuscript Template Rage 0 0F20
+

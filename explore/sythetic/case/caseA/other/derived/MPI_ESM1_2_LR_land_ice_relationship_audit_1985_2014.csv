@@ -1,0 +1,4 @@
+pair,x_sd,y_sd,status,tree_input_has_response_variation
+P -> ET,180.30457,13.088116,Descriptive cryospheric relationship,True
+P -> R,180.30457,0.0,Negative control if runoff is constant,False
+P -> R/P,180.30457,0.0,Negative control if runoff fraction is constant,False

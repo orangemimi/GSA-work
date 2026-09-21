@@ -1,0 +1,61 @@
+°
+ScienceAdvances — Manuscript
+Anas Template
+
+1 Title
+
+2 * Full tite: Hemispheric asymmetry in evapotranspiration reveals terrestrial water-flux
+
+3 redistribution
+
+4 ‘* Short title: Bvapotranspiration asymmetry across the globe
+
+5
+
+6 Authors
+
+7 ‘Yonggiang Zhang™*, Congcong Li', Dongdong Kong’, Zhenwu Xu, Diego Mitalles*, Tim
+
+8 R. McVicar’, Jing Tian', Xuanze Zhang', Ning Ma’, Xiaojie Li', Yongyong Zhang!,
+
+9 Haoshan Weil, Gang Zhao’, Jun Xia’, Yuanyuan Huang', Zhipin Ai', Ronglin Tang!, Ge
+10 Sun‘, Stefan Uhlenbrook’, Georgia Destouni®??
+u
+12 Affiliations
+a ‘Institute of Geographic Sciences and Natural Resoutces Research, Chinese Academy of
+“4 Sciences; Beijing, China.
+15 "Department of Atmospheric Science, School of Environmental Studies, China University
+16 of Geosciences; Wuhan, China
+"7 3Department of Environment, Ghent University; Ghent, Belgium.
+18 ‘CSIRO Environment, Black Mountain; Canberra, Australia.
+19 $State Key Laboratory of Water Resources Engineering and Management, Wuban
+20 University; Wuhan, China,
+21 Bastem Forest Environmental Threat Assessment Center, USDA Forest Service, Research
+2 Triangle Park; North Carolina, United States.
+B 7Rederal Office of Meteorology and Climatology MeteoSwiss; Zurich, Switzerland.
+24 SDepartment of Physical Geography, Stockholm University; Stockholm, Sweden
+2s Department of Sustainable Development, Environmental Science and Engineering, KTH
+26 Royal Institute of Technology; Stockholm, Sweden,
+2 WStellenbosch Institute for Advanced Study; Stellenbosch, South Africa.
+8
+2» *Corresponding author. Email: zhangyq@igsnrr.ac.cn
+30
+31 Abstract
+32 Global warming is widely expected to intensify the hydrological cycle. However,
+3 observational evidence for accelerated cvapotranspiration (ET), a Key terrestrial water
+ea ‘eyele and energy balancs component, remains ambiguous. Here, we constrained diverse
+38 datasets using basin-scale ET estimates covering 47% of global land to reveal a hidden
+36 asymmetry. We found a small global change in ET (-0.06 + 0.44 mm year, P > 0.10)
+37 from 2000-2022, resulting from strongly opposing hemispheric trends. The Northem
+38 Hemisphere shows noticeable ET increases (0.91 + 0.46 mm year’, P < 0.05), primarily
+39 driven by vegetation greening, whercas the Southem Hemisphere exhibits strong declines
+40 (2.63 + 0.46 mm year®, P < 0.05) due to precipitation deficits. Our observation-
+4 constrained projections indicate this asymmetry is likely to persist through 2050. The
+2 small global ET trend masks a dramatic compensation between northern greening and
+“a southern drying, suggesting current models may overestimate homogenized water eycle
+“4 intensification. Our study provides profound implications for global food security, carbon
+45 sequestration, drought risks and regional climate adaptation
+
+Selence Advances ———~—~S~S~*~*~*~*CaTemplte Page
+Yor20
+

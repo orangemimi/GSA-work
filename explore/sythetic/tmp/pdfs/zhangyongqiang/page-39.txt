@@ -1,0 +1,15 @@
+OT. Si ilies 0s
+5 LZ
+os C os
+2 os
+' BF hn
+dems i
+( mE
+5 ; ? a“ on
+Fig. S21.
+‘The performance of the basin-level attribution analysis using a Generalized Additive
+Model (GAM) coupled with SHapley Additive exPlanations (SHAP) under cross
+validations, indicated by the coefficient of determination, R?. In 90% of the 232 river basins
+globally, our model can explain more than 98% of annual ET anomalies, respectively.
+24
+

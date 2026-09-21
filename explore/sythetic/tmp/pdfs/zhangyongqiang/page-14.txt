@@ -1,0 +1,56 @@
+gy
+°
+
+357 Acknowledgments
+858 YQZ acknowledges the support of the Inner Mongolia Autonomous Region Water
+859 Conservancy Research Special Project (grant NSK202301), the National Natural Science
+860 Foundation of China (Grant No. 42330506 and 42361144709), and the ‘Talent Program of
+B61 the Ministry of Science and Technology of China. GD acknowledges support from the
+862 Swedish Research Council (VR, project grant 2022-04672), We appreciate the various
+863 ‘water agencies stated in the Methods section for sharing their streamflow data. Our work
+864 ‘was inspired by the preparation of the 2024 Annual Report of the World Meteorological
+865 Organization (WMO) State of Global Water Resources. We thank the Editor and the two
+866 anonymous reviewers for their constructively critical comments which helped improve
+867 this paper.
+308
+869 ‘Author contributions: YQZ conceived the study, wrote MATLAB scripts for data
+$70 analysis and figures plotting, and drafted the paper. CCL collated the streamflow dataset
+st and conducted basin water balance analysis. DDK collated CMIP6 and evapotranspiration
+872 datasets. ZWX and CCL prepared the attribution analysis dataset. HSW plotted
+373 conceptualized Figure 5. All authors contributed to discussion, text revisions and result
+574 interpretations.
+815
+316 ‘Competing interests: The authors declare they have no competing interests.
+8i7
+88 Data, code, and materials availability: All data and code needed to evaluate and
+879 reproduce the results in the paper are present in the paper and/or the Supplementary
+880 Materials. All data and code are available on Zcnodo at
+881 https://zenodo.org/records/19914712, This study did not generate new materials.
+882
+ssi Figures and Tables
+884
+Bas Fig. 1. Global evapotranspiration (ET) mean and trend. Spatial pattern of mean annual
+886 ET in 2000-2022 for 232 river basins (> 10,000 km?) (A). The 232 simulation
+887 river basins are from HydroSHEDS level three. Of the 232 basins used for global
+888 analysis, 173 are in the Northern Hemisphere and 59 im the Southern Hemisphere.
+889 Spatial pattem of annual ET trends over the same period and river basins (B).
+390 Cross-hatching denotes that the annual ET in the basins has significantly changed
+301 (< 0.05, Mann-Kendall test). Greenland and oceans arc masked out
+892 Fig. 2, Interannual variability in evapotranspiration and its trend. Time series of ET
+803 anomaly across the globe, the Northern Hemisphere (NH) and the Southem
+a94 Hemisphere (SH) for 2000 to 2022 (A). The El Nitio-Southern Oscillation (ENSO)
+95 events are shown, with El Nifio phase when the Nino 3.4 Index exceeds 0.5°C for
+896 each 12 months and La Niia phase when the Nino 3.4 Index falls below -0.5°C for
+397 each 12 months. Each thick line represents the ensemble mean of nine ET
+898 estimates and shading denotes + onc standard deviation. BT trends for the globe,
+899 ‘NH and SH, respectively (B). The box-whisker plots are delineated using 10th,
+500 25th, median, 75th, and 90th percentiles, respectively, from bottom to top in all
+901 three cases. Two dots in panel B denote the trend from the mean of the nine ET
+902 estimates with P < 0.05.
+903 Fig. 3. Key contributing factors on evapotranspiration trends across each river basin.
+904 Relative contributions (%) of precipitation (P1), potential evapotranspiation (PET)
+sos and leaf area index (LAD to the ET trends are estimated ftom the Generalized
+905 Additive Model coupled with SHapley Additive exPlanations. The total
+
+‘ence Advances ——~—~S~*~*~S*Cge Tepe SSCSCSC*~*~*~*~*~*~*~*~*S*S*«S
+

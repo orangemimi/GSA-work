@@ -1,0 +1,97 @@
+284 causation. Fifth, we use moving averages for both the ET-water balance model constraint
+
+285 and the GAM-SHAP analysis, which can introduce autocorrelation, influencing P values
+
+286 and regression diagnostics. This approach, however, offers a clear advantage by more
+
+287 cffoctively revealing the underlying low-frequency hydroclimatic trends compared to
+
+2a, annual block averages, a well-established method for improving the signal-to-noise ratio
+
+289 in climate trend analysis (54, 55),
+
+290 By integrating machine learning with individual diagnostic ET products and basin-scale
+
+291 ‘water balance estimates, our approach provides a robust baseline for global ET trend
+
+292 assessments and projections, such as the annual report of World Meteorological
+
+293 Organization (WMO) State of Global Water Resources (56) and Intergovernmental Panel
+
+294 on Climate Change (IPCC) climate assessments (34). Together, these results show that
+
+295 recent changes in terrestrial evapotranspiration are characterised by hemispheric
+
+296 redistribution rather than uniform global intensification, underscoring the importance of
+
+297 considering regional disparities in climatc adaptation and water management strategies.
+
+298 Moving forward, incorporating data from improved observational networks, Earth
+
+299 observations and advanced modeling techniques will be essential to refine global water
+
+300 oycle projections across spatio-temporal scales and ensure effective policy interventions.
+
+30L By reconciling hemispheric ET trends, this work supports achieving United Nation
+
+302 Sustainable Development Goal 6 (SDG 6, clean water and sanitation) and SDG 13
+
+303 (climate action) through improved drought forecasting and refined climate projections.
+
+308
+
+305 Materials and Methods
+
+306 Basin water balance and datasets
+
+307 ‘Actual evapotranspiration (ET) at a basin scale can be quantified using precipitation (Pr,
+
+308 mm year"), streamflow (Q, mm year’) and basin storage changes (AS, mm year’!
+
+309 integrated terrestrial water storages in soil moisture, groundwatcr, lakes, reservoirs, snow
+
+310 and ice):
+
+au ET =Pr—As—Q @
+
+an ‘The water-balanced quantified ET at the basin scale is regarded as a ‘pseudo-obscrvation”
+
+313 since Pr, Q and AS can be all estimated based on the ground measurements (Pr and Q) or
+
+3t4 satellite observations (AS), Pr and AS are obtained by area-weighted averaging of all 0.25°
+
+318 grid values within the basin; Q is obtained from the observations of basin outlet. In cases,
+
+316 Where water is transferred across basin boundaries, the monthly transferred volume is
+
+317 added to Q in the donor basin and subtracted from Q in the receiving basin. How the three
+
+318 ‘water balance components are obtained is detailed in the following.
+
+319 Three state-of-the-art diagnostic Pr products were selected from 2000 to 2022 (276
+
+320 months), including Climatic Research Unit (CRU) gridded Time Series (57), Multi-Source
+
+321 Weighted-Ensemble Precipitation (MSWEP) version 2 (58), and Global Precipitation
+
+322 Climatology Project (GPCP) version 3.2 (59). The CRU Pr is a widely used climate
+
+323 dataset on a 0.5° latitude by 0.5° longitude grid over all land domains of the world.
+
+324 ‘MSWEP is a global precipitation product with a 3 hourly 0.1° resolution. The product
+
+325 merges with gauge, satellite and reanalysis datasets. The GPCP data set provides a gridded
+
+326 (Level 3) homogeneously processed record of global precipitation estimates at 0.5° spatial
+
+at and daily temporal resolution. AS data were obtained from three sources (60-62): (i) JPL
+
+328 Mascon RILO6M.1 Version 3; (ii) CSR RILO6 Mascon version 2; and (iii) GSFC Mascon
+
+329 RLO6 version 2. All data sets were generated using the Gravity Recovery and Climate
+
+330 Experiment (GRACE) satellites and their successor, GRACE Follow-on (GRACE-FO)
+
+331 satellites. This study used the Monthly Mass Grids - Global mascons with a 0.5° spatial
+Science Aivances SSC pT RFT
+

@@ -1,0 +1,20 @@
+Table $4.
+‘The performance of the machine-Iearning model at training and model cross-validation
+mode. NSE is the Nash-Sutcliffe Efficiency between the water balance annual ET and simulated
+annual ET. R?.means the coefficient of determination between the water balance annual ET and
+simulated annual ET. The first column shows the observed water balance ET is obtained using
+different combinations of precipitation and storage change products.
+ET observation source NSE ‘NSE R R
+(r+ AS) (Calibration) (cross- —_Ccalibration) (cross-
+validation) validation)
+CRU-CSR 0977 0570 0977 0.970
+‘CRU-GSFC 0977 0.969 0977 0.969
+‘CRU-IPL 0.976 0.968 0.976 0.968,
+GPCP-CSR 0.955 0.940 0.956 0.941
+GPCP-GSFC 0.954 0.939 0.955 0.940
+GPCP-IPL 0.952 0.937 0.953 0.938
+MSWEP-CSR 0979 0971 0979 O97
+MSWEP-GSFC 0978 0970 0978 0970
+MSWEP-IPL 097 0970 0977 0970
+34
+

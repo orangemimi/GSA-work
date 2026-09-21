@@ -1,0 +1,146 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:41 - 1:30)
+So, because these are very large global models that lots of people use, so we could look at those, and they are different ones, so there are 32 in total, and they have global data so we could look at those maybe as potential for analysis, so that we pick examples from those to analyze their interactions in the model. So maybe CLIP6 is a good choice. Yeah, it's better.
+
+You want to use something that is as widely used as possible, so that it's most meaningful for people.
+
+[说话人 2] (1:31 - 1:41)
+Yeah, exactly. Maybe when I test this different non-uniform, we can also try to apply it to the real cases.
+
+[说话人 1] (1:41 - 2:08)
+Yeah, so maybe you'll have a look at the CLIP6 to see, and then we'll just pick a few variables and try it out. It doesn't really matter. Ultimately, we need a very large dataset with lots of interactions to look through and organize.
+
+And then what would be interesting is if we could find two or three models in there that have very different distributions of types of relationships.
+
+[说话人 2] (2:09 - 2:32)
+Yeah, I also think so. And I also would like to ask if we are detecting a complex relationship currently, and the local relationship also needs to be detected later? Because I think local could be more harder or complex than this branch.
+
+[说话人 1] (2:32 - 3:20)
+Yeah, yeah, yeah. Local would be more complicated again. I mean, what might be a good idea is once we're done with this, then maybe we pick some of these examples and actually have a look at what they look like and how often we find cases where it doesn't fit any of the categories that we have.
+
+Maybe that's very rare, or maybe it's a lot, and so maybe we can do this a bit iteratively. But at the moment, we have all synthetic examples, which makes sense to organize this and understand. But then if we use the real-world cases, we can see how often does this actually happen.
+
+[说话人 2] (3:20 - 3:22)
+Yeah, okay, no problem.
+
+[说话人 1] (3:22 - 3:34)
+Yeah, and then we can say, okay, maybe it happens so often that it's local that we really need to split this. But we find it happens in a very small fraction, and then maybe we say, okay, we don't need this.
+
+[说话人 2] (3:34 - 3:37)
+Yeah, okay, it depends on the result we may detect.
+
+[说话人 1] (3:37 - 3:40)
+Yeah, because I have no idea. I mean, I don't know.
+
+[说话人 2] (3:41 - 3:50)
+No problem, and I will do this work next weekend to finalize the tree of this branch.
+
+[说话人 1] (3:50 - 4:05)
+Yeah, that's great. And then, yeah, we can already think about how we use these kind of examples maybe to write this up as a way to understand.
+
+[说话人 2] (4:05 - 4:06)
+Yes.
+
+[说话人 1] (4:07 - 4:10)
+This is another sort of very short, no?
+
+[说话人 2] (4:10 - 4:25)
+Yeah, it's very short. And I think maybe we can also – I can also learn the style of Jacob you have also mentioned. I noticed that he has also done a lot of work.
+
+[说话人 1] (4:28 - 4:30)
+Jakob Seichmann? Yeah, Jakob. Okay.
+
+[说话人 2] (4:31 - 4:31)
+This one.
+
+[说话人 1] (4:31 - 4:33)
+Yeah, yeah, so he's – yeah.
+
+[说话人 2] (4:35 - 4:46)
+And because I think there are some similarities between my counterpart and his because he has also analyzed the different input and output of the system models.
+
+[说话人 1] (4:47 - 5:36)
+Yeah, yeah, absolutely. There's also another person. Yeah.
+
+It was this Earth – what is it called? Earth Future paper on interpretable AI, you remember?
+
+[说话人 2] (5:36 - 5:38)
+Yeah, I remember.
+
+[说话人 1] (5:39 - 6:31)
+So the first author of that is now at – I think he's at the Max Planck Institute in Vienna or somewhere. And he – they also have quite a few papers which I think are – Yeah, I can check. So it's worth having a look.
+
+Yeah. The interesting thing – I mean the question is this one is very – Very similar. Yeah, it's very methodological.
+
+That's why it's – and so far it's very methodological. And then so it's a question of where you put the focus on what the methods were. Very often these papers are more on the – what they learn, frame it very nicely.
+
+[说话人 2] (6:31 - 6:32)
+Yeah, exactly.
+
+[说话人 1] (6:35 - 6:53)
+But yeah, so there's also – he's a mathematician. So he's not so interested in what it is he's analyzing. So they analyze all sorts of things.
+
+So here then we could think about whether there is a methodological paper and then there is a sort of a paper where we actually learn about processes.
+
+[说话人 2] (6:53 - 6:54)
+Yeah.
+
+[说话人 1] (6:55 - 7:07)
+But it's good, yeah. It's good to find examples where – Thank you very much. Yeah, very good.
+
+[说话人 2] (7:07 - 7:09)
+Thank you. Thank you for your time.
+
+[说话人 1] (7:10 - 7:32)
+No, that's very good. Yeah, so it doesn't really say that much here. But the CMIP6 might be worth looking at and thinking about whether we can use some of these models to analyze.
+
+It would be quite useful.
+
+[说话人 2] (7:33 - 7:40)
+Yes. Maybe I can finish as a tree and find some one or more models to try to detect.
+
+[说话人 1] (7:40 - 8:13)
+Yeah, maybe have a look how complicated it is. We can also ask other groups like Yongzhang's group who was already used in this. I always wonder how he comes up with these large groups of people, I must say.
+
+I mean, one is there are lots of his students, no? Yeah. So lots of them.
+
+So one, two, three, nine. Yeah, I have – Ten, eleven, twelve. Twelve of his, I guess, PhD students or postdocs, no?
+
+[说话人 2] (8:13 - 8:15)
+I am familiar with some names.
+
+[说话人 1] (8:16 - 8:19)
+Yeah, exactly. I know a couple, but they are at the very end here.
+
+[说话人 2] (8:25 - 8:35)
+Because Chinese people prefer to invite different professors, especially very high quality professors.
+
+[说话人 1] (8:36 - 9:09)
+I know. I can imagine that part of it is more strategy, and the other part is necessary help to do all the analysis. Yeah.
+
+It's quite interesting too. But yeah, it's good. But yeah, I thought that might be a good way.
+
+So we can – the CMIP6 is one. The other option is some of the – we can also analyze some of the global data sets for hydrology or so. But we just – at the moment, we just need an example.
+
+[说话人 2] (9:09 - 9:09)
+Yeah.
+
+[说话人 1] (9:10 - 9:14)
+And the CMIP is probably something we would eventually analyze anyway.
+
+[说话人 2] (9:15 - 9:15)
+Yeah, exactly.
+
+[说话人 1] (9:16 - 9:17)
+So that's good.
+
+[说话人 2] (9:17 - 9:20)
+Okay, thank you. We will have talking with Sander.
+
+[说话人 1] (9:21 - 9:31)
+Yeah, I will stop by. I need to check my email. I need to find one of our MM people to have a look.
+
+See you. See you.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

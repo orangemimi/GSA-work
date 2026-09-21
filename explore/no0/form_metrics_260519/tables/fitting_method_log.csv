@@ -1,0 +1,141 @@
+analysis_group,zone,model,x_label,y_label,method,status,reason,n_points
+HW_T,HW,CLASSIC,P,T,Equal-width bins,success,,12340
+HW_T,HW,CLASSIC,P,T,Equal-count bins,success,,12340
+HW_T,HW,CLASSIC,P,T,LOWESS,success,,12340
+HW_T,HW,CLASSIC,P,T,Polynomial degree 3,success,,12340
+HW_T,HW,CLASSIC,P,T,GAM,success,,12340
+HW_T,HW,CLASSIC,P,T,Piecewise linear,success,,12340
+HW_T,HW,CLASSIC,P,T,Symbolic regression,success,,12340
+HW_T,HW,LPJ-GUESS,P,T,Equal-width bins,success,,12538
+HW_T,HW,LPJ-GUESS,P,T,Equal-count bins,success,,12538
+HW_T,HW,LPJ-GUESS,P,T,LOWESS,success,,12538
+HW_T,HW,LPJ-GUESS,P,T,Polynomial degree 3,success,,12538
+HW_T,HW,LPJ-GUESS,P,T,GAM,success,,12538
+HW_T,HW,LPJ-GUESS,P,T,Piecewise linear,success,,12538
+HW_T,HW,LPJ-GUESS,P,T,Symbolic regression,success,,12538
+HW_T,HW,CLASSIC,LAI,T,Equal-width bins,success,,12340
+HW_T,HW,CLASSIC,LAI,T,Equal-count bins,success,,12340
+HW_T,HW,CLASSIC,LAI,T,LOWESS,success,,12340
+HW_T,HW,CLASSIC,LAI,T,Polynomial degree 3,success,,12340
+HW_T,HW,CLASSIC,LAI,T,GAM,success,,12340
+HW_T,HW,CLASSIC,LAI,T,Piecewise linear,success,,12340
+HW_T,HW,CLASSIC,LAI,T,Symbolic regression,success,,12340
+HW_T,HW,LPJ-GUESS,LAI,T,Equal-width bins,success,,12538
+HW_T,HW,LPJ-GUESS,LAI,T,Equal-count bins,success,,12538
+HW_T,HW,LPJ-GUESS,LAI,T,LOWESS,success,,12538
+HW_T,HW,LPJ-GUESS,LAI,T,Polynomial degree 3,success,,12538
+HW_T,HW,LPJ-GUESS,LAI,T,GAM,success,,12538
+HW_T,HW,LPJ-GUESS,LAI,T,Piecewise linear,success,,12538
+HW_T,HW,LPJ-GUESS,LAI,T,Symbolic regression,success,,12538
+all_zones_E_soil,HW,CLASSIC,P,E_soil,Equal-width bins,success,,12340
+all_zones_E_soil,HW,CLASSIC,P,E_soil,Equal-count bins,success,,12340
+all_zones_E_soil,HW,CLASSIC,P,E_soil,LOWESS,success,,12340
+all_zones_E_soil,HW,CLASSIC,P,E_soil,Polynomial degree 3,success,,12340
+all_zones_E_soil,HW,CLASSIC,P,E_soil,GAM,success,,12340
+all_zones_E_soil,HW,CLASSIC,P,E_soil,Piecewise linear,success,,12340
+all_zones_E_soil,HW,CLASSIC,P,E_soil,Symbolic regression,success,,12340
+all_zones_E_soil,HW,LPJ-GUESS,P,E_soil,Equal-width bins,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,P,E_soil,Equal-count bins,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,P,E_soil,LOWESS,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,P,E_soil,Polynomial degree 3,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,P,E_soil,GAM,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,P,E_soil,Piecewise linear,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,P,E_soil,Symbolic regression,success,,12538
+all_zones_E_soil,HW,CLASSIC,LAI,E_soil,Equal-width bins,success,,12340
+all_zones_E_soil,HW,CLASSIC,LAI,E_soil,Equal-count bins,success,,12340
+all_zones_E_soil,HW,CLASSIC,LAI,E_soil,LOWESS,success,,12340
+all_zones_E_soil,HW,CLASSIC,LAI,E_soil,Polynomial degree 3,success,,12340
+all_zones_E_soil,HW,CLASSIC,LAI,E_soil,GAM,success,,12340
+all_zones_E_soil,HW,CLASSIC,LAI,E_soil,Piecewise linear,success,,12340
+all_zones_E_soil,HW,CLASSIC,LAI,E_soil,Symbolic regression,success,,12340
+all_zones_E_soil,HW,LPJ-GUESS,LAI,E_soil,Equal-width bins,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,LAI,E_soil,Equal-count bins,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,LAI,E_soil,LOWESS,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,LAI,E_soil,Polynomial degree 3,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,LAI,E_soil,GAM,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,LAI,E_soil,Piecewise linear,success,,12538
+all_zones_E_soil,HW,LPJ-GUESS,LAI,E_soil,Symbolic regression,success,,12538
+all_zones_E_soil,HD,CLASSIC,P,E_soil,Equal-width bins,success,,11147
+all_zones_E_soil,HD,CLASSIC,P,E_soil,Equal-count bins,success,,11147
+all_zones_E_soil,HD,CLASSIC,P,E_soil,LOWESS,success,,11147
+all_zones_E_soil,HD,CLASSIC,P,E_soil,Polynomial degree 3,success,,11147
+all_zones_E_soil,HD,CLASSIC,P,E_soil,GAM,success,,11147
+all_zones_E_soil,HD,CLASSIC,P,E_soil,Piecewise linear,success,,11147
+all_zones_E_soil,HD,CLASSIC,P,E_soil,Symbolic regression,success,,11147
+all_zones_E_soil,HD,LPJ-GUESS,P,E_soil,Equal-width bins,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,P,E_soil,Equal-count bins,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,P,E_soil,LOWESS,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,P,E_soil,Polynomial degree 3,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,P,E_soil,GAM,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,P,E_soil,Piecewise linear,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,P,E_soil,Symbolic regression,success,,11341
+all_zones_E_soil,HD,CLASSIC,LAI,E_soil,Equal-width bins,success,,11147
+all_zones_E_soil,HD,CLASSIC,LAI,E_soil,Equal-count bins,success,,11147
+all_zones_E_soil,HD,CLASSIC,LAI,E_soil,LOWESS,success,,11147
+all_zones_E_soil,HD,CLASSIC,LAI,E_soil,Polynomial degree 3,success,,11147
+all_zones_E_soil,HD,CLASSIC,LAI,E_soil,GAM,success,,11147
+all_zones_E_soil,HD,CLASSIC,LAI,E_soil,Piecewise linear,success,,11147
+all_zones_E_soil,HD,CLASSIC,LAI,E_soil,Symbolic regression,success,,11147
+all_zones_E_soil,HD,LPJ-GUESS,LAI,E_soil,Equal-width bins,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,LAI,E_soil,Equal-count bins,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,LAI,E_soil,LOWESS,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,LAI,E_soil,Polynomial degree 3,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,LAI,E_soil,GAM,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,LAI,E_soil,Piecewise linear,success,,11341
+all_zones_E_soil,HD,LPJ-GUESS,LAI,E_soil,Symbolic regression,success,,11341
+all_zones_E_soil,CW,CLASSIC,P,E_soil,Equal-width bins,success,,21322
+all_zones_E_soil,CW,CLASSIC,P,E_soil,Equal-count bins,success,,21322
+all_zones_E_soil,CW,CLASSIC,P,E_soil,LOWESS,success,,21322
+all_zones_E_soil,CW,CLASSIC,P,E_soil,Polynomial degree 3,success,,21322
+all_zones_E_soil,CW,CLASSIC,P,E_soil,GAM,success,,21322
+all_zones_E_soil,CW,CLASSIC,P,E_soil,Piecewise linear,success,,21322
+all_zones_E_soil,CW,CLASSIC,P,E_soil,Symbolic regression,success,,21322
+all_zones_E_soil,CW,LPJ-GUESS,P,E_soil,Equal-width bins,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,P,E_soil,Equal-count bins,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,P,E_soil,LOWESS,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,P,E_soil,Polynomial degree 3,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,P,E_soil,GAM,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,P,E_soil,Piecewise linear,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,P,E_soil,Symbolic regression,success,,21472
+all_zones_E_soil,CW,CLASSIC,LAI,E_soil,Equal-width bins,success,,21322
+all_zones_E_soil,CW,CLASSIC,LAI,E_soil,Equal-count bins,success,,21322
+all_zones_E_soil,CW,CLASSIC,LAI,E_soil,LOWESS,success,,21322
+all_zones_E_soil,CW,CLASSIC,LAI,E_soil,Polynomial degree 3,success,,21322
+all_zones_E_soil,CW,CLASSIC,LAI,E_soil,GAM,success,,21322
+all_zones_E_soil,CW,CLASSIC,LAI,E_soil,Piecewise linear,success,,21322
+all_zones_E_soil,CW,CLASSIC,LAI,E_soil,Symbolic regression,success,,21322
+all_zones_E_soil,CW,LPJ-GUESS,LAI,E_soil,Equal-width bins,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,LAI,E_soil,Equal-count bins,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,LAI,E_soil,LOWESS,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,LAI,E_soil,Polynomial degree 3,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,LAI,E_soil,GAM,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,LAI,E_soil,Piecewise linear,success,,21472
+all_zones_E_soil,CW,LPJ-GUESS,LAI,E_soil,Symbolic regression,success,,21472
+all_zones_E_soil,CD,CLASSIC,P,E_soil,Equal-width bins,success,,13445
+all_zones_E_soil,CD,CLASSIC,P,E_soil,Equal-count bins,success,,13445
+all_zones_E_soil,CD,CLASSIC,P,E_soil,LOWESS,success,,13445
+all_zones_E_soil,CD,CLASSIC,P,E_soil,Polynomial degree 3,success,,13445
+all_zones_E_soil,CD,CLASSIC,P,E_soil,GAM,success,,13445
+all_zones_E_soil,CD,CLASSIC,P,E_soil,Piecewise linear,success,,13445
+all_zones_E_soil,CD,CLASSIC,P,E_soil,Symbolic regression,success,,13445
+all_zones_E_soil,CD,LPJ-GUESS,P,E_soil,Equal-width bins,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,P,E_soil,Equal-count bins,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,P,E_soil,LOWESS,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,P,E_soil,Polynomial degree 3,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,P,E_soil,GAM,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,P,E_soil,Piecewise linear,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,P,E_soil,Symbolic regression,success,,10397
+all_zones_E_soil,CD,CLASSIC,LAI,E_soil,Equal-width bins,success,,13445
+all_zones_E_soil,CD,CLASSIC,LAI,E_soil,Equal-count bins,success,,13445
+all_zones_E_soil,CD,CLASSIC,LAI,E_soil,LOWESS,success,,13445
+all_zones_E_soil,CD,CLASSIC,LAI,E_soil,Polynomial degree 3,success,,13445
+all_zones_E_soil,CD,CLASSIC,LAI,E_soil,GAM,success,,13445
+all_zones_E_soil,CD,CLASSIC,LAI,E_soil,Piecewise linear,success,,13445
+all_zones_E_soil,CD,CLASSIC,LAI,E_soil,Symbolic regression,success,,13445
+all_zones_E_soil,CD,LPJ-GUESS,LAI,E_soil,Equal-width bins,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,LAI,E_soil,Equal-count bins,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,LAI,E_soil,LOWESS,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,LAI,E_soil,Polynomial degree 3,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,LAI,E_soil,GAM,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,LAI,E_soil,Piecewise linear,success,,10397
+all_zones_E_soil,CD,LPJ-GUESS,LAI,E_soil,Symbolic regression,success,,10397

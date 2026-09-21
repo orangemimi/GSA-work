@@ -1,0 +1,167 @@
+column_name,aspect,sub_aspect,formula_or_rule,scale,notes
+__notation_accumulated_variation__,Notation,Accumulated absolute variation,A_j = cumsum(abs(diff(y_fit_norm))) at fitted-curve segment midpoints; this equals cumsum(abs(local_slope_j) * dx_norm_j).,normalized fitted y variation,Used for accumulated response strength to avoid point-count sensitivity from unweighted slope sums.
+__notation__,Notation,Curve coordinates,"(x_j, y_j) are fitted curve points sorted by x; j = 1,...,J.",,Duplicate fitted x values are collapsed by median y before metrics.
+__notation_norm__,Notation,Normalization,x_norm_j = (x_j - min(x_fit)) / (max(x_fit) - min(x_fit)); y_norm_j = (y_j - min(y_fit)) / (max(y_fit) - min(y_fit)).,normalized,"If the denominator is zero or non-finite, normalized metrics are NaN."
+__notation_slope__,Notation,Local slopes,s_j = diff(y_norm)_j / diff(x_norm)_j; x_mid_j = (x_norm_j + x_norm_{j+1}) / 2.,normalized,Only finite segments with non-zero dx are used. slope_tol = 0.03.
+__notation_segments__,Notation,Early/middle/late segments,"early: normalized x or x_mid in [0, 1/3]; middle: (1/3, 2/3]; late: (2/3, 1].",normalized,Slope segment metrics use x_mid; residual segment metrics use normalized raw x evaluation positions.
+__notation_residual__,Notation,Residuals,"residual_i = y_raw_i - interp(x_raw_i; x_fit, y_fit).",raw,Raw points outside the fitted x range are excluded to avoid extrapolation.
+__notation_quantile__,Notation,Quantiles,q_p(z) is the pth percentile of z; IQR(z) = q_75(z) - q_25(z).,,
+__notation_tightness_denominators__,Notation,Tightness normalization,"SD(y_raw) and range(y_raw) are computed over all finite raw y values for the relation, not only the retained interpolation range.",raw y scale,Residuals are still computed only where raw x lies inside the fitted curve x range.
+analysis_group,Identifier,Target analysis,Assigned target-analysis name: HW_T or all_zones_E_soil.,,
+zone,Identifier,Climate zone,Climate-zone code for the relation.,,"HW, HD, CW, CD."
+model,Identifier,Model,Model name for the relation.,,CLASSIC or LPJ-GUESS.
+x_label,Identifier,Input variable,Input variable label used for x.,,P or LAI in this run.
+y_label,Identifier,Output variable,Output variable label used for y.,,T or E_soil in this run.
+method,Identifier,Fitting method,Fitting method used to estimate the curve.,,One of the seven configured methods.
+n_raw_points,Metadata,Sample size,count(finite x_raw and finite y_raw) before fitting.,count,
+n_curve_points,Metadata,Curve size,J = count(finite fitted curve points after sorting and duplicate-x handling).,count,
+pearson_r,Shape,Linearity and monotonicity,"PearsonCorr(x_fit, y_fit).",raw fitted curve coordinates,"Computed on fitted curve coordinates, not raw scatter."
+pearson_p,Shape,Linearity and monotonicity,"Two-sided p-value for PearsonCorr(x_fit, y_fit).",p-value,
+spearman_rho,Shape,Linearity and monotonicity,"SpearmanRankCorr(x_fit, y_fit).",rank correlation,Computed on fitted curve coordinates.
+spearman_p,Shape,Linearity and monotonicity,"Two-sided p-value for SpearmanRankCorr(x_fit, y_fit).",p-value,
+kendall_tau,Shape,Linearity and monotonicity,"KendallTau(x_fit, y_fit).",rank correlation,Computed on fitted curve coordinates.
+kendall_p,Shape,Linearity and monotonicity,"Two-sided p-value for KendallTau(x_fit, y_fit).",p-value,
+abs_pearson_r,Shape,Linearity and monotonicity,abs(pearson_r).,absolute correlation,
+abs_spearman_r,Shape,Linearity and monotonicity,abs(spearman_rho).,absolute rank correlation,
+abs_spearman_minus_abs_pearson,Shape,Linearity and monotonicity,abs(spearman_rho) - abs(pearson_r).,difference,
+raw_net_change,Shape,Net change,y_fit_last - y_fit_first after sorting by x.,raw y units,
+absolute_net_change,Shape,Net change,abs(y_fit_last - y_fit_first).,raw y units,
+normalized_net_change,Shape,Net change,y_norm_last - y_norm_first.,normalized fitted y,
+normalized_absolute_net_change,Shape,Net change,abs(y_norm_last - y_norm_first).,normalized fitted y,
+positive_slope_fraction,Shape,Positive/negative/flat slope fraction,mean(s_j > slope_tol).,fraction,s_j uses normalized fitted x and y; slope_tol = 0.03.
+negative_slope_fraction,Shape,Positive/negative/flat slope fraction,mean(s_j < -slope_tol).,fraction,s_j uses normalized fitted x and y; slope_tol = 0.03.
+flat_slope_fraction,Shape,Positive/negative/flat slope fraction,mean(abs(s_j) <= slope_tol).,fraction,s_j uses normalized fitted x and y; slope_tol = 0.03.
+dominant_slope_sign,Shape,Positive/negative/flat slope fraction,"flat if flat_fraction >= max(positive_fraction, negative_fraction); else positive if positive_fraction >= negative_fraction; else negative.",category,
+monotonic_fraction,Shape,Positive/negative/flat slope fraction,"max(positive_slope_fraction, negative_slope_fraction).",fraction,
+number_of_slope_sign_changes,Shape,Positive/negative/flat slope fraction,sum(sign_nonzero_j != sign_nonzero_{j-1}) after removing flat slope signs.,count,sign_nonzero is based on s_j and slope_tol.
+early_slope,Shape,Early/middle/late slopes,"mean(s_j for x_mid in [0, 1/3]).",normalized slope,
+middle_slope,Shape,Early/middle/late slopes,"mean(s_j for x_mid in (1/3, 2/3]).",normalized slope,
+late_slope,Shape,Early/middle/late slopes,"mean(s_j for x_mid in (2/3, 1]).",normalized slope,
+early_absolute_slope,Shape,Early/middle/late slopes,abs(early_slope).,absolute normalized slope,
+middle_absolute_slope,Shape,Early/middle/late slopes,abs(middle_slope).,absolute normalized slope,
+late_absolute_slope,Shape,Early/middle/late slopes,abs(late_slope).,absolute normalized slope,
+early_late_slope_sign_consistency,Shape,Early/middle/late slopes,sign_tol(early_slope) == sign_tol(late_slope) and sign is not flat.,boolean,"sign_tol(v)=1 if v>slope_tol, -1 if v<-slope_tol, else 0."
+early_late_slope_sign_opposition,Shape,Early/middle/late slopes,sign_tol(early_slope) * sign_tol(late_slope) < 0.,boolean,
+has_internal_valley,Shape,U-shape / inverse-U evidence,True if normalized slope signs change from negative to positive at an internal point.,boolean,"Turning candidates within x_norm in (0.02, 0.98)."
+has_internal_peak,Shape,U-shape / inverse-U evidence,True if normalized slope signs change from positive to negative at an internal point.,boolean,"Turning candidates within x_norm in (0.02, 0.98)."
+number_of_internal_extrema,Shape,U-shape / inverse-U evidence,count of internal slope-sign reversal candidates.,count,Flat slope segments are ignored for reversal detection.
+turning_point_x_norm,Shape,U-shape / inverse-U evidence,x_norm of selected internal extremum.,normalized x,"If multiple extrema exist, choose the candidate with largest minimum vertical contrast to both endpoints."
+turning_point_y_norm,Shape,U-shape / inverse-U evidence,"interp(turning_point_x_norm; x_norm, y_norm).",normalized y,
+turning_point_type,Shape,U-shape / inverse-U evidence,valley for negative-to-positive slope reversal; peak for positive-to-negative reversal.,category,
+turning_point_x,Shape,U-shape / inverse-U evidence,min(x_fit) + turning_point_x_norm * (max(x_fit) - min(x_fit)).,raw x units,
+two_line_left_slope,Shape,U-shape / inverse-U evidence,OLS slope from y_norm ~ x_norm for x_norm <= turning_point_x_norm.,normalized slope,Proxy two-line diagnostic.
+two_line_right_slope,Shape,U-shape / inverse-U evidence,OLS slope from y_norm ~ x_norm for x_norm >= turning_point_x_norm.,normalized slope,Proxy two-line diagnostic.
+two_line_left_p,Shape,U-shape / inverse-U evidence,p-value for the left OLS slope in y_norm ~ x_norm.,p-value,
+two_line_right_p,Shape,U-shape / inverse-U evidence,p-value for the right OLS slope in y_norm ~ x_norm.,p-value,
+two_line_test_evidence,Shape,U-shape / inverse-U evidence,True if left and right slopes have opposite non-flat signs and finite p-values are <= 0.05.,boolean,"Proxy diagnostic, not a formal Lind-Mehlum test."
+u_test_stat,Shape,U-shape / inverse-U evidence,NaN.,not implemented,Formal U-test was recorded as unavailable rather than forcing a fragile implementation.
+u_test_p,Shape,U-shape / inverse-U evidence,NaN.,not implemented,Formal U-test was recorded as unavailable.
+lind_mehlum_stat,Shape,U-shape / inverse-U evidence,NaN.,not implemented,Formal Lind-Mehlum test was recorded as unavailable.
+lind_mehlum_p,Shape,U-shape / inverse-U evidence,NaN.,not implemented,Formal Lind-Mehlum test was recorded as unavailable.
+raw_amplitude,Strength,Amplitude,max(y_fit) - min(y_fit).,raw y units,
+normalized_amplitude,Strength,Overall response magnitude,raw_amplitude / SD(y_raw).,SD-normalized raw y units,Column kept for continuity; now equals amplitude_norm_by_y_sd.
+amplitude_norm_by_y_sd,Strength,Overall response magnitude,raw_amplitude / SD(y_raw).,SD-normalized raw y units,This is the preferred normalized amplitude for Strength.
+amplitude_norm_by_y_range,Strength,Overall response magnitude,raw_amplitude / (max(y_raw) - min(y_raw)).,range-normalized raw y units,Same value as amplitude_divided_by_raw_y_range.
+amplitude_divided_by_raw_y_range,Strength,Overall response magnitude,raw_amplitude / (max(y_raw) - min(y_raw)).,range-normalized raw y units,Legacy column name; same value as amplitude_norm_by_y_range.
+raw_y_sd_for_strength,Strength,Overall response magnitude,"SD(y_raw), computed with ddof=1 over finite raw y values for the relation.",raw y units,Denominator for amplitude_norm_by_y_sd.
+strength_raw_net_change,Strength,Net change,y_fit_last - y_fit_first after sorting by x.,raw y units,"Same base quantity as raw_net_change, repeated in Strength block."
+strength_absolute_net_change,Strength,Net change,abs(strength_raw_net_change).,raw y units,
+strength_normalized_net_change,Strength,Net change,y_norm_last - y_norm_first.,normalized fitted y,
+strength_normalized_absolute_net_change,Strength,Net change,abs(strength_normalized_net_change).,normalized fitted y,
+raw_total_variation,Strength,Total variation,sum(abs(diff(y_fit))).,raw y units,
+normalized_total_variation,Strength,Overall response magnitude,sum(abs(diff(y_fit_norm))).,normalized fitted y variation,Equal to accumulated_absolute_variation_final_value when finite.
+mean_absolute_elasticity,Strength,Elasticity,mean(abs((dy_fit/dx_fit) * (x_mid_raw / y_mid_raw))) over valid segments.,elasticity,Raw slope uses raw fitted coordinates; segments with zero/non-finite x_mid or y_mid are excluded.
+median_absolute_elasticity,Strength,Elasticity,median(abs((dy_fit/dx_fit) * (x_mid_raw / y_mid_raw))) over valid segments.,elasticity,
+max_absolute_elasticity,Strength,Elasticity,max(abs((dy_fit/dx_fit) * (x_mid_raw / y_mid_raw))) over valid segments.,elasticity,
+mean_absolute_slope,Strength,Mean / max absolute slope,mean(abs(s_j)).,absolute normalized slope,s_j uses normalized fitted x and y.
+max_absolute_slope,Strength,Mean / max absolute slope,max(abs(s_j)).,absolute normalized slope,
+median_absolute_slope,Strength,Mean / max absolute slope,median(abs(s_j)).,absolute normalized slope,
+slope_standard_deviation,Strength,Mean / max absolute slope,std(s_j).,normalized slope,
+slope_interquartile_range,Strength,Mean / max absolute slope,q_75(s_j) - q_25(s_j).,normalized slope,
+overall_standardized_slope,Strength,Standardized slope,mean(s_j).,normalized slope,
+mean_standardized_absolute_slope,Strength,Standardized slope,mean(abs(s_j)).,absolute normalized slope,Same formula as mean_absolute_slope.
+max_standardized_absolute_slope,Strength,Standardized slope,max(abs(s_j)).,absolute normalized slope,Same formula as max_absolute_slope.
+early_standardized_slope,Strength,Early/middle/late slopes,"mean(s_j for x_mid in [0, 1/3]).",normalized slope,
+middle_standardized_slope,Strength,Early/middle/late slopes,"mean(s_j for x_mid in (1/3, 2/3]).",normalized slope,
+late_standardized_slope,Strength,Early/middle/late slopes,"mean(s_j for x_mid in (2/3, 1]).",normalized slope,
+early_absolute_standardized_slope,Strength,Early/middle/late slopes,abs(early_standardized_slope).,absolute normalized slope,
+middle_absolute_standardized_slope,Strength,Early/middle/late slopes,abs(middle_standardized_slope).,absolute normalized slope,
+late_absolute_standardized_slope,Strength,Early/middle/late slopes,abs(late_standardized_slope).,absolute normalized slope,
+middle_to_early_absolute_slope_ratio,Strength,Strength variation across input range,middle_absolute_standardized_slope / early_absolute_standardized_slope.,ratio,Uses normalized fitted x and y slopes; NaN if early absolute slope is zero or non-finite.
+late_to_early_absolute_slope_ratio,Strength,Strength variation across input range,late_absolute_standardized_slope / early_absolute_standardized_slope.,ratio,Values below 1 suggest weakening/saturation; values above 1 suggest strengthening.
+accumulated_absolute_variation_final_value,Strength,Strength variation across input range,last(cumsum(abs(diff(y_fit_norm)))).,accumulated normalized y variation,Equivalent to integrating abs(local standardized slope) over dx_norm.
+accumulated_absolute_variation_early_value,Strength,Strength variation across input range,last(cumsum(abs(diff(y_fit_norm))) where x_mid_norm <= 1/3).,accumulated normalized y variation,NaN if no curve segment midpoint falls in the early segment.
+accumulated_absolute_variation_middle_value,Strength,Strength variation across input range,last(cumsum(abs(diff(y_fit_norm))) where x_mid_norm <= 2/3).,accumulated normalized y variation,Cumulative through the middle boundary.
+accumulated_absolute_variation_late_value,Strength,Strength variation across input range,last(cumsum(abs(diff(y_fit_norm)))).,accumulated normalized y variation,Endpoint of the accumulated absolute variation curve.
+accumulated_slope_final_value,Strength,Strength variation across input range,last(cumsum(abs(diff(y_fit_norm)))).,accumulated normalized y variation,"Legacy column name; now stores accumulated absolute variation, not unweighted cumulative local slope."
+accumulated_slope_early_value,Strength,Strength variation across input range,last(cumsum(abs(diff(y_fit_norm))) where x_mid_norm <= 1/3).,accumulated normalized y variation,Legacy column name; now stores accumulated absolute variation.
+accumulated_slope_middle_value,Strength,Strength variation across input range,last(cumsum(abs(diff(y_fit_norm))) where x_mid_norm <= 2/3).,accumulated normalized y variation,Legacy column name; now stores accumulated absolute variation.
+accumulated_slope_late_value,Strength,Strength variation across input range,last(cumsum(abs(diff(y_fit_norm)))).,accumulated normalized y variation,Legacy column name; now stores accumulated absolute variation.
+tightness_n_raw,Tightness,Sample size,count(finite x_raw and finite y_raw).,count,
+tightness_n_predicted,Tightness,Sample size,count(raw points with x_raw inside fitted x range and finite interpolated prediction).,count,
+tightness_prediction_fraction,Tightness,Sample size,tightness_n_predicted / tightness_n_raw.,fraction,
+raw_y_sd_for_tightness,Tightness,Overall tightness,"SD(y_raw), ddof=1 over all finite raw y values for the relation.",raw y units,Denominator for SD-normalized Tightness metrics.
+raw_y_range_for_tightness,Tightness,Overall tightness,max(y_raw) - min(y_raw) over all finite raw y values for the relation.,raw y units,Denominator for range-normalized RMSE.
+r_squared,Tightness,R2,1 - sum(residual_i^2) / sum((y_eval_i - mean(y_eval))^2).,unitless,R2 uses retained y_eval values because it is evaluated only where predictions exist.
+rmse,Tightness,RMSE,sqrt(mean(residual_i^2)).,raw y units,Residuals are y_raw - interpolated_y_fit over raw x values inside fitted curve range.
+normalized_rmse_raw_y_range,Tightness,Overall tightness,rmse / (max(y_raw) - min(y_raw)).,range-normalized residual ratio,Uses all finite raw y values for the relation.
+normalized_rmse_raw_y_std,Tightness,Overall tightness,rmse / SD(y_raw).,SD-normalized residual ratio,Uses all finite raw y values for the relation.
+nrmse_by_raw_y_range,Tightness,Overall tightness,rmse / (max(y_raw) - min(y_raw)).,range-normalized residual ratio,Alias of normalized_rmse_raw_y_range under the updated denominator definition.
+nrmse_by_sd,Tightness,Overall tightness,rmse / SD(y_raw).,SD-normalized residual ratio,Alias of normalized_rmse_raw_y_std under the updated denominator definition.
+residual_variance,Tightness,Residual variance,"var(residual_i, ddof=1).",raw y units squared,
+residual_standard_deviation,Tightness,Residual variance,"std(residual_i, ddof=1).",raw y units,
+mean_absolute_residual,Tightness,Residual variance,mean(abs(residual_i)).,raw y units,
+median_absolute_residual,Tightness,Residual variance,median(abs(residual_i)).,raw y units,
+residual_iqr,Tightness,Residual variance,q_75(residual_i) - q_25(residual_i).,raw y units,
+residual_90_interval_width,Tightness,Predictive uncertainty,q_95(residual_i) - q_5(residual_i).,raw y units,
+residual_95_interval_width,Tightness,Predictive uncertainty,q_97.5(residual_i) - q_2.5(residual_i).,raw y units,
+residual_90_interval_width_by_sd,Tightness,Predictive uncertainty / buffer width,residual_90_interval_width / SD(y_raw).,SD-normalized residual interval width,Alias conceptually equivalent to buffer_width90_by_sd.
+residual_95_interval_width_by_sd,Tightness,Predictive uncertainty / buffer width,residual_95_interval_width / SD(y_raw).,SD-normalized residual interval width,Alias conceptually equivalent to buffer_width95_by_sd.
+mean_buffer_width,Tightness,Buffer width,mean(abs(residual_i)).,raw y units,Same formula as mean_absolute_residual.
+median_buffer_width,Tightness,Buffer width,median(abs(residual_i)).,raw y units,Same formula as median_absolute_residual.
+buffer_width_90,Tightness,Buffer width,q95(residual_i) - q5(residual_i).,raw y units,Raw residual interval width.
+buffer_width_95,Tightness,Buffer width,q97.5(residual_i) - q2.5(residual_i).,raw y units,Raw residual interval width.
+mean_buffer_width_by_sd,Tightness,Overall tightness,mean(abs(residual_i)) / SD(y_raw).,SD-normalized residual ratio,Mean buffer width is mean absolute residual.
+median_buffer_width_by_sd,Tightness,Overall tightness,median(abs(residual_i)) / SD(y_raw).,SD-normalized residual ratio,Median buffer width is median absolute residual.
+buffer_width90_by_sd,Tightness,Overall tightness,(q95(residual_i) - q5(residual_i)) / SD(y_raw).,SD-normalized residual interval width,Same numerator as buffer_width_90 and residual_90_interval_width.
+buffer_width95_by_sd,Tightness,Overall tightness,(q97.5(residual_i) - q2.5(residual_i)) / SD(y_raw).,SD-normalized residual interval width,Same numerator as buffer_width_95 and residual_95_interval_width.
+early_mean_absolute_residual,Tightness,Local buffer width,"mean(abs(residual_i)) for x_eval_norm in [0, 1/3].",raw y units,
+early_median_absolute_residual,Tightness,Local buffer width,"median(abs(residual_i)) for x_eval_norm in [0, 1/3].",raw y units,
+early_rmse,Tightness,Local buffer width,"sqrt(mean(residual_i^2)) for x_eval_norm in [0, 1/3].",raw y units,
+early_rmse_by_sd,Tightness,Local tightness,early_rmse / SD(y_raw).,SD-normalized residual ratio,Early segment uses normalized retained raw x positions.
+early_nrmse_by_sd,Tightness,Local tightness,early_rmse / SD(y_raw).,SD-normalized residual ratio,Alias of early_rmse_by_sd.
+early_residual_variance,Tightness,Local buffer width,"var(residual_i, ddof=1) for x_eval_norm in [0, 1/3].",raw y units squared,
+early_buffer_width_90,Tightness,Local buffer width,"q_95(residual_i) - q_5(residual_i) for x_eval_norm in [0, 1/3].",raw y units,
+early_buffer_width_95,Tightness,Local buffer width,"q_97.5(residual_i) - q_2.5(residual_i) for x_eval_norm in [0, 1/3].",raw y units,
+early_buffer_width90_by_sd,Tightness,Local tightness,early_buffer_width_90 / SD(y_raw).,SD-normalized residual interval width,Early buffer 90 uses q95-q5 residuals within the segment.
+early_buffer_width95_by_sd,Tightness,Local tightness,early_buffer_width_95 / SD(y_raw).,SD-normalized residual interval width,Early buffer 95 uses q97.5-q2.5 residuals within the segment.
+middle_mean_absolute_residual,Tightness,Local buffer width,"mean(abs(residual_i)) for x_eval_norm in (1/3, 2/3].",raw y units,
+middle_median_absolute_residual,Tightness,Local buffer width,"median(abs(residual_i)) for x_eval_norm in (1/3, 2/3].",raw y units,
+middle_rmse,Tightness,Local buffer width,"sqrt(mean(residual_i^2)) for x_eval_norm in (1/3, 2/3].",raw y units,
+middle_rmse_by_sd,Tightness,Local tightness,middle_rmse / SD(y_raw).,SD-normalized residual ratio,Middle segment uses normalized retained raw x positions.
+middle_nrmse_by_sd,Tightness,Local tightness,middle_rmse / SD(y_raw).,SD-normalized residual ratio,Alias of middle_rmse_by_sd.
+middle_residual_variance,Tightness,Local buffer width,"var(residual_i, ddof=1) for x_eval_norm in (1/3, 2/3].",raw y units squared,
+middle_buffer_width_90,Tightness,Local buffer width,"q_95(residual_i) - q_5(residual_i) for x_eval_norm in (1/3, 2/3].",raw y units,
+middle_buffer_width_95,Tightness,Local buffer width,"q_97.5(residual_i) - q_2.5(residual_i) for x_eval_norm in (1/3, 2/3].",raw y units,
+middle_buffer_width90_by_sd,Tightness,Local tightness,middle_buffer_width_90 / SD(y_raw).,SD-normalized residual interval width,Middle buffer 90 uses q95-q5 residuals within the segment.
+middle_buffer_width95_by_sd,Tightness,Local tightness,middle_buffer_width_95 / SD(y_raw).,SD-normalized residual interval width,Middle buffer 95 uses q97.5-q2.5 residuals within the segment.
+late_mean_absolute_residual,Tightness,Local buffer width,"mean(abs(residual_i)) for x_eval_norm in (2/3, 1].",raw y units,
+late_median_absolute_residual,Tightness,Local buffer width,"median(abs(residual_i)) for x_eval_norm in (2/3, 1].",raw y units,
+late_rmse,Tightness,Local buffer width,"sqrt(mean(residual_i^2)) for x_eval_norm in (2/3, 1].",raw y units,
+late_rmse_by_sd,Tightness,Local tightness,late_rmse / SD(y_raw).,SD-normalized residual ratio,Late segment uses normalized retained raw x positions.
+late_nrmse_by_sd,Tightness,Local tightness,late_rmse / SD(y_raw).,SD-normalized residual ratio,Alias of late_rmse_by_sd.
+late_residual_variance,Tightness,Local buffer width,"var(residual_i, ddof=1) for x_eval_norm in (2/3, 1].",raw y units squared,
+late_buffer_width_90,Tightness,Local buffer width,"q_95(residual_i) - q_5(residual_i) for x_eval_norm in (2/3, 1].",raw y units,
+late_buffer_width_95,Tightness,Local buffer width,"q_97.5(residual_i) - q_2.5(residual_i) for x_eval_norm in (2/3, 1].",raw y units,
+late_buffer_width90_by_sd,Tightness,Local tightness,late_buffer_width_90 / SD(y_raw).,SD-normalized residual interval width,Late buffer 90 uses q95-q5 residuals within the segment.
+late_buffer_width95_by_sd,Tightness,Local tightness,late_buffer_width_95 / SD(y_raw).,SD-normalized residual interval width,Late buffer 95 uses q97.5-q2.5 residuals within the segment.
+shape_label,Derived label,Rule-based classification,Rule priority: Flat/no response; Linear; Non-monotonic U/inverted-U; Saturating monotonic; Monotonic nonlinear; Complex nonlinear.,category,Uses SHAPE_LABEL_THRESHOLDS in the notebook; candidate metrics remain the main output.
+piecewise_breakpoint,Method metadata,Piecewise linear,"Estimated x0 from piecewise_linear_one_break(x, x0, k1, k2, b).",raw x units,Only populated for Piecewise linear method.
+symbolic_expression,Method metadata,Symbolic regression,String representation of the fitted gplearn SymbolicRegressor program.,expression,Only populated for Symbolic regression method.
+net_change_by_sd,Strength,Overall response magnitude,strength_raw_net_change / SD(y_raw).,SD-normalized raw y units,Signed net change normalized by raw-y SD.
+absolute_net_change_by_sd,Strength,Overall response magnitude,abs(strength_raw_net_change) / SD(y_raw).,SD-normalized raw y units,Absolute net change normalized by raw-y SD.
+abs_net_change_by_sd,Strength,Overall response magnitude,abs(strength_raw_net_change) / SD(y_raw).,SD-normalized raw y units,Alias of absolute_net_change_by_sd.
+total_variation_by_sd,Strength,Overall response magnitude,raw_total_variation / SD(y_raw).,SD-normalized raw y units,Accumulated raw fitted-y variation normalized by raw-y SD.
+__output_shape_wide_selected_methods__,Output table,Selected-method wide CSV,"shape_metrics_wide_selected_methods.csv pivots selected methods into columns using ""Method | metric"" names.",CSV output,"Selected methods: Equal-width bins, Equal-count bins, LOWESS, Generalized Additive Model (GAM)."
+__output_strength_wide_selected_methods__,Output table,Selected-method wide CSV,"strength_metrics_wide_selected_methods.csv pivots selected methods into columns using ""Method | metric"" names.",CSV output,"Selected methods: Equal-width bins, Equal-count bins, LOWESS, Generalized Additive Model (GAM)."
+__output_tightness_wide_selected_methods__,Output table,Selected-method wide CSV,"tightness_metrics_wide_selected_methods.csv pivots selected methods into columns using ""Method | metric"" names.",CSV output,"Selected methods: Equal-width bins, Equal-count bins, LOWESS, Generalized Additive Model (GAM)."

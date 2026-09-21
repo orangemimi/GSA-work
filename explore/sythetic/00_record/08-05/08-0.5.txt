@@ -1,0 +1,234 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:00 - 1:11)
+And then we figure out, we try this out, and the main thing would be, it would be good if we can base it on other studies, because it's not the main point to figure out this threshold, you know, so we don't want to spend too much time on that. My worry with this is that you get very, very small values here, and then we, it's the same problem we have when we use levels of significance, because if we have a very large data set, it's almost always significant, even for tiny correlations, and it's not helping, you know, because, and so here we could also find that if you break it, like, if the shuffling produces a lot of relationships that are very, very small, and anything that is above 1.5 could be always acceptable, you know, and then the problem is, I assume that we end up with, we will not reduce this, the initial correlation map enough to proceed if we don't have quite high thresholds, you know.
+
+[说话人 2] (1:11 - 1:29)
+Yeah. Do you mean that during these kind of processes, too, we'll pay a lot of extended work, because we have, when applying to the system models, it will have a lot of loss?
+
+[说话人 1] (1:31 - 2:52)
+Well, you have to assume, let's say we take one of these models, you know, we have 100 impact factors, we have 100,000 grid cells, so that means we have 100 times 100,000, which is about 10 million data points. So if we now look at pairings, I mean, we're going to have many thousands of plots, and we, what we, so this iterative, let's say we have, you know, a thousand plots to start with, then we will iterate this, then we have multiple times a thousand, so it gets very, very quickly very large, and if then the result is that, let's say, we still have half of the plots as possible relationships, that means we still have 500, and that's only too many.
+
+Yeah. You know, so we have to, and that's why I wonder if we keep this option, but we start by just setting a threshold, and then, which we can look at later, looking at the sensitivity tool.
+
+[说话人 2] (2:52 - 3:03)
+Do you mean that we can define the threshold as that, if the matrix with certain range, it can be defined as no relationship and calculate each plot?
+
+[说话人 1] (3:03 - 3:30)
+Exactly, and that's what they do in this paper. They say, while there is no theoretical basis, there is a rule of thumb for linear correlation, and we could try to start there. It's not optimal.
+
+I mean, the best would be if there is a theoretical basis for it, you know, but I'm not aware of any, apart from the level of significance, which gives us way too many.
+
+[说话人 2] (3:30 - 3:35)
+Yes, exactly, and I think this could be the one option.
+
+[说话人 1] (3:36 - 4:04)
+Yeah, so why we do that, but in order to not get stuck at this point too long, if we keep this option, but also just decide on a threshold and move on and come back to that problem, because then we can also see how important is it. If we go from 0.7 to 0.6 to 0.5, how much does it actually change?
+
+[说话人 2] (4:04 - 5:41)
+Yes, I think one of the results of this step could fit this kind of exception, because maybe I can go directly to one of the results. Yes, one of the main results is that this kind of method can go very well of the detection, but maybe it's time-consuming or making a lot of plots. Yes, but maybe the next result I think you will be interested in is that I do the, I cannot spell it very well, because I get to decrease one of the metrics one by one, and I found that if the K means that the number of the metrics, K equals one, when it just depends on the distance correlation, it can get to the most higher power of the test, and most of the tests of the metrics, it shows the biggest strength is the lowest R-squared and the distance correlation, so maybe based on your suggestion we can also use this kind of results to see which metrics and which threshold or detailed metrics we can use.
+
+[说话人 1] (5:42 - 6:12)
+Yes, the one thing that we discussed last week also is that we might need a bit of a hierarchy, because if, you know, if there is, like we have linear correlation, non-linear or rank-based correlation and information theory, if none of them show anything, or all three are below threshold, we can probably exclude them.
+
+[说话人 2] (6:12 - 7:01)
+Yes, exactly, because I, this method to measure that pair with other low-relationship pair, and I see the different, maybe I can see directly to that method, because I have to test whether if there are any metrics, the maximum metrics, and here is the maximum metrics of the low-relationship, and compare this kind of low-relationship with the maximum metrics of the, has the low-relationship, and I can find that the most power metrics to define whether it has a relationship or no relationship is distance correlation.
+
+[说话人 1] (7:02 - 7:03)
+What do you mean by distance correlation?
+
+[说话人 2] (7:04 - 7:40)
+It means that, because I have calculated a lot of metrics based on this pairing, we have measured the information family and the other families to calculate each plot, and each plot will have a set of metrics, and then I compare that, for example, I calculated the maximum metrics in that plot, this means that it could summarise the strongest signal detected by any metrics in the observed pair.
+
+[说话人 1] (7:41 - 7:46)
+Yeah, but I'm not sure, I'm not sure whether we want to use all the metrics at once.
+
+[说话人 2] (7:46 - 8:06)
+Yes, this is also the exploration work, I think, maybe, I would like to detect whether it has relationship or not, maybe if one metric can give the signal of the relationship, and we can assume that it could have the relationship.
+
+[说话人 1] (8:08 - 8:14)
+No, I'm not sure that's quite right, because all the metrics measure different things.
+
+[说话人 2] (8:14 - 8:15)
+Yes, exactly.
+
+[说话人 1] (8:15 - 8:37)
+And the point is not, because it's a little bit, you see, if we say there is a relationship, if any of the metrics are high, we're probably going to find something everywhere.
+
+[说话人 2] (8:38 - 8:38)
+Yeah.
+
+[说话人 1] (8:39 - 9:31)
+And then it's not going to help us. Yes. So we need to have, and that's why I was thinking of more of a flowchart, you know, more of a sequence of things.
+
+Yes. That we say, okay, and that groups things. So, for example, you might find something in your lowest regression or so, where you find where there is a relationship, but in a very small fraction of the space.
+
+Yeah, exactly. So that is different from saying there is a general relationship. So we have to think about this stepwise, so that we, what I don't think, I mean, I just, you might have to convince me.
+
+Sorry. It is using all the metrics at once.
+
+[说话人 2] (9:31 - 9:31)
+Yeah.
+
+[说话人 1] (9:32 - 9:35)
+It's going to get very confusing to organise everything this way.
+
+[说话人 2] (9:35 - 9:45)
+So you mean that if I can use some targeted metrics to test whether it has a relation or no relationship?
+
+[说话人 1] (9:47 - 10:13)
+Yeah, so we need to, exactly, so I think we need to have some, we need to organise these metrics in a way. Like, yeah, so rather than using the whole matrix in one go, I think we have to say, okay, we can say if under certain conditions using these three metrics, we know there is no larger scale relationship between these metrics.
+
+[说话人 2] (10:13 - 10:14)
+Yes.
+
+[说话人 1] (10:14 - 10:18)
+Now that can still be that we check for small scale relationships and maybe part of the space.
+
+[说话人 2] (10:19 - 10:19)
+Yes.
+
+[说话人 1] (10:21 - 10:33)
+Or, and then if there is a relationship, we can say, okay, if there is a relationship, we want to see is this a relationship that is positive, negative, strong, weak, reaching a plateau or not.
+
+[说话人 2] (10:34 - 10:34)
+Yeah.
+
+[说话人 1] (10:34 - 10:35)
+You know, so like that.
+
+[说话人 2] (10:36 - 10:59)
+Yeah. Yeah, I understand that. So, but it seems that maybe it could be helpful for to some extent this method.
+
+I'm not sure. Maybe I can, I understand how to maybe to mention it.
+
+[说话人 1] (10:59 - 11:03)
+Yeah, because at the end, we want to organise everything.
+
+[说话人 2] (11:03 - 11:03)
+Yeah.
+
+[说话人 1] (11:05 - 11:19)
+And I think because it's going to be potentially a lot of interactions. Yes. And I think we need to organise it in a way like a tree-based way, you know, that we say, okay, over here are the variables where we can find anything.
+
+[说话人 2] (11:20 - 11:20)
+Yeah.
+
+[说话人 1] (11:20 - 11:40)
+Here are the variables where we could find something at the larger scale or across the whole range and they are organised in strong, weak, plateau, positive, negative, you know. So that we can then say, okay, now I want to look for any kind of threshold-based relationships.
+
+[说话人 2] (11:41 - 11:41)
+Yeah.
+
+[说话人 1] (11:41 - 11:41)
+Yeah.
+
+[说话人 2] (11:42 - 11:43)
+Yes, I understand that.
+
+[说话人 1] (11:43 - 11:53)
+It might not change very much what we actually calculate. It just organises it a little bit so that it's, because ultimately people have to be able to follow.
+
+[说话人 2] (11:54 - 11:54)
+Yeah.
+
+[说话人 1] (11:55 - 11:55)
+Yeah.
+
+[说话人 2] (11:55 - 12:38)
+So I can also show you one tree. I have designed two trees. This is maybe, maybe I can show you another tree.
+
+This one. I think maybe, for example, this could, something different, the tree you mentioned because I intended to, for example, calculate all some characteristics one by one and then we can combine that characteristics together and get to the conclusion instead of...
+
+[说话人 1] (12:38 - 12:44)
+Yeah, but we can, this is very nice, but you could think of it as a tree.
+
+[说话人 2] (12:44 - 12:44)
+Yeah.
+
+[说话人 1] (12:44 - 12:52)
+You know, rather than saying here's the one result, you could say, okay, here are, we use this to break it up into...
+
+[说话人 2] (12:52 - 12:55)
+Maybe you prefer this tree. Is that...
+
+[说话人 1] (12:58 - 13:17)
+Yeah, a bit more, exactly. So it's, that's more what I had in mind because then we, at the very end, we want to then be able to look at some things. And when we need, essentially the algorithm you're putting together is organising all the relationships for us.
+
+[说话人 2] (13:17 - 13:17)
+Yeah.
+
+[说话人 1] (13:17 - 13:33)
+So we want to build lots of groups and the, so that we can then say, okay, I want to, and we can then look at the groups by variables. So where does precipitation play a role, for example?
+
+[说话人 2] (13:33 - 13:33)
+Yes.
+
+[说话人 1] (13:34 - 13:45)
+Or where does something else, or where is there, where are the thresholds, where are there relationships that sort of saturation, you know? So like that, you know?
+
+[说话人 2] (13:45 - 13:54)
+Yeah. I understand. So maybe I will adjust this PowerPoint to some extent to meet the whole goal.
+
+[说话人 1] (13:54 - 14:15)
+Yeah. So, I mean, it's the same thing you're already doing. It's just a question of how we organise it.
+
+Yeah. That, and maybe we can, tomorrow with Francesca, is Francesca coming tomorrow? Yeah.
+
+So we could think a bit about, okay, what could the end goal, the result look like? Yeah. And how would we use it?
+
+And that might help define the steps.
+
+[说话人 2] (14:15 - 14:15)
+Yes.
+
+[说话人 1] (14:16 - 14:17)
+To get there. Yeah, yeah.
+
+[说话人 2] (14:17 - 14:23)
+I will add some slides about the potential outputs of the whole research.
+
+[说话人 1] (14:23 - 14:33)
+Yes. And I think I gave this, there was this paper by Zhang or so in, about interpretable machine learning.
+
+[说话人 2] (14:34 - 14:34)
+Yeah, yeah, exactly.
+
+[说话人 1] (14:34 - 14:50)
+So that might also be a good paper to have another look at. And maybe, because they were trying to do something similar. Finding relationships in a, just using interpretable machine learning, so it's a bit less organised.
+
+We're trying to do it in a more organised way.
+
+[说话人 2] (14:50 - 14:50)
+Yeah.
+
+[说话人 1] (14:50 - 14:57)
+But that might also, some of the conceptual figures might be interesting to think about.
+
+[说话人 2] (14:57 - 15:02)
+Okay. I will try to review this paper and summarise some slides.
+
+[说话人 1] (15:03 - 15:10)
+Yes. And I think that might help because I was, I came across that again today. Okay.
+
+And I think it might be useful.
+
+[说话人 2] (15:11 - 15:11)
+Yes.
+
+[说话人 1] (15:11 - 15:11)
+Okay.
+
+[说话人 2] (15:11 - 15:13)
+Thank you for this session.
+
+[说话人 1] (15:13 - 15:14)
+See you tomorrow morning.
+
+[说话人 2] (15:14 - 15:15)
+See you. Bye.
+
+[说话人 1] (15:15 - 15:15)
+Bye.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

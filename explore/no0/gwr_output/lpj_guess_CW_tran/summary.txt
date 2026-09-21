@@ -1,0 +1,18 @@
+target: tran
+n_sample: 3000
+features: ['precipitation', 'lai']
+kernel: bisquare (adaptive=True)
+
+=== GWR ===
+bandwidth (#neighbors): 47.0
+AICc: 27761.400
+R2:   0.9773
+adj_R2: 0.9738
+elapsed: 3.7s
+
+=== MGWR ===
+bandwidths: intercept=41.0, precip=41.0, lai=41.0
+AICc: 27611.634
+R2:   0.9784
+adj_R2: 0.9751
+elapsed: 177.4s

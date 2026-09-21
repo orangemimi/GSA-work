@@ -1,0 +1,95 @@
+382 in next year and that of the same given month in current yeat, For each basin, this
+
+383 ‘monthly-moving agercgation method results in 265 annual ET times series, and it provides
+
+384 a more robust trend estimation duc to the increased sample size, smoother trends, better
+
+385 statistical power, and reduecd influcnec of anomalies (69), compared to the 23 annual ET
+
+386 time series obtained if using only calendar year aggregation.
+
+387 In summary, we had three Pr products and three AS products, and by using all
+
+388 combinations we obtained nine water-balance annual ET observations that were then used.
+
+39 respectively to train our machine-leaming model to obtain nine simulations at basin and
+
+390 global seales (figs. $5 to $7). In this way, uncertainty in watcr-balance ET estimates can
+
+301 be quantified using one standard deviation (1 STD) of the nine estimates. This will reduce
+
+392 estimated biases and obtain more reliable trends.
+
+393 Diagnostic ET products
+
+394 To train the machine-leaming model, we selected five state-of-the-art diagnostic actual ET
+
+395 products from 2000 to 2022, including: (i) Penman-Monteith-Leuning Evapotranspiration
+
+396 (PML_V2) PML_v2.1.8 (19); (ii) Moderate-resolution Imaging Spectrotadiometer dataset
+
+397 (MODIS) MODI6A2 (70); (ii) and (iv) two versions of Global Land Evaporation
+
+398 ‘Amsterdam Model dataset (GLEAM), GLEAM ¥3.8a (71) and GLEAM4.1a (24); and (v)
+
+399 the Complementary Relationship product CR-v1 (72). Selection of the five products was
+
+400 carefully considered, based on representation of dominant methodologies, spatiotemporal
+
+401 ‘compatibility, regional and global performance and data availability for the study period
+
+402 2000-2022. PMI_v2.1.8 is a biophysical model coupled to the gross primary production
+
+403 process based on stomatal conductance theory with 8-day and 500m resolution
+
+404 ‘MOD16A2 is based on the Penman-Monteith Equation and calculates the canopy
+
+405 ‘conductance using the semi-empirical model including various constraining factors, also
+
+406 with 8-day and 500 m resolution. GLEAM v3.8a estimates actual ET using the Priestley
+
+407 and Taylor potential BT multiplied by a semi-empirical function of evaporative stress,
+
+408 having daily and 0.25° resolution. GLEAM4.1a uses a Penman equation, and a stress
+
+409 ‘computation based on deep leaning, having daily and 0.1° resolution. Unlike the previous
+
+410 four products driven by remote sensing data, CR_v1 was solely driven by routine
+
+aul meteorological data, including air and dew-point temperatures, wind speed, and net
+
+an radiation, having daily and 0.25° resolution. Since MODI6A and PML_v2.1.8 have mueh
+
+413 higher spatial resolution, compared to the other three, these two were first resampled into
+
+414 0.25° by the nearest neighbor method. We also unified the temporal resolution to monthly
+
+41s, by adding the BT of the daily and 8-day resolution products. To calculate basin scale ET
+
+aw area-weighting was applied to cach ET product,
+
+ay CMIPG ESMs ET simulations
+
+ane We also compared our BT trends with those of CMIP6 ESMs. There were 32 CMIP6
+
+419 ESMs employed (table 81, httpsi//esgf-datadkrz.de/; last accessed 18 November 2024).
+
+20 ET simulations (the variable ‘evspsbl’) of historical and business-as-usual sccnario
+
+al (SSP245) ripfl realization were used. Historical simulations end in 2014. SSP245 were
+
+422 used to extend the historical scenario to 2022 and used for future scenario analysis.
+
+433 Basin boundary data
+
+424 For the global basin-scale analysis we used level three of the HydroSHEDS global basin
+
+425 boundary dataset (73, 74), which is based on elevation data obtained in 2000 by NASA's
+
+426 Shuttle Radar Topography Mission (SRTM). This dataset offers a suite of geo-referenced
+
+ar datasets (vector and raster) at various scales, including river networks, catchment
+
+428 boundaries, drainage directions, and flow accumulations. The level three dataset covers
+“lence Advances MamusiptTemplae~—~—~C~*~S~S*«~S iD
+

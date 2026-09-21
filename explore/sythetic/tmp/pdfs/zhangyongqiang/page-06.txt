@@ -1,0 +1,101 @@
+234 underestimate hemispheric ET discrepancy. Furthermore. each of the five individual ET
+
+25 products exhibits lower correlations with the observed ET obtained from basin water
+
+236 balance (figs. $18-S19). This demonstrates that itis necessary to process diagnostic results,
+
+237 for better estimates of BT dynamics at global and hemispheric scales, The failure of most
+
+238 ESMs to capture the contrasting hemispheric trencls (table S1 and fig. 517) indicates
+
+239 remaining structural limitations in representing vegetation-hydroclimate coupling (42,
+
+240 43), These may be related to underestimating the COz-fertlization feedhack (44) and
+
+2a afforestation/reforestation impacts (41) on vegetation changes in the Norther
+
+ae Hemisphere. For the Southern Hemisphere and its more water-limited conditions (29),
+
+23 ESMs may underestimate ET declines from precipitation deficits (45) and additional
+
+nn FNSO-enhanced drying (46-48) (Fig. 4). Our emergent constraints project that this
+
+245 asymmetry will persist through 2050, implying that evaporation paradox (49, 50) of
+
+246 dccreasing ET in a warmet climate is not transient but a signature of hemispherically
+
+247 divergent water cycles.
+
+248 ‘The hemispheric asymmetries in ET trends have not only direct implications for global
+
+249 water cycle, but also broader implications. The increased ET in the Northern Hemisphere
+
+250 may reflect enhanced vegetation growth, forest expansion and carbon sequestration (42,
+
+231 52), but also implies higher agricultural water use, intensifying competition for freshwater
+
+252 resources under increased atmospheric demand for water. Conversely, the declining ET in
+
+253 the Souther Hemisphere due to atmospheric drying, may be associated with lower crop
+
+254 yields, exacerbating food insecurity in water-scarce regions. The declining precipitation
+
+2s5 may also increase irrigation demand, which cannot always be met sustainably at
+
+256 local/regional scales, and also exacerbates water resource competition and requires
+
+237 significant infrastructure investments (52). This is particularly critical for southeast
+
+258 Australia and Brazil—both at the forcfront of global food production. Thesc trends also
+
+258 pose challenges for hydropower generation, ecosystem stability/integrity, and biodiversity
+
+260 conservation.
+
+261 While our approach advances global ET estimates and trend analysis, certain
+
+262 considerations of clarifications should be noted. First, we account for precipitation
+
+263 uncertainty by utilizing three state-of-the-art precipitation products. Nevertheless,
+
+264 precipitation uncertainty may remain substantial in regions with sparse gauge coverage
+
+265 (53). Despite this, all three products consistently revealed contrasting hemispheric
+
+266 patterns, with slight variations in magnitude due (o the nature of our model, which is
+
+267 constrained by basin-water balances and thus directly influenced by precipitation inputs
+
+268 (fig. $8). Second, our estimations are conducted at a basin scale (@ 10,000 km’), meaning
+
+269 that direct point-scale validation using flux tower data is not directly applicable—an
+
+20 inherent characteristic of basin-scale water balance studies. However, these approaches,
+
+2m are complementary: basin-scale reconciliations provide a spatially integrated, mass-
+
+m constrained benchmark, while flux towers offer mechanistic insights at fine temporal
+
+273 scales. Future studies could employ this framework to integrate flux tower data with
+
+214 catchment streamflow and large-basin terrestrial water storage, providing robust
+
+215 constraints for refined water flux estimates. Third, while our framework captures annual
+
+26 ET trends, it does not address seasonal and sub-seasonal variations; addressing these
+
+27 requires finer temporal scale study. Nevertheless, investigating short-term fluctuations
+
+28 driven by extreme weather events and vegetation changes is another important topic for
+
+29 future research, Fourth, the dominant drivers identified represent strong statistical
+
+20 associations derived from the Generalized Additive Model coupled with SHapley Additive
+
+281 exPlanations (GAM-SHAP) analysis. While these are consistent with well-established
+
+282 hydrological principles (c.g., ET limitation by P in dry regions, influence of LAI via
+
+283 transpiration), they indicate correlation and mechanistic plausibility rather than definitive
+‘Seienee Zdvances Manuscript Template ——~—~=~C~S*~*~*~S*«S IO
+

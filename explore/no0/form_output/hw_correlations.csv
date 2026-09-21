@@ -1,0 +1,9 @@
+﻿model,zone,x,y,pearson_r,spearman_rho
+CLASSIC,HW,P,T,0.5,0.57
+CLASSIC,HW,P,E_soil,-0.53,-0.57
+CLASSIC,HW,LAI,T,0.78,0.79
+CLASSIC,HW,LAI,E_soil,-0.82,-0.84
+LPJ-GUESS,HW,P,T,0.64,0.67
+LPJ-GUESS,HW,P,E_soil,0.49,0.53
+LPJ-GUESS,HW,LAI,T,0.89,0.9
+LPJ-GUESS,HW,LAI,E_soil,0.26,0.3

@@ -1,0 +1,95 @@
+139 while B] Nino events suppressed BT in the Southom Hemisphere. We further quantify the
+
+140 correlation between the Nifio 3.4 index and annual ET anomalies during strong ENSO
+
+41 events (35). The analysis reveals contrasting, hemispheric responscs: significant negative
+
+1a correlations (P « 0.05) dominated in the Souther Hemisphere, while positive correlations
+
+143 provailed in the Northcm Hemisphere. These opposing hemispheric effects resutt in.
+
+148 weakened global-scale signal. The markedly higher interanmual variability in Southern
+
+14s Hemisphere ET (Fig, 2A) is likely driven by the greater influence of high-amplitucle
+
+146 climate modes like FNSO on precipitation in the Southem Hemisphere, particularly in
+
+147 ‘Australia (fig. $13), coupled with the larger proportion of water-limited ecosystems where
+
+148 ET variability closely tracks precipitation vatiability. Specifically, strong negative
+
+M9 correlations between ENSO and ET emerge in southeasterm/northen Australia and
+
+150 southern Africa. Notably, the Amazon basin exhibits weaker-than-expected impacts.
+
+1st Through attribution analysis, we identify factors including land surface conditions (e.g.,
+
+152 leaf area index (LAI) and atmospheric factors (e.g., precipitation and potential
+
+153 cevapotranspiration (PET)) that directly impact influencing the ET trends (Fig. 3).
+
+154 Precipitation positively influences the ET trends in South America and Australia, with
+
+155 contribution reaching about 29% and 42%, respectively. Potential evapotranspiration,
+
+156 which integrates net radiation and other atmospheric drivers (Methods, Fquation 2), plays
+
+157 a dominant role in majority of high latitude basins (L., > 50° from the equator) and large
+
+158 parts of the Southern Hemisphere (including Amazon basin), indicating the importance of
+
+159 energy limitation in these regions. The decrease in ET in Southern Hemisphere is largely
+
+160 dominated by decrease in precipitation, increase in PET and its key driver of vapor
+
+161 pressure deficit (figs. S14 and $16). This interpretation is further supported by
+
+162 hemisphoric-scale co-variability in standardised annual anomalies (fig. $15), which shows
+
+163 a strong negative coupling between ET and air temperature in Northem Hemisphere (R =
+
+64 0.78), but a negative coupling in Southem Hemisphere (R ~ -0.62), whereas ET
+
+165 precipitation relationships are similar between hemispheres (R = 0.65 for Northern
+
+166 Hemisphere, R = 0.66 for Southern Hemisphere). In regions such as Burope and Asia, land
+
+167 cover changes contributed approximately 45% or more to the annual ET trends. This
+
+168 suggests that vegetation dynamics play a crucial role in Northern Hemisphere ET
+
+169 variations, and leaf area index in Northern Hemisphere is accompanied by strong
+
+170 grecning, e.g, increase in leaf area index.
+
+i Future projection
+
+1m To project future trends, we first evaluate 32 online Earth System Models (ESMs). Their
+
+173 ensemble average shows a similar ET global trend to our estimate for the same period
+
+174 Ge, 2000-2022). However, most of them do riot show significant contrasting signs in
+
+175 their hemispheric trends (lable S1 and fig. $17). This stimulates us to reduce ESM.
+
+176 uncertainty for better future ET projections. Using the emergent constraint framework that
+
+7 is widely used to reduce uncertainty for future projections (23, 36-38), we establish robust
+
+178 relationships between historical trends and future changes (2025-2050 relative to 1981
+
+179 2014) based on the results of ESMs in the Coupled Model Intercomparison Project Phase
+
+130 6 (CMIP6) under a moderate Shared Socioeconomic Pathway 2-4.5 (SSP2-4.5) for the
+
+at global land, the Norther Hemisphere, and the Southem Hemisphere (Fig. 4). Applying,
+
+182 the emergent constraint (23, 36-38) using the global ET trend only slightly changes the
+
+183 future projection of ET increase from the ESMs results. This is expected since our
+
+184 historical results are similar lo the historical simulations of the ESMs ensemble. However,
+
+185 it is striking that when the ESMs are constrained using hemispheric trend results, the
+Silence Adwnces——~—S*~*~*~*~*~*~*«C apt Tepe Page 020
+

@@ -1,0 +1,16 @@
+ Srape e on
+A tt um
+ae i
+Sep aes
+§ 3 ee ba
+‘0
+Fig. S13.
+Pearson’s correlation map between ENSO (represented by the Nidio 3.4 index) and annual
+evapotranspiration (ET) anomalies across 232 global river basins from 2000 to 2022. Cross-
+hatchings indicate regions where the corelation is significant (P < 0.05 according tothe Mann-
+Kendall tend tes). Greenland and oceans are masked out. Correlation are color-coded using the
+parula colormap (-1 to +1), where sttong negative correlations indiate increased ET during La
+Nifia and decreased ET during El Nilo, and strong positive correlations indicate increased BT
+during EL Nifo and decreased ET during La Nita.
+16
+

@@ -1,0 +1,388 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:00 - 0:04)
+The values on the right-hand side, some of them are very high as well.
+
+[说话人 2] (0:05 - 0:19)
+Yeah, the ones towards the very left are very low noise. So as long as the noise is very low, they will still come out. Because it looks for the clarity of the relationship, no?
+
+[说话人 1] (0:19 - 0:54)
+Yeah, so these are all, as the title says, around 0.8. Yeah, near 0.8. And this is MIC near 0.6. We can see that the noise has added, but we can also find here the code colour relationship could be more noise. And here's the form colour relationship. Sorry, can you go back a point?
+
+[说话人 2] (0:55 - 1:09)
+That's interesting, because like this one, the bottom right one doesn't look like there's any difference in noise, but it's a very big difference in MIC, no?
+
+[说话人 1] (1:09 - 1:10)
+Yeah, exactly.
+
+[说话人 2] (1:11 - 1:14)
+So it's very sensitive to noise then for some of the more complex?
+
+[说话人 1] (1:14 - 1:16)
+Yeah, I think so.
+
+[说话人 2] (1:16 - 1:17)
+Okay.
+
+[说话人 1] (1:17 - 1:40)
+And one important idea here is that through our last discussion, we assume that even when the noise gets very, very high, that the MIC will go to zero. But in fact, it's not low to zero, but near 0.1. This is also the paper has shown here.
+
+[说话人 2] (1:41 - 1:47)
+They find that essentially almost just noise will not be zero.
+
+[说话人 1] (1:47 - 2:05)
+Yeah, yeah. And so I think that the possible next step is whether we need to separate the detectable relationship with the global relationship, or the first stage also could be... What do you mean?
+
+[说话人 2] (2:08 - 2:14)
+Yeah, I think, I mean, I do like your third point here.
+
+[说话人 3] (2:15 - 2:15)
+Yeah.
+
+[说话人 2] (2:16 - 2:29)
+Because, and then we could think this through for all the steps with the different metrics. Yeah. And then have the students again assess whether the result is sensible.
+
+[说话人 3] (2:29 - 2:29)
+Yeah.
+
+[说话人 2] (2:30 - 2:44)
+Because we also have to be a little bit careful that in reality, the data is going to be a lot more noisy than what you have here. Yeah. So it will look a lot worse, you know?
+
+[说话人 3] (2:44 - 2:44)
+Yeah.
+
+[说话人 2] (2:45 - 3:02)
+And so I think it's okay to be a bit more conservative because the likelihood that we have a very important relationship that just happens to be very odd and it's not very large, you know? Yeah. So that's where I think we can...
+
+[说话人 1] (3:02 - 3:08)
+Yeah. So you will actually start from the third, yeah?
+
+[说话人 3] (3:08 - 3:09)
+Yeah.
+
+[说话人 1] (3:09 - 3:44)
+I would still like maybe have a quick look like, you know, pretend you are the student if I just check that 0806 kind of work for you. Yeah. Or slightly change it if you realise actually, I don't know, maybe it needs to be a little bit more or less, you know?
+
+Just, you know, gain a little bit of confidence that 0608 is vaguely okay before you go to other people because otherwise you use their time to discover something that very clearly doesn't work and you could have find out quickly, no?
+
+[说话人 3] (3:44 - 3:44)
+Yeah.
+
+[说话人 1] (3:45 - 4:08)
+Yeah. But other than that, I think it's good to try this other approach. Yeah.
+
+Yeah. But I think maybe we can start at first and then ask our colleagues to help to labour because I think the threshold for us is has done a lot of experiments and maybe we can start at first a branch and to detect whether this could be effective.
+
+[说话人 2] (4:09 - 4:19)
+Yeah. But I would suggest that let's go further and then ask them later again. Yeah, yeah, yeah.
+
+[说话人 1] (4:20 - 4:33)
+Yeah. Yeah. And what I would also like to ask is, yes, we need to do a clear definition of the global relationship as you suggested at the early of this discussion.
+
+[说话人 2] (4:35 - 4:56)
+I think I would try to see, well, what we're saying is if we take something out at this first step, we don't know whether it's no relationship or very local relationship. So that's still possible. From the ones that we take forward, the question is, does everything end up somewhere sensible?
+
+[说话人 1] (4:56 - 5:00)
+Yeah. So we do not need to make more, for example.
+
+[说话人 2] (5:01 - 5:10)
+I think it's just for the other group. We later have to think about how we find local relationships. Yeah?
+
+Francesca?
+
+[说话人 1] (5:11 - 5:12)
+Yes.
+
+[说话人 2] (5:14 - 5:19)
+Cool. Then now you go and get some ice cream. Yes.
+
+[说话人 1] (5:19 - 5:33)
+Yes. Yeah. I also wanted to say I'm not sure I will be able to join next week.
+
+So I think I'm going to be offline for three weeks and then pick up.
+
+[说话人 2] (5:34 - 5:35)
+When will you be back?
+
+[说话人 1] (5:36 - 6:27)
+Let me see. Because I think I'm being too optimistic about how much work I can actually do. While I have Dani.
+
+Why is this now? Sorry, my computer has restarted. And now has lost the calendar.
+
+Do we have, well, I'll do it this way. My calendar doesn't upload. But do we have a meeting in our calendar on the 20th of August?
+
+[说话人 2] (6:28 - 6:30)
+We just have it continuously, Francesca.
+
+[说话人 1] (6:30 - 6:33)
+Okay. Then I have accepted that.
+
+[说话人 2] (6:34 - 6:36)
+But this is for a different reason. When are you back?
+
+[说话人 1] (6:38 - 6:46)
+So I am going to Italy tomorrow. Next week I will be working back.
+
+[说话人 2] (6:47 - 6:51)
+No, no. I'm just wondering in August when are you back working?
+
+[说话人 1] (6:51 - 6:56)
+And then I'm back on the 17th, which is a Monday.
+
+[说话人 2] (6:57 - 6:57)
+Yeah.
+
+[说话人 1] (6:58 - 7:03)
+17th. Yeah. Okay.
+
+So that Thursday of that week.
+
+[说话人 2] (7:04 - 7:04)
+Yeah.
+
+[说话人 1] (7:04 - 7:06)
+I should have accepted the invite. Yeah.
+
+[说话人 2] (7:07 - 7:14)
+Yeah, my question is I'm writing a proposal and I was wondering whether towards the end of August you could have a look through.
+
+[说话人 1] (7:16 - 7:17)
+Yes, I am.
+
+[说话人 2] (7:18 - 7:19)
+If you have time.
+
+[说话人 1] (7:19 - 7:45)
+Yeah. We might have a chat. Because I'm still a bit making up my mind.
+
+It might be that the last two weeks of August when I come back, I'm actually like single-mindedly doing one thing. Because there is a deadline on the 10th of September for this policy fellowship.
+
+[说话人 3] (7:46 - 7:46)
+Yeah.
+
+[说话人 1] (7:46 - 7:49)
+To be seconded at the Environment Agency for a year and a half.
+
+[说话人 3] (7:50 - 7:50)
+Okay.
+
+[说话人 1] (7:51 - 8:09)
+And I'm trying to get some info about how this works and trying to make up my mind if this is something sensible or not to do for me. And I have changes of heart. But if I decide, if when I come back I decide I want to do it, then I have, you know, two weeks to write it up.
+
+[说话人 2] (8:09 - 8:09)
+Okay.
+
+[说话人 1] (8:09 - 8:22)
+Not massively long, but yeah, I have to do that. So I'll keep busy with that. And maybe I enjoy actually.
+
+And then we can chat maybe. Sure. You tell me also.
+
+And in exchange you read mine.
+
+[说话人 2] (8:23 - 8:23)
+Excellent.
+
+[说话人 1] (8:24 - 8:26)
+But what is it? Is it the ARC?
+
+[说话人 2] (8:26 - 8:30)
+Yeah. But it's not very long. It's like 12 pages.
+
+[说话人 1] (8:30 - 8:32)
+What is it? Two plus four?
+
+[说话人 2] (8:32 - 8:43)
+Five plus seven or so maybe. Okay. But the first one is a bit more, but it's a CV and stuff, you know.
+
+So I think it's five pages of actual content.
+
+[说话人 1] (8:43 - 8:45)
+When is the submission deadline?
+
+[说话人 2] (8:46 - 8:47)
+27th of August.
+
+[说话人 1] (8:47 - 9:14)
+Okay. Yeah. Sure.
+
+Cool. Yeah, yeah. I will be working.
+
+At the moment my calendar looks very free. Excellent. It's two weeks of August and I'm trying to keep it as such because if I, basically I'm a bit like confused because there are two things that have come up.
+
+One is my head of school is resigning. Oh, really? And becoming, and taking a super big position in Bath.
+
+[说话人 2] (9:14 - 9:15)
+Oh, wow. As what?
+
+[说话人 1] (9:15 - 10:13)
+Yeah. Vice Chancellor or something? Yeah, Dean of Engineering, but in Bath the deans are also vice chancellors.
+
+So the deans, there are only four deans and they are in the executive board of the university. Okay, wow. So it's like a big step up.
+
+And a few people have come and told me, oh, you should do interim for one year. But yeah, I had a long meeting yesterday about this and after that I was like, you know, well, no, you have to put a gun on my head. And then I'm also thinking instead of this fellowship application, which again, I'm a bit torn.
+
+So I would actually enjoy to have a chat with you. Sure. Torn into, you know, is it something that maybe it would make me happier to be at university to see how people work at the environment agency.
+
+I think it would be a good outcome of that, no?
+
+[说话人 2] (10:13 - 10:14)
+Yeah, I can imagine.
+
+[说话人 1] (10:15 - 10:26)
+To be there for a year and a half and then say, well, actually, you know what, I'll go back to writing my paper. So I don't know, I have these two, you know, potential big changes in what I do next year.
+
+[说话人 3] (10:26 - 10:26)
+Okay.
+
+[说话人 1] (10:27 - 10:37)
+But both of them, to begin with, I was very enthusiastic. And then I thought, actually, maybe the main outcome of this is that I will be happy to go back to my job.
+
+[说话人 2] (10:39 - 10:48)
+Yeah, I would be surprised. But that doesn't mean that it's not a bad thing to do. That's a different thing.
+
+[说话人 1] (10:48 - 10:56)
+So maybe actually, if you don't mind, maybe I'll give you a call next week to just chat these things through. Sure. At some point.
+
+[说话人 3] (10:56 - 10:56)
+Yes.
+
+[说话人 1] (10:57 - 11:08)
+And then in terms of looking at the proposal, sure, those two weeks, I mean, if you have a draft and you want to send it by the 17th, so I'll pick it up when I'm back.
+
+[说话人 3] (11:08 - 11:10)
+Yeah, that's what I mean. That's kind of what I mean. Yeah.
+
+[说话人 1] (11:10 - 11:22)
+If you send it by that week, then I can pick it up when I'm back. Yeah. And instead with you, I don't know.
+
+I just think because next week I'll be in Italy with my mom, I feel a bit reluctant to commit to all my meetings.
+
+[说话人 3] (11:22 - 11:24)
+No, no, it's okay. Francesca.
+
+[说话人 1] (11:24 - 11:29)
+Because then things, you know, come in my way and I stress out and, you know.
+
+[说话人 2] (11:29 - 11:34)
+And your mom doesn't care that much for bubblegum, so it's harder to keep her quiet.
+
+[说话人 1] (11:34 - 12:27)
+Well, this is the point that, you know, when I am with my mom, basically, you know, I have two children instead of one. And Daniel is the reasonable one of the two. So, you know, not really.
+
+It's double work for me. So, you know, you think this is complicated, but it's nothing. So, I can do, if I can do my work, you know, at my own pace is one thing.
+
+But if I have to guarantee to show up at a given time, it's a bit different. So, I said to people, I will revise your paper with, you know, two things online. But yeah, I don't want to commit to say I'll show up at Thursday at four because then, you know, maybe it doesn't happen.
+
+Yeah. But yeah, no, but very nice work. And then, you know, I'll pick it up.
+
+I'll join the meetings again when I'm back. And instead, maybe we have a chat next week.
+
+[说话人 3] (12:27 - 12:29)
+Sounds good, yeah. Just let me know when.
+
+[说话人 1] (12:29 - 12:36)
+The ERC is basically a better, like the idea of last year just with more now.
+
+[说话人 2] (12:37 - 12:53)
+Yeah, combined with what I presented in Vienna. Yeah. So, really, yeah, I think the way it's also formulated, it's a bit – here's a bigger issue that we need to tackle.
+
+[说话人 3] (12:53 - 12:53)
+Yeah.
+
+[说话人 2] (12:53 - 13:00)
+And here's some directions in which we can go. Yeah. And I will see whether that works as a framing.
+
+[说话人 1] (13:01 - 13:10)
+But last year, you didn't go for it because you heard about the EGO award and you thought it would be better to wait to have that in your CV.
+
+[说话人 2] (13:10 - 13:23)
+No, I was just running out of time. Okay. I was running out of time and I lost confidence that I could get it in a good enough shape.
+
+Because if you don't get into the second round in the reviews, you're out for two years.
+
+[说话人 1] (13:24 - 13:26)
+Ah, so you better get it right.
+
+[说话人 2] (13:26 - 13:35)
+Yeah. So that's why I didn't want to send a proposal that was only – Half thought through. Yeah.
+
+Not quite convincing.
+
+[说话人 1] (13:36 - 13:36)
+Yeah, yeah.
+
+[说话人 2] (13:36 - 13:54)
+And it's important that at least the first part has to be convincing because that gets you into the second round. And even if you get kicked out in the second round, that's less likely to be a problem. But if you get kicked out in the first round, then they would say, no, then you have to wait.
+
+[说话人 1] (13:54 - 13:55)
+Yeah, yeah.
+
+[说话人 2] (13:55 - 13:56)
+Which is not the end of the world.
+
+[说话人 1] (13:57 - 14:00)
+Yeah, I said last year it was rubbish, so you did well.
+
+[说话人 2] (14:00 - 14:07)
+Exactly. There we go. This year it's going to be brilliant.
+
+Brilliant. Okay. Well, enjoy the ice cream.
+
+[说话人 1] (14:07 - 14:14)
+I think, you know, the story that you told at the EGU award, you know, I think.
+
+[说话人 2] (14:14 - 14:14)
+Yeah, exactly.
+
+[说话人 1] (14:15 - 14:18)
+It was very nice and very well developed.
+
+[说话人 2] (14:18 - 14:21)
+Yeah, exactly. And supporting that with a bit more detail.
+
+[说话人 1] (14:21 - 14:27)
+And maybe you have now a few more papers in the meantime, where you trial more things.
+
+[说话人 2] (14:27 - 14:37)
+Yeah, some of them. So not all of them are out yet, but we'll see. Yeah, very good.
+
+[说话人 1] (14:37 - 14:50)
+Thank you for your patience today with me. Enjoy your vacation. Bye.
+
+Okay, bye. Bye, bye. Thank you for your suggestions.
+
+[说话人 2] (14:51 - 14:52)
+Yeah, no, that's good.
+
+[说话人 1] (14:53 - 14:56)
+You can cycle the car with it, no worries.
+
+[说话人 2] (14:56 - 15:04)
+Yeah, no worries. I'll wait a moment to see whether it's not tricking me. It usually tricks me, you know.
+
+As soon as I leave here, it starts raining.
+
+[说话人 1] (15:04 - 15:04)
+Oh, really?
+
+[说话人 2] (15:05 - 15:10)
+Yeah, yeah. I've done it a few times. But it's good.
+
+It doesn't really matter. I'm not going to have a rain jacket.
+
+[说话人 1] (15:10 - 15:14)
+Yeah, okay. So next week, I can have a review with you.
+
+[说话人 2] (15:14 - 15:15)
+Yeah.
+
+[说话人 1] (15:15 - 15:16)
+I can prove it.
+
+[说话人 3] (15:16 - 15:16)
+Okay. See you.
+
+[说话人 2] (15:17 - 15:17)
+See you.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

@@ -1,0 +1,22 @@
+A ae B
+| Fea | " fee
+
+7 gat L ae
+
+E a i yn
+
+§ x b. x
+
+Mn OF © :
+
+By w 2K 3.
+
+, ‘Observed frend fmm your?) Observed trend {enm year)
+Fig. $3.
+Same as Fig. S2, but for the Northern Hemisphere. (A) The calibration mode. The
+‘Calibrated’ refers to the training results. (B) The validation modc. ‘Validated’ refers to 5-fold
+cross-validation results. (C) Spatial location of the sclected basins across the globe. This analysis
+includes 112 basins in the Northem Hemisphere with more than 10 years of streamflow
+observations. Trends are assessed using Sen's slope and Mann-Kendall P yalue tests.
+6
+

@@ -1,0 +1,18 @@
+target: evspsblsoi
+n_sample: 3000
+features: ['precipitation', 'lai']
+kernel: bisquare (adaptive=True)
+
+=== GWR ===
+bandwidth (#neighbors): 47.0
+AICc: 24389.668
+R2:   0.8734
+adj_R2: 0.8542
+elapsed: 3.7s
+
+=== MGWR ===
+bandwidths: intercept=55.0, precip=42.0, lai=55.0
+AICc: 24552.696
+R2:   0.8589
+adj_R2: 0.8414
+elapsed: 359.3s

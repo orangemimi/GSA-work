@@ -1,0 +1,1 @@
+LinAlgError: A singular matrix detected: slice(s) [0] are singular.

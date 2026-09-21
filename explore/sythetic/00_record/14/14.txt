@@ -1,0 +1,475 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:00 - 0:04)
+To ensure that every problem I have not missed.
+
+[说话人 2] (0:04 - 0:19)
+Yeah, that's very good. Before we start, I want to say thank you again for reviewing the Science Advances manuscript. I submitted that.
+
+I also included you in Science Advances. You can include co-reviewer.
+
+[说话人 1] (0:19 - 0:20)
+Oh, yeah.
+
+[说话人 2] (0:20 - 0:22)
+So I included you as a co-reviewer.
+
+[说话人 1] (0:22 - 0:29)
+Yesterday I have received the email from the science side. Yes, that's the co-reviewer.
+
+[说话人 2] (0:30 - 0:46)
+Exactly. So I hope that's okay with you. Yes.
+
+Since you did a really good job, so I agree with all the things you said. Yes, thank you. Very good.
+
+So it's very interesting, no? Because there was actually very little they actually did.
+
+[说话人 1] (0:47 - 0:55)
+Yeah, exactly. They tell a very large and good story, but the actual work could be very small.
+
+[说话人 2] (0:55 - 0:58)
+Yeah, exactly. So it was very good.
+
+[说话人 1] (1:00 - 1:05)
+But I think they provide a good idea for us if we would like to do such kind of work.
+
+[说话人 2] (1:05 - 1:21)
+No, and I like your idea. I looked at that as well. I was a bit, at the moment, a bit too sidetracked with a few other things.
+
+But no, I think that's a very good idea. And thinking about how we do this and how we set it up would be very good. So that would be a nice follow-up.
+
+[说话人 1] (1:22 - 1:38)
+Yeah, I think that last week you have provided me the suggestion that I can do small models, such a kind of HPV model to test whether the large language models can do what for us really do.
+
+[说话人 2] (1:39 - 1:39)
+Yeah.
+
+[说话人 1] (1:39 - 1:47)
+So I would like also start that kind of small cases to see how large language models can support us.
+
+[说话人 2] (1:47 - 2:10)
+Yes, yeah. And then it would be interesting to see, I mean, so let's say we can provide the code, but what other information do they actually need, no? And how do you organize that for them so that they use the right information to create the information?
+
+Yeah, exactly.
+
+[说话人 1] (2:11 - 2:18)
+So maybe we can look at the result of small cases and can see what we can do next step.
+
+[说话人 2] (2:18 - 2:19)
+Yeah, very good.
+
+[说话人 1] (2:19 - 3:25)
+Okay. And let me start. This is a recap of the decision tree of last weekend.
+
+You have provided me a lot of suggestions. So this week I may need to do two kind of work. First is simplify the simple branch and then try to evaluate the complex branch.
+
+And this is a whole view of current decision tree and later I will introduce step by step. And first you have suggested if Pearson larger than 0.7 and Spearman should be larger than 0.7 and I see whether these cases look like and they are mainly cubic. And I also test the proportion of the whole cubic number.
+
+And they are not very large, it's very small. So I think maybe we can directly use Pearson larger than 0.7 to make the branch more simple.
+
+[说话人 2] (3:28 - 3:29)
+So let me see.
+
+[说话人 1] (3:30 - 3:30)
+This one.
+
+[说话人 2] (3:30 - 3:36)
+So if it is Pearson larger than 0.7 then it's simple.
+
+[说话人 1] (3:37 - 3:37)
+Yeah.
+
+[说话人 2] (3:37 - 3:42)
+Yeah. And if it's below 0.7 then it's something else.
+
+[说话人 1] (3:42 - 3:43)
+Yeah, yeah, yeah.
+
+[说话人 2] (3:43 - 3:51)
+And sorry, just so I understand. And the only case when it is above 0.7 but maybe not that simple is when you test this cubic form.
+
+[说话人 1] (3:51 - 3:54)
+Yeah, yeah, yeah. And the proportion is very small.
+
+[说话人 2] (3:54 - 3:59)
+Yeah, and this cubic form is still something that is very easy to fit a polynomial to.
+
+[说话人 1] (3:59 - 4:56)
+Yeah, exactly. And so this is the first gate. And next is about this simple branch we start here.
+
+We try to use the polynomial fit to test whether all the cases are fit. And the last discussion you suggest me to use the R square to test whether they could fit better. And so here I mainly to try to use the R square as the first criteria to see whether it fits good.
+
+And if it fits good I use here the B. Here if it's similar as 0 so it can be divided as linear. And if it is not I use the sign of this equation to test whether it's concave and convex.
+
+And here if it does not fit very well so here I directly use uncertain.
+
+[说话人 2] (4:57 - 5:01)
+And sorry, what is this power? What is the tau power?
+
+[说话人 1] (5:02 - 5:23)
+This is R power, the number of detailed R square. So here I do not use clear number here. I just use characteristic here.
+
+So this is just to use here instead of providing the number.
+
+[说话人 2] (5:23 - 5:29)
+Okay, so we would have to think about what the number would be.
+
+[说话人 1] (5:29 - 6:21)
+Yeah, yeah, exactly. So here maybe we can see here. Here I do the sensitivity of the detailed number of the R square.
+
+And here the first line is about the different R square. And here is different families. And here means that what it directly separated.
+
+And here is the last line is about the accuracy of the whole detection. And here I use from 0.7 to 0.98. And this is for detecting MIC larger than 0.8. And we can find that maybe here larger than 0.8 could be better because they are all above 80.
+
+[说话人 2] (6:21 - 6:40)
+Well, it's, I'm not sure what to make. Well, 81% below and it's 0.8, 84% and it's 0.85, 89.5% and it's 0.9. Yeah, exactly. So it's, but why does it go down to 0.8?
+
+[说话人 1] (6:40 - 6:58)
+Because I think if R square set as 0.98, it could separate a lot of linear outside. So this make the accuracy low. Okay.
+
+Yeah. Yeah.
+
+[说话人 2] (6:58 - 7:10)
+No, it's just interesting. So I think in the one paper we use 0.9, but we, I think normally you would probably start quite high. Yeah.
+
+And then go down, no?
+
+[说话人 1] (7:10 - 8:44)
+Yeah, exactly. Yeah. And here I also evaluate when it's MIC from 0.6 to 0.8 because there are a lot of noise here. And so the accuracy is down. But it is still relatively high through 0.7 to 0.85. So here I use 0.85 as the first criteria. And we can see that when MIC larger than 0.8, I think most of them are divided very good. And except the S curve, but this is not a problem. The accuracy, I think it's relatively high. And here as MIC when it's from 0.6 to 0.8, and I think the result is also good. And so this is a simple branch. And so in the last version of this tree, I tried to separate the S curve threshold and cubic here, this poor, in the simple branch. But I think it could be at the complexity and the polynomial-based matrix cannot distinguish these three very clearly.
+
+And so I think maybe it can be divided and moved to the complex branch, and I try to detect the complex branch. Is that acceptable?
+
+[说话人 2] (8:44 - 8:49)
+Yeah. And the threshold was that this was these ecology papers, no?
+
+[说话人 1] (8:49 - 8:49)
+Yeah.
+
+[说话人 2] (8:50 - 8:57)
+Yeah. So yeah, I think that's good. And then we can have the complex one.
+
+Yeah, I think that's good.
+
+[说话人 1] (8:57 - 9:14)
+Yeah. And so here, for the complex, I first defined the three points we need to detect. First is about the turning point, and also about whether it has a branch inside.
+
+[说话人 2] (9:15 - 9:19)
+Turning point means if you have something like this.
+
+[说话人 1] (9:19 - 9:53)
+Exactly. And also it has a threshold. And here, when I do here, I feel something very interesting because I think the complex relationship and the local relationship have some similarities.
+
+Because I think complex relationship, maybe it requires some more simple components through the whole X range, and the local relationship just exists in the very small range of X. So maybe I think complex and the local relationship both need to do segment-based detection.
+
+[说话人 2] (9:54 - 10:08)
+Yeah. Yeah, it could be that that's a good way to get to complex things, and then something like what we discussed before from this one paper to think about how we might use something like that.
+
+[说话人 1] (10:08 - 10:08)
+Yeah.
+
+[说话人 2] (10:08 - 10:12)
+The other thing in that other paper was also it was only two-dimensional.
+
+[说话人 1] (10:13 - 10:13)
+Mm-hmm.
+
+[说话人 2] (10:13 - 10:15)
+So they never looked at it more.
+
+[说话人 1] (10:15 - 13:47)
+Yeah, exactly. So first I tried to use this paper's methods to see whether it can really detect the threshold. And this paper used distributional tests using these three tests to see whether it has a threshold.
+
+The first is a KL test. It detects whether the overall distribution of Y changes with X. I think it mainly detects whether the X and Y has a relationship.
+
+It looks like one point I have mentioned before is to do the permutation and to see whether it has a great p-value, it has a significant permutation. And here the second is it using the QR test to test whether the spread of Y varies across the whole X range. And the last is about it detects whether the distribution of Y has multiplied peaks.
+
+And what this paper do is do the permutation to do the non-distribution to create the test. And here I use these methods to detect whether it performs very well. And first I detect MIC larger than 0.8. And all the families are the sources I have introduced in the last slide. It's uncertain from the simple branch and some others from simple and complex branch. And here this is a family and this is a KL test result. And this is a QR test result and this is a HD test result.
+
+And actually I think that there are some problems about this paper because it shows that it has different patterns for detecting the threshold. But I found that the only very important thing is just to test whether it has a different peak of the Y distribution. And from this table we can find that the threshold and the S-curve has very significant at the HD test.
+
+This means that it has a multimodal through the Y distribution. And here it also shows very large proportion of the oscillation. And this is mainly because it will have a lot of points here and here and here.
+
+It's very small. And we can also see the plots. I think it fits my expectation.
+
+And I also see the MIC from the 0.6 to the 0.8. And lots of them shows very small at the HD significant. And I thought the S-curve and the threshold could be larger. But actually when I see the real scatter plot, I found that it looks like not so threshold-like.
+
+[说话人 2] (13:50 - 13:58)
+You would have thought that these are two distributions, but they're probably too connected so that it's not clear.
+
+[说话人 1] (13:58 - 15:06)
+Yeah, it's not a very clear threshold. So I think this paper's methods, what we can learn from is that first is HD testing we can return because it can detect the multimodality. And it is directly useful for identifying the threshold and the oscillation.
+
+And the second is KL testing. And I think it is not needed because it's just to detect whether X, Y has a relationship. And in this branch, we have ensured that it has a complex relationship.
+
+And this is QR. This is deferred because I think it mainly depends on the spread. It may change.
+
+But it's also as a signal of the threshold. But I think this needs some more exploration at this matrix. And also this test also do the permutation testing.
+
+And sometimes it's very computational.
+
+[说话人 2] (15:06 - 15:11)
+So how does it work in this case? Or can you explain to me?
+
+[说话人 1] (15:11 - 15:13)
+Yeah, do you mean the…
+
+[说话人 2] (15:13 - 15:16)
+Permutation, how do they do it? So they just create subsamples?
+
+[说话人 1] (15:17 - 15:33)
+They just randomly select different Y to permute it. Maybe I can show you the cases I have introduced to you. It's just shuffling.
+
+[说话人 2] (15:34 - 15:35)
+Ah, I see.
+
+[说话人 1] (15:35 - 15:59)
+It's just this shuffling. Okay. So this is also the problem you have introduced to me because a small relationship could also impact this.
+
+And do you also have some comments about this?
+
+[说话人 2] (15:59 - 16:56)
+No, no, that's good. I think it's good if we… I mean, I was quite interested in finding this because the other way to remember this or think of this is it could give us some idea of how to write these things up.
+
+Because it's interesting because they have a very specific thing they're looking for. And then it's very methodological in terms of… And it's not very long.
+
+So this could actually be… So that could be something to think about, whether we can write ours up in a similar way and then find a relevant enough example as case study. So that's why I also like this.
+
+And the other one was similar.
+
+[说话人 1] (16:56 - 17:32)
+Yeah, yeah, yeah. And for the turning point, I tried to use this method as a sizer. I think it's very similar as the lowest method.
+
+It fits the local linear regression with kernel width at the simple and wants to estimate the first derivative across the domain. And finally, it can get to this kind of sizer map. And we can…
+
+Through this sizer map, we can calculate the turning point number.
+
+[说话人 2] (17:35 - 17:38)
+So it's like a window.
+
+[说话人 1] (17:38 - 17:45)
+Yeah, yeah, exactly. It's a very automatic window because it uses different kernels.
+
+[说话人 2] (17:45 - 17:46)
+Yeah, okay.
+
+[说话人 1] (17:47 - 19:25)
+And here, I… Because I use a different bandwidth, and I need to determine whether it calculates very good. So I use three out of five bandwidths must agree the same output.
+
+So we can find that both of the monotonic has no turning point. And for the U shape, it has one turning point. And for the cubic, it has two.
+
+And the oscillation, it also has larger than three. I think it functions very well. But I separated these three function families because I think they are quite different from this.
+
+And the accuracy is relatively high. It's about 97. Yeah.
+
+And… Oh, sorry. This is MIC larger than 0.8. And here is MIC belongs to 0.6 to 0.8. And it also has a very high accuracy. I think maybe we can use these functions to detect whether it has different numbers of turning points. And here, I also find some similarities and problems because, for example, the S curve and the threshold are always separated as a similar group, no matter for this function, and also for the situation and the concave.
+
+[说话人 2] (19:27 - 19:30)
+So this I understand. So this is a very, very…
+
+[说话人 1] (19:30 - 19:30)
+Yeah.
+
+[说话人 2] (19:31 - 19:38)
+I mean, it probably will mostly look like this anyway. This is probably very rare. That it's so clear.
+
+[说话人 1] (19:38 - 19:39)
+Yeah, exactly.
+
+[说话人 2] (19:40 - 19:44)
+And so I think it's perfectly okay that we say it's either this or this.
+
+[说话人 1] (19:44 - 19:44)
+Yeah.
+
+[说话人 2] (19:45 - 19:51)
+And this, what do you mean here? Concave, this low? What do you mean?
+
+It's unclear? What is…
+
+[说话人 1] (19:51 - 19:54)
+I think this is also very similar as the concave.
+
+[说话人 2] (19:54 - 19:57)
+Ah, the saturation between… Ah, okay. So yeah, yeah, yeah.
+
+[说话人 1] (19:57 - 20:00)
+They are the two groups, very similar. Yeah.
+
+[说话人 2] (20:00 - 20:14)
+But we can… So we could… Yeah, so I like the transition group.
+
+It's a good name. So maybe concave-related relationships is maybe not…
+
+[说话人 1] (20:16 - 20:17)
+Not so good.
+
+[说话人 2] (20:17 - 20:26)
+Maybe the saturation is a bit better, no? Ah, yeah. So that we say, okay, these are saturation-type relationships or…
+
+[说话人 1] (20:26 - 20:27)
+Yeah, yeah, yeah.
+
+[说话人 2] (20:27 - 20:32)
+Or limit-type relationships is another way that it reaches some limit.
+
+[说话人 1] (20:32 - 20:46)
+Yeah, I also think so. The main point here is I would like to say is maybe we can, when we do the testing, we can combine these types together to calculate the accuracy.
+
+[说话人 2] (20:46 - 20:47)
+Yeah.
+
+[说话人 1] (20:47 - 20:48)
+And…
+
+[说话人 2] (20:48 - 21:00)
+Yeah, and we say, okay, this, if it falls into, the end group is the transition group or the saturation group or limit group or whatever we want to call it, no? And then we can analyze it there.
+
+[说话人 1] (21:00 - 21:39)
+Yeah, exactly. And so this is all the last week I do, and the possible next step is maybe I can integrate that to the HD testing and from this paper to with the turning point to detect whether it has a threshold or this one. And the second is maybe we can use more, some more segment-based detection for branch types.
+
+And the last thing is test as a pipeline robustness with a non-uniform X distribution because the current test is just uniform.
+
+[说话人 2] (21:40 - 21:49)
+Yeah. No, that's very good. The other thing we should then think about is what is a good case study to try this out on?
+
+[说话人 1] (21:49 - 21:49)
+Yeah.
+
+[说话人 2] (21:49 - 21:50)
+On real data.
+
+[说话人 1] (21:50 - 21:51)
+Yeah.
+
+[说话人 2] (21:51 - 22:01)
+So I was just looking through. Give me a second.
+
+[说话人 1] (22:02 - 22:02)
+Yeah, okay. Go for it.
+
+[说话人 2] (22:56 - 23:01)
+So this is a paper by Yang Zhang.
+
+[说话人 1] (23:01 - 23:03)
+Yeah. Oh, I know.
+
+[说话人 2] (23:03 - 24:15)
+I think they use – it's a bit in the – it's on CO2 and evapotranspiration, but they – I think the – the CMIP models, but where is this? Here. Here.
+
+[说话人 1] (24:15 - 24:16)
+Uh-huh.
+
+[说话人 2] (24:16 - 24:55)
+The CMIP6 models. Yeah. So because these are very large global models that lots of people use, so we could look at those, and they are different ones, so there are 32 in total, and they have global data.
+
+So we could look at those maybe as potential for analysis. Yeah. From those to analyze their interactions.
+
+[说话人 1] (24:55 - 24:56)
+Yeah, exactly.
+
+[说话人 2] (24:56 - 24:57)
+In the models.
+
+[说话人 1] (24:57 - 25:01)
+So maybe CMIP6 is a – Is a good choice.
+
+[说话人 2] (25:01 - 25:08)
+Yeah. Because it's better – you want to use something that is as widely used as possible.
+
+[说话人 1] (25:08 - 25:08)
+Yeah.
+
+[说话人 2] (25:09 - 25:11)
+So that it's most meaningful for people.
+
+[说话人 1] (25:12 - 25:22)
+Yeah, exactly. Maybe when I test this different non-uniform, and we can also try to apply it to the real cases.
+
+[说话人 2] (25:22 - 25:50)
+Yeah. So maybe you'll have a look at the CMIP6 to see, and then we'll just pick a few variables and try it out. It doesn't really matter.
+
+Mainly, ultimately, we need a very large data set. Yeah, exactly. Lots of interactions to look through and organize.
+
+Yeah. And then what would be interesting is if you could find two or three models in there that have very different distributions of types of relationships.
+
+[说话人 1] (25:50 - 25:51)
+Yeah, I also think so.
+
+[说话人 2] (25:51 - 25:52)
+Yeah. Very good.
+
+[说话人 1] (25:52 - 26:13)
+Yeah, and I also would like to ask if we are detecting the complex relationship currently, and the local relationship also need to be detected later? Because I think local could be more harder or complex than this branch.
+
+[说话人 2] (26:14 - 27:01)
+Yeah, yeah, yeah. Local would be more complicated again. I mean, what might be a good idea is once we're done with this, then maybe we pick some of these examples and actually have a look what they look like.
+
+And how often we find cases where it doesn't fit any of the categories that we have. Maybe it's very rare or maybe it's a lot, and so maybe we can do this a bit iteratively. But at the moment we have all synthetic examples, which makes sense to organize this and understand.
+
+But then if we use the real-world cases, we can see how often does this actually happen.
+
+[说话人 1] (27:01 - 27:03)
+Yeah, okay, no problem.
+
+[说话人 2] (27:03 - 27:15)
+Yeah, and then we can just say, okay, maybe it happens so often that it's local that we really need to split this. But we find it happens in a very small fraction, and then maybe we say, okay, we don't need this.
+
+[说话人 1] (27:15 - 27:18)
+Yeah, okay, it depends on the result we may detect.
+
+[说话人 2] (27:18 - 27:19)
+Yeah, because I have no idea.
+
+[说话人 1] (27:22 - 27:31)
+No problem, and I will do this work next weekend to finalize the tree of this branch.
+
+[说话人 2] (27:31 - 27:45)
+Yeah, no, that's great. And then, yeah, we can already think about how we use these kind of examples maybe to write this up as a way to understand.
+
+[说话人 1] (27:46 - 27:47)
+Yes.
+
+[说话人 2] (27:47 - 27:50)
+Because it's another sort of very short, no?
+
+[说话人 1] (27:51 - 28:06)
+Yeah, it's very short. And I think maybe we can also, I can also learn the style of Jacob you have also mentioned. I noticed that he has also done a lot of work.
+
+[说话人 2] (28:08 - 28:11)
+Jakob Zeissberg? Yeah, Jakob. Oh, okay.
+
+[说话人 1] (28:11 - 28:12)
+This one.
+
+[说话人 2] (28:12 - 28:14)
+Yeah, yeah, so he's, yeah.
+
+[说话人 1] (28:16 - 28:27)
+And because I think there are some similarities between my counterpart and his because he has also analyzed the different input and output of the system models.
+
+[说话人 2] (28:27 - 29:17)
+Yeah, yeah, absolutely. There's also, I don't know, another person. Yeah.
+
+It was this Earth, what is it called, Earth Future paper on interpretable AI, you remember?
+
+[说话人 1] (29:17 - 29:19)
+Yeah, I remember.
+
+[说话人 2] (29:20 - 29:35)
+So the first author of that. Yeah. He's now at, I think he's at the Max Planck Institute in Jena or somewhere.
+
+And he, they also have quite a few papers which I think are.
+
+[说话人 1] (29:36 - 29:37)
+Yeah, I can check.
+
+[说话人 2] (29:38 - 29:48)
+So it's worth having a look. Yeah, the interesting thing, I mean the question is this one is very.
+
+[说话人 1] (29:50 - 29:51)
+Very similar.
+
+[说话人 2] (29:51 - 29:59)
+Yeah, it's very methodological. That's why it's, and so far it's very methodological and then so it's the question.
+
+(该文件长度超过30分钟。 在https://turboscribe.ai/zh-CN/点击升级到无限，以转录长达10小时的文件。)

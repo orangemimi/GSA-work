@@ -1,0 +1,15 @@
+A B
+Es is qa ie
+i - i a
+sol C8 20 Sal 7
+af eh. *
+Scheer tend erm ear®) Gamers eer yoo °
+Fig. $2.
+‘Trends in annual evapotranspiration (ET) obtained from machine learning model versus
+* those obtained from the observations across the globe. (A) The calibration mode. The
+‘Calibrated’ refers to the training results. (B) The validation mode. ‘Validated’ refers to 5-fold
+cross-validation results. (C) Spatial location of the selected basins across the globe. We only kept
+the 158 basins with more than 10 years of streamflow observations. Trends are assessed using
+Sen's slope and Mann-Kendall P value tests.
+sf
+

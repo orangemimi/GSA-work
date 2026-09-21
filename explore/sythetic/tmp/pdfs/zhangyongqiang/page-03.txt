@@ -1,0 +1,91 @@
+94 water budgets (including also independent data for water storage changes) with machine
+
+95 earning techniques, resolving scale mismatches that have long obscured regional and
+
+96 global trends (see Methods). Our method demonstrates remarkable performance in
+
+7 simulating annual ET variability and trends (figs. S1 to S7 and table S3). Specifically, the
+
+98 prediction accuracy in our annual ET trends, indicated by the correlation coefficient (R),
+
+9 ranges from 0.82 to 0.90 during cross-validation, giving confidence in our results.
+
+100
+
+101 Results
+
+102 Global and hemispheric ET trends
+
+103 From 2000 to 2022, the mean annual ET across the 232 river basins globally is estimated
+
+104 at 507.3 + 6.14 mm year", coresponding to a volumetric ET of approximately (66.4 +
+
+105 0.80) x 10? km? year", which is slightly lower than an independent global ET estimate
+
+106 (69.0 6.2) x 10° km? yr, both not including Greenland and Antarctica (32). The highest
+
+107 ET values (> 1000 mm year) are observed in tropical river basins such as the Amazon,
+
+108 ‘Congo, and Southeast Asian basins, while moderate values (500-1000 mm year") are
+
+109 found in the Yangtze, Mississippi, Danube and Rhine basins. In contrast, arid and semi-
+
+10 atid regions, such as the Ycllow River Basin, western United States, Sahara Desert, central
+
+ul Australia, central Asia, and the Arabian Peninsula, exhibit lower ET values (< 500 mm
+
+m2 year", Fig. 1A).
+
+43 Global ET experienced a non-significant trend of -0.06 + 0.44 mim year? (P> 0.05) from
+
+4 2000 to 2022 (Fig. 2). This is negligible over 23 years, despite large and opposing
+
+us hemispheric changes, strongly contrasting with reports of a 10% increase in a recently
+
+116 retracted article (Pascolini-Campbell ct a, 2021) (33). Furthermore, this overall change
+
+47 conceals substantial hemispheric asymmetry. The Northern Hemisphere experienced a
+
+ug strong average ET increase of 0.91 + 0.46 mim year? (P< 0.05), concentrated particularly
+
+19 in regions undergoing greening, while the Southern Hemisphere witnessed a strong
+
+x20 average decline of -2.63 + 0.46 mm year (P< 0.05), primarily driven by declines in
+
+121 South America and Australia (Fig. 1B). The Amazon River basin accounted for more than
+
+122 40% of the total trends in the Southern Hemisphere (fig. S12). Given the larger landmass
+
+13 (ie., after excluding Greenland and Antarctica, about 72.6% of the global land area is
+
+124 north of the equator) and consequent higher ET volumes in the Norther Hemisphere, the
+
+125 global trend remains negligible, despite the strong decline over the Southem Hemisphere.
+
+125 This asymmetry demonstrates that recent water-cycle change is fundamentally
+
+127 heterogeneous, which has driven large-scale terrestrial water flux redistribution.
+
+18 Furthermore, the sensitivity of global ET change to global air temperature change from
+
+129 2000 to 2022 is -0.29 + 1.45 % °C". This is far below Clausius-Clapeyron expectations of
+
+130 ~7% specific humidity increase per degree of warming, and also below the expected
+
+131 change in precipitation per degree of warming (hydrological sensitivity) of 2-3% (34).
+
+12 Climate drivers and attribution analysis
+
+13 To better understand the major drivers for recent trends in ET, we perform large-scale
+
+134 (<e., global or hemispherical or continental) causality analysis and local-scale (i.c.,
+
+135 catchment-scale) attribution analysis. At a large scale, our analysis reveals that decadal ET
+
+136 trends arc regulated by strong El Nifio-Southemn Oscillation (ENSO) events (defined by
+
+B7 Nitio 3.4 index anomalies <~0.5°C for La Niffa or > 0.5°C for El Niffo) (Fig. 2). Strong
+
+138 La Nifia years corresponded with positive ET anomalies in the Southern Hemisphere,
+Selene Avances————~—S~S~SC ait Tete _ PageSof20
+

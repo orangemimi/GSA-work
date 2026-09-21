@@ -1,0 +1,386 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 2] (0:07 - 1:47)
+And this is, let me do the recap of our last discussion. And last discussion, you provide about three issues. The first thing is about you suggest me to test the branch detection with synthetic data to see how the method goes well.
+
+And secondly, you suggest me to remove the zero and near zero values about the X and Y data to test how it goes work. And secondly, it also suggests me to test the loss regression to see the main response structure. And for the first part, I have used branch detection method to test the synthetic data.
+
+Actually, I think it goes well because it's about over 80 percent of expected branches were identified as candidate branch. And secondly, first, I identify the zero and near zero values in X and Y data. Actually, there are main two types of these zero types.
+
+The first is about their physical interpretable zeros. And the second is mainly about the model uncertainty zeros. But actually, I think we cannot identify the detailed type of the zero values and all the near zero values.
+
+So I just remove these zero and near zero values to see how the remaining values work. Sorry.
+
+[说话人 1] (1:47 - 1:56)
+So you have now included a step to identify zero or near zero values.
+
+[说话人 2] (1:57 - 2:19)
+No, I just want to see how these zero and near zero values may work. The first thing is actually they are zero. Another is mainly caused by the model uncertainty or some other causes.
+
+But actually, we cannot identify it.
+
+[说话人 1] (2:20 - 3:19)
+Well, I guess. Yeah, yeah. I mean, you cannot you cannot ask an algorithm given the data to tell you which of these two categories the zeros are, because you need to have knowledge of the process, the variables and the model to be able to say, OK, this makes sense.
+
+It's an actual zero prediction. And this is instead a clip in the model. Yeah.
+
+So I understand that you cannot do that. What I think but I think there is another question, which is like instead what you can ask of the algorithm is to tell you if you have because I think it's not only if one variable is zero, but is like if both X and Y are zero.
+
+[说话人 2] (3:20 - 3:20)
+Yeah.
+
+[说话人 1] (3:20 - 3:44)
+Yeah. That's one thing instead is if you have that Y is zero for a range of X there. Yeah.
+
+This is the case that is interesting, no? Or the other one where you have X is zero, but Y can go up and down. Yeah.
+
+So you can identify those cases.
+
+[说话人 2] (3:45 - 3:45)
+Yeah, exactly.
+
+[说话人 1] (3:47 - 4:24)
+But I'm curious to know, you know, like. Because it's not about. It's not only about removing those, I guess, it's also about flagging that those that that behavior exists.
+
+You don't want to what I'm saying is you don't want to lose the information that. That behavior exists, then maybe, you know, for subsequent calculation, you want to remove those data points because they create confusion. But you also want to retain the information that those data points were there, no?
+
+[说话人 2] (4:25 - 4:29)
+Are you doing that? No, but I think we can do it later.
+
+[说话人 1] (4:32 - 4:56)
+Because, you know, I think so in a way, you know, I would break this up. So the question of is it a physically interpretable zero or not is a question that you cannot answer with this algorithm. So you don't even need to ask that question because it's impossible for the algorithm to give an answer to that question.
+
+But what would be interesting instead is, I think, to break that.
+
+[说话人 2] (5:01 - 5:04)
+Sorry, the Internet is not very well.
+
+[说话人 1] (5:05 - 5:40)
+Yeah, sorry. What I'm saying is what is what I think we want the algorithm to do is to tell us. If there is a problem, if there is a if there is a feature in the data set where you have a lot of zero valued X or Y.
+
+And I think this might be, you know, where I think we need to have some thinking is about, you know, how many data points of that kind do you need to have in order to flag that case?
+
+[说话人 2] (5:41 - 5:41)
+Yeah.
+
+[说话人 1] (5:42 - 6:27)
+Because say that you have, I don't know, 1000 data points. Yeah. And there are three.
+
+Yeah. On the X axis, you know, does that matter? Yeah.
+
+You know, if it's the zero three percent, you know, but of course, if you have a lot, if you have, I don't know, 1000. Yeah. That matters.
+
+Yeah. Yeah. So I think the question for me is a bit more, how do you modulate that threshold to decide this is something that needs flagging?
+
+Yeah. Because then you will also remove those data to avoid confusion. But you also need to have a flag and say, look, I have removed the data, but, you know, there was that behaviour.
+
+And so.
+
+[说话人 2] (6:29 - 6:31)
+Yeah, I understand what you mean.
+
+[说话人 1] (6:34 - 7:02)
+Of data point distributed this way. Yeah. Yeah.
+
+Yeah. And I think it also matters how they are distributed, because if I say Y is zero and X is zero, zero point one, zero point, you know, if if the value is very small, so they are actually just a cloud around the point zero zero. Yeah.
+
+[说话人 2] (7:03 - 7:03)
+Yeah.
+
+[说话人 1] (7:03 - 7:11)
+Instead, what we are interested is finding this behaviour when they span over the entire axis. Yeah.
+
+[说话人 2] (7:11 - 7:30)
+Yeah. Actually, I see the distribution of the how the zero and the near zero separate. But actually, I don't see whether they have the cluster.
+
+So. Yeah. But I do not put the plot here.
+
+Sorry, I can put it next meeting.
+
+[说话人 1] (7:31 - 7:43)
+Yeah. What I'm saying is it's important that you have a clear criterion to identify that behaviour. Then, of course, you will exclude those data points.
+
+But you need to know that they were there originally. No.
+
+[说话人 2] (7:43 - 8:33)
+Yeah, I understand. Actually, I see the distribution, but they are not performed like the cluster or some other performance. And so at first I tried to delete the exact zero and near zero.
+
+So at the last week's work, I just exclude the values to the one e minus two to see how the remaining value work. And next week I can show you the distribution. OK.
+
+Yeah. And for after the removing of these values, just there are only two candidate branch remain. These are these two plots.
+
+[说话人 1] (8:35 - 8:47)
+Because previously those zero were confused as a branch. Yeah, exactly. Yeah.
+
+And now instead. Yeah, you don't have that and you only have. Yeah.
+
+Yeah.
+
+[说话人 2] (8:47 - 11:26)
+OK. And the third party is about to try to use the loss regression to see the main response structure. And actually, in this part, I found something very interesting because before we try to analyze the detailed shape of the loss curve, and we first need to assess how well the curvature represents variation in the X and Y data.
+
+And I use the coefficient of determination to measure how much is the variation of Y is captured by the loss regression. And actually, I found that the higher R square can capture the very clear X and Y response structure. And the low R square represent the loss regression can explain little of the Y variation.
+
+And this can exist in two situations. The first is it has very weak or flat main response because it has a very low R square. And another is it has very large spread pattern and it also makes the R square very low.
+
+And so I think there are two main patterns in relationship. The first is about the main response dominated relationship. It means that the synthetic variation are mainly captured by changes in the central response by the loss regression.
+
+And another is about the conditional distributed dominated patterns. It means that the variation is mainly captured by changes in conditional distribution beyond the main response, such as a spread or the multimodal or the branch structure. So for the higher R square, we can call it main response pattern dominate.
+
+And we can analyze the shape or the structure of the loss curve for the classification. And for those with lower R square, we can call it conditional distributed dominate or no relationship. And for this part, I think we should rethink about how the global relationship define.
+
+This does it means that it mainly has a main response pattern or it has a main response pattern or has the conditional distribution pattern. This is also I would like to talk with you.
+
+[说话人 1] (11:26 - 11:58)
+So your question here is, okay, there is no doubt that on the left hand side, we have a global relationship. Yeah. And it's characterized, you identify that with the high R square.
+
+Yes. On the right hand side instead, what you are asking is like fundamentally at the level of definition, do we call this a relationship or not?
+
+[说话人 2] (11:58 - 11:58)
+Yeah.
+
+[说话人 1] (11:59 - 12:17)
+Yeah. Because there is no mean response pattern, but the distribution of points changes as we move along the x-axis. So that is, is that a relationship or not?
+
+Yeah. This is a philosophical question.
+
+[说话人 2] (12:18 - 12:39)
+Yeah, because it's... What do you think? Actually, I think two also can be called a global relationship.
+
+So this means that the global relationship can be divided into two patterns. First, whether it has a main response relationship or it has very conditional distribution pattern.
+
+[说话人 1] (12:41 - 14:22)
+I don't know. You know, it's interesting because... Do you know about global sensitivity analysis?
+
+Yeah. Yeah. So, for example, you know, in global sensitivity analysis, the depending on which method you use, you would get a different answer to the question.
+
+Because, for example, if you use Sobol method, yeah? Sobol method, what it does is it measures the variance explained by the x-factor, yeah? So visually, what you do if you interpret the Sobol indices in a...
+
+with scatter plots, what you do is you basically, you say, for example, let's, you know, let's create bins along the x-axis. Let's calculate the mean of each one of these bins, yeah? And then let's calculate the variance of those means, yeah?
+
+So on the left-hand side, you would get a very high sensitivity index, yeah? Because the mean is low and then it goes up. So then if you look at...
+
+die. But if we apply the, if instead we apply Sobol, this first-order Sobol on the right-hand side, what we see is that the mean is always the same. Yeah.
+
+So there is very little variance of the mean.
+
+[说话人 2] (14:22 - 14:22)
+Yeah.
+
+[说话人 1] (14:23 - 14:46)
+So the Sobol index would be zero, yeah? Yeah. But if we use instead a, if we use instead of a variance-based method, a distribution-based method.
+
+Yeah. Yeah? Then on the right-hand side, we look at the distribution in every interval.
+
+[说话人 2] (14:46 - 14:47)
+Yeah.
+
+[说话人 1] (14:47 - 15:05)
+And then we measure the distance between those distributions. Yeah. And they are different.
+
+So we would see some sensitivity, yeah? Yeah, exactly. Because we are looking at the difference between the full distribution, not only the mean.
+
+[说话人 2] (15:06 - 15:06)
+Yeah.
+
+[说话人 1] (15:06 - 15:42)
+So it seems to me that essentially, yes, you are, no? You are saying, like, yeah, if I look at this as someone who comes from sensitivity analysis, I would say, well, it depends on, you know, what metric you use, what sensitivity index approach you use, how you define the mean. Or if you want to look at the entire distribution, then you get a different answer about sensitivity.
+
+[说话人 2] (15:43 - 15:51)
+Yeah, so I think this is mainly depends on the perspective we see the scatter plots or the data sets.
+
+[说话人 1] (15:52 - 16:09)
+Yeah, I think, you know, it means that what we are saying is, do we intend the relationship as a functional form? Yeah. Yeah?
+
+In which case there is a relationship only on the left-hand side.
+
+[说话人 2] (16:10 - 16:10)
+Yeah.
+
+[说话人 1] (16:11 - 16:39)
+Or do we expand that? Yeah. To imply, to include something more.
+
+Yeah. That is also not a functional relationship, because there is no functional relationship on the right-hand side. Yeah.
+
+But there is still a sensitivity. Yeah. In terms of distribution.
+
+[说话人 2] (16:40 - 16:41)
+Yeah, exactly.
+
+[说话人 1] (16:41 - 17:06)
+Um, I think that, again, we need to think back of what was the original question. If the original question was, we now want a methodology to an identify functional relationship.
+
+[说话人 2] (17:07 - 17:07)
+Yeah.
+
+[说话人 1] (17:07 - 17:38)
+Maybe we stick to the left. Yeah. Because there is no functional relationship.
+
+Yes, you are saying that X has an impact on the distribution of Y. Yeah. But not in a functional sense.
+
+In a distribution sense. So I'm just thinking, you know, going back to the original question that, you know, Korsten was bringing, that is, we want to find a way to compare different models.
+
+[说话人 2] (17:39 - 17:39)
+Yeah.
+
+[说话人 1] (17:39 - 18:57)
+And understand, you know, do they identify the same type of shapes across different variables. And maybe we need to stick to the original definition also to make our, you know, solve one problem first. Yeah.
+
+Yeah. I also think so. And because, you know, it's always good when you, you know, as ever, when you begin to dig deeper into a topic, you realise, no?
+
+Yeah. How many different things. And sometimes I think sometimes it's also good to say, well, okay, so the problem is more complex than we originally thought.
+
+Yeah. Exactly. So let's begin by.
+
+The original problem. Maybe what we are learning from this is that at the very beginning of your work. Yeah.
+
+You need to define, you know, you need to be very clear about what I am looking at, you know, what I am hoping to identify now is this kind of relationship.
+
+[说话人 2] (18:58 - 18:58)
+Yeah.
+
+[说话人 1] (19:00 - 19:31)
+There can be more complex relationship between variables, for example, a conditional distribution pattern. Yeah. Yeah.
+
+And if we were to find this one, I'm not totally sure scientifically, what would we make of it? Yeah. You know, like, how would we interpret in a physical sense the fact that variable X increase the variance of variable Y?
+
+I don't know. Yeah, I understand.
+
+[说话人 2] (19:31 - 19:31)
+Yeah.
+
+[说话人 1] (19:32 - 19:43)
+But maybe you can say, okay, you know, now I'm building an algorithm that is capable of identifying and comparing case one.
+
+[说话人 2] (19:46 - 20:12)
+I think, for example, the conditional distribution pattern is not just appear in this plot. Also in the main response pattern, it will also exist. But what's different, the difference of the two plot is, it's here in this plot, it has the main response, but for here, it do not have the main response.
+
+[说话人 1] (20:13 - 20:21)
+You can also have the second effect on top of the first, no? Yeah. You can have a change in mean and a change in distribution.
+
+[说话人 2] (20:21 - 20:21)
+Yeah.
+
+[说话人 1] (20:22 - 20:52)
+But somehow, I guess now what we are, yeah. And it's a decision we need to also revise with Torsten. But I would be inclined in towards saying, okay, let's, no?
+
+Yeah. Let's stick now to the original brief that was to identify relationships of the left hand side type. Yeah.
+
+[说话人 2] (20:52 - 23:42)
+Okay. No problem. I think maybe next week we can also talk about this question with him.
+
+And I also do try to recognize the main response pattern. Let me show you. Okay.
+
+First, this many, first, I do the laboring of real cases as detectable uncertain and weak response of the loss regression curve. And for example, this plot is a laboring work I have do. The orange is I label the scatter plot as a flat or weak response.
+
+And here, the unresolved is I cannot identify whether it's weak or it's detectable. And here, the detectable means that I think that the loss regression could have the main response pattern, for example, like the linear or situational like. First, this is a laboring work I have do.
+
+And here, I also try to see how this R square works. This is different threshold of the R square. And lastly, I think that, for example, I set the 0.6 as detectable main response pattern. This means that over 0.6, these curves can be detected as detectable main response. And here, when it is larger than 0.35 and less than 0.6, I think they are uncertain. And this uncertain also need to be tried to see how the loss regression curve, the shape of this curve look like.
+
+And when the R square is lower than 0.35, I think they are flat. And this is the first I identify the threshold I. And secondly, this is about the decision tree I have make the revision.
+
+This is a threshold I have made for the R square. And then, for this detectable and uncertain relationship, I go through to the simple or complex detection. It's mainly using the Pearson larger than 0.6 to see whether they are simple or complex. And if they are simple, I try to see the low-bow strength to see whether they are linear or they are situational or acceleration. And for the complex ones, I just to see whether it has a real shape or complex ones. And I will show you some results I have made.
+
+[说话人 1] (23:42 - 23:46)
+Sorry, can you go back one second? I'm not totally clear. What do you do with the uncertain?
+
+[说话人 2] (23:48 - 23:59)
+Do you mean this part? Yeah. Yeah, with this uncertain relationship, I also make these curves go to this path to see they are simple or complex.
+
+[说话人 1] (23:59 - 24:13)
+So even if you say it's dash, it still goes there? Yeah. Okay.
+
+And then the last one on the right is R2 less than 0.35. Yeah.
+
+[说话人 2] (24:13 - 24:16)
+Oh, sorry, I make a mistake.
+
+[说话人 1] (24:16 - 24:17)
+Yeah. Okay.
+
+[说话人 2] (24:17 - 24:53)
+Yeah. Okay. This is some part of the results I have made.
+
+This first is precipitation to the runoff. And the X is precipitation and the Y are the runoff. And each row represent different models.
+
+And each column represent the different regions. And we can see that these curves are more like the linear. And for this precipitation to the evapotranspiration and the- Oh, sorry, go back one second.
+
+Yeah.
+
+[说话人 1] (24:53 - 24:56)
+So they are all classified as linear?
+
+[说话人 2] (24:57 - 25:12)
+Yes, because I have make the threshold not so ambiguous. I would like to say if they have very clear curvature, it could be separated as acceleration. So they are all linear?
+
+Yeah.
+
+[说话人 1] (25:12 - 25:14)
+They are all the same color here because they are all linear?
+
+[说话人 2] (25:14 - 25:15)
+Yeah.
+
+[说话人 1] (25:16 - 25:16)
+Yeah.
+
+[说话人 2] (25:18 - 25:41)
+And this is precipitation to the evapotranspiration. They are quite different from that plot. And for the green ones, they are R squared is less than 0.35. And for the orange ones, they are saturation. And for the purple ones, they are U shape. And for the yellow ones, they are linear.
+
+[说话人 1] (25:43 - 25:55)
+And- Can I suggest that maybe, because can you put- You have the legend down there. Yeah. Can you move it to the right?
+
+Because like when we are speaking on- Yeah, I understand.
+
+[说话人 2] (25:56 - 26:06)
+Very often it gets covered by my- So sorry, maybe do- can I- but I can move the plot a little bit.
+
+[说话人 1] (26:06 - 26:08)
+Maybe by zoom, you know?
+
+[说话人 2] (26:08 - 26:09)
+Yeah.
+
+[说话人 1] (26:09 - 26:09)
+Yeah.
+
+[说话人 2] (26:11 - 26:13)
+Is this too small? Sorry.
+
+[说话人 1] (26:14 - 26:30)
+Yeah, I think you have to make it bigger and on the side. Because over there, it gets covered a lot of time. Yeah.
+
+Okay. And are you- are you happy with these classifications?
+
+[说话人 2] (26:32 - 27:23)
+Yeah, because for the physical process, I think the precipitation to the evapotranspiration are mainly like the saturation. Because when the precipitation increase and the evapotranspiration will be full, so it will go to the saturation shape. But some models are not like the saturation.
+
+It can show the great difference between different models. Yeah. But what I feel so not very certain is because there are some part of the plot is- R squared is very low, like this one.
+
+But for the visualization, it could like the inverted U shape.
+
+[说话人 1] (27:34 - 28:33)
+I would have- Sorry, the internet is not good. I think it's my fault. I don't know why my- can you hear me now?
+
+Yeah. Yeah, if you go back to- can you go back with the- with the mouse on the one you were showing? Yeah.
+
+It was, I think, the second, no? Do you mean this one? No, no, next.
+
+Next. Next. This one?
+
+Yeah, so the- if we- I'm on the second row, no? Or even the top row. Yeah.
+
+Yeah, visually, yeah, visually the ones that are now classified as weak. Yeah. Yeah, I'm not- yeah, visually, I would have not said that they are significantly different from the one on the left.
+
+Yeah. But R2 is very different.
+
+[说话人 2] (28:33 - 28:49)
+Yeah, because I think because it's a hex bin, you can see that there are a lot of plots here, and but it also separated here a lot of plots here. This mainly causes a difference, I think.
+
+[说话人 1] (28:51 - 29:14)
+Yeah. Yeah, and I think that, yeah, the reason why we also use indicators, because what we visually see, you know, might be- Yeah. Might be misleading.
+
+[说话人 2] (29:15 - 29:24)
+Yeah, so this is the reason I would like to distinguish whether we need the main response.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

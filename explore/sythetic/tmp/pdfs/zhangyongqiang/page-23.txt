@@ -1,0 +1,22 @@
+A D
+b ger Ae age
+i = 1
+Ie in
+' . t . =
+Ee ae 2 a
+"Retest Bees *
+c F
+ie et i weit
+Be ag Beh apa
+fo Sg 2
+Pe i oe
+fos Hl
+Fig. SS.
+Scatterplots between observed ET treads (mm year) and simulated ET trends (mm year?)
+at training mode (left) and 5-fold cross-validation mode (right). Results are aggregated across
+183 selected large basins and 12 staggered 12-month periods (Jan—Dec, Feb—Jan, ..., Dec-Nov).
+Water-balance observed ET is obtained from the combination of CRU precipitation and
+terrestrial water storage change from three products: A, CSR; B, GSFC; and C, JPL. (A-C)
+Training mode. (D-F) Cross-validation mode.
+8
+

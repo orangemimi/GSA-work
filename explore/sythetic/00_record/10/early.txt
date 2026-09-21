@@ -1,0 +1,437 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:06 - 0:08)
+Figure 1, what was figure 1 again?
+
+[说话人 3] (0:08 - 0:17)
+Figure 1 means, maybe you can't see. This one.
+
+[说话人 1] (0:17 - 0:18)
+Ah, this one.
+
+[说话人 3] (0:18 - 0:19)
+This is the whole workflow.
+
+[说话人 1] (0:19 - 0:23)
+Yeah. Yeah, very cool.
+
+[说话人 2] (0:25 - 0:26)
+Do you like this paper?
+
+[说话人 1] (0:26 - 0:47)
+Yeah, no, no, it's very nice. I think what I like very much is that in the original paper it was a bit too, how do I say, there were good suggestions in there, but there was no consideration of how complicated it is to actually do all of this.
+
+[说话人 3] (0:47 - 0:47)
+Yeah, exactly.
+
+[说话人 1] (0:48 - 1:09)
+And that was a bit unrealistic, you know, because yes, in theory that would all be great, but in practise nobody can do this, you know, it's just way too complicated and no PhD student would be able to ever finish their thesis because it would take another two years to do all this. And so now it's a lot more realistic of how do we actually approach this.
+
+[说话人 3] (1:10 - 1:10)
+Yes.
+
+[说话人 1] (1:10 - 1:15)
+And what do we still need to figure out, and I think that makes it a lot more practical, you know.
+
+[说话人 2] (1:15 - 1:21)
+Yeah, yeah, yeah. I also think so. Currently there are, okay, she has come.
+
+Yeah. Oh, sorry.
+
+[说话人 1] (1:25 - 1:25)
+Hi.
+
+[说话人 2] (1:26 - 1:34)
+Hello. Hello. I can't share my screen directly.
+
+I'm sorry.
+
+[说话人 1] (1:35 - 1:36)
+Gee, you're not wearing a jacket.
+
+[说话人 2] (1:36 - 1:39)
+Yeah, because I feel a little cold.
+
+[说话人 1] (1:40 - 1:52)
+You feel cold? Just to say it's 25 degrees here today, you know, so. Yeah.
+
+Okay. But where are you from? Is your place very hot?
+
+[说话人 2] (1:52 - 1:53)
+Yeah, I'm cold.
+
+[说话人 1] (1:53 - 1:54)
+Which part of China are you from?
+
+[说话人 2] (1:54 - 1:56)
+I'm from the southern part of China.
+
+[说话人 1] (1:57 - 2:01)
+Okay. So 25 is winter time.
+
+[说话人 2] (2:01 - 2:04)
+I think it's spring temperature.
+
+[说话人 1] (2:05 - 2:20)
+Okay. Because here in Bristol we now have another heat wave, so it's again 28, 30 degrees. And everybody goes around the corridor and the office.
+
+It's like, oh, I cannot walk. Too hot.
+
+[说话人 2] (2:21 - 2:27)
+Okay. Do they have any air conditioners in the office? No.
+
+[说话人 1] (2:28 - 2:47)
+No, this is the UK, no? Yeah, it's very, this temperature is very rare. So, yeah, we have fans.
+
+Okay. Fan, yeah. But I have, from where I am from, this is a good temperature for the summer.
+
+It's actually not, you know, I'm not complaining.
+
+[说话人 3] (2:47 - 2:49)
+Okay. Yes.
+
+[说话人 1] (2:49 - 2:53)
+Exactly. I don't understand this all complaining. Now we have finally the temperature like Tuscany.
+
+[说话人 3] (2:54 - 2:54)
+Exactly.
+
+[说话人 1] (2:54 - 3:23)
+And now everybody's like, oh God, this is a disaster. Exactly. I am like, you know, this is fine.
+
+Let's go to Italy for vacation. You know, it's like, come on. Anyway, good to see you.
+
+And yes, sorry I'm always late because then the previous meeting. Yeah. I should say I will have to leave a few minutes early because I have some students coming and I should probably not leave.
+
+Yeah, okay. For a lecture.
+
+[说话人 3] (3:23 - 3:23)
+Yeah.
+
+[说话人 1] (3:25 - 3:32)
+Complaining about a lecture one of my colleagues gave, so I better be on time to aggravate it already. Save the situation.
+
+[说话人 2] (3:32 - 6:00)
+Yes. Okay. So can I start?
+
+Yeah, you go ahead. Okay. Sure, sure.
+
+Last week I have presented initial decision tree designed to classify the different relationship between the input and the output pairings and you have provided some suggestions and this week I have revised this tree based on our discussion and tested on the synthetic scatter plots. And I start with conservative metric threshold to identify the most clear relationship at first, mainly about simple relationships. And this is revised decision tree.
+
+At first I have changed the first level. We have to detect whether it has a global relationship or not. Here I mainly use MIC as criteria.
+
+And after we have detected it has a global relationship, we can detect whether it is simple or complex. And when it can be regarded as simple, we can also detect its monotonicity. And when it has very strong monotonicity, we can detect whether it's a line shape or not.
+
+And when it is not a line or it has not very high monotonicity, we can detect whether it has a curvature. If it has, we can detect the detailed type of curvature. And here I have designed the three main types, the convex, concave, and the inflected.
+
+And for each shape, I have also detected the direction of these different shapes. And I also do the preliminary structure of the complex relationships. This is mainly about branching threshold and whether it has a turning point.
+
+And this could be the parallel detection. And if we detect the different characteristics, it could be divided into different segments. And based on this segment, we can also detect the similar workflow as simple or complex.
+
+So this week, I mainly focus on the simple relationship. Do you need to make some suggestions on these slides?
+
+[说话人 1] (6:01 - 6:40)
+No, I think this is progressing well. It's much better than last time. I still think that we will maybe have to think a bit about the word in simple or complex.
+
+I can already see people complaining about the use of complex. And maybe instead of complex, it's complicated. I don't know.
+
+Anyway, that's just to say that it's a bit like what is simple and what is complex. And the other thing is, when you have the question about the curvature and you say no, so then you end up saying this we don't know, that box uncertain.
+
+[说话人 2] (6:41 - 6:47)
+Yeah, yeah, yeah. Because it did not fit any detection criteria here.
+
+[说话人 1] (6:48 - 8:00)
+I think when we try all this, we will have to see what ends up in that category and see, you know, maybe instead we can not. Maybe we find a way to complete that branch. It's fine for now, but maybe not.
+
+If any scatter plots end up there, we might have a look at them and say, okay, you know, can they belong to a category? Because it's a bit funny that, you know, you have this end point now that is like, oh, this we don't know. And you don't have it anywhere else.
+
+Yeah? Yes, yes. Yeah, we could – maybe we can also – has curvature and curvature type, maybe we can bring that together.
+
+And then say, okay, curvature type is convex, concave, inflected or undefined or something like that. Then at least we don't have a separate branch. So then it's part of – but you have slope at larger equal 0.1. What is slope? This one. The criterion you have.
+
+[说话人 2] (8:00 - 8:09)
+Standardised division. I would like to see whether they all have some division between the different slopes of segments.
+
+[说话人 1] (8:09 - 8:10)
+Ah, okay.
+
+[说话人 2] (8:11 - 8:20)
+Yeah. In the previous vision of this week, I have combined this branch together. But I divided it.
+
+[说话人 1] (8:20 - 8:26)
+Okay. Then let's leave it. I think what Francesca suggests is a good idea.
+
+Let's see what ends up there.
+
+[说话人 2] (8:27 - 8:27)
+Yeah.
+
+[说话人 1] (8:27 - 8:31)
+And then we can think about how we integrate it better, you know?
+
+[说话人 2] (8:31 - 8:31)
+Yeah, okay.
+
+[说话人 1] (8:33 - 8:33)
+Good.
+
+[说话人 2] (8:33 - 10:56)
+So next slide is – I have generated several scatterplot cases with pronounced characteristics for testing this decision tree. At first I have added several function families here you have suggested before. It's about the two lines and this one line with one U-shaped line.
+
+And here is a multi-region. And it has – I have also added a windowed J-shape in different range of X. Yeah.
+
+And I have designed two types of environment. At first I have used these 27 scatterplots directly to test the decision tree. And the second experiment is I have added the different noise to the synthetic scatterplot to expand the cases to test the decision tree with more realistic cases.
+
+And at first we start from these 27 scatterplots and we first need to detect whether it has a global or not global relationship. And I give the definition of the three types. The first global relationship means that the pattern covers most or all of the most of the X range.
+
+And the local relationship means that it appears only within a limited sub-range of X. The local relationship may be the spike or the multi-regions, this kind of scatterplot. And here I use the MIC to detect whether it could have the global relationship.
+
+Here this is the result of this detection. The blue one means that it is detected based on the global relationship. And the green one does not have the global relationship.
+
+And one interesting thing is that the situation I have, it is diagnosed as no global relationship. And I think this is mainly because it jumps very fast at this X range. Okay, sorry.
+
+[说话人 1] (10:58 - 11:47)
+Were you saying more detail about this? Okay, then keep going. Well, I think this is interesting.
+
+I'm not sure, so I understand that the blue ones are the ones that your criterion, your rule, MIC above 0.8, says this is global. And the grey one is where according to the criterion it's local. Yeah, I'm not totally sure I agree with that.
+
+For example, there is a cubic, no? Yeah, no, exactly. Or like, it's interesting that the no relationship, well, I don't know.
+
+Maybe that's a different story, but the no relationship should be no relationship, not local, I guess.
+
+[说话人 2] (11:48 - 12:01)
+Because I think that when the MIC is more than 0.8, it could detect, it has a relationship, but maybe it cannot detect. Yeah.
+
+[说话人 1] (12:03 - 12:13)
+Or, for example, the two branching ones, again, I would have thought that that's a global.
+
+[说话人 2] (12:13 - 12:14)
+Yeah, I also think so.
+
+[说话人 1] (12:15 - 13:21)
+So, yeah, I am not sure this is working the way we – well, maybe because also the criterion is not completely defined. Because, for example, you know, a saturating curve is a global saturating curve, or it is like two different local behaviours. Yeah, but I mean, most of it, let's say, most of it seems sensible.
+
+Now, there are a couple of the cubic and the two lines are the ones that are maybe surprising, because we would say that those are also global. The other, I explained by them changing over a very small range, and therefore, that would be considered local, which is, I think, okay. The question is the cubic and the two lines.
+
+So, in the original paper with this MIC criterion, the two lines show up, but they are quite sensitive to noise.
+
+[说话人 3] (13:21 - 13:21)
+Yeah.
+
+[说话人 1] (13:21 - 13:34)
+No, so if there is noise on them, then that reduces the MIC value quite a bit. You know, if it were just two exact lines, it probably would come out as 0.8. Yes.
+
+[说话人 2] (13:34 - 13:41)
+I have also tested whether if the noise gets smaller and the MIC gets higher.
+
+[说话人 1] (13:41 - 13:56)
+Yeah. So, one question we will probably have is that there is a, you know, a grey area. I mean, the cubic one is 0.7, which is quite high.
+
+[说话人 2] (13:56 - 14:00)
+Yeah, but not as high as our set.
+
+[说话人 1] (14:00 - 14:34)
+Exactly, not 0.8. So, that's one question. If a better threshold, if maybe 0.8 is not the right threshold, you say. Yeah, or whether we need to have some kind of fuzzy, you know, acceptance criterion or so, which is not a harsh threshold, but say, okay, anything from 0.6 onwards to 0.8 is maybe starting to be increasingly okay, and above 0.8, it's certainly a global relationship. So, maybe we have to think of something like that.
+
+[说话人 3] (14:35 - 14:35)
+Yeah.
+
+[说话人 1] (14:35 - 14:44)
+Because it's not going to be, I mean, there's always going to be one example which is just below, you know, regardless of what we set as a threshold.
+
+[说话人 2] (14:45 - 14:52)
+Yeah, this is also, each one function family has only one example, so there would be some coincidence here.
+
+[说话人 1] (14:53 - 15:04)
+But maybe, yeah, maybe something like a fuzzy acceptance criterion or so might be a way to consider that we don't know exactly what the threshold is. Yeah.
+
+[说话人 2] (15:04 - 15:15)
+But I think one good thing in this slide is that what we can see is that if one scatterplot has a very clear global relationship, it can be detected.
+
+[说话人 1] (15:15 - 15:15)
+Yes.
+
+[说话人 2] (15:17 - 15:25)
+And maybe I can go to the next slide. And next, I detect whether it has a simple or complex detection.
+
+[说话人 1] (15:25 - 15:43)
+Sorry, one quick question before we continue. But what do you think, like a fuzzy rule or so, or is there anything else you can think of? Either of you.
+
+That's what we used in the past, no, to consider some of these uncertainties with clear…
+
+[说话人 2] (15:43 - 16:29)
+Yeah, yeah, yeah, yeah, yeah. I have to think that maybe if we detect a different range of what we set, the output could be very different. But I'm not sure if…
+
+Because I think that what impact whether it has a global relationship detection is one is the noise it may contain, and another is whether it really has a global relationship. And if we set the different threshold of metrics, it would impact the proportion of each relationship.
+
+[说话人 1] (16:31 - 16:49)
+Yeah, I guess I was thinking because we're essentially grouping things. We're creating subgroups of the overall population. And so these fuzzy rules were used to be, if you're uncertain about the criteria, to group things.
+
+Then that's a way to consider that.
+
+[说话人 2] (16:49 - 17:22)
+Yeah, I have also tried to add, for example, the distance correlation, and I would like to see whether it's set, for example, larger than 0.7, it could change the result. And I find that it makes a global relationship more smaller, but not contain the two lines, this kind of relationship.
+
+[说话人 1] (17:22 - 17:47)
+Yeah, I'm just thinking so we could… I mean, since we're having essentially a classification tree now to organise this, we could bring in… That would be a way to use some fuzzy criteria.
+
+But it's just an idea too. For now, I mean, in principle, it does what we're looking for. So let's keep going so we can see where at the moment we end up.
+
+[说话人 2] (17:47 - 18:35)
+Okay. The next is I detect whether it has a simple or complex relationship. Here I defined the simple or complex relationship is that whether it can be described by a single dominant response pattern over most or all of the input range.
+
+So here I give the rule is that the Pearson is larger than 0.7, and also the Spearman larger than 0.7, and its signal change is less than 0. And here the green one is that the result of simple relationship, and the orange one is a complex relationship.
+
+[说话人 1] (18:36 - 18:43)
+But again, isn't this monotonic versus non-monotonic?
+
+[说话人 2] (18:45 - 19:48)
+I think the simple relationship could be monotonic. But if we set the monotonic very strict, it could miss some relationships here. Such as?
+
+Such as, let me see. I think that, for example, let me go this one. You can see that here the Spearman is 0.85, and here is 0.98. I think that it would have some impact of this kind of relationship. Also the threshold here is not more than 0.8. So I would like to first give them the detection of simple, and then I can detect the more strict criteria.
+
+[说话人 1] (19:50 - 19:57)
+Sorry, can you go back to the previous one? Because you had a branching, no, in your tree? Yeah.
+
+Simple versus complex.
+
+[说话人 3] (19:57 - 19:57)
+Yeah.
+
+[说话人 1] (19:58 - 20:25)
+What I'm trying to say here is that if you're happy with this classification now that you get here, the green versus the orange, in this example here at least, essentially what is changing is in what case you have one or more change of direction in the orange one.
+
+[说话人 2] (20:25 - 20:25)
+Yeah.
+
+[说话人 1] (20:25 - 20:40)
+Yeah? Yeah. And instead in the green one, there is no change of direction.
+
+The relationship never goes from being, somewhere is direct and somewhere is inverse. Can I?
+
+[说话人 3] (20:40 - 20:41)
+Yeah.
+
+[说话人 1] (20:41 - 20:59)
+I see your point, but one thing is if you think about the cubic and the branching, if we add those, if we bring those in as global relationships, then it wouldn't be simple, monotonic, and non-monotonic wouldn't work anymore.
+
+[说话人 2] (21:00 - 21:12)
+Which one? This one? The branching and the cubic.
+
+The Spearman is more than 0.7. Yeah, I mean there you could still, I mean it's not continuously monotonic.
+
+[说话人 1] (21:12 - 22:04)
+I mean it goes up and down, so it's a little bit different. But the branching could also be, both could be, you know, individually monotonic, but it probably would be a complex relationship and not a simple one. I'm just saying that from also what you're showing here, it seems to me there is one branch, the green one, is univocally monotonic, and the other branch, the orange plus probably some of the grey, is not univocally monotonic.
+
+Yeah, but that's, I'm wondering whether that's still true if we add the grey ones. I agree with the ones that are orange. Yeah, yeah, because for example the two with the branching are non-univocally monotonic.
+
+[说话人 2] (22:04 - 22:18)
+Yeah, I think one point here is because each family just has one scatterplot, maybe I can show you this, I have, I don't know if there are several scatterplots and each has a different proportion.
+
+[说话人 1] (22:18 - 22:28)
+Yeah, I'm just saying that I'm still not clear at this point. Okay. But let's continue and then maybe we'll find a better way.
+
+[说话人 2] (22:28 - 22:29)
+Yeah, yeah, yeah.
+
+[说话人 1] (22:29 - 22:30)
+Yeah, yeah, okay.
+
+[说话人 2] (22:31 - 24:16)
+And here, based on that simple relationship, I test whether it has a strong monotonicity or it's just a high-medium monotonicity, and we can find that the green one has a very strong monotonicity, and based on the strong monotonicity, I have detected whether it's a line shape or not. I have given the rho of the Pearson larger than 0.9, and I have also given the slope SD is less than 0.2. This means that the slope will not change too much when detecting whether it has a line. Okay.
+
+And we can find the two scatterplots are divided into a line and others have nonlinear. And based on that nonlinear, I have detected whether it has a curvature and all the remaining cases has a curvature, and I have detected whether this has curvature cases, has different patterns of curvature. So this is mainly based on the pattern of early, middle, and late slope, and we can find that this dark green can be divided into the convex, and these four are divided into concave, and the four cases are divided into the inflected.
+
+Yeah.
+
+[说话人 1] (24:17 - 24:46)
+Sorry, can I make a point here? That is this maybe something, I mean, you can break it up, but you could also say, for example, if it's a nonlinear relationship, that you, for example, fit a simple polynomial to it, and whether the exponent is above one or below one would be convex or concave.
+
+[说话人 3] (24:47 - 24:47)
+Yeah.
+
+[说话人 1] (24:48 - 24:48)
+You know?
+
+[说话人 3] (24:49 - 24:49)
+Yeah.
+
+[说话人 1] (24:49 - 25:10)
+Might that be more generic than... Sorry, I'm a bit confused now, it's too late maybe, but... Too late is now earlier for you.
+
+But, sorry, look, so you have the two linears, okay, and then the next one is convex.
+
+[说话人 2] (25:11 - 25:11)
+Yeah.
+
+[说话人 1] (25:12 - 25:14)
+And the one after is also convex.
+
+[说话人 2] (25:15 - 25:31)
+Yeah, because it has changed the direction. Here is convex, here is concave. And these two, why they look similar, but they are different because I use different equations to concrete it.
+
+[说话人 1] (25:31 - 25:38)
+No, no, no, no, I'm not talking about how the algorithm classifies, but your own initial classification.
+
+[说话人 3] (25:39 - 25:39)
+Mm-hmm.
+
+[说话人 1] (25:40 - 25:57)
+So the plot, if I compare the third and the fourth, you label it both convex? Yeah. So what's the difference then between convex and concave?
+
+[说话人 2] (25:58 - 26:03)
+Convex is like this one, and the concave is like this one.
+
+[说话人 1] (26:03 - 26:08)
+Yeah, so the number three is convex and number four is concave, no?
+
+[说话人 2] (26:09 - 26:17)
+Yeah, because if the direction changes because it's a positive direction and here is a negative direction and it changes.
+
+[说话人 1] (26:17 - 26:26)
+But on the top it says convex, not concave. You have convex here and concave here.
+
+[说话人 3] (26:26 - 26:27)
+Ah.
+
+[说话人 1] (26:28 - 26:38)
+So, but really it's, convex is... Yeah, yeah. So if I look at them, it should be convex, concave, concave, convex.
+
+[说话人 2] (26:39 - 26:40)
+Yeah, yeah, yeah.
+
+[说话人 1] (26:40 - 26:42)
+Instead the labels are convex, convex, concave, concave.
+
+[说话人 2] (26:42 - 27:00)
+Yeah, yeah, yeah. Maybe here I need to add the direction into this detection because I detect the absolute value of each slope. So this would make some mistake.
+
+[说话人 1] (27:01 - 27:18)
+You agree with me that the classification here is wrong? The four top right ones? Yeah.
+
+Also the same problem you have in the line below, no? It says concave, concave, convex, convex. Instead it should be concave, convex, convex, concave.
+
+[说话人 2] (27:19 - 27:30)
+Yeah, yeah, yeah. I think this, one thing I need to do is to confirm the detail, the definition of the convex and the concave, and maybe I need to make some adjustment.
+
+[说话人 1] (27:30 - 27:47)
+Yeah, yeah, yeah. I mean, it's probably a small mistake that you can fix, but no? I think it's, yeah.
+
+But in terms of, so the standardised slope, you know, broke this up into different sections, or how did you calculate the standardised slope?
+
+[说话人 2] (27:47 - 27:53)
+I divided it into different segments, too.
+
+[说话人 1] (27:53 - 27:59)
+Yeah. Because I'm not sure, because this is the branch with global relationships.
+
+[说话人 3] (27:59 - 28:00)
+Yeah.
+
+[说话人 1] (28:00 - 28:10)
+I think, I mean, the breaking it, binning it into different sections seems something we should be mainly doing.
+
+[说话人 3] (28:10 - 28:11)
+Yeah.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

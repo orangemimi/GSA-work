@@ -1,0 +1,529 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-07-28",
+  "language": "zh-CN",
+  "purpose": "为后续科研讨论、代码实现、论文写作和方案审查提供去身份化的长期上下文。",
+  "research_profile": {
+    "role": "Earth system modelling、hydrology、global sensitivity analysis 与 scientific reproducibility 方向的研究人员",
+    "core_expertise": [
+      "Earth System Models and Global Water Models",
+      "input-output relationship characterization",
+      "global sensitivity analysis",
+      "functional relationship diagnostics",
+      "synthetic benchmark design",
+      "statistical metric design and evaluation",
+      "scientific reproducibility",
+      "environmental and hydrological modelling"
+    ],
+    "model_experience": [
+      "CLASSIC",
+      "LPJ-GUESS",
+      "CREST",
+      "VIC",
+      "SWAT"
+    ],
+    "general_research_principles": [
+      "先澄清研究对象、定义、假设和逻辑，再决定算法与实现。",
+      "区分模型内部机制、模型输入输出的经验关系和 ML surrogate，不能把 surrogate interpretation 当成机制解释。",
+      "ground truth 应来自明确的生成机制、可辩护的定义或独立观测，不应由待验证的 metrics 反向制造。",
+      "synthetic benchmark 的成功不能自动证明对真实 ESM 数据有效，必须单独处理 synthetic-to-real transfer。",
+      "对模型与观测的比较必须同时承认 model error 与 observational uncertainty。",
+      "避免把一个 metric 直接等同于一个科学属性，除非定义和适用边界足够清楚。",
+      "方法框架的目标是形成可验证、可解释的科研贡献，不以制作用户工具箱为首要目标。"
+    ]
+  },
+  "research_portfolio": [
+    {
+      "id": "relationship_hierarchy",
+      "title": "ESM 输入输出关系的分层识别与定量刻画",
+      "status": "current_primary",
+      "objective": "从散点数据中先判断可检测的全局关系，再沿 Simple 与 Complex 两条路径分解关系结构，最终形成可解释的关系类别和属性描述。",
+      "scientific_positioning": [
+        "研究对象是 scatterplot 所表达的 input-output relationship，而不是单一相关系数。",
+        "目标不是用一个万能指数替代现有 GSA，而是建立关系检测、结构分解和形状刻画的层级框架。",
+        "分类层级应保存信息，不能让早期 gate 永久丢弃可能存在的 localized relationship。",
+        "Simple 与 Complex 是结构路由，不代表科学重要性高低。"
+      ]
+    },
+    {
+      "id": "conditional_functional_relationships",
+      "title": "条件化 functional relationship 与模型诊断",
+      "status": "active_background",
+      "objective": "比较 unconditional 与 conditional functional relationship，分析 climate controls 与 landscape controls 如何改变水文响应曲线，并用于跨模型诊断。",
+      "key_dimensions": [
+        "importance",
+        "form",
+        "certainty",
+        "conditionality",
+        "interaction"
+      ],
+      "methodological_elements": [
+        "binned median curves",
+        "hierarchical conditioning",
+        "curve distance",
+        "bootstrap uncertainty",
+        "cross-model comparison",
+        "multiple observational products"
+      ],
+      "positioning_constraints": [
+        "这是 methodological framework，不是新的 universal GSA index。",
+        "条件化曲线关注 relationship shape 如何变化，不等同于 Sobol interaction-order decomposition。",
+        "可作为 emergent-constraint analysis 之前的 mechanistic diagnostic layer，但不能夸大为直接的因果机制识别。"
+      ]
+    },
+    {
+      "id": "esm_model_comparison",
+      "title": "CLASSIC 与 LPJ-GUESS 的 hydro-ecological relationship 比较",
+      "status": "supporting_application",
+      "objective": "比较不同气候区中 P、LAI 与 ET、T、E_veg、E_soil 等变量之间的关系形状、强度和离散特征。",
+      "analysis_elements": [
+        "Pearson and Spearman association",
+        "equal-width and equal-count binning",
+        "LOWESS or LOESS",
+        "polynomial regression",
+        "GAM",
+        "piecewise linear fitting",
+        "symbolic regression",
+        "linear and log scales"
+      ],
+      "interpretation_rules": [
+        "|Spearman| minus |Pearson| 只作为 nonlinearity diagnostic，不作为独立真值。",
+        "normalized slope 主要描述 shape，不能在 amplitude 已被归一化后继续解释为 strength。",
+        "跨模型 strength 比较需要 common normalization，不能只使用各模型自己的 SD。"
+      ]
+    },
+    {
+      "id": "scientific_reproducibility",
+      "title": "地学模型与 hybrid ESM 的 scientific reproducibility",
+      "status": "parallel_research",
+      "topics": [
+        "hybrid Earth system model reproducibility",
+        "geo-modelling workflow comprehension, execution and assessment",
+        "probabilistic reproducibility assessment",
+        "aleatory and epistemic uncertainty",
+        "reproducibility versus replicability terminology"
+      ],
+      "principles": [
+        "概念定义必须与评估层级一一对应。",
+        "框架、实验和结论之间必须保持可追踪的 problem-method-evidence chain。",
+        "不能把基础设施可获得性、代码可运行性、结果一致性和科学结论可复制性混为一个层面。"
+      ]
+    }
+  ],
+  "current_primary_scheme": {
+    "name": "global-to-shape hierarchical decision pipeline",
+    "status": "latest_working_scheme",
+    "last_verified_from": [
+      "E/scheme_E_S4_S5.drawio",
+      "E/E_S4_mic_range_filter.ipynb",
+      "E/E_S5_power_law_shape_analysis.ipynb",
+      "D/Global/D_S3_snr_sweep_generation.ipynb",
+      "D/Global/D_S8_annotation_merge_and_qc.ipynb"
+    ],
+    "scope": "当前实现重点是 Global gate 和 Simple path。Complex path 的结构与顺序已经定义，但检测算法仍需继续实现和验证。",
+    "decision_hierarchy": [
+      {
+        "level": 1,
+        "name": "Global relationship screening",
+        "metric": "MIC",
+        "current_thresholds": {
+          "strong_global": "MIC >= 0.8",
+          "intermediate": "0.6 <= MIC < 0.8",
+          "weak_or_no_global": "MIC < 0.6"
+        },
+        "routing": {
+          "strong_global": "进入当前 S5 tree",
+          "intermediate": "保留在当前 S5 tree 之外，等待后续分析",
+          "weak_or_no_global": "暂不进入 global-shape tree，未来另行检查 localized relationship"
+        },
+        "interpretation_limits": [
+          "MIC 同时受到 noise、relationship complexity 和 sample structure 影响。",
+          "MIC 不会在纯噪声下必然精确等于 0。",
+          "0.6 与 0.8 是当前可配置 working thresholds，不应表述成普适自然常数。",
+          "被 gate 排除不等于证明完全没有关系，可能是关系过弱、过局部或结构过复杂。"
+        ]
+      },
+      {
+        "level": 2,
+        "name": "Simple versus Complex routing",
+        "input": "MIC >= 0.8 cases",
+        "current_rule": {
+          "simple": "|Pearson r| >= 0.7 AND |Spearman rho| >= 0.7",
+          "complex": "未同时满足上述两个条件"
+        },
+        "interpretation_limits": [
+          "该 gate 是 operational routing rule。",
+          "Complex 不等于无规律，可能包含 branching、threshold、turning point 或多种结构共存。"
+        ]
+      },
+      {
+        "level": 3,
+        "name": "Strong monotonicity within Simple",
+        "current_rule": "|Spearman rho| >= 0.9",
+        "routing": {
+          "yes": "进入 strong-linearity candidate gate",
+          "no": "进入待分型 shape pool"
+        }
+      },
+      {
+        "level": 4,
+        "name": "Strong linearity candidate",
+        "current_rule": "|Pearson r| > 0.9",
+        "routing": {
+          "yes": "用 free power-law exponent 确认 Linear",
+          "no": "进入待分型 shape pool"
+        }
+      },
+      {
+        "level": 5,
+        "name": "Power-law confirmation of Linear",
+        "model": "y = c + a*x^b",
+        "current_rule": "fit converged AND |b - 1| <= 0.05",
+        "routing": {
+          "linear": "Linear terminal class",
+          "other": "进入待分型 shape pool"
+        }
+      },
+      {
+        "level": 6,
+        "name": "Simple-path shape classification",
+        "input": "Simple but not confirmed Linear cases",
+        "primary_features": [
+          "power-law exponent b",
+          "first-derivative sign stability",
+          "second-derivative sign stability",
+          "reliable second-derivative sign changes"
+        ],
+        "current_thresholds": {
+          "linear_exponent_tolerance": 0.05,
+          "first_derivative_dominance": 0.95,
+          "second_derivative_dominance": 0.75,
+          "derivative_evaluation_domain": "interior 10% to 90% of observed x range"
+        },
+        "classes": {
+          "concave": "b < 0.95, stable first derivative, stable negative second derivative",
+          "convex": "b > 1.05, stable first derivative, stable positive second derivative",
+          "s_shaped": "stable first derivative and one reliable second-derivative sign change",
+          "other_or_uncertain": "其他情况，包括拟合失败、derivative pattern 不稳定或规则冲突"
+        },
+        "diagnostics_not_used_for_routing": [
+          "R-squared",
+          "cross-validated R-squared",
+          "NRMSE",
+          "Delta BIC",
+          "Runs test"
+        ],
+        "important_scope_note": "当前 coarse shape classification 不声称区分 S-curve 与 Threshold。"
+      },
+      {
+        "level": 7,
+        "name": "Complex-path structural decomposition",
+        "implementation_status": "conceptual_tree_defined_algorithm_pending",
+        "properties_can_cooccur": true,
+        "decomposition_order": [
+          "Branching",
+          "Threshold",
+          "Turning point"
+        ],
+        "branching": {
+          "question": "Y 是否为 single-valued relationship",
+          "outputs": [
+            "2-way branching",
+            "n-way branching"
+          ],
+          "next": "对每个 branch 递归进入 Simple 或 Complex path"
+        },
+        "threshold": {
+          "question": "是否存在 discontinuity or step",
+          "outputs": [
+            "single step",
+            "multiple steps"
+          ],
+          "next": "记录 step location 与 step size，并对各 segment 递归"
+        },
+        "turning_point": {
+          "question": "direction 是否发生变化",
+          "outputs": [
+            "one turning point such as U, inverted-U or spike",
+            "two turning points such as cubic",
+            "three or more turning points such as oscillatory"
+          ],
+          "next": "分段后进入 Simple path"
+        }
+      }
+    ],
+    "human_annotation_role": {
+      "status": "supplementary_validation_and_qc",
+      "design": [
+        "blind annotation",
+        "ordinal labels for global, uncertain and no-global",
+        "independent repeats",
+        "overlap cases for inter-rater agreement",
+        "case-level and family-by-SNR summaries"
+      ],
+      "coding": {
+        "global": 1.0,
+        "uncertain": 0.5,
+        "no_global": 0.0
+      },
+      "rules": [
+        "保留原始分歧，不为了强制随 noise 单调变化而修改人工评分。",
+        "区分对图形是否可见的不确定性与对 global 定义本身的不一致。",
+        "不能因 annotator 风格不同而自动删除其结果。",
+        "family-specific perceptual ranges 不应误写成 universal MIC thresholds。",
+        "人工标注用于检查分类结果是否 sensible，不作为唯一且绝对的 scientific ground truth。"
+      ]
+    }
+  },
+  "synthetic_benchmark": {
+    "current_selected_families": [
+      {
+        "id": "F01",
+        "name": "Linear positive"
+      },
+      {
+        "id": "F03",
+        "name": "Power convex positive"
+      },
+      {
+        "id": "F05",
+        "name": "Power concave positive"
+      },
+      {
+        "id": "F07",
+        "name": "Saturation positive"
+      },
+      {
+        "id": "F13",
+        "name": "S-curve positive"
+      },
+      {
+        "id": "F15",
+        "name": "Threshold positive"
+      },
+      {
+        "id": "F18",
+        "name": "Quadratic valley"
+      },
+      {
+        "id": "F21",
+        "name": "Cubic"
+      },
+      {
+        "id": "F19",
+        "name": "Spike"
+      },
+      {
+        "id": "F23",
+        "name": "Two Lines"
+      },
+      {
+        "id": "F24",
+        "name": "Line and Parabola"
+      },
+      {
+        "id": "F25",
+        "name": "Multi-regime threshold"
+      },
+      {
+        "id": "F26",
+        "name": "Windowed threshold"
+      },
+      {
+        "id": "F22",
+        "name": "Complex non-monotonic functions"
+      }
+    ],
+    "controls": [
+      "Null with independent x and y"
+    ],
+    "variants": [
+      "mild",
+      "standard",
+      "strong"
+    ],
+    "full_snr_sweep_design": {
+      "snr_levels": 227,
+      "replicates_per_family_variant": 10,
+      "points_per_case": 500,
+      "signal_cases": 95340,
+      "independent_null_cases": 100,
+      "paired_trajectory": "同一 family, variant 和 replicate 内固定 x、branch assignment 和 standard-normal noise draw，只改变 noise scale。"
+    },
+    "design_principles": [
+      "方向相反但结构对称的 family 可在结构学习阶段使用 canonical representative，direction 在后续单独恢复。",
+      "SNR 是 signal variance 与 noise variance 的派生比例，不应被误写成独立 shape label。",
+      "Null 不具有有意义的 SNR，必须使用独立 realization。",
+      "mild、standard 和 strong 用于检验结构强度变化与规则稳定性。",
+      "degeneration zones 是重要的 boundary cases，不应仅因难分类而全部删除。",
+      "每个 downstream path 共享同一上游 scatterplot data，不能为了 metrics path 与 raw-data path 分别制造不一致的数据定义。"
+    ]
+  },
+  "metrics_and_methods": {
+    "currently_used_for_routing": [
+      "MIC",
+      "Pearson r",
+      "Spearman rho",
+      "power-law exponent b",
+      "first derivative pattern",
+      "second derivative pattern"
+    ],
+    "currently_diagnostic_or_supporting": [
+      "distance correlation",
+      "MCN",
+      "MAS",
+      "MEV",
+      "LOWESS diagnostics",
+      "GAM diagnostics",
+      "bin-based slopes and spread summaries",
+      "R-squared",
+      "cross-validated R-squared",
+      "NRMSE",
+      "Delta BIC",
+      "Runs test"
+    ],
+    "interpretation_constraints": [
+      "MIC 是 general dependence indicator，但不单独编码 relationship type。",
+      "Pearson 与 Spearman 在当前方案中承担 operational gates，不是完整的 shape description。",
+      "power-law exponent 适合确认 linear, concave and convex tendency，但不能独立识别所有 complex shapes。",
+      "derivative classification 必须限制在可靠 interior domain，并显式处理 numerical instability。",
+      "metric 数值差异不自动等于科学上显著或可解释的结构差异。"
+    ]
+  },
+  "deprecated_or_superseded": [
+    {
+      "item": "以 Delta/sigma 重复随机试验为主线，先逐属性验证 metric 敏感性，再进行 fingerprint comparison 或 ML",
+      "status": "superseded_as_core_method",
+      "current_treatment": "可作为历史探索或局部 robustness 思路，但不再作为当前研究框架的核心叙事与执行顺序。"
+    },
+    {
+      "item": "把完整 metric fingerprint 直接与预设 case 做 unweighted Euclidean matching",
+      "status": "not_current_primary_method",
+      "reason": "容易受到无关 metrics、尺度差异和结构混杂影响。"
+    },
+    {
+      "item": "把人工标注拟合出的 family-specific fuzzy ranges 当成普适 MIC 定义",
+      "status": "rejected",
+      "reason": "不同 family 的可感知范围重叠，且人工结果混合了 perceptual uncertainty 与 definition disagreement。"
+    },
+    {
+      "item": "让 Delta BIC、Runs test 或 R-squared 决定 Simple-path 的主路由",
+      "status": "removed_from_primary_routing",
+      "current_treatment": "只保留为 fit diagnostics 或平行比较。"
+    },
+    {
+      "item": "宣称当前 Simple-path 已经区分 S-curve 与 Threshold",
+      "status": "not_supported",
+      "current_treatment": "当前只做 coarse shape classification，Threshold 留给 Complex structural decomposition。"
+    }
+  ],
+  "open_questions": [
+    "如何为 Complex path 建立稳定的 Branching、Threshold 和 Turning-point 检测算法。",
+    "Simple versus Complex 的 correlation gate 在不同 sample size、x distribution、spread pattern 和真实 ESM 数据上是否稳定。",
+    "MIC 0.6 与 0.8 working thresholds 对研究结论的敏感性如何。",
+    "如何在不丢失 localized relationship 的前提下控制第一层 screening 的 false positive 与 false negative。",
+    "如何把 synthetic hierarchy 转移到真实 ESM scatterplots，并显式识别 out-of-distribution relationships。",
+    "如何处理多种结构共存，以及递归分解后的 uncertainty propagation。",
+    "如何将 direction、strength、spread 和 heteroscedasticity 作为附加属性接入当前 structural hierarchy。",
+    "人工评审应在 pipeline calibration、external validation 和 result audit 中分别承担什么角色。"
+  ],
+  "working_style": {
+    "communication": {
+      "default_language": "中文",
+      "technical_terms": "保留必要的 English terminology",
+      "tone": [
+        "直接",
+        "简洁",
+        "客观",
+        "高信息密度",
+        "不使用安慰式措辞代替分析"
+      ],
+      "editing_preference": "优先做 targeted edits，不在未要求时重写整篇内容。",
+      "correction_handling": "用户指出错误时直接核查并修正，不为旧答案辩护。",
+      "prose_preferences": [
+        "避免 em dash",
+        "避免不必要的 colon",
+        "避免空泛拔高",
+        "避免重复结论",
+        "短句优先",
+        "概念边界要明确"
+      ]
+    },
+    "reasoning": [
+      "先给结论，再说明支持结论的证据和限制。",
+      "明确区分事实、当前 working assumption、推断和尚未验证的设想。",
+      "发现逻辑冲突时应指出，而不是顺着既有表述继续扩写。",
+      "评价方法时同时检查 definition、identifiability、validation、transferability 和 interpretability。",
+      "不因为结果来自已有代码就默认其科学含义正确。",
+      "方案更新后，以最新明确确认的结构为准，旧方案只能标为历史版本。"
+    ],
+    "coding": [
+      "提供完整可运行代码，包括 imports、paths、data loading、validation、computation、visualization 和 export。",
+      "不能假设 notebook 中已有变量存在。",
+      "保留随机种子、case ID、source ID 和关键参数，确保可追踪与可复现。",
+      "长任务采用 resumable outputs，并在合并前检查 schema、重复 ID 和缺失 case。",
+      "不静默覆盖重要输出，除非有明确 overwrite switch。",
+      "先做 smoke or pilot validation，再执行 full run。",
+      "代码注释解释 scientific intent 和 boundary condition，不只复述语法。",
+      "分析流程通常按 data ingestion、metric computation、visualization、interpretation 和 export 排列。"
+    ],
+    "visualization": {
+      "general": [
+        "白色背景",
+        "四条 spines 均可见",
+        "grid color 0.82",
+        "axis below data",
+        "关闭 minor ticks",
+        "图例尽量放在 figure bottom center",
+        "颜色含义在整个项目中保持一致"
+      ],
+      "scatterplot_reference": {
+        "typical_figsize": "approximately 17 by 8",
+        "dpi": 180,
+        "scatter_size": 3,
+        "scatter_alpha": 0.45,
+        "scatter_linewidth": 0,
+        "scatter_subsample": "approximately 30000 points for display only",
+        "binned_median": "white halo linewidth 4.2 under colored line linewidth 2.4"
+      },
+      "integrity_rules": [
+        "visual smoothing 不能替代原始数据。",
+        "repeat variability 应显示 mean plus or minus SD 或保留 individual cases。",
+        "颜色分级必须在 continuous score 计算之后进行。",
+        "不得为了获得单调图形而修改原始人工标签。"
+      ]
+    },
+    "academic_writing": {
+      "english_style": [
+        "natural",
+        "precise",
+        "concise",
+        "professional",
+        "avoid inflated claims"
+      ],
+      "argument_structure": "Problem to methodological gap to proposed solution to validation to limitations to contribution",
+      "paper_analysis_protocol": [
+        "bird's-eye summary",
+        "section-by-section and figure-by-figure analysis",
+        "method reconstruction",
+        "Problem-Method-Experiment-Conclusion logic chain",
+        "Need-Root-Solution-Cost evaluation",
+        "plain-language explanation"
+      ],
+      "citation_rule": "不能仅凭记忆捏造来源、原文或页码，必须核对文献。"
+    }
+  },
+  "assistant_behavior": {
+    "use_latest_scheme_by_default": true,
+    "do_not_reintroduce_deprecated_core_method": true,
+    "ask_before_major_reframing": true,
+    "flag_outdated_files_or_assumptions": true,
+    "preserve_user_files_and_unrelated_changes": true,
+    "default_response_pattern": [
+      "结论",
+      "关键依据",
+      "限制或未决问题",
+      "必要时给出下一步"
+    ]
+  }
+}

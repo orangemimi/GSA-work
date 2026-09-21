@@ -1,0 +1,85 @@
+sa variables explain more (han 87% of ET anomalies i 2000-2022, demonstrating robustness
+
+saa of our method
+
+328 We quantified contributions of the three drivers to global ET trends using a Coneralized
+
+528 Additive Model (GAM) (78) coupled with SHapley Additive exPlanations (SHAP) (28,
+
+527 79, 80). The approach of GAM coupled with SHAP ensures an interpretable
+
+528 decomposition of the ET response to individual predictors while accounting, for nonlinear
+
+529 Sependencies. Prior to applying the GAM and SITAP, we first standardized all inputs
+
+530, (XP, i = 1,2, -+,8) and BT (ET*"™) time series using:
+
+4 rrorm — XH ag prpnorm — Ear
+
+531 xP a? d ET" mae @®
+
+532 where jax and ier are the long-term means of driver X; and ET, respectively; oy,and
+
+533 Gpy are the standard deviation of driver X; and ET, respectively; n is the total number of
+
+534 inputs. This normalization casures that all variables are dimensionless, improving stability
+
+535 of the following analysis. We then applied for a collinear screening to ensure the
+
+536 reliability and interpretability of our results, For the collinearity analysis, the Variance
+
+537 Inflation Factor (VIF) for all drivers at the basin scale was calculated (81). Drivers with
+
+S38, VIF > 5 were removed and all retained variables satisfied VIF < 5. If there is only one
+
+339 driver remaining after VIF filtering, the two drivers with the highest interannual variances
+
+540 were selected to ensure robustness in attribution.
+
+sal After these two processes, we implemented GAM and SHAP analysis. In the GAM model,
+
+542 annual ET is taken as a function of multiple climate and land surface predictors:
+
+543 ET = Po t+ DE fio t+e @)
+
+344 where ET is the predicted annual ET for a basin, f;(-) represents the smooth function of
+
+345 predictor X, (eg., Ta LAD, fo is the intercept term, ¢ is the residual error, and 7 is the total
+
+546 number of predictors (e.g., three used here).
+
+5H SHA values (i provide 2 game-theoretic estimate of each predictor’s impact:
+
+548 ET = bo + Dhabi ©
+
+49, where ¢; represents the contribution of driver Xj to ET, go is the baseline ET prediction. To
+
+350 analyze long-term trends, we calculated SHAP values obtained using the moving annual
+
+551 window and for each predictor X.
+
+552 To determine trends of the SHAP values, we apply Sen’s slope estimator to the time series
+
+553, of moving annual SHAP values:
+
+554 $1 = mean (M88), ve, < ty ©
+
+555 where 5} represents the trend of SHAP values for driver Xi, 2 and 11 are two consecutive
+
+556 time points with  - th representing the time interval (e.g., one month) between them. The
+
+557 relative contribution C; of each driver is finally computed as:
+
+558 6. = spt 100% o
+
+359 This formulation ensures that the dominant drivers of ET are identified based on their
+
+560 contribution to long-term ET trends.
+
+561 Emergent constraint approach
+
+562 ‘We employed the emergent constraint (EC) framework, a widely used approach in Earth
+
+563 sciences (23, 36-38), to reduce uncertainties in future projections of ET. This approach
+‘Seienoe dibances ———————~—~—CMaupp Tops ———SCSCSCS*~S~S~S*« gO
+

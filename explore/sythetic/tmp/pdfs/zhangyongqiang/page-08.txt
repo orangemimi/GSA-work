@@ -1,0 +1,101 @@
+332 resolution, There existed LI-month continuous and 24-month isolated GRACE data gaps
+
+333 during the transition between the two satellite missions from July 2017 to May 2018. For
+
+334 the missing data, we used an imovative transformer-based deep learning model for data
+
+335 gap-filling, (63), which strongly improved AS gop filling in atid regions, indicated by
+
+336 11-8-42,3% reductions in root mean squate error, compared to traditional deep learning,
+
+37 approaches (64, 65). We acknowledge the signal leakage of GRACE data in small basins
+
+338 and conducted a comparison between the AS values obtained from the original and two
+
+339 state-of-the-art downscaled products (66, 67). The results showed high consistency
+
+340 ‘between the two, with an R? of 0.98 or higher (fig. 89). Furthermore, we tested the
+
+341 training and cross-validation results of our machine learning model derived from both AS
+
+342 dataseis and found that using the downscaled AS did not yield noticcably better outcomes
+
+343 (figs. $10-S11). Therefore, we used the AS results mentioned above for the remainder of
+
+aaa the analysis.
+
+343 For Q data, we used monthly streamflow data obtained from six sources: (i) the Global
+
+346 Runoff Data Centre (GRDC, located in Germany, bttp:// https://grde.bafg.de/; last
+
+347 accessed 03 March 2025); (ii) the U.S. Geological Survey (USGS) National Water
+
+348 Information System and Geospatial Attributes of Gages for L:valuating Streamflow
+
+349 (GAGES)-II database (https://wwww.usgs.cov/data/statistical-daily.streamflow-estimates-
+
+350 ‘gages-ii-non-reference-streameages-conterminous-united; last assessed 28 February
+
+351 2025); (iii) the Australian Burcau of Meteorology (http://www.bom.gov.au/water/hrs/; last,
+
+352 accessed 01 February 2025); (iv) the Chinese River Sediment Bulletin
+
+353, (http://www. irtces.orginszx/cbw/hinsgb/A$50406index_Lhtm; last accessed on 25
+
+354 November 2024); (v) the Mekong River Commission (hitps://www mremekong.org/; last
+
+355 accessed on 03 March 2025); and (vi) the CAWATERinfo dataset for Central Asian rivers
+
+336 (http://www cawater-info.net/bd/index_e.htm; last accessed on 01 March 2025). To meet
+
+357 our research requirements, we established two criteria to select high-quality streamtflow
+
+358 data: (a) the river basin area is larger than 30,000 km? to minimize the uncertainty of the
+
+359 coarse resolution of GRACE data (13); (b) there are not more than 13 months of
+
+360 observations missing in the period from Jan 2003 to Dec 2023 (table $2), making sure
+
+361 there are at least two gap-ftee moving-average years used for model training; and (c) the
+
+362 volume of water transferred across basins must be less than 2% of the mean annual runoff
+
+363 in both the donor and receiving basins. Consequently, the Colorado River basin was
+
+364 excluded from our analysis because more than 10% of its runoff was transferred out (68).
+
+365 In contrast, its two receiving basins, including the Mississippi River basin and the Rio
+
+366 Bravo basin, were retained, as the transferred water from the Colorado River basin
+
+367 ‘accounts for only 0.16% and 1.47% of their respective mean annual runoff. For the
+
+368 ‘Yangtze River basin, water transferred out via the South-to-North Water Diversion Project
+
+369 was added to the observed streamflow at its outlet gauge in Equation (1) (table $3). The
+
+370 receiving basin, the low Hai River basin, was not included in the analysis. Ultimately, we
+
+371 selected 183 large river basins for training the machine-learning model, which accounted
+
+372 for 47.1% of global land area (excluding Greenland and Antarctica). The basin ranges
+
+373 from 30,665 ku? to 4,702,291 km?, with 10%, 50%, and 90" percentiles of 37,690 km”,
+
+374 84,381 km, and 843,262 km?, respectively (fig. $1). Furthermore, there are 90% basins
+
+375 having more than 100 months data available.
+
+376 ‘We estimated basin ET at an annual time scale, We used the moving window approach to
+
+377 estimate the annual ET from January 2000 to January 2022. The January 2000 anmual BT
+
+378 means the period of January 2000 ( December 2000, the February 2000 annual ET means
+
+379 the period of February 2000 to January 2001, and so on to the end of the period being
+
+380 Tanuary 2022 to December 2022. Pr and Q were aggregated at cach of the annual slols,
+
+381 while AS is calculated as the difference between terrestrial water storage of-a given month
+Science Advances “Manuscript Template Page 8 0f20
+

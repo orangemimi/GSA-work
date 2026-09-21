@@ -1,0 +1,49 @@
+so leverages the relationship between observable short-term trends (2000-2022) and long-
+565 term future changes (2025-2050 relative to 1980-2014) across an ensemble of ESM. The
+566 underlying physical basis for this constraint is that models exhibiting realistic historical
+567 ET trends are more likely to produce reliable future projections.
+$68 For cach ESM, we calculated hemispheric and global ET trends during 2000-2022 using,
+569 Sen's slope estimator. These trends served as the predictor variable (x), while the
+570 corresponding future ET changes (AET) represented the predictand (y). A linear
+S71 regression model y = fw + Bix was fitted to the ESM ensemble, Observed ET trends (xots +
+sn 1 $TDess) were then usod to consirain future AET projections through the relationship:
+3 9 ~ Bot Pixote ®
+sm with total uncertainty 5 = V (STDers” + RMSE*), where RMSE is the regression root
+375 ‘mean square error from ESMs output relationship. The reasoning for Equation 8 is that the
+576 STD generated from observation-constrained trend in historical period of 2000-2022 is
+517 independent from the error produced from ESMs scatter plotting (23). Therefore, their
+58 total uncertainty can be combined by STDats and RMSE (82).
+579 ENSO’s influence on ET anomalies
+580 ‘We quantified ENSO’s impact on ET anomalies using the Nii 3.4 index (2000-2022)
+581 (35). Strong ENSO events were included (|Nifio 3.4| > 0.5). Pearson correlations were
+582 used to identify the relationship between ENSO and annual ET after anomaly calculation
+583 at basin and hemispheric scales.
+set Trend analysis and significance test
+585 For all trends analysis in this paper, we applied the Sen's slope estimator and the Mann-
+586 Kendall (MK) test. Sen's slope provides a robust estimate of the trend magnitude, while
+387 the MK test evaluates the statistical significance of the trend. Trends were classified as,
+S88 increasing, decreasing, or no trend based on the slope dircotion and significance levels (P
+589 < 0.05). We used the ‘mean’ instead of the ‘median’ in Equation 6 to estimate trends,
+590 ensuring that the trends are mathematically balanced — that is, the sum of area-weighted
+391 hemispheric ET trends equals the global trend
+592
+593 References
+sm, Intergovernmental Panel on Climate Change (IPCC) in Climate Change 2021 — The
+595 Physical Science Basis: Working Group I Contribution to the Sixth Assessment Report of
+596 the Intergovernmental Panel on Climate Change, IPCC, Ed. (Cambridge University Press,
+597 Cambridge, 2023), pp. 1055-1210.
+598 2. C.H. Akhoudas, J.-B. Salle, G. Reverdin, F. A. Haumann, E. Pauthenet, C. C. C.
+599 Chapman, F. Margirier, C. Lo Monaco, N. Metzl, J. Meilland, C. Stranne, Isotopic
+600 evidence for an intensified hydrological cycle in the Indian sector of the Southern Ocean.
+ot Nature Communications 14, 2763 (2023).
+2 3. X.Chen, L. Yuan, ¥. Ma, D. Chen, Z. Su, D. Cao, A doubled increasing trend of
+03 ‘evapotranspiration on the Tibetan Plateau. Science Bulletin 69, 1980-1990 (2024).
+4 4, N.Ma, Y. Zhang, Increasing Tibetan Plateau terrestrial evapotranspiration primarily
+605 driven by precipitation. Agricultural and Forest Meteorology 317, 108887 (2022).
+06 5. —-V.B.P. Chagas, P. L. B. Chaffe, G. Blocsch!, Climate and land management accelerate
+or ‘the Brazilian water cycle. Nature Communications 13, 5136 (2022).
+6086. P. J. Durack, S. E. Wijffels, R. J. Matear, Occan Salinities Reveal Strong Global Water
+9 Cyele Intensification During 1950 to 2000. Science 336, 435-458 (2012).
+
+“Siewedivaness Wantage Tempe —————SCSCSCSCS~S~S~S*~*« TWF
+

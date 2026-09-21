@@ -1,0 +1,130 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
+  <diagram id="conditional-dip-multiscale" name="Conditional Dip Test">
+    <mxGraphModel dx="1557" dy="1172" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="&lt;b&gt;Conditional Dip Test for Branch Detection&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=26;fontColor=#1F1F1F;" parent="1" vertex="1">
+          <mxGeometry x="350" y="20" width="900" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="settings" value="&lt;b&gt;Set the number of bins&lt;/b&gt;&lt;br&gt;n&lt;sub&gt;bins&lt;/sub&gt; = 20" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="474" y="75" width="649" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="partition" value="&lt;b&gt;Partition the X-range into 20 quantile bins&lt;/b&gt;&lt;br&gt;B&lt;sub&gt;1&lt;/sub&gt;, B&lt;sub&gt;2&lt;/sub&gt;, …, B&lt;sub&gt;20&lt;/sub&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="474" y="165" width="649" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="per_bin_group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9E9E9E;strokeWidth=2;dashed=1;dashPattern=6 6;arcSize=7;" parent="1" vertex="1">
+          <mxGeometry x="129" y="270" width="1339" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="per_bin_label" value="&lt;b&gt;Repeat within every X-bin&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;verticalAlign=middle;fontSize=17;fontColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="179" y="254" width="269" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="observed_label" value="&lt;b&gt;Observed data in bin j&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=17;fontColor=#2F5597;" parent="1" vertex="1">
+          <mxGeometry x="189" y="292" width="299" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="null_label" value="&lt;b&gt;Null simulation&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=17;fontColor=#B45F06;" parent="1" vertex="1">
+          <mxGeometry x="1089" y="292" width="299" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="observed_y" value="&lt;b&gt;Observed Y values within bin j&lt;/b&gt;&lt;br&gt;Y&lt;sub&gt;j&lt;/sub&gt; = {y&lt;sub&gt;i&lt;/sub&gt; : x&lt;sub&gt;i&lt;/sub&gt; ∈ B&lt;sub&gt;j&lt;/sub&gt;}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="284" y="330" width="349" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="observed_ecdf" value="&lt;b&gt;Construct the ECDF&lt;/b&gt;&lt;br&gt;F&lt;sub&gt;n,j&lt;/sub&gt;(y)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="284" y="420" width="349" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="observed_dip" value="&lt;b&gt;Compute the observed Dip&lt;/b&gt;&lt;br&gt;D&lt;sub&gt;obs,j&lt;/sub&gt; = inf&lt;sub&gt;G∈𝒰&lt;/sub&gt; sup&lt;sub&gt;y&lt;/sub&gt; |F&lt;sub&gt;n,j&lt;/sub&gt;(y) − G(y)|" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="284" y="510" width="349" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="simulate" value="&lt;b&gt;Generate B random samples&lt;/b&gt;&lt;br&gt;Each sample: n&lt;sub&gt;j&lt;/sub&gt; values from U(0,1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="964" y="330" width="349" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="sim_ecdf" value="&lt;b&gt;Construct an ECDF&lt;/b&gt;&lt;br&gt;for each simulated sample" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="964" y="420" width="349" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="sim_dip" value="&lt;b&gt;Compute each simulated Dip&lt;/b&gt;&lt;br&gt;D&lt;sub&gt;1,j&lt;/sub&gt;, D&lt;sub&gt;2,j&lt;/sub&gt;, …, D&lt;sub&gt;B,j&lt;/sub&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="964" y="510" width="349" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="compare" value="&lt;b&gt;Compare D&lt;sub&gt;obs,j&lt;/sub&gt; with the simulated Dip distribution&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="549" y="615" width="499" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="pvalue" value="&lt;b&gt;Calculate the bin-level p-value&lt;/b&gt;&lt;br&gt;p&lt;sub&gt;j&lt;/sub&gt; = [1 + #{D&lt;sub&gt;b,j&lt;/sub&gt; ≥ D&lt;sub&gt;obs,j&lt;/sub&gt;}] / (B + 1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="549" y="695" width="499" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="p_decision" value="&lt;b&gt;p&lt;sub&gt;j&lt;/sub&gt; &amp;lt; 0.05?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="689" y="770" width="219" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="sig_bin" value="&lt;b&gt;Significant bin&lt;/b&gt;&lt;br&gt;I&lt;sub&gt;j&lt;/sub&gt; = 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="349" y="770" width="219" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="nonsig_bin" value="&lt;b&gt;Non-significant bin&lt;/b&gt;&lt;br&gt;I&lt;sub&gt;j&lt;/sub&gt; = 0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="1029" y="770" width="219" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="fraction" value="&lt;b&gt;Calculate the proportion of significant bins&lt;/b&gt;&lt;br&gt;f&lt;sub&gt;sig&lt;/sub&gt; = Σ&lt;sub&gt;j&lt;/sub&gt; I&lt;sub&gt;j&lt;/sub&gt; / 20" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="474" y="880" width="649" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="fraction_decision" value="&lt;b&gt;f&lt;sub&gt;sig&lt;/sub&gt; ≥ 15%?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=19;" parent="1" vertex="1">
+          <mxGeometry x="674" y="975" width="249" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="branch_vote" value="&lt;b&gt;Branching detected&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="299" y="980" width="259" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="nonbranch_vote" value="&lt;b&gt;No significant evidence&lt;br&gt;of branching&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=17;" parent="1" vertex="1">
+          <mxGeometry x="1039" y="980" width="259" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="e_settings_partition" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="settings" target="partition" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_partition_observed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="partition" target="observed_y" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_partition_sim" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="partition" target="simulate" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_observed_ecdf" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="observed_y" target="observed_ecdf" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_observed_dip" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="observed_ecdf" target="observed_dip" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_sim_ecdf" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="simulate" target="sim_ecdf" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_sim_dip" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="sim_ecdf" target="sim_dip" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_observed_compare" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="observed_dip" target="compare" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_sim_compare" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="sim_dip" target="compare" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_compare_pvalue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="compare" target="pvalue" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pvalue_decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="pvalue" target="p_decision" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_p_yes" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;" parent="1" source="p_decision" target="sig_bin" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_p_no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;" parent="1" source="p_decision" target="nonsig_bin" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_sig_fraction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="sig_bin" target="fraction" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nonsig_fraction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="nonsig_bin" target="fraction" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_fraction_decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;" parent="1" source="fraction" target="fraction_decision" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_fraction_yes" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;" parent="1" source="fraction_decision" target="branch_vote" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_fraction_no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;fontStyle=1;labelBackgroundColor=#ffffff;" parent="1" source="fraction_decision" target="nonbranch_vote" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

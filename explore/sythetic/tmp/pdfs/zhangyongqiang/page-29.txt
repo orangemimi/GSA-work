@@ -1,0 +1,22 @@
+= D
+BS  Gaceenes e Y Bumiotaaey
+io ag te ~
+Pa 2e Pa en BS
+8 oa Fagl 2 .
+ir et es ae | ee ae ee
+C__Osseved Teen ear) Fo ened er rend trmyear?)
+ic ee =
+Bu age ea Bot dager 4
+is ggg, Ea, pggee es
+59 eS | Ll. oe
+815 rs . * ap
+2, - a
+atk ee ae ee ae
+ceasisdeT ersten a) ceases err ini
+Fig, SL.
+Same as those in Fig. $5, but for ET derived from downscaled JPL-GRACE dataset by Gou
+and Soja (67). Water-balance obscrved ET is obtained from the combination of downscaled JPL-
+GRACE terrestrial storage change and three precipitation products: A, CRU; B, GPCP; and C,
+MSWEP. (A-C) Training mode, (D-F) Cross-validation mode.
+14
+

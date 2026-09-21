@@ -1,0 +1,322 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 2] (0:00 - 1:09)
+pattern and the distribution, conditional distribution pattern, because for this plot many, I think one of the reasons is that it has very strong conditional distribution pattern and it makes the loss regression, the r square is very low. But it can also show that, for example, this kind of model are more spread than other models, like in wet and warm zone, like this plot and this plot, although they look very similar like in Huxley plot. Do you have some suggestions for this direction or this method?
+
+[说话人 1] (1:12 - 2:35)
+Yeah, I don't know, this is not completely consistent with, I'm wondering if here we are perhaps being a bit overconfident in the relationship, like the ones that are in blue and red, you know, visually, I would say that they are very far from the synthetic case studies that you've been working on so far. They are extremely noisy, so I'm wondering if there is a way to capture that actually, you know, there is a quite a bit of uncertainty in this in this classification, no? Yeah, I wonder if you were to compare these numbers here of, you know, R2 Pearson with the numbers that you get, for example, on the synthetic data set, can we define, you know, also, you know, I would be interested in knowing what's the R2 for, you know, a synthetic data set where we see very clearly the pattern, would it go up in the region of 08, 09?
+
+[说话人 2] (2:37 - 2:43)
+Sorry, what do you mean? Do you mean that we can use the Pearson to see how this works?
+
+[说话人 1] (2:43 - 3:08)
+No, not the Pearson, the R2. Oh, the R2, yeah. Yeah, what I'm saying is, it seems to me, from this example, it seems to me that, you know, the R2 value that we are allowing to be used as an indicator of a functional relationship.
+
+[说话人 2] (3:09 - 3:09)
+Yeah.
+
+[说话人 1] (3:09 - 3:50)
+I'm happy with your choice and the fact that you say, okay, you know, there is a relationship here, but maybe it would be useful to know, like, what is a threshold that you probably don't rarely achieve on real world data, but that you could achieve occasionally or in synthetic data that tell us, okay, this is a very clear relationship now, like, you know. Yeah. For example, if we go to the one before, can we go to the one before?
+
+Yeah. So, here R2 is easily in the 90s, no?
+
+[说话人 2] (3:51 - 3:52)
+09. Yeah.
+
+[说话人 1] (3:53 - 3:53)
+Yeah.
+
+[说话人 2] (3:55 - 4:32)
+Not exactly. For example, this one is like 0.5 and this one is 0.68 and this one is 0.8. It's very different. I think it will also be inflected by how the spread, whether the spread is very large.
+
+If the spread is very large, the R2 will be low. I also do this R2 with synthetic data. Do you want to say it?
+
+[说话人 1] (4:32 - 4:59)
+Basically, what I'm saying is, I'm wondering if, now this is going to make it complicated, but if on top of the, so you have yellow is linear, right? Yeah. Yeah.
+
+And then if we go to the next page, you have, yeah, red is saturation and blue is the reverse hue.
+
+[说话人 2] (5:00 - 5:00)
+Yeah.
+
+[说话人 1] (5:00 - 5:54)
+Yeah. I'm also wondering if we should have a way visually, maybe with the intensity of the color to say, okay, this is saturating and because R2 is 0.37 is pale red. Yeah.
+
+But if R2 was 0.77, yeah, you know, intense red, you know, to give us a sense of also, you know. Yeah. How strong these things are coming out, you know.
+
+[说话人 2] (5:54 - 6:09)
+Yeah. I understand. So you mean that actually I can classify all those regression curves and I can also use the different strengths of color to see where they are.
+
+Yeah.
+
+[说话人 1] (6:09 - 7:03)
+Can we go back again to the flowchart? Flowchart? Yeah.
+
+This one? Yeah. So, yeah, this one.
+
+Yeah. I think it would be good if, you know, I'm wondering how we also communicate that, you know, you have every one of those leaf now, linear, saturation, acceleration, zero, hue, shape, complex, weak. Well, weak is weak.
+
+Okay. But the others, I wonder if we should also have a simple statement of the confidence in that classification if you want. Yeah.
+
+Yeah. Because then again, thinking about comparing different models.
+
+[说话人 2] (7:04 - 7:04)
+Yeah.
+
+[说话人 1] (7:04 - 7:33)
+Yeah. Then says linear and the other says acceleration. But both of these classifications are mild.
+
+Yeah. Yeah. If instead a model says linear very strongly and the other one says acceleration very strongly.
+
+[说话人 2] (7:33 - 7:34)
+Yeah.
+
+[说话人 1] (7:34 - 7:41)
+Then, you know, then those models are really giving us a different response. Yeah.
+
+[说话人 2] (7:42 - 7:42)
+Yeah.
+
+[说话人 1] (7:42 - 9:01)
+Because ultimately what we want to do, remember, is to explore a lot of data and then we'll have to think about also how we summarize the differences between models, because, you know, in an ideal world, I imagine in the end we want to have some kind of dashboard with a summary that says, okay, these two models are very similar for this relationship, but they are fundamentally different for this one. Yeah.
+
+Yeah. I understand. And when it comes the moment to do that summary, I am happy to, you know, close an eye if the model is different on classification with low confidence, whereas I really would like to have the spotlight on those cases where the model different from another very confident relationship of another model, no?
+
+So, yeah, I think we will have to wait basically, maybe, you know, in measuring then the difference across models, we might use R2 as a way also to wait, you know, how strong is that difference? Are they really in conflict with one another or they are both a little bit undecided and then, you know.
+
+[说话人 2] (9:02 - 9:23)
+Yeah, I also think so. I think this is a very good idea to analyze all those regression shape and to give, to using the R2 as the confidence of each classification. And maybe next week I can also do this.
+
+Yeah.
+
+[说话人 1] (9:23 - 10:01)
+Maybe visually, you know, you could have something to colour things, you know, relative to even, you know, maybe not with a threshold, with a gradient, no? So that red becomes more intense with R2 or less intense with R2. And then when it comes to the moment of summarizing the comparison, I think we have to think about a way to include that piece of information so that we really highlight where, you know, the behaviour diverge.
+
+And there is a high confidence by each model, but just, you know, they are confident about different things.
+
+[说话人 2] (10:02 - 10:31)
+Yeah. Yeah. I will write down and give some notes.
+
+And what I also think we may have the confidence is, as last week, do you remember I have give the linear, near linear score, but also suggest a way it could keep it simple. But actually, we can see the plots, they are likely very not, not gives a very different difference.
+
+[说话人 1] (10:33 - 10:37)
+Yeah, maybe. Let me see. You mean Pearson?
+
+[说话人 2] (10:39 - 11:00)
+I mean, linear or the situation or the interverted, actually, they are not very different. If we need to add the confidence of each classification, we can also talk with Tosin about this detailed classification.
+
+[说话人 1] (11:02 - 11:28)
+Yeah, I think, you know, they don't look very different, because the classification in itself is not super strong, no? Yeah. Yeah, it's based on the shape of that approximator.
+
+Yeah. But that approximator is a very rough approximator of the data, because R2 is good, but not excellent, no? So, yeah.
+
+[说话人 2] (11:28 - 12:05)
+Maybe we can also talk with Tosin about whether we need the exact classification, or we can give the sequence of the classification. And these are some other results of the classification. For example, I think your suggestion would be very great if I applied it into these results, because most of them are great, because their R2 is very small, and the only two, because R2 is larger than 0.385. Yeah, yeah.
+
+[说话人 1] (12:05 - 12:18)
+But now, for example, that one is 0.36, yeah, which is just above. And in fact, you know, it's not fundamentally that different from the one next to it. Yeah.
+
+[说话人 2] (12:19 - 13:36)
+Yeah. And this one is very special, because only the R2 is very low, but others are large. Yeah.
+
+And this one is SNO4 with total runoff, and I will do the adjustment of your suggestion. Yeah. And this is what I do with synthetic data, because I have used the current decision tree to see.
+
+And we can see that most of the simple relationships could be performed very well. Only one case of the situation be separated into non-monotonic. But what's something special is for the branch-like synthetic data, do you remember?
+
+That branch, the two line. And most of them are separated into the R2 is very low, but some branch-like larger than classified into the monotonic. And I think this also means that we could see the different scatter plots into two perspectives.
+
+The first is a mean response pattern, another is conditional distributional pattern.
+
+[说话人 1] (13:37 - 13:44)
+Okay, do you have these ones visualized for me to better understand what is the problem?
+
+[说话人 2] (13:44 - 13:49)
+Yeah, show me that how this R2 and the regression.
+
+[说话人 1] (13:49 - 13:55)
+So these are the cases where the classification is wrong? Yeah.
+
+[说话人 2] (13:56 - 14:08)
+Because the variable, the R2 is larger than 0.35. And they are big classified into the monotonic.
+
+[说话人 1] (14:13 - 14:31)
+So, okay. So, the problem with this one is that the lowest interpolator interpolates in between, but it's still sufficiently close to the data point. So the R2 is still lower than, higher than 0.35. And so they get misclassified.
+
+[说话人 2] (14:31 - 15:04)
+Yeah. So, in my plan, not discussed with you before, and I think maybe we can see into the two leaf. The first is whether it has a mean response relationship, another is whether it has conditional distribution relationship.
+
+And for this branch, we can also see whether it has a branch or the multimodal structure, or whether it has a spread pattern, because I think all of these are see the scatterplots into different perspective.
+
+[说话人 1] (15:09 - 15:38)
+I don't know. So, for sure, you need to recover the information about branches. Yeah.
+
+I think. Yeah. So, you know, if I ignore what you added on the right hand side, you know, you're, you're right that on the left hand side, you are missing the possibility for the classificator to identify branches.
+
+[说话人 2] (15:39 - 15:39)
+Yeah.
+
+[说话人 1] (15:39 - 15:45)
+Yeah. So that's for sure. So that I think you need to re-include.
+
+[说话人 2] (15:45 - 15:50)
+Yeah. So you think that the branch should be included in this.
+
+[说话人 1] (15:50 - 16:16)
+Yeah. I think we need, for sure, we need to leave, we need to give the possibility for the classificator to arrive to a leaf that says branch. Yeah.
+
+Okay. Yeah. Hello.
+
+Sorry. Hello. Yeah.
+
+Can you hear me now?
+
+[说话人 2] (16:16 - 16:17)
+Yeah. Yeah. Yeah.
+
+[说话人 1] (16:17 - 16:43)
+Okay. So I am, I think you need the branch leaf, whether you also want to know, you have also added constant, no peak, interior peak, interior valley, irregular. Yeah.
+
+Yeah. That's a lot. Okay.
+
+I'm not, I'm not sure. Yeah. If we really want all of those.
+
+[说话人 2] (16:44 - 17:07)
+Yeah. Because actually I have read some paper to analyse, they try to analyse the tail of the spread pattern. So just to see whether it's, for example, the spread pattern is increasing or decreasing.
+
+Sorry, give me a second. Okay. Yeah.
+
+Or they have peak in the central part of the scatter plot.
+
+[说话人 1] (17:12 - 17:54)
+The reason why I'm not totally convinced is because, you know, anyway, what we are saying in that case is that, no, there is, that there is an impact on one variable over the variability, the spread of the other. Yeah. And I'm not sure this is really a functional.
+
+So I don't know. I think we need to discuss also with Torsten how complex we want to go, no? And how much we want to expand the definition of functional relationship.
+
+Instead, I think branch is a different story.
+
+[说话人 2] (17:54 - 17:54)
+Yeah.
+
+[说话人 1] (17:55 - 18:03)
+Because branch is really a functional relationship simply, you know, over branches. So that one, I'm sure you need to bring back into your classification.
+
+[说话人 2] (18:04 - 18:07)
+Yeah. Okay. I will think about how to put it here.
+
+[说话人 1] (18:08 - 18:15)
+So that, you know, also, for example, when you apply to the synthetic data, yeah, you'll find those cases. Yeah. Yeah.
+
+[说话人 2] (18:15 - 18:15)
+Yeah.
+
+[说话人 1] (18:16 - 19:06)
+One other thing is if you go back to the table. Table. This table?
+
+Yeah. So I think it would be interesting to add one more column. Yeah.
+
+Here. To say not only, so here you, if I interpret right, you are telling me the number of cases when you exceed R2. Yeah.
+
+It would also be interesting to know what is the mean R2. Yeah. So that we get a grasp of when you have functional relationship that are very well, no?
+
+Yeah. When you have synthetic data set that you have produced.
+
+[说话人 2] (19:07 - 19:13)
+Yeah. I have analyzed the minimum value of R squared and the maximum.
+
+[说话人 1] (19:14 - 19:14)
+Yeah.
+
+[说话人 2] (19:14 - 19:18)
+I see, but I think nothing very special, but I will show you next.
+
+[说话人 1] (19:18 - 19:27)
+But maybe because this, in here, you are also including the data sets where you then added the noise. Yeah. That's why.
+
+[说话人 2] (19:28 - 19:34)
+So I can, maybe I can separate the different level of noise to see the how the R squared.
+
+[说话人 1] (19:34 - 19:49)
+Yeah. If you tell me, like, it would be interesting to know what's the typical R2 if you only look at the low noise categories, you know, like maybe the one with the first two level of noise. Yeah.
+
+[说话人 2] (19:50 - 19:50)
+Yeah.
+
+[说话人 1] (19:51 - 20:31)
+So we get a grasp of, okay, when we really have a very strong, visible relationship. Yeah. How much is R2?
+
+Yeah. And that is basically telling us somehow, you know, if you ever have, when we then apply to real models, if you ever reach that value of R2. Yeah.
+
+That is really not a very strong statement by the model. Yeah. On the intensity of the relationship.
+
+And if that happens with one model and not with another, then we are really, you know.
+
+[说话人 2] (20:32 - 20:32)
+Yeah.
+
+[说话人 1] (20:32 - 20:43)
+That should really be flagged. Yeah. Because we are saying there is a model and the other models don't say the same.
+
+Yeah.
+
+[说话人 2] (20:43 - 20:51)
+Yeah. Yeah. Okay.
+
+So next week I will try to figure these problems out and.
+
+[说话人 1] (20:52 - 21:05)
+Yeah. And bring in the branches. And then I think we discussed with Toast and Weather, no?
+
+Yeah. We also want all those other, other leafs. Would we use that or not, is the question.
+
+[说话人 2] (21:05 - 21:31)
+Yeah. Okay. We can also talk with Toast about whether these leafs can be separated here or just to see this, how the loss regression to in different groups to see the spread pattern.
+
+Okay. That's all. There is nothing more about my last week's work.
+
+[说话人 1] (21:31 - 22:18)
+Very good. And yeah, let's talk next week and then let's see if we need to rearrange the meetings. Yeah.
+
+Yeah. Okay. And then, yeah.
+
+And then maybe, yeah, I think we need to spend a little bit more time on nailing down the methodology and then maybe we should spend a bit of time and then maybe we could begin to think about, no? What experiments you want to run. Experiment, I mean, you know, what data sets you want to begin to.
+
+Yeah. And think about what could be the storyline for a paper or so. Yeah.
+
+[说话人 2] (22:18 - 22:19)
+Okay. Yeah. Yeah.
+
+[说话人 1] (22:19 - 22:25)
+I think the methodology is beginning to be close to be ready to be actually applied to discover new things.
+
+[说话人 2] (22:26 - 22:39)
+Yeah. In this period, I also tried to download some CMAP6 data sets because they are very huge and spend a lot of time for download. So I'm still also doing the download work.
+
+[说话人 1] (22:39 - 22:43)
+Yeah. The organization of the data sets and so. Yeah.
+
+[说话人 2] (22:43 - 22:44)
+Okay. Yeah.
+
+[说话人 1] (22:44 - 22:53)
+Yeah. Very good. And yeah, everything is well in general with you.
+
+Are you? Okay. Yeah.
+
+Okay.
+
+[说话人 2] (22:53 - 22:53)
+Thank you very much.
+
+[说话人 1] (22:53 - 22:54)
+Very good.
+
+[说话人 2] (22:55 - 22:55)
+Bye.
+
+[说话人 1] (22:55 - 22:55)
+Bye.
+
+[说话人 2] (22:55 - 22:56)
+Bye. See you.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

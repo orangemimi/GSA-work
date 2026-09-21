@@ -1,0 +1,16 @@
+# macOS metadata
+.DS_Store
+
+# Local datasets and generated data products (at any depth)
+data/
+
+# Large scientific-data and generated-array files
+*.nc
+*.npz
+*.parquet
+*.jsonl
+
+# Derived data directories
+preprocessed/
+generated_scatterplot_data/
+E_S1_output/

@@ -1,0 +1,298 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 1] (0:12 - 5:12)
+During our last discussion, I have completed this decision tree. Francesca, I would like to introduce it to you. At first, we will detect whether it has a global relationship or not based on the MIC.
+
+If MIC is larger than 0.8, it shows a strong global relationship and it can go directly to detect whether it is simple or complex. Here, we can also detect whether it has an intermediate global relationship. It means that MIC is larger than 0.6 but less than 0.8. It can also go through this path to detect whether it has a simple or complex relationship. Based on this detection, we can use Pearson larger than 0.7 to detect whether it has a simple relationship or complex relationship. Based on the simple relationship, we first use the power law fit to test whether it fits very well. We first use R-squared larger than 0.85 to detect whether it is adequate. If it is, we can go to the next path to detect whether it is linear or curvature. If it doesn't meet the power R-squared, it goes uncertain. We use coefficient minus one less than 0.05 to detect whether it is a linear group. If it doesn't, we can also detect whether it has curvature strength and detect whether it has a situation group or acceleration group. If it doesn't meet the curvature strength, it goes through the uncertain. This uncertain will go through the complex relationship.
+
+For the complex relationship, we first detect whether it has a branch or not. If it has a branch, it goes to the branch group. If it doesn't have a branch, we go to the no-branch pool to detect whether it has a different number of turning points.
+
+For the no-turning point, we also detect whether it has a multi-model. If it has a multi-model, it could be separated as a transition group. And this is the current tree.
+
+Would you like to make some comments here? And this is the output of the current tree. I think in summary, it's separated very well, except it has separated some multi-region threshold into the cubic and some threshold into oscillation.
+
+But I think it is acceptable because this is not a very common situation. And this kind of threshold also looks like it has a lot of turning points. And this is a potential extension of the within-group diagnosis.
+
+Because in the last decision tree, I have separated into the eight groups, like the linear, like the situational, like the acceleration. And for each group, we can also detect the different features, like the direction, like the slope strength, like the curvature strength. This is the within-group diagnosis.
+
+And we can also detect the spread pattern. It could be constant, increasing, decreasing, or middle-high. And we can also detect the different distribution.
+
+And this can also connect the current tree with different characteristics we discussed at the early discussion. And for this week, I mainly do the application of current tree. The purpose of this work is to use the CMAP6 models to detect different multiply variables.
+
+And with four climate zoos to characterize the relationship and assess whether the relationship are similar or not. It can be divided into two experiments. The first is within one scenario.
+
+We can detect whether the different system models in one scenario can represent very similar input and output relationships. And this is what I do this week. And another experiment is across scenarios.
+
+We can detect whether the same relationship change under different climate scenarios. And the second experiment will be done later.
+
+[说话人 3] (5:15 - 5:41)
+Sorry, so just to understand. So the first, so within one scenario, so you compare different models with the same essentially meteorological forcings. Yeah.
+
+And then instead you take the same model and you look at whether the relationship change when you look at the retrospective climate or future climate under different warming levels.
+
+[说话人 1] (5:42 - 5:43)
+Sorry, what do you mean?
+
+[说话人 2] (5:44 - 5:45)
+The cross scenario.
+
+[说话人 3] (5:46 - 5:58)
+Yeah. So scenario means basically the hydrological model is forced by climate projections under different global warming level.
+
+[说话人 1] (5:59 - 6:09)
+I think the scenario here means that because the CMAP6 have different scenarios. So the cross scenario means here.
+
+[说话人 3] (6:10 - 6:24)
+Okay. Okay, so properly the carbon concentration pathway and socio-economic pathway scenarios of climate impact studies. Okay.
+
+[说话人 1] (6:25 - 12:14)
+Okay. So CMAP6 contains one historical scenario and several future scenarios here. And the historical has a period of from the 1850 to the 2014.
+
+And the future scenarios contains from the 2015 to the 2100 years. So the time period is very different. And for each scenario, the models, the variables and the assembled members and the grid are not fully aligned across all scenarios.
+
+So we should require a large number of pre-processing and align before we do the test of our decision tree. And here I choose the historical scenario to detect whether the different models in historical scenario can have a similar relationship or not. And sorry, I also would like to mention that for the historical scenario, it contains 75 models and thousands of variables.
+
+And it is really a large, big number. So for the first detection, I would like to select some related variables because the 1000 is too much. And first I select about 70 variables and two fixed fields to do the first further analysis.
+
+And 60 models available is very, this means that for each pairing, it may contain more than 60 models available. But the number is also too much. And so I first select five models for initial analysis.
+
+The top five is the models I selected for further analysis. I just would like to do less data pre-processing because later this one also needed to do extra data processing. And I would like to do this later.
+
+The first thing I would like to do is to validate the whole decision tree. And this week I have to do a lot of work about the data processing, including batch download, selected models and variables, harmonize data, align the data and grid, and calculate 70 years climatological mean values. Because the 30 years is following the WMO climate normal convention.
+
+And I have assigned the climate to do a further analysis. And this is example data after pre-processing. This means that within each system models, each grid cell represents one special sample containing the different variables.
+
+And I here separated into five zones, the warm-wet, the warm-dry, and the cold-wet, cold-dry, and including also the land ice, like the green land. Because I separated here is because it has different physical processes with other zones. And this is the first I see through the precipitation to the total runoff theory.
+
+For each row, it represents different system models. And for each column, it represents a different zone. Here is the warm-wet zone.
+
+And here is the dry zone. And here is the wet zone. And this is the dry zone.
+
+And here is the land ice. And here is the merge of all zones. And we can see that some simple, clear and simple relationships are classified as uncertain, like this one, like this one, and this one.
+
+I have also analyzed the reasons for misclassification. Because for the simple relationship, we first use the R square larger than 0.85 to see whether it fits or not. This threshold is too strict for noisy real-world relationships.
+
+And also here, for the linear and the curvature, it has a gap here. Because this one, 0.05 to the 0.5, there is a gap here. It will make very weak curvature become uncertain and go into the complex part.
+
+So I plan to change the threshold at first. For example, I change the R square to 0.5. And here I just merge them into one threshold. This means that there will not have a gap here.
+
+Previously, we would like to separate the cubic and the S curve. Because they have very weak curvature here. So this is the main reason we previously have the gap here.
+
+But I think maybe we can have here a very continuous threshold. And then we can see whether there is real S curve or cubic be separated into the simple relationship. Would you like to have some comments here?
+
+[说话人 2] (12:17 - 12:20)
+You have revised results already?
+
+[说话人 1] (12:21 - 12:21)
+Yeah, later.
+
+[说话人 2] (12:22 - 12:28)
+Maybe let's look at the results and then comment. I'm just curious what this looks like.
+
+[说话人 1] (12:29 - 12:59)
+The difference is that when I revise the threshold, I think it goes very well. At least, after the precipitation to the total runoff detection. And we can see that for the wet-warm, it may be separated into acceleration.
+
+And here is also the acceleration. And here is also containing the linear group. This is the one output of precipitation to the total runoff.
+
+[说话人 3] (12:59 - 13:36)
+So the class uncertain has now disappeared? Sorry, what do you mean? After the correction of the threshold, before you had somewhere classified as unclear, uncertain.
+
+And now, instead, all of them get classified one way or another. And then the idea here is that you basically look at the classification you get. And look visually if you agree or not.
+
+[说话人 1] (13:38 - 13:49)
+And this blanket background is mainly based on their MIC is very low. So they do not even go to the simple path.
+
+[说话人 2] (13:51 - 14:07)
+So one thing there that might create this is that at the moment, the number of dots is how many? How many dots are there in any of these?
+
+[说话人 1] (14:07 - 14:17)
+Yes, the detailed number. And I deleted some extreme values for each zoom.
+
+[说话人 2] (14:18 - 14:24)
+Okay. But you use them in the calculation but not in the visualization. Is that what you mean?
+
+[说话人 1] (14:25 - 14:29)
+I calculated at this visualization plot.
+
+[说话人 2] (14:30 - 14:32)
+But why did you delete the outliers?
+
+[说话人 1] (14:32 - 14:48)
+Because I think that I first see the visualization of scatter plots. Some points are very far away from others. So I deleted the first percent and the 19% of these two dots.
+
+[说话人 2] (14:49 - 15:02)
+Okay, we have to think about whether that's a good idea. But there is also a huge density difference in these plots that are difficult to see from the scatter plot.
+
+[说话人 3] (15:02 - 15:20)
+But this is more because some models must have a coarser resolution than others, no? Because it seems to me that the third line, for example, has much smaller value of n across a lot of landscapes. So is that because the resolution is coarse?
+
+[说话人 1] (15:21 - 15:24)
+Yes, they have different resolution. Okay.
+
+[说话人 2] (15:24 - 15:36)
+But I mean the fact that the MIC value is sometimes very low. Yeah. Even though the line you have, what is this, a moving average now?
+
+Or what is this, the line, the black line?
+
+[说话人 1] (15:36 - 15:45)
+The black line is equal. This is like that nature of water is being equal number as a medium.
+
+[说话人 2] (15:48 - 16:00)
+But you can't see the influence of very much changing density because it looks like there is a relationship, no? But it comes up with no global relationship.
+
+[说话人 1] (16:01 - 16:09)
+So do you mean that it looks like it has a global relationship, but it doesn't have a very high?
+
+[说话人 3] (16:09 - 16:12)
+Are you looking at the wet-cold column?
+
+[说话人 2] (16:12 - 16:15)
+The wet-cold at the bottom, for example.
+
+[说话人 3] (16:16 - 16:22)
+Yeah. Also at the top, it says no global relationship, but it seems to me there is a very clear relationship, no?
+
+[说话人 2] (16:22 - 16:28)
+Exactly. So that's maybe a problem with the MIC because the R value is very high.
+
+[说话人 1] (16:28 - 16:47)
+Yeah. I think the main reason the MIC is very low because it has a lot of sample points and has a lot of noise. Because it has a lot of points here.
+
+So I think this is the main reason.
+
+[说话人 2] (16:47 - 16:49)
+Sorry, why is that a problem for MIC?
+
+[说话人 1] (16:51 - 17:03)
+The reason for the MIC is not very high here is maybe because it has a lot of points and maybe it's regarded as noise.
+
+[说话人 3] (17:03 - 17:21)
+I don't know because if you compare, for example, if you compare the top on the top row, that one, wet-cold with the one next to it, dry-warm. In both cases, you have around 4000 points, no?
+
+[说话人 1] (17:21 - 17:21)
+Yeah.
+
+[说话人 3] (17:22 - 18:07)
+So the number of points is similar. Yeah. And R is also similar and high in both cases, which corresponds to what we see visually.
+
+But the MIC in the dry-warm is much higher than in the wet-cold. Yeah. So the sample size is similar.
+
+Correlation is high in both cases. I would say there is a relationship in both cases. But one doesn't because the MIC is much lower.
+
+But I don't know how this MIC works, but it doesn't seem to be working well now.
+
+[说话人 2] (18:07 - 18:09)
+No, not in this case, no.
+
+[说话人 3] (18:11 - 18:29)
+You see, because those two, for example, you know, visually they are reasonably similar. There is spread in both cases, but not too much. And the number of points is very similar.
+
+And the correlation is high in both cases. But the MIC is very different. I don't know why.
+
+[说话人 2] (18:30 - 19:29)
+Yeah, and that's what I mean. The one thing I can imagine is because the MIC tries to break up the area, essentially the plot into different subplots, and then looks at relationship in the subplots. And the first thing that came to mind is that because on the right one, you see that in the beginning, there's a lot of wiggle.
+
+There's a little scatter, which is not there for the other one. So it seems that that might confuse this value. So it might break it up into smaller groups and say, oh, it's going up and down.
+
+You know, when actually for us, it's just a continuous relationship, you know. So I could imagine that the density differences in this wet-cold region plot are much higher than in the one left of it. And that seems to be a problem for it, which is interesting.
+
+[说话人 3] (19:29 - 19:29)
+Yes.
+
+[说话人 2] (19:30 - 19:35)
+Because that means we have a problem to using it. So in this sense, no.
+
+[说话人 3] (19:35 - 20:02)
+Yes. I also, yeah. And on a different topic also, to be honest, the bottom, the most bottom right.
+
+So it's land ice and it's the last model. I would have thought that was a bifurcation, no? Like a branching case.
+
+It's quite, visually it's quite evident. But it doesn't get picked up.
+
+[说话人 1] (20:02 - 20:36)
+I think the main reason is that it has to go through the simple path and it has been classified as a curvature poor. So it will go directly to the complex path. Because this means that the power law fits, it mainly looks like it fits okay.
+
+So it's a go directly to the simple path.
+
+[说话人 2] (20:37 - 20:43)
+Yeah. But it's another example of where sort of the classification is difficult.
+
+[说话人 1] (20:49 - 21:12)
+So maybe we can also, for example, change other criteria like MIC, such as distance co-relationship. Because in previous experiments, I have detected as a distance co-relationship sometimes have a similar effect like the MIC to see whether it works well.
+
+[说话人 2] (21:14 - 21:16)
+Sorry, what do you mean by distance co-relationship?
+
+[说话人 1] (21:16 - 21:32)
+So in the previous synthetic data set, the distance co-relationship represent a similar effect like the MIC. But it's very similar to separate.
+
+[说话人 2] (21:32 - 21:35)
+Is that a good thing? Sorry, are you suggesting to use it instead?
+
+[说话人 1] (21:35 - 21:38)
+Yeah, I suggest that we can try to use it.
+
+[说话人 2] (21:38 - 21:39)
+Because it might not have this problem.
+
+[说话人 1] (21:39 - 21:40)
+Yeah.
+
+[说话人 2] (21:40 - 21:41)
+Is that what you mean?
+
+[说话人 1] (21:41 - 21:49)
+I mean that maybe it will not fit into this situation.
+
+[说话人 2] (21:49 - 21:49)
+Yeah.
+
+[说话人 1] (21:50 - 21:53)
+Maybe we can change the MIC to other similar criteria.
+
+[说话人 2] (21:53 - 22:00)
+Yeah, I know. Because the interesting thing is that there are big differences between the models.
+
+[说话人 1] (22:01 - 22:01)
+Yeah.
+
+[说话人 2] (22:02 - 22:08)
+And that we managed to capture some of them already. So we need to capture a few more.
+
+[说话人 1] (22:08 - 22:08)
+Yeah.
+
+[说话人 2] (22:15 - 22:32)
+I mean, you could try. If you plot the density from left to right, then my guess would be that the dry-warm case is much more homogeneous or uniform than the wet-cold one, which is a lot more of the points are towards the left.
+
+[说话人 1] (22:33 - 22:38)
+Yeah, so do you mean that we can also show the density of the…
+
+[说话人 2] (22:38 - 22:41)
+Well, it's for us to understand where the difference comes from.
+
+[说话人 1] (22:41 - 22:42)
+Yeah, okay.
+
+[说话人 2] (22:44 - 23:01)
+And then I think it's the same at the bottom, because they are the bottom right, what Francesca was saying. Now, there are enough points going up that when you use R to look at it, it shows that it works quite well.
+
+[说话人 3] (23:01 - 23:01)
+Yeah.
+
+[说话人 2] (23:02 - 23:06)
+Because the other points are so small that it doesn't make that much error.
+
+[说话人 3] (23:06 - 23:07)
+Yeah.
+
+[说话人 2] (23:09 - 23:24)
+But that's interesting, no? So it's suggesting that it's still sort of the visual component is quite powerful for figuring this out.
+
+[说话人 1] (23:24 - 23:35)
+Yeah. But we can also see that each model is very different of this pairing.
+
+[说话人 2] (23:35 - 23:36)
+Yeah, yeah, yeah.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)

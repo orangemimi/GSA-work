@@ -1,0 +1,733 @@
+               Articles
+               https://doi.org/10.1038/s41559-020-1256-9
+             Thresholds for ecological responses to global 
+             change do not emerge from empirical data
+                                           1,2,3                         4                                 5,6,7                          2,3
+             Helmut Hillebrand                  ✉, Ian Donohue    , W. Stanley Harpole                         , Dorothee Hodapp , 
+                                  8                                               9                      10                             11
+             Michal Kucera , Aleksandra M. Lewandowska    , Julian Merder , Jose M. Montoya     and 
+             Jan A. Freund  12
+                                    
+             To understand ecosystem responses to anthropogenic global change, a prevailing framework is the definition of threshold levels 
+             of pressure, above which response magnitudes and their variances increase disproportionately. However, we lack systematic 
+             quantitative evidence as to whether empirical data allow definition of such thresholds. Here, we summarize 36 meta-analyses 
+             measuring more than 4,600 global change impacts on natural communities. We find that threshold transgressions were rarely 
+             detectable, either within or across meta-analyses. Instead, ecological responses were characterized mostly by progressively 
+             increasing magnitude and variance when pressure increased. Sensitivity analyses with modelled data revealed that minor vari-
+             ances in the response are sufficient to preclude the detection of thresholds from data, even if they are present. The simulations 
+             reinforced our contention that global change biology needs to abandon the general expectation that system properties allow 
+             defining thresholds as a way to manage nature under global change. Rather, highly variable responses, even under weak pres-
+             sures, suggest that ‘safe-operating spaces’ are unlikely to be quantifiable.
+                    oncepts of thresholds, tipping points and regime shifts domi-       ecosystems. We capitalize on this richness of data by combining 
+                    nate current ecological frameworks aiming to understand  available information from 36 meta-analyses, providing 4,601 effect 
+                                                                              1–4       sizes across ecosystems and pressures of global change into mul
+            Cecosystem responses to anthropogenic global change . A                                                                                           -
+             threshold corresponds to a level of environmental pressure that            tiple tests of whether these datasets—individually or aggregated—
+             creates a discontinuity in the ecosystem response to this pressure.        reveal a response pattern that indicates transgression of a threshold 
+             Thresholds and tipping points pervade environmental policy docu            (Fig. 1b). We first tested whether and how ecosystems respond to 
+                                                                                   -
+             ments5,6 as they allow definition of levels of pressure below which        increased environmental pressures by simply exploring whether 
+                                                                              6         ecosystems show a directional change in response to a pressure, 
+             ecosystem responses remain within ‘safe ecological limits’  and 
+             above which response magnitudes and their variances increase dis-          regardless of the presence of a threshold (Fig. 1c). Second, we quan-
+             proportionately7,8. Anticipating when and under what conditions            tified discontinuities in the variance of responses, which would be a 
+             such threshold transgression might occur is important for sustain-         way to define the existence of a threshold. Finally, we tested for exis-
+             able environmental management.                                             tence of multimodality of responses, which would be stronger evi-
+                Threshold-related concepts and their implementation in policy           dence for alternative states under different environmental pressures.
+             hinge upon the assumption that the presence of thresholds can be 
+             detected in data or—even better—predicted. Testing this assumption         Results
+             requires knowledge of the ecosystem response to an environmental           To test for general changes of systems along gradients of envi-
+             pressure for present-day and potential future pressure magnitudes.         ronmental pressures, we used an averaged Kullback–Leibler (KL) 
+             Ecological meta-analysis has led to the publication of thousands of        divergence method (see Methods) to quantify the overall deviation 
+             effect sizes in response to in-situ trends or experimental manipu
+                                                                                   -    between the response distribution for a given stressor value and 
+                                                                                        the marginal response distribution; that is, the response distribu
+             lations of key pressures of global change such as eutrophication,                                                                                -
+             warming, land-use change, fisheries and ocean acidification. Each          tion when collapsing all response data onto a single axis ignoring 
+             study in a meta-analysis quantifies the magnitude of the response of       the magnitude of the stressor variable. Most meta-analyses (23 of 
+             an ecosystem variable to the strength of an applied environmental          36) showed changes in the response magnitude along the gradi-
+             pressure (Fig. 1a). The entire set of studies in the meta-analysis then    ent of pressure strengths (KL; Supplementary Table 1). This pro-
+             represents a wide range of pressure strengths, which often exceed          vides strong evidence that direction and increasing magnitude of  
+             the conditions observed in nature but might be expected in future          global environmental pressures have significant effects on ecosystem  
+             1Plankton Ecology Lab, Institute for Chemistry and Biology of the Marine Environment, Carl von Ossietzky University Oldenburg, Oldenburg, Germany. 
+             2                                                                                                               3
+             Helmholtz-Institute for Functional Marine Biodiversity at the University of Oldenburg (HIFMB), Oldenburg, Germany.  Alfred-Wegener-Institute, 
+                                                                                   4
+             Helmholtz Centre for Polar and Marine Research, Bremerhaven, Germany.  School of Natural Sciences, Department of Zoology, Trinity College Dublin, 
+                            5                                                                                                        6
+             Dublin, Ireland.  Department of Physiological Diversity, Helmholtz Center for Environmental Research – UFZ, Leipzig, Germany.  German Centre 
+                                                                 7                                                         8
+             for Integrative Biodiversity Research, Leipzig, Germany.  Martin Luther University Halle-Wittenberg, Halle, Germany.  MARUM – Center for Marine 
+                                                                           9                                                                 10
+             Environmental Sciences, University of Bremen, Bremen, Germany.  Tvärminne Zoological Station, University of Helsinki, Hanko, Finland.  Marine 
+                                                                                                                                                    11
+             Geochemistry, Institute for Chemistry and Biology of the Marine Environment, Carl von Ossietzky University Oldenburg, Oldenburg, Germany.  Centre for 
+             Biodiversity Theory and Modelling, Theoretical and Empirical Ecology Station, CNRS and Paul Sabatier University, Moulis, France. 12Theoretical Physics/
+             Complex Systems, Institute for Chemistry and Biology of the Marine Environment, Carl von Ossietzky University Oldenburg, Oldenburg, Germany. 
+             ✉
+              e-mail: helmut.hillebrand@uni-oldenburg.de
+             1502                                                        NATuRe ecoLogy & evoLuTIoN | VOL 4 | NOVEMBER 2020 | 1502–1509 | www.nature.com/natecolevol
+                    NaTuRE Ecology & EvoluTIoN                                                                                                                                                                                   Articles
+                                                     a      Primary data from meta-analysis                                     b      Rationale
+                                                                                    var.LRR                                               Below threshold        Increasing         Above threshold
+                                                                                                                                         even for sensitive     frequency of         even for robust
+                                                                                     LRR                                                      systems             threshold             systems
+                                                                                                                                                                transgression
+                                                            iance Control Treatment
+                                                            ar    Pressure strength
+                                                             sampling v
+                                                            ±                                                                      Response magnitude
+                                                        Response magnitude (LRR)                                                                                                                     Response magnitude
+                                                                                                                                                                                                              Pressure strength
+                                                                               Pressure strength                                                        Pressure strength
+                                                     c       Statistical tests
+                                                                KL: impact of pressure strength                             QR: test for variance increase                             HD: test for multimodality
+                                                                                                                      iance
+                                                                                                                      ar
+                                                            Response magnitude                                        Response v                                                    Response magnitude
+                                                                           Pressure strength                                       Pressure strength                                             Frequency
+                     Fig. 1 | Detecting thresholds in response to environmental change. a, Classically, the approach to detecting thresholds is to address the discontinuity 
+                     of responses to an environmental driver over time. Instead of a temporal axis, our analyses use the multitude of experiments or observations testing the 
+                     same driver in independent studies. Each meta-analysis summarizes the results of multiple experiments characterized by different magnitudes of the 
+                     same pressure and response magnitudes ± sampling variance. The basis of each meta-analysis is represented by single experiments (or observational 
+                     studies) measuring the response in a variable of interest in control and disturbed environments (insert). The distance in the environmental variable (for 
+                     example, temperature in warming experiments) between control and treatment gives the intensity of the pressure, the LRR measure the relative change in 
+                     the response variable (for example, plant biomass) based on treatment and control means, whereas the pooled standard deviations result in an estimate 
+                     of sampling variance per study (var.LRR). b, If the response shows discontinuity, we expect a tendency towards a new category of responses (red cases 
+                     reflecting critical transitions) at higher pressure strengths. c, We developed two robust non-parametric test statistics and assessed their statistical 
+                     significance using permutation tests: KL divergence to test for general changes in the response magnitude along the pressure gradient and the weighted 
+                     QR of interquantile (5–95%) ranges to test for changes in the variability of effect sizes. We tested for multimodal frequency distribution of effect sizes, 
+                     reflecting alternative responses to a common driver using the HD test. To visualize the KL approach, we indicated a potential realized distribution of 
+                     responses by a red area, compared to a randomized distribution (blue area; see Methods). The significant deviation between realized and randomized 
+                     responses can occur if there is gradual increase in response with increasing pressure (orange line) or if shifts in the response (red solid line) occur at a 
+                     threshold (vertical dashed line).
+                                                                                                                                                                                                                    9
+                     variables. While necessary, this evidence is not sufficient to sup-                                                       assess the multimodality of effect sizes , which provides a narrow 
+                     port the general prevalence of threshold-type responses across  test for the case of bi-(multi)-stability of responses. We found no 
+                     ecosystems.                                                                                                               support for widespread existence of alternative states in ecologi-
+                          If thresholds are common, then we expect to see increased  cal responses to increasing pressure intensities. None of the 36 
+                     variance in response variables as the pressure strength crosses the                                                       meta-analyses revealed any sign of bimodality in the frequency dis-
+                                               7,8
+                     threshold value  (see Fig. 1c). To test for discontinuities in the vari-                                                  tribution of effect sizes (HD, P > 0.3 in every case; Supplementary 
+                     ance of effect size responses, we used a weighted quantile ratio (QR)                                                     Table 1).
+                     of interquantile range (95–5%) to quantify substantial inhomoge-                                                                Comparing these empirical results (Supplementary Table 1) to 
+                     neity in the width of the response distribution across the range of                                                       model data (Fig. 2 and Extended Data Fig. 1) with known pres-
+                     observed stressors (see Methods). Significant changes in the vari-                                                        ence or absence of thresholds shows that our three approaches 
+                     ance of effect sizes were present in only eight out of 36 cases (QR;                                                      are suitable to detect threshold transgression. For idealized data, 
+                     Supplementary Table 1), challenging the widespread expectation                                                            the three tests provide a clear differentiation between gradual and 
+                     of rising variance as a signal of threshold transgression. Moreover,                                                      threshold-associated disproportional changes in response magni-
+                     in those cases with a significant QR test, the increase in variance                                                       tudes. However, empirical observations will be affected by different 
+                     occurred frequently only at the most extreme pressure level observed                                                      sources of variance, both systematic (cases with different locations 
+                     in the respective meta-analysis (see later for further details).                                                          of thresholds and magnitudes of response shift) and stochastic. 
+                          Stronger evidence for threshold-type ecosystem responses to  With increasing noise-to-signal ratios, thresholds—although pres-
+                     increasing environmental pressure would be provided by the exis-                                                          ent—quickly become undetectable, as the power of QR and HD 
+                     tence of multimodal distributional patterns, reflecting a state tran-                                                     declines rapidly. The exponential decline in detection probability for 
+                     sition. We used Hartigan’s dip test method (HD; see Methods) to                                                           QR shows that thresholds can only be identified reliably for nearly 
+                     NATuRe ecoLogy & evoLuTIoN | VOL 4 | NOVEMBER 2020 | 1502–1509 | www.nature.com/natecolevol                                                                                                                                             1503
+            Articles                                                                                        NaTuRE Ecology & EvoluTIoN
+                                        a        b         c        d         e         f        g         h         i
+                                                                                                                                    Without threshold
+                          Scenario                                                                                                  With threshold
+                                   1.00                                                                                          Expected outcome
+                                   0.75
+                          er HD 0.50                                                                                                Negative
+                          w        0.25                                                                                             Positive
+                                     0
+                          est po   1.00
+                          T        0.75
+                             KL    0.50
+                                   0.25                                                                                          P value
+                                     0
+                                   1.00                                                                                             0.01
+                                   0.75                                                                                             0.05
+                             QR 0.50
+                                   0.25
+                                     0
+                                       0 0.5 1 0 0.5 1 0 0.5 1 0 0.5 1 0 0.5 1 0 0.5 1 0 0.5 1 0 0.5 1 0 0.5 1
+                                                                        Noise variance (ISNR)
+             Fig. 2 | Detection probability for thresholds in global change experiments using kernel density estimation. We analysed the test power for nine scenarios 
+             of responses to pressure in meta-analyses. The derivation of each scenario is described in the Supplementary Text and Extended Data Fig. 3, the top 
+             panel presents an illustration of each scenario (full description in Extended Data Fig. 3). Each scenario is represented in a column, the test power is then 
+             given for each of the three statistical tests used in our analyses (HD, Hartigan’s dip test; KL, Kullback–Leibler; QR, quantile ratio). a–d, These scenarios 
+             do not comprise a threshold, where the scenario shown in a is the null model without an effect of the pressure on the response. e–i, These scenarios do 
+             comprise a threshold, for the last two combined with intermediate responses. For the three statistical tests used in our analyses, the expected outcome is 
+             colour-coded, with green representing that the test should be significant. Test power is given as the proportion of 1,000 simulated datasets for which the 
+             tests were significant with a probability P = 0.05 (black) and P = 0.01 (blue) along a gradient of increasing noise variance (inverse signal-to-noise ratio, 
+                                                                                                         59
+             ISNR). Bandwidth selection was based on the ‘solve-the-equation’ method of Sheather and Jones . The estimated bandwidth was adjusted by a factor 
+             of 2.5 in each case because this optimized test power for all cases. The three tests together allow perfect detection of thresholds in the absence of noise 
+             (e–h). If threshold-type and gradual responses are mixed (i), the analysis of multimodality (HD) is no longer able to pick up the threshold embedded in 
+             the data, as the simultaneous increase in mean and variance of the response (as in d) masks modes in the response distribution. With increasing noise 
+             variance, however, the detection probability for thresholds via HD and QR rapidly decrease.
+             ideal data without random variation around the response magni-             response variance with increasing pressure. Thus, only three out of 
+             tude (scenarios g–i in Fig. 2), with the exception of the unlikely case    36 cases showed a shifting distribution of effect sizes with increas-
+             that all systems are characterized by the same threshold (scenario f       ing pressure that was consistent with the emergence of new types 
+             in Fig. 2). For HD, the power collapses completely with only mod-          of responses above a threshold. These comprise land-use change 
+             erate noise levels (Fig. 2). Only KL is still able to detect changes       effects on mammal abundance (MA6.5), warming effects on corals 
+             in response magnitude with increasing pressure with increasing  (MA10) and fertilization effects on microbial respiration (MA17.2; 
+             variance, either around gradual shifts in response magnitude (sce-         all Extended Data Fig. 2). By contrast, in 12 of the 36 meta-analyses, 
+             narios c and d in Fig. 2) or around thresholds (scenarios e–i). The        neither KL nor QR were significant (exemplified by MA23.1 in Fig. 3;  
+             simulations corroborate our general empirical finding across the 36        for others see Extended Data Fig. 2), indicating that no increases 
+             datasets that thresholds are rarely detectable in data even if using       in response magnitudes or threshold trangressions were observed.
+             statistical methods developed for threshold detection.                        These results are relevant for across-system analyses of single 
+                Even when thresholds were empirically detected, limited infer-          pressure gradients but in many cases management might not have 
+             ence can be made as shown by highlighting several individual  a-priori knowledge of which pressure gradient leads to transgres-
+             meta-analysis datasets to illustrate specific ecosystem responses  sions. To analyse this situation, we further aggregated our analysis 
+             to particular environmental pressures. The first meta-analysis in          across drivers, organism groups and ecosystems, by standardiz-
+             our dataset (MA1.1) exemplifies the general results. The overall           ing and normalizing the pressure gradient to a median of 0 and a 
+             response of biomass production to biodiversity loss tended to be           range of –1 to 1 (Fig. 4). The range of responses was impressive, the 
+             negative and became more negative for larger proportions of species        effect sizes in cases indicated >200-fold increase or decrease in the 
+             lost without changes in the variational range of effect sizes (Fig. 3).    measured ecosystem variable (Fig. 4a). Both KL and QR tests were 
+             This gradual response type was also found in the analysis of fertil-       highly significant for the aggregated data, indicating a strong impact 
+             ization effects on biomass production (MA2.1) and in soil responses        of pressure intensity on the strength and variance of the ecologi-
+             to changes in precipitation (MA8) and land-use change (MA9) as             cal response (Supplementary Table 1). However, this increase in the 
+             well as prey responses to predator loss (MA16.1). Ten additional           variance of effect sizes was found for studies with normalized pres-
+             examples of this type of response involving other drivers of environ-      sures >0.5, which comprised the top 3.5% of the manipulated range 
+             mental change are provided in the supporting material (Extended            of potential impacts (Fig. 4b). This observation resembles a ‘sledge-
+             Data Fig. 2 and Supplementary Table 1). In all of these cases, the         hammer effect’; that is, system transformation by huge impact, 
+             magnitude of the environmental change altered the magnitude of             which is a trivial consequence of the large pressure magnitude and 
+             the response—as expected—but the variance around this relation-            the complete transformation of the system.
+             ship did not indicate the emergence of a ‘novel’ ecosystem response           As the sign of the effect size depends upon the specific associa-
+             beyond a pressure threshold. Eight cases showed significant QR             tion of driver and effect in each meta-analysis, we also analysed the 
+             tests, of which three showed an increase in response variance only         absolute magnitude of response (|LRR|) independent of sign for 
+             at highest pressure strength and two cases showed a reduction in           the aggregated dataset (Fig. 4c). We found that the median |LRR| 
+             1504                                                        NATuRe ecoLogy & evoLuTIoN | VOL 4 | NOVEMBER 2020 | 1502–1509 | www.nature.com/natecolevol
+              NaTuRE Ecology & EvoluTIoN                                                                                                                      Articles
+                                              MA1.1: Biodiversity change            4         MA2.1: Fertilization                          MA3: Warming
+                                       1
+                                       0                                            2                                          6
+                                      –1                                                                                       0
+                                    LRR biomass–2                                LRR biomass0                               LRR biomass–6
+                                      –3                                           –2
+                                          0     0.2   0.4    0.6    0.8    1.0           0     2      4     6      8              0     1    2     3     4     5
+                                               Proportion species loss                   LN relative nutrient increase                   Absolute warming (°C)
+                                       1          MA8: Precipitation                4       MA9: Land-use change                         MA16.1: Predator loss
+                                                                                    2                                          4
+                                       0                                            0                                          0
+                                                                                   –2                                         –4
+                                      –1                                           –4
+                                    LRR soil respiration                         LRR NxO emission                           LRR prey biomass
+                                        –100      0      100     200      300          –2    –1    0     1    2     3               –5         0         5        10
+                                             Relative change in precipitation           Relative change in N availability           Proportion predator biomass lost
+                                               MA18.1: Fragmentation                          MA21.1: Fisheries                4 MA23.1: Freshwater invasion effects
+                                       2                                            2                                          3
+                                       0                                            0                                          2
+                                                                                   –2                                          1
+                                    interactions–2                               LRR biomass–4                                 0
+                                 LRR strength of trophic                                                                     LRR biomass or abundance
+                                           0     2       4     6       8                      –4       –2       0                  0    0.2    0.4   0.6   0.8   1.0
+                                              Log-transformed area loss                Temporal distance from fisheries                  Proportion invader
+                                               Lower quantile marginal       Lower quantile      Median marginal        Aquatic        Freshwater        Density
+                                               Upper quantile marginal       Upper quantile      Median                 Terrestrial    Marine
+               Fig. 3 | example meta-analyses testing for changes in the response magnitude along with increasing pressure intensity. Red- and blue-shaded regions 
+               indicate the (5–95%) interquantile ranges for, respectively, the bivariate data (including the pressure gradient) and the marginal distribution of LRR 
+               (integrating out the pressure gradient). Dashed red and thick blue lines trace the related median (50% quantile). Overlain are the data points and, at the 
+               bottom, the yellow-shaded area indicates the distribution of stressor variables resulting from a weighted kernel density estimation. Circle size reflects 
+               statistical weight. The suggestive break in the responses in MA8 is induced by a lack of data covering intermediate pressure magnitude. LN, natural log.
+               increased with increasing environmental pressure, as did the vari-                        Our use of field and seminatural experiments has the advan-
+               ance, particularly so at the highest pressure magnitudes (significant                 tage that these often involve pressures that are larger than observed 
+               KL and QR tests; Supplementary Table 1). The median |LRR| cor-                        environmental conditions, as they commonly incorporate future 
+                                                                                                                                                        13
+               responded to 1.5–2-fold increases or decreases in process rates or                    scenarios of severe environmental change . This counters the argu-
+               properties, whereas the range of responses (the 5–95% quantiles                       ment that thresholds exist but have not yet been reached. Still, some 
+               of |LRR|) exceeded fivefold changes even at the smallest pressure                     caveats to our approach need to be acknowledged. First, the absence 
+               strengths. Thus, even at very small pressures, very large responses                   of evidence is obviously not the evidence of absence: as shown by 
+               can occur.                                                                            our explicit analysis of test power, the existence of thresholds can be 
+                                                                                                     masked by high interstudy variance (especially for HD). However, 
+               Discussion                                                                            this also questions the usefulness of thresholds if their occurrence 
+               Analysis of the 4,601 experiments that we assembled here, poten-                      is dependent on the complex interaction of multiple pressures and 
+               tially the most comprehensive data available, did not enable us to                    their detection is only possible under very high signal-to-noise 
+               estimate where thresholds might have been crossed. Instead, the                       ratios. Without a-priori knowledge across specific systems of when 
+               data suggest that the ecosystem impacts of human-induced changes                      thresholds might appear, any definition of thresholds—even if pre
+                                                                                                                                                                                      -
+               in environmental drivers are better characterized by gradual shifts                   cautionary principles are used—must remain arbitrary. Second, 
+               in response magnitudes with increasing pressure coupled with  we focused on functional, not compositional, aspects of ecosys-
+               broad variations around this trend. While our analyses do not rule                    tems and do not make conclusions about threshold pressures for 
+               out the existence of tipping points, they bring into question the                     changes in composition. However, compositional and functional 
+               utility of threshold-based concepts in management and policy if                                                                         14
+                                                                                                     stability often show interdependencies  because compensatory 
+               we cannot detect thresholds in nature10,11. Expectation of threshold                  dynamics between species may dampen the response in ecosystem 
+                                                                                                                 15                                                       16–18
+               responses ultimately leads to an underestimation of the large conse-                  functions  or allow for rapid recovery from a phase shift                 . Given 
+                                                                  12
+               quences of small environmental pressures . Moreover, it marginal-                     that the functions addressed here often are aggregate properties 
+               izes the importance of other, more complex, nonlinear dynamics                        of the communities investigated, we thus consider it unlikely that 
+               under global change, which may underlie the considerable variance                     thresholds are more prevalent for compositional responses. Third, 
+               around gradually increasing response magnitudes.                                      the temporal extent of the experimental studies in our database is 
+               NATuRe ecoLogy & evoLuTIoN | VOL 4 | NOVEMBER 2020 | 1502–1509 | www.nature.com/natecolevol                                                                        1505
+              Articles                                                                                                     NaTuRE Ecology & EvoluTIoN
+                a    12                                                                                The lack of clearly defined and generally applicable thresholds 
+                                                                                                    distinguishing between tolerable and non-tolerable responses has 
+                      6                                                                             obvious implications for environmental policies. The use of thresh-
+                      0                                                                             olds has been critically discussed in ecosystem management, con-
+                                                                                                                                   19–21
+                                                                                                    servation and restoration           to establish precautionary principles 
+                 log response ratio–6                                                               for environmental policy. Using such threshold arguments in a 
+                                                                                                    world where changes are too case-specific and variable to allow 
+                    –12                                                                             prediction of tipping points undermines this precautionary argu
+                                                                                                                                                                                    -
+                                                                                    y-density       ment. It leads to the anticipation of major system transformation 
+                    -density                                                                        as thresholds are passed, whereas most observed responses to envi-
+                    x                                                                               ronmental change represent progressively shifting baselines on 
+                                    Normalized environmental pressures                              timescales of human perceptions22,23. Consequently, environmental 
+                                                                                                    concerns might appear overstated if thresholds are taken for the 
+                b     3                                                                             general case but critical transitions associated with transgressing 
+                      2                                                                             thresholds are not observed24,25. The frequently major and highly 
+                      1                                                                             variable responses we observed even at low pressure magnitudes 
+                      0                                                                             indicate that safe-operating spaces are unlikely to be definable from 
+                  log response ratio–1                                                              data. The data resonate well with the fact that, conceptually, thresh-
+                     –2                                                                             olds occur under special and limiting conditions. Our results thus 
+                     –3                                                                             question the pervasive presence of threshold concepts in manage-
+                                                                                                    ment and policy.
+                   -density                                                        y-density
+                   x                                                                                Methods
+                                  Normalized environmental pressures                                Data. We searched the ISI Web of Science (WoS) using a search string targeted 
+                                                                                                    towards detecting meta-analyses in a global change context (Topic: [‘metaanalysis’ 
+                                                                                                    or ‘meta-analysis’ or ‘metaanalyses’ or ‘meta-analyses’] AND Topic: [‘global 
+                c     3                                                                             change’ or ‘fertili*’ or ‘land-use’ or ‘acidification’ or ‘warming’ or ‘temperature’ 
+                                                                                                    or ‘eutrophication’ or ‘disturbance’ or ‘invasion’ or ‘extinction’ or ‘drought’ or 
+                                                                                                    ‘ultraviolet’] AND Topic: [‘chang*’ or ‘manipulation*’ or ‘experim*’ or ‘treatm*’]). 
+                      2                                                                             We refined the results by focusing on the WoS research area ‘Environmental 
+                                                                                                    sciences and ecology’. This search (done on 11 September 2016) yielded 979 studies 
+                                                                                                    from which most did not fit all of our inclusion criteria (upon request, we can 
+                      1                                                                             provide a list of all studies with the study-specific criteria to include or exclude), 
+                   log response ratio                                                               which were as follows:
+                      0                                                                             •	  The paper provided a formal meta-analysis with effect sizes, which quantified 
+                                                                                    y-density           the responses to a factor that represented a global change impact. The factor 
+                                                                                                        was either an experimental treatment or an in-situ change. This excluded 
+                   -density                                                                             numerous studies that were verbal/vote-counting reviews or provided effect 
+                   x                                                                                    sizes as a response to non-global-change factors (for example, mitigation 
+                                                                                                        efforts).
+                                    Normalized environmental pressures                              •	  The response was measured at the level of ecological communities or eco-
+                                                                                                        systems. This excluded studies where responses were measured at the level 
+                        Lower quantile marginal                   Lower quantile                        of single species, as these were deemed inappropriate to detect regime shifts, 
+                        Upper quantile marginal                   Upper quantile                        or at the level of human societies (for example, health aspects and economy). 
+                                                                                                        We also excluded fossil data as not being affected by anthropogenic global 
+                        Median marginal                         Aquatic                                 change and non-biological response variables (for example, the effect of 
+                                                                                                        CO-enrichment on water pH).
+                        Median                                  Terrestrial                                2
+                                                                                                    •	  Given that effect sizes on species richness have recently been criticized 
+                                                                                                        strongly for being statistically biased26, we decided not to use biodiversity 
+                        Freshwater                                x-density                             response variables but only functional processes or properties at the commu-
+                        Marine                                    y-density                             nity or ecosystem level (details below). As we explicitly address the statistical 
+                                                                                                        distribution of effect sizes (see below), this statistical bias was considered to be 
+                                                                                                        potentially misleading in the context of our analysis. However, we used cases 
+              Fig. 4 | Analysis of aggregate data across meta-analyses. a, LRR of                       where biodiversity loss was the manipulated component of global change and 
+              ecological processes across a gradient of environmental change, where                     a functional response was measured.
+              the different pressures were normalized to a median of 0 and a range of                  From the remaining 162 meta-analyses that fulfilled these criteria, we extracted 
+              −1 to 1. Circle size reflects statistical weight. Shaded regions indicate the         the information needed to perform our analyses. This included a measure of the 
+              interquantile (5–95%) ranges for the marginal distribution (blue) and                 magnitude of the stressor (impact, driver) and the effect size as well as its sampling 
+              the bivariate distribution (red). Density of values along the stressor and            variance or weight (response). When the information was not given in an online 
+              the response axis are given below (yellow) or at the right margin (green),            appendix or associated data table, we contacted the authors to ask for data access. 
+                                                                                                    Still, we had to exclude further meta-analyses, as they: did not quantify the stressor 
+              respectively. b, Same as a but without single effect sizes, focusing on the           magnitude (this was especially common in meta-analyses addressing the response 
+              distribution of response magnitudes over the normalized pressure gradient.            to invasive species); did not contain enough cases to perform analysis (we set 
+              c, Same as b but for absolute response magnitudes. Note the change in                 the critical number of effect sizes to 35 as a minimum to detect variance shifts); 
+              scale of the y axis in the three panels.                                              overlapped with other meta-analyses on the same subject (this was especially found 
+                                                                                                    for analyses on eutrophication and biodiversity loss, where we always opted for the 
+                                                                                                    most consistent and information-dense alternative); did not provide available data.
+                                                                                                       The final database contained 24 meta-analyses (information derived from 29 
+                                                                                                          27–55
+              limited; it rarely exceeds the scale of tens of generations of organ-                 papers   ), which were divided into 36 cases (Supplementary Table 1). Subsetting 
+              isms. However, there is no strong support for why threshold trans-                    multiple cases from a meta-analysis was done if different drivers were tested or 
+              gressions should increase through time. Threshold-related concepts                    different response categories were used in a single meta-analysis. We followed 
+              thus would be untestable in ecology, as their absence could always                    the authors in defining response categories and stressor variables. We excluded 
+                                                                                                    laboratory experiments and focused our study solely on field experiments and 
+              be ascribed to insufficiently long observation periods.                               observational studies. The resulting dataset reflects ecological responses in the 
+              1506                                                                 NATuRe ecoLogy & evoLuTIoN | VOL 4 | NOVEMBER 2020 | 1502–1509 | www.nature.com/natecolevol
+                   NaTuRE Ecology & EvoluTIoN                                                                                                                                                                          Articles
+                    form of ecosystem processes (primary or secondary production, feeding rates                                          (Extended Data Fig. 7), the 5%, 50% (median) and 95% quantiles can be extracted 
+                    and element fluxes) to the most pervasive anthropogenic alterations of our planet                                    for each grid point gx (Extended Data Fig. 8). The test statistics that we devised are:
+                    (Supplementary Table 1).                                                                                              1.     the average KL divergence
+                    Statistical approach. For each meta-analysis dataset containing a measure of                                                                       X              X                           PLRRjXðÞgyjgx
+                                                                                                                                                                                ðÞ                  ðÞlog
+                                                                                                                                                              KL¼           P gx            P        gyjgx
+                    the stressor magnitude (X), the response variable (log response ratio, LRR) and                                                                           X              LRRjX                   P      ðÞgy                     ð3Þ
+                    its sampling variance (var.LRR), we assessed whether the dataset reflects any                                                                       gx              gy                             LRR
+                    statistically significant influence of the stressor variable on the response. As the                                 that shares the useful property of being non-negative and that vanishes if, and 
+                    data basis of each meta-analysis (and thus the sources of variation of LRR within                                    only if, P        ≡ P      (almost everywhere). Pronounced differences between the two 
+                    each dataset) is unknown to us, we devised three robust non-parametric test                                                      LRR|X      LRR
+                    statistics and assessed their statistical significance by permutation tests.                                         empirical distributions are thus condensed in values substantially larger than zero.
+                         An averaged KL divergence quantified the overall deviation between the                                           2.     the quantile ratio (QR) of interquantile (5–95%) ranges (IQR)
+                    response distribution for a given stressor value and the marginal response                                                                                                IQR95ðÞ99%
+                    distribution (that is, the response distribution when collapsing all response data                                                                               QR¼           5                                                 ð4Þ
+                                                                                                                                                                                              IQR95ðÞ1%
+                    onto a single axis ignoring the stressor variable). Second, a quantile ratio (QR) of                                                                                            5
+                    interquantile range (95–5%) was then used to quantify substantial variability of the                                          IQR95ðÞqx
+                    response distribution width across the range of observed stressors. Finally, we used                                 where          5        denotes the qx-quantile of the 5–95% interquantile range of the 
+                                                                                                                                                   I
+                                                                                                                                         conditional probability distribution P                  (gy|gx) and the subsequent percentage in 
+                                                                                           9                                                                                                LRR|X
+                    the HD test to assess the multimodality of effect sizes . Based on simulation-based                                  brackets indicates the related weighted quantile across the stressor grid points. We 
+                    P values, HD provides a narrow test for the case of bi-(multi)-stability of responses,                               choose this latter definition for robustness, rather than the maximum/minimum 
+                                                                                                                56
+                    analogous to the bimodality test proposed by Scheffer and Carpenter . A                                              ratio which may be prone to distortions by extremes. This measure was devised to 
+                    significant HD indicates that the responses along the pressure gradient fall into                                    indicate substantial changes of the LRR variance along the stressor axis.
+                    two (or more) clearly separated categories, which indicates the presence of two                                       3.     the HD statistic tests for multimodality, which, if significant, indicates that a 
+                    (or more) alternative ecosystem states. Essentially, strict bimodality across a wide                                         frequency distribution has more than one mode.
+                    range of studies is a rather narrow expectation but we include this test as the                                           Values of all test statistics obtained for the original dataset were assessed for 
+                    bifurcation case is the one most often discussed in considerations of thresholds, 
+                                                              56,57                                                                      statistical significance. This was done by excessively repeating the permutation 
+                    tipping points and regime shifts               .                                                                     strategy to create surrogate data in accordance with the NH of a non-existent 
+                         For both KL and QR, the assessment of statistical significance was done by                                      connection between stressor X and response LRR. P values for both test statistics 
+                    a permutation test: the null hypothesis (NH) that the response distribution is                                       (KL and QR) were obtained as fractions of 10,000 surrogate sets (in the case of 
+                    unrelated to the stressor is simulated by breaking up paired variables (X, LRR,                                      HD, 2,000 permutations), leading to test statistics exceeding related values of the 
+                    var.LRR) and recombining them in the form (X′, LRR, var.LRR), where X′ is a                                          original dataset.
+                    permutation of recorded stressor values. If the NH were valid, this permutation                                           In addition to the employed kernel density estimates generating cumulative 
+                    should induce no substantial difference. Computing the two test statistics (KL and                                   distribution functions and derived quantiles, we used a nonlinear quantile 
+                    QR) for the permuted dataset (X′, LRR, var.LRR) and repeating these steps 10,000 
+                                                                                                                                                                                                   58
+                    times generates the distribution of the test statistics under validity of the NH and                                 regression supplied by the R package qgam . This package is based on general 
+                    allows extraction of a P value as the fraction of permutations that yielded a similar                                additive models and returns quantiles instead of standard mean response. With 
+                    or larger value for the test statistic (KL or QR) as the original dataset (X, LRR,                                   qgam we estimated the following quantiles: 0.001, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 
+                    var.LRR).                                                                                                            0.8, 0.9 and 0.999. Because these quantile curves were computed sequentially, 
+                         In comparison to alternative approaches, our methods are robust and                                             independently resultant lines could intersect. To resolve this problem, we used the 
+                    non-parametric—they do not rely on functional assumptions and use only the                                           R package cobs to perform a penalized B-spline regression of obtained quantiles 
+                    supposed smoothness of a possible connection between stressor and response.                                          (separately for every grid point gx), bound to the constraint of a monotonic 
+                    Reconstructing the NH by simulating surrogate data guarantees perfect control of                                     increase, thus yielding a smooth cumulative distribution function. As for the kernel 
+                    errors of the first kind (false positive statements) and even would handle a constant                                density estimation, exemplary 5%, 50% (median) and 95% quantiles are shown in 
+                    bias of estimators. Given the breadth of underlying meta-analyses, we also consider                                  Extended Data Fig. 8.
+                    our analysis highly conservative with regard to publication bias and study selection.                                     Under default settings, the qgam routine was very time consuming and, in 
+                    Finally, using a weighted approach downgrades the influence of studies with very                                     comparison with the bandwidth optimized kernel density method, had inferior 
+                    high internal variance and thus decreases the chance of missing threshold-like                                       test power (Fig. 2 and Supplementary Table 1). This may be due to the fact that, 
+                    responses because of too-noisy data (false negative statements).                                                     because of excessive run time an optimization of qgam parameters was not 
+                         It should be noted that neither the single experiments summarized in                                            feasible. We therefore constrain reporting of our results to those obtained with the 
+                    each meta-analysis nor the meta-analyses themselves were designed to detect                                          optimized kernel density method.
+                    thresholds. The inclusion of studies not necessarily looking for thresholds actually                                 Simulations. We examined the performance of our tests by simulating artificial 
+                    reduces the risk of publication bias towards positive results. However, even if the                                  datasets that combined nine deterministic backbone structures with additive 
+                    underlying experiments were not planned to detect thresholds, our statistical                                        noise (normally distributed random fluctuations) of controlled intensity. The 
+                    approach should reveal these if they fall into the covered range of stressors, which                                 deterministic backbone structures were chosen to reflect a broad range of 
+                    can be expected as this range encompasses stressor magnitudes not yet experienced                                    scenarios. The noise intensity is quantified via the inverse signal-to-noise ratio 
+                    under realistic conditions.                                                                                          (ISNR), that is the size ratio of fluctuations and backbone structure. The nine 
+                    Statistical analyses. For each effect size in each meta-analysis, a statistical weight                               cases are depicted in Extended Data Fig. 3, each for small (ISNR = 0.05) and large 
+                    is assigned to each data point as the log-transformed inverse sampling variance of                                   (ISNR = 0.95) noise intensity. In Fig. 2 and Supplementary Table 1, we list the 
+                    the effect size                                                                                                      expected outcome of the three designed tests for the noise-free case. To assess the 
+                                                                    performance of the tests under various noise conditions, we simulated, for each 
+                                                               log 1þ           1                                               ð1Þ      ISNR value (in the range [0–1]), 1,000 artificial datasets and collected related test 
+                                                                           var:LRR                                                       decisions (for two decision criteria P = 0.05 and 0.01 and all three tests). In the  
+                    As described above, surrogate datasets (reflecting the NH) are created by                                            case of an expected positive test, the fraction of positive test decisions thus 
+                    permuting the list of stressor values in X (yielding X′ = X shuffled). From the                                      estimates the test power (1-error of the second kind). We note that simulations 
+                    list of stressor values, a smooth probability distribution P (gx) is computed                                        of the test power were also underlying the optimization of the kernel bandwidth, 
+                                                                                                X                                        where bandwidth selection was based on the ‘solve-the-equation’ method of 
+                    via weighted (with statistical weights calculated following equation (1)) kernel                                                               59
+                    density estimation (with a Gaussian kernel and an optimized bandwidth,                                               Sheather and Jones .
+                    compare Simulations) for grid points gx that span the range of observed stressor                                          In all simulated cases with small to moderate noise (ISNR < 0.5), threshold 
+                    values (Extended Data Fig. 4). A smooth density surface over the grid (gx, gy)                                       structures in simulated response–stressor relations could be detected with high 
+                    in the (X, LRR) plane is computed from the dataset (and the surrogates) via a                                        reliability (at least for the KL and QR tests). Of course, for strong noise (ISNR ≥ 1), 
+                    two-dimensional weighted (with statistical weights calculated following equation                                     thresholds may be masked by random fluctuations reflecting natural variability. 
+                    (1)) kernel density estimation (bivariate Gaussian D-class kernel with optimized                                     In such situations, the underlying threshold structure, although present, will no 
+                    bandwidth) (Extended Data Fig. 5). For each grid point gx, the density profile                                       longer be ecologically relevant because it is overridden by natural variability.
+                    along gy is converted to a conditional probability distribution P                         (gy|gx) by 
+                                                                                                         LRR|X                           Reporting Summary. Further information on research design is available in the 
+                    normalization (Extended Data Fig. 6, with results for the original data and the                                      Nature Research Reporting Summary linked to this article.
+                    surrogate data). Based on the conditional cumulative distribution function,
+                                                                    X              X                 0
+                                             F       ðgyjgxÞ¼              P            P        ðÞgy jgx
+                                              LRRjX                gy0 ≤gy  LRRjX         LRRjX                                 ð2Þ      Data availability
+                                                                                                                                         All data are available at https://zenodo.org/record/3828869#.XsI4ZmgzaUk.
+                    NATuRe ecoLogy & evoLuTIoN | VOL 4 | NOVEMBER 2020 | 1502–1509 | www.nature.com/natecolevol                                                                                                                                    1507
+                               Articles                                                                                                                                                                                                                                           NaTuRE Ecology & EvoluTIoN
+                               code availability                                                                                                                                                                              33. Gibson, L. et al. Primary forests are irreplaceable for sustaining tropical 
+                               All code are available at https://zenodo.org/record/3828869#.XsI4ZmgzaUk.                                                                                                                              biodiversity. Nature 478, 378–381 (2011).
+                                                                                                                                                                                                                              34. Liang, J. Y., Qi, X., Souza, L. & Luo, Y. Q. Processes regulating progressive 
+                               Received: 21 January 2020; Accepted: 15 June 2020;                                                                                                                                                     nitrogen limitation under elevated carbon dioxide: a meta-analysis. 
+                               Published online: 17 August 2020                                                                                                                                                                       Biogeosciences 13, 2689–2699 (2016).
+                                                                                                                                                                                                                              35. Liu, L. L. et al. A cross-biome synthesis of soil respiration and its 
+                                                                                                                                                                                                                                      determinants under simulated precipitation changes. Glob. Change Biol. 22, 
+                               References                                                                                                                                                                                             1394–1405 (2016).
+                                1.  Scheffer, M., Carpenter, S., Foley, J. A., Folke, C. & Walker, B. Catastrophic                                                                                                            36. van Lent, J., Hergoualc’h, K. & Verchot, L. V. Reviews and syntheses: soil N O 
+                                        shifts in ecosystems. Nature 413, 591–596 (2001).                                                                                                                                             and NO emissions from land use and land-use change in the tropics and  2
+                                2.      Scheffer,  M.  Critical Transitions in Nature and Society (Princeton Univ.                                                                                                                    subtropics: a meta-analysis. Biogeosciences 12, 7299–7313 (2015).
+                                        Press, 2009).                                                                                                                                                                         37. Ateweberhan, M. & McClanahan, T. R. Relationship between historical 
+                                3.  Rockström, J. et al. A safe operating space for humanity. Nature 461,                                                                                                                             sea-surface temperature variability and climate change-induced coral 
+                                        472–475 (2009).                                                                                                                                                                               mortality in the western Indian Ocean. Mar. Pollut. Bull. 60, 964–970 (2010).
+                                4.  Folke, C. et al. Regime shifts, resilience and biodiversity in ecosystem                                                                                                                  38. Gärtner, M. et al. Invasive plants as drivers of regime shifts: identifying 
+                                        management. Annu. Rev. Ecol. Evol. Syst. 35, 557–581 (2004).                                                                                                                                  high-priority invaders that alter feedback relationships. Divers. Distrib. 20, 
+                                5.  Donohue, I. et al. Navigating the complexity of ecological stability. Ecol. Lett.                                                                                                                 733–744 (2014).
+                                        19, 1172–1185 (2016).                                                                                                                                                                 39. Dooley, S. R. & Treseder, K. K. The effect of fire on microbial biomass: a 
+                                6.      Aichi Biodiversity Targets (UN, 2010); https://www.cbd.int/sp/targets/                                                                                                                        meta-analysis of field studies. Biogeochemistry 109, 49–61 (2012).
+                                7.  Carpenter, S. R. & Brock, W. A. Rising variance: a leading indicator of                                                                                                                   40. Dijkstra, F. A. & Adams, M. A. Fire eases imbalances of nitrogen and 
+                                        ecological transition. Ecol. Lett. 9, 308–315 (2006).                                                                                                                                         phosphorus in woody plants. Ecosystems 18, 769–779 (2015).
+                                8.  Scheffer, M. et al. Early-warning signals for critical transitions. Nature 461,                                                                                                           41. Lu, M. et al. Responses of ecosystem carbon cycle to experimental warming: 
+                                        53–59 (2009).                                                                                                                                                                                 a meta-analysis. Ecology 94, 726–738 (2013).
+                                9.  Hartigan, J. A. & Hartigan, P. M. The dip test of unimodality. Ann. Stat. 13,                                                                                                             42. Grifon, J. N., Byrnes, J. E. K. & Cardinale, B. J. Effects of predator richness on 
+                                        70–84 (1985).                                                                                                                                                                                 prey suppression: a meta-analysis. Ecology 94, 2180–2187 (2013).
+                                10. Montoya, J. M., Donohue, I. & Pimm, S. L. Planetary boundaries for                                                                                                                        43. Srivastava, D. S. et al. Diversity has stronger top-down than bottom-up effects 
+                                        biodiversity: implausible science, pernicious policies. Trends Ecol. Evol. 33,                                                                                                                on decomposition. Ecology 90, 1073–1083 (2009).
+                                        71–73 (2018).                                                                                                                                                                         44. Östman, Ö. et al. Top-down control as important as nutrient enrichment for 
+                                11. Pimm, S. L., Donohue, I., Montoya, J. M. & Loreau, M. Measuring resilience                                                                                                                        eutrophication effects in North Atlantic coastal ecosystems. J. Appl. Ecol. 53, 
+                                        is essential to understand it. Nat. Sustain. 2, 895–897 (2019).                                                                                                                               1138–1147 (2016).
+                                12. Clark, C. M. & Tilman, D. Loss of plant species after chronic low-level                                                                                                                   45. Katano, I., Doi, H., Eriksson, B. K. & Hillebrand, H. A cross-system 
+                                        nitrogen deposition to prairie grasslands. Nature 451, 712–715 (2008).                                                                                                                        meta-analysis reveals coupled predation effects on prey biomass and diversity. 
+                                13. Korell, L., Auge, H., Chase, J. M., Harpole, W. S. & Knight, T. M. We need                                                                                                                        Oikos 124, 1427–1435 (2015).
+                                        more realistic climate change experiments for understanding ecosystems of                                                                                                             46. Borer, E. T. et al. What determines the strength of a trophic cascade? Ecology 
+                                        the future. Glob. Change Biol. 26, 325–327 (2020).                                                                                                                                            86, 528–537 (2005).
+                                14. Hillebrand, H. et al. Decomposing multiple dimensions of stability in global                                                                                                              47. Hodapp, D. & Hillebrand, H. Effect of consumer loss on resource removal 
+                                        change experiments. Ecol. Lett. 21, 21–30 (2018).                                                                                                                                             depends on species-specific traits. Ecosphere 8, e01742 (2017).
+                                15. Connell, S. D. & Ghedini, G. Resisting regime-shifts: the stabilising effect of                                                                                                           48. Liu, L. L. & Greaver, T. L. A global perspective on belowground carbon 
+                                        compensatory processes. Trends Ecol. Evol. 30, 513–515 (2015).                                                                                                                                dynamics under nitrogen enrichment. Ecol. Lett. 13, 819–828 (2010).
+                                16. Bruno, J. F., Sweatman, H., Precht, W. F., Selig, E. R. & Schutte, V. G. W.                                                                                                               49. Martinson, H. M. & Fagan, W. F. Trophic disruption: a meta-analysis of how 
+                                        Assessing evidence of phase shifts from coral to macroalgal dominance on                                                                                                                      habitat fragmentation affects resource consumption in terrestrial arthropod 
+                                        coral reefs. Ecology 90, 1478–1484 (2009).                                                                                                                                                    systems. Ecol. Lett. 17, 1178–1189 (2014).
+                                17. Diaz-Pulido, G. et al. Doom and boom on a resilient reef: climate change,                                                                                                                 50. Holden, S. & Treseder, K. A meta-analysis of soil microbial biomass responses 
+                                        algal overgrowth and coral recovery. PLoS ONE 4, e5239 (2009).                                                                                                                                to forest disturbances. Front. Microbiol. 4, 163 (2013).
+                                18. Carpenter, S. R. et al. Early warnings of regime shifts: a whole-ecosystem                                                                                                                51. Nagelkerken, I. & Connell, S. D. Global alteration of ocean ecosystem 
+                                        experiment. Science 332, 1079–1082 (2011).                                                                                                                                                    functioning due to increasing human CO  emissions. Proc. Natl Acad. Sci. 
+                                19. Suding, K. N. & Hobbs, R. J. Threshold models in restoration and                                                                                                                                  USA 112, 13272–13277 (2015).                                                                2
+                                        conservation: a developing framework. Trends Ecol. Evol. 24, 271–279 (2009).                                                                                                          52. Kaiser, M. J. et al. Global analysis of response and recovery of benthic biota 
+                                20. Vaquer-Sunyer, R. & Duarte, C. M. Thresholds of hypoxia for marine                                                                                                                                to fishing. Mar. Ecol. Prog. Ser. 311, 1–14 (2006).
+                                        biodiversity. Proc. Natl Acad. Sci. USA 105, 15452–15457 (2008).                                                                                                                      53. Gill, D. A. et al. Capacity shortfalls hinder the performance of marine 
+                                21. Groffman, P. M. et al. Ecological thresholds: the key to successful                                                                                                                               protected areas globally. Nature 534, 665–669 (2017).
+                                        environmental management or an important concept with no practical                                                                                                                    54. Gallardo, B., Clavero, M., Sánchez, M. I. & Vilà, M. Global ecological  
+                                        application? Ecosystems 9, 1–13 (2006).                                                                                                                                                       impacts of invasive species in aquatic ecosystems. Glob. Change Biol. 22, 
+                                22. Hughes, T. P., Carpenter, S., Rockstrom, J., Scheffer, M. & Walker, B. Multiscale                                                                                                                 151–163 (2016).
+                                        regime shifts and planetary boundaries. Trends Ecol. Evol. 28, 389–395 (2013).                                                                                                        55. Vila, M. et al. Ecological impacts of invasive alien plants: a meta-analysis  
+                                23. Papworth, S. K., Rist, J., Coad, L. & Milner-Gulland, E. J. Evidence for                                                                                                                          of their effects on species, communities and ecosystems. Ecol. Lett. 14, 
+                                        shifting baseline syndrome in conservation. Conserv. Lett. 2, 93–100 (2009).                                                                                                                  702–708 (2011).
+                                24. Schlesinger, W. H. Planetary boundaries: thresholds risk prolonged                                                                                                                        56. Scheffer, M. & Carpenter, S. R. Catastrophic regime shifts in ecosystems: 
+                                        degradation. Nat. Clim. Change 1, 112–113 (2009).                                                                                                                                             linking theory to observation. Trends Ecol. Evol. 18, 648–656 (2003).
+                                25. Duarte, C. M. et al. Reconsidering ocean calamities. BioScience 65,                                                                                                                       57. Andersen, T., Carstensen, J., Hernandez-Garcia, E. & Duarte, C. M. 
+                                        130–139 (2015).                                                                                                                                                                               Ecological thresholds and regime shifts: approaches to identification. Trends 
+                                26. Chase, J. M. & Knight, T. M. Scale-dependent effect sizes of ecological drivers                                                                                                                   Ecol. Evol. 24, 49–57 (2009).
+                                        on biodiversity: why standardised sampling is not enough. Ecol. Lett. 16,                                                                                                             58. Fasiolo, M., Goude, Y., Nedellec, R. & Wood, S. N. Fast calibrated additive 
+                                        17–26 (2013).                                                                                                                                                                                 quantile regression. J. Am. Stat. Assoc. https://doi.org/10.1080/01621459.2020.
+                                27. Cardinale, B. J. et al. Effects of biodiversity on the functioning of trophic                                                                                                                     1725521 (2020).
+                                        groups and ecosystems. Nature 443, 989–992 (2006).                                                                                                                                    59. Sheather, S. J. & Jones, M. C. A reliable data-based bandwidth  
+                                28. Gruner, D. S. et al. A cross-system synthesis of consumer and nutrient                                                                                                                            selection method for kernel density estimation. J. Royal Stat. Soc. B 53, 
+                                        resource control on producer biomass. Ecol. Lett. 11, 740–755 (2008).                                                                                                                         683–690 (1991).
+                                29. Elser, J. J. et al. Global analysis of nitrogen and phosphorus limitation of                                                                                                             Acknowledgements
+                                        primary producers in freshwater, marine and terrestrial ecosystems. Ecol. Lett. 
+                                        10, 1135–1142 (2007).                                                                                                                                                                The data reported in this paper are presented and derived from 36 different 
+                                30. Lin, D., Xia, J. & Wan, S. Climate warming and biomass accumulation of                                                                                                                   meta-analyses; they are archived and available from each of these as indicated in the 
+                                        terrestrial plants: a meta-analysis. New Phytol. 188, 187–198 (2010).                                                                                                                Supplementary Text. The concept of this paper emerged during scientific discussions 
+                                31. Treseder, K. K. Nitrogen additions and microbial biomass: a meta-analysis of                                                                                                             with T. Blenckner at Stockholm University, at the UK NERC/BESS Tansley Working 
+                                        ecosystem studies. Ecol. Lett. 11, 1111–1120 (2008).                                                                                                                                 Group on ecological stability and the TippingPond EU Biodiversa project. The 
+                                32. Akiyama, H., Yan, X. & Yagi, K. Evaluation of effectiveness of                                                                                                                           actual work was funded by the Lower Saxony Ministry of Science and Culture 
+                                        enhanced-efociency fertilizers as mitigation options for N O and NO                                                                                                                  through the MARBAS project to H.H. and the HIFMB, a collaboration between the 
+                                                                                                                                                                       2
+                                        emissions from agricultural soils: meta-analysis. Glob. Change Biol. 16,                                                                                                             Alfred-Wegener-Institute, Helmholtz-Center for Polar and Marine Research and the Carl 
+                                        1837–1846 (2010).                                                                                                                                                                    von Ossietzky University Oldenburg, initially funded by the Ministry for Science and 
+                               1508                                                                                                                                                     NATuRe ecoLogy & evoLuTIoN | VOL 4 | NOVEMBER 2020 | 1502–1509 | www.nature.com/natecolevol
+               NaTuRE Ecology & EvoluTIoN                                                                                                                          Articles
+               Culture of Lower Saxony and the Volkswagen Foundation through the ‘Niedersächsisches     competing interests
+               Vorab’ grant programme (grant no. ZN3285). The work was finalized with support           The authors declare no competing interests.
+               by Deutsche Forschungsgemeinschaft grant no. HI848/26–1. L. Toaspern helped with 
+               gathering data from invasion meta-analyses. P. Ruckdeschel helped with the statistical 
+               approach. M. Vilà provided additional information on their published meta-analyses. We   Additional information
+               acknowledge the comments by U. Feudel, G. Gerlach and the members of the Plankton        Extended data is available for this paper at https://doi.org/10.1038/s41559-020-1256-9.
+               Ecology Lab at the Carl von Ossietzky University Oldenburg on the manuscript which       Supplementary information is available for this paper at https://doi.org/10.1038/
+               helped with our argumentation.                                                           s41559-020-1256-9.
+               Author contributions                                                                     Correspondence and requests for materials should be addressed to H.H.
+               H.H. designed the analysis and discussed the framework with I.D. J.M.M., J.A.F. and      Peer review information Peer reviewer reports are available.
+               J.M. developed the statistical approach with input from H.H. and D.H. H.H. assembled     Reprints and permissions information is available at www.nature.com/reprints.
+               the effect size information. J.A.F. and J.M. performed the statistical analysis. M.K.,   Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in 
+               A.M.L. and W.S.H. provided input on palaeoecological and experimental constraints,       published maps and institutional affiliations.
+               respectively. H.H. wrote the manuscript together with W.S.H. and J.M.M. as well as input 
+               from all co-authors.                                                                     © The Author(s), under exclusive licence to Springer Nature Limited 2020
+               NATuRe ecoLogy & evoLuTIoN | VOL 4 | NOVEMBER 2020 | 1502–1509 | www.nature.com/natecolevol                                                                             1509
+       ArArticlesticles                                  NaNaTuRE TuRE EEccolologogy & y & EEvvololuTIouTIoNN
+       Extended Data Fig. 1 | Test power as in Fig. 2, but for the “qgam” approach. Fractions of positive test results (equals test power when test should be 
+       positive) for simulated test cases. We analysed the test power for 9 scenarios of responses to pressure in meta-analyses, the derivation of each scenario 
+       is described in the supplementary online material, Extended Data Fig. 7. Scenarios a–d do not comprise a threshold, where scenario a is the null model 
+       without an effect of the pressure on the response. Scenarios e–i do comprise a threshold, for the latter two combined with intermediate responses. For 
+       the three statistical test used in our analyses, the expected outcome is colour-coded, with green representing that the test should be significant. We 
+       then tested the proportion of 1000 simulated datasets for which the tests were significant with a probability p = 0.05 (black) and p = 0.01 (blue). We 
+       did for increasing noise variance (= inverse signal-to-noise ratio). The three tests together allow perfect detection of thresholds at the absence of noise 
+       (scenarios e–h), only if threshold-type and gradual responses are mixed (scenario i), the analysis of multimodality (HD) fails, giving the same output as 
+       a gradual increase in mean and variance of the response (scenario d). With increasing noise variance, however, the detection probability for thresholds 
+       via HD and QR rapidly decreases.We used default settings for the “qgam” approach due to high runtimes and computational effort, thus settings are not 
+       optimized as for the test power calculations based on kernel density estimation. Note: HD is equal to kernel method, because it is not based on different 
+       quantile estimations.
+                                                       NATuRe ecoLogy & evoLuTIoN | www.nature.com/natecolevol
+       NaNaTuRE TuRE EEccolologogy & y & EEvvololuTIouTIoNN             ArArticlesticles
+       Extended Data Fig. 2 | See next page for caption.
+       NATuRe ecoLogy & evoLuTIoN | www.nature.com/natecolevol
+       ArArticlesticles                                  NaNaTuRE TuRE EEccolologogy & y & EEvvololuTIouTIoNN
+       Extended Data Fig. 2 | changes in the response magnitude along increasing pressure strength. Further meta-analyses testing for changes in the 
+       response magnitude along increasing pressure strength. Red and blue shaded regions indicate the (5%-95%) interquantile ranges for the bivariate data 
+       (including the pressure gradient) and the univariate LRR data (ignoring the pressure gradient = homogeneous marginal probability), respectively. Solid 
+       red and dashed blue thick lines trace the related median (50% quantile). Overlain are the data points and at the bottom the yellow shaded area indicates 
+       the distribution px(gx) resultant from a weighted kernel density estimation. Colour codes for habitat (dark blue: freshwater, aquamarine: marine, green: 
+       terrestrial), circle size reflect statistical weight.
+                                                       NATuRe ecoLogy & evoLuTIoN | www.nature.com/natecolevol
+       NaNaTuRE TuRE EEccolologogy & y & EEvvololuTIouTIoNN             ArArticlesticles
+       Extended Data Fig. 3 | See next page for caption.
+       NATuRe ecoLogy & evoLuTIoN | www.nature.com/natecolevol
+       ArArticlesticles                                  NaNaTuRE TuRE EEccolologogy & y & EEvvololuTIouTIoNN
+       Extended Data Fig. 3 | Test cases at different noise levels. In order to assess the power of our statistical tests, we simulated artificial meta-analyses 
+       combining prototypical response~stressor relationships with (normally distributed) random fluctuations reflecting natural variability, and compared 
+       related statistical test results with expectations. Stressor range (along horizontal range) and deterministic effect sizes (along vertical axis) are normalized 
+       to [−0.5,0.5] x [0.5,0.5]. Stressor values are normally distributed with mean zero. The relative intensity of random fluctuations is quantified by inverse 
+       signal-to-noise ratio (isnr). A grey background indicates absence of thresholds, yellow background threshold presence. a, (neutral -simple-): Here pressure 
+       strength has no impact on the response, which falls into a single response. Thus, we assume that across all “studies” in this “meta-analysis”, there is 
+       one main response type and no threshold. b, (neutral -bimodal-): Here pressure strength has no impact on the response, which falls into either of two 
+       alternative attractors: a weak and a strong response. Thus, we assume that across all “studies” in this “meta-analysis”, there are two main response types 
+       and no threshold. c, (plain trend, proportionate response): A gradual response with no change in variability revealing a trend but no threshold.  
+       d, (gradual, no threshold): A nonlinear but smooth increase with smoothly increasing variability. Here we assume that the responses increase with some 
+       normally distributed error with the pressure without transgressing any threshold. e, (saddle-node bifurcation): A widely discussed model situation in the 
+       context of ‘tipping points’ and ‘catastrophic regime shifts’. f, (strict threshold): Here we assume that across all studies in a meta-analysis, the response 
+       switches from weak to strong (as defined in case a) at exactly the same threshold for each study. This assumption is very unrealistic (see below) but 
+       makes the case when there are two main response types and a global threshold holding for any single study in the meta-analysis. g, (variable threshold): 
+       Here we assume that all studies in a meta-analysis potentially transgress a threshold, but the position of the threshold differs. Thus, the probability that 
+       the response switches from weak to strong increases with increasing pressure. Response similar to Case a. h, (variable threshold with intermediates): Here 
+       we assumed that not all studies in a meta-analysis potentially transgresses a threshold, but some of the studies show gradual responses. As in Case f, the 
+       position of the threshold differs between studies and the probability that the response switches from weak to strong increases with increasing pressure. 
+       As for cases a,b,e and f, we assume there are two main response types. This scenario can be distinguished from case d by the abrupt change in variance 
+       along the pressure gradient. i, (variable threshold and variable effect sizes below and above threshold): Here we assumed that the position of the threshold 
+       differs between studies (as in Case f) and any experiment in the study had a 50% chance that the threshold was crossed, independent of the pressure 
+       magnitude. By contrast to cases a,b and e–h, we relax the assumption that there are two main response types, but transgressing the thresholds leads to 
+       an increase in effect size, which depended on the position on the pressure gradient. Thus, if a study with a large pressure magnitude transgressed the 
+       threshold, the increase in response magnitude was larger than if a study with an overall small pressure did so.
+                                                       NATuRe ecoLogy & evoLuTIoN | www.nature.com/natecolevol
+          NaNaTuRE TuRE EEccolologogy & y & EEvvololuTIouTIoNN                                         ArArticlesticles
+          Extended Data Fig. 4 | Permutation example. An example dataset (a) together with a surrogate dataset based on permuted X values (b); as in Fig. 2 
+          of the main text, colour codes habitat (blue: marine, green: terrestrial), circle size reflects statistical weight, and the yellow shaded area indicates the 
+          distribution p (gx) resultant from a weighted kernel density estimation.
+                   X
+          NATuRe ecoLogy & evoLuTIoN | www.nature.com/natecolevol
+       ArArticlesticles                                  NaNaTuRE TuRE EEccolologogy & y & EEvvololuTIouTIoNN
+       Extended Data Fig. 5 | Two-dimensional probability densities. Densities are calculated over a grid (gx,gy) for the original dataset (a) and the surrogate 
+       dataset (b).
+                                                       NATuRe ecoLogy & evoLuTIoN | www.nature.com/natecolevol
+             NaNaTuRE TuRE EEccolologogy & y & EEvvololuTIouTIoNN                                                                                  ArArticlesticles
+                                                                                                                             p    ðÞgy j gx
+              Extended Data Fig. 6 | conditional probability distribution example. The conditional probability distribution  LRRjX         for each grid point gx together 
+              with the marginal distribution p  (gy) (thick black line). a, original dataset, b, surrogate dataset.          I
+                                             LRR
+              NATuRe ecoLogy & evoLuTIoN | www.nature.com/natecolevol
+             ArArticlesticles                                                                                    NaNaTuRE TuRE EEccolologogy & y & EEvvololuTIouTIoNN
+                                                                                                            F     ðÞgy j gx
+             Extended Data Fig. 7 | cumulative distribution example. The cumulative distribution functions  LRRjX          and F  (gy) (thick black line) for the 
+                                                                                                                                LRR
+             probability profiles shown in Supplementary Fig. 3. a, original, b, surrogate.                  I
+                                                                                                               NATuRe ecoLogy & evoLuTIoN | www.nature.com/natecolevol
+       NaNaTuRE TuRE EEccolologogy & y & EEvvololuTIouTIoNN             ArArticlesticles
+       Extended Data Fig. 8 | comparison of kernel density estimation and “qgam”. Images of the reconstructed statistical structures for an original dataset 
+       (MA1.1) and one of its surrogate datasets. a, Quantiles estimated by optimized kernel density estimation; b, Quantiles estimated by “qgam”.
+       NATuRe ecoLogy & evoLuTIoN | www.nature.com/natecolevol
+                                                                                                                                                        nature research  |  reporting summary
+                                                                                Corresponding author(s):   Hillebrand
+                                                                                Last updated by author(s): May 15, 2020
+     Reporting Summary
+     Nature Research wishes to improve the reproducibility of the work that we publish. This form provides structure for consistency and transparency 
+     in reporting. For further information on Nature Research policies, see our Editorial Policies and the Editorial Policy Checklist.
+     Statistics
+     For all statistical analyses, confirm that the following items are present in the figure legend, table legend, main text, or Methods section.
+     n/a Confirmed
+              The exact sample size (n) for each experimental group/condition, given as a discrete number and unit of measurement
+              A statement on whether measurements were taken from distinct samples or whether the same sample was measured repeatedly
+              The statistical test(s) used AND whether they are one- or two-sided 
+              Only common tests should be described solely by name; describe more complex techniques in the Methods section.
+              A description of all covariates tested
+              A description of any assumptions or corrections, such as tests of normality and adjustment for multiple comparisons
+              A full description of the statistical parameters including central tendency (e.g. means) or other basic estimates (e.g. regression coefficient) 
+              AND variation (e.g. standard deviation) or associated estimates of uncertainty (e.g. confidence intervals)
+              For null hypothesis testing, the test statistic (e.g. F, t, r) with confidence intervals, effect sizes, degrees of freedom and P value noted 
+              Give P values as exact values whenever suitable.
+              For Bayesian analysis, information on the choice of priors and Markov chain Monte Carlo settings
+              For hierarchical and complex designs, identification of the appropriate level for tests and full reporting of outcomes
+              Estimates of effect sizes (e.g. Cohen's d, Pearson's r), indicating how they were calculated
+                                          Our web collection on statistics for biologists contains articles on many of the points above.
+     Software and code
+     Policy information about availability of computer code
+       Data collection  none
+       Data analysis    All analyses were performed with R, an open access platform. All code is available.
+     For manuscripts utilizing custom algorithms or software that are central to the research but not yet described in published literature, software must be made available to editors and 
+     reviewers. We strongly encourage code deposition in a community repository (e.g. GitHub). See the Nature Research guidelines for submitting code & software for further information.
+     Data
+     Policy information about availability of data
+      All manuscripts must include a data availability statement. This statement should provide the following information, where applicable: 
+         - Accession codes, unique identifiers, or web links for publicly available datasets 
+         - A list of figures that have associated raw data 
+         - A description of any restrictions on data availability                                                                                       April 2020
+      All data and code are available at https://zenodo.org/record/3828869 (http://doi.org/10.5281/zenodo.3828869). 
+                                                                                                                                                        1
+     Field-specific reporting                                                                                                                                 nature research  |  reporting summary
+     Please select the one below that is the best fit for your research. If you are not sure, read the appropriate sections before making your selection.
+         Life sciences                Behavioural & social sciences         Ecological, evolutionary & environmental sciences
+     For a reference copy of the document with all sections, see nature.com/documents/nr-reporting-summary-flat.pdf
+     Life sciences study design
+     All studies must disclose on these points even when the disclosure is negative.
+       Sample size       Describe how sample size was determined, detailing any statistical methods used to predetermine sample size OR if no sample-size calculation 
+                         was performed, describe how sample sizes were chosen and provide a rationale for why these sample sizes are sufficient.
+       Data exclusions   Describe any data exclusions. If no data were excluded from the analyses, state so OR if data were excluded, describe the exclusions and the 
+                         rationale behind them, indicating whether exclusion criteria were pre-established. 
+       Replication       Describe the measures taken to verify the reproducibility of the experimental findings. If all attempts at replication were successful, confirm this 
+                         OR if there are any findings that were not replicated or cannot be reproduced, note this and describe why.
+       Randomization     Describe how samples/organisms/participants were allocated into experimental groups. If allocation was not random, describe how covariates 
+                         were controlled OR if this is not relevant to your study, explain why.
+       Blinding          Describe whether the investigators were blinded to group allocation during data collection and/or analysis. If blinding was not possible, 
+                         describe why OR explain why blinding was not relevant to your study.
+     Behavioural & social sciences study design
+     All studies must disclose on these points even when the disclosure is negative.
+       Study description         Briefly describe the study type including whether data are quantitative, qualitative, or mixed-methods (e.g. qualitative cross-sectional, 
+                                 quantitative experimental, mixed-methods case study). 
+       Research sample           State the research sample (e.g. Harvard university undergraduates, villagers in rural India) and provide relevant demographic 
+                                 information (e.g. age, sex) and indicate whether the sample is representative. Provide a rationale for the study sample chosen. For 
+                                 studies involving existing datasets, please describe the dataset and source.
+       Sampling strategy         Describe the sampling procedure (e.g. random, snowball, stratified, convenience). Describe the statistical methods that were used to 
+                                 predetermine sample size OR if no sample-size calculation was performed, describe how sample sizes were chosen and provide a 
+                                 rationale for why these sample sizes are sufficient. For qualitative data, please indicate whether data saturation was considered, and
+                                                                                                                                                       
+                                 what criteria were used to decide that no further sampling was needed.
+       Data collection           Provide details about the data collection procedure, including the instruments or devices used to record the data (e.g. pen and paper, 
+                                 computer, eye tracker, video or audio equipment) whether anyone was present besides the participant(s) and the researcher, and 
+                                 whether the researcher was blind to experimental condition and/or the study hypothesis during data collection.
+       Timing                    Indicate the start and stop dates of data collection. If there is a gap between collection periods, state the dates for each sample 
+                                 cohort.
+       Data exclusions           If no data were excluded from the analyses, state so OR if data were excluded, provide the exact number of exclusions and the 
+                                 rationale behind them, indicating whether exclusion criteria were pre-established.
+       Non-participation         State how many participants dropped out/declined participation and the reason(s) given OR provide response rate OR state that no 
+                                 participants dropped out/declined participation.
+       Randomization             If participants were not allocated into experimental groups, state so OR describe how participants were allocated to groups, and if 
+                                 allocation was not random, describe how covariates were controlled.
+                                                                                                                                                              April 2020
+     Ecological, evolutionary & environmental sciences study design
+     All studies must disclose on these points even when the disclosure is negative.
+       Study description         Our study uses published literature in the form of meta-analyses, no new data have been assembled. 
+       Research sample           4601 published experiments on the response of (semi-)natural ecological communities to environmental change, derived from 36 
+                                                                                                                                                              2
+        Research sample              meta-analyses 
+        Sampling strategy            Search and selection criteria for meta-analyses were described in detail in method section and supplementary material                      nature research  |  reporting summary
+        Data collection              No own data were collected
+        Timing and spatial scale     Timing and spatial scale was defined by the authors of the primary 4601 experiments
+        Data exclusions              none
+        Reproducibility              Search and selection criteria decribed, all data publicly available. 
+        Randomization                not applicable
+        Blinding                     not applicable
+        Did the study involve field work?           Yes          No
+     Reporting for specific materials, systems and methods
+      We require information from authors about some types of materials, experimental systems and methods used in many studies. Here, indicate whether each material, 
+      system or method listed is relevant to your study. If you are not sure if a list item applies to your research, read the appropriate section before selecting a response. 
+       Materials & experimental systems                           Methods
+      n/a Involved in the study                                  n/a Involved in the study
+                Antibodies                                                 ChIP-seq
+                Eukaryotic cell lines                                      Flow cytometry
+                Palaeontology and archaeology                              MRI-based neuroimaging
+                Animals and other organisms
+                Human research participants
+                Clinical data
+                Dual use research of concern
+      Dual use research of concern
+      Policy information about dual use research of concern
+      Hazards
+        Could the accidental, deliberate or reckless misuse of agents or technologies generated in the work, or the application of information presented 
+        in the manuscript, pose a threat to:
+        No Yes
+                 Public health
+                 National security
+                 Crops and/or livestock
+                 Ecosystems
+                 Any other significant area
+      Experiments of concern
+        Does the work involve any of these experiments of concern:
+        No Yes
+                 Demonstrate how to render a vaccine ineffective
+                 Confer resistance to therapeutically useful antibiotics or antiviral agents                                                                                    April 2020
+                 Enhance the virulence of a pathogen or render a nonpathogen virulent
+                 Increase transmissibility of a pathogen
+                 Alter the host range of a pathogen
+                 Enable evasion of diagnostic/detection modalities
+                 Enable the weaponization of a biological agent or toxin
+                 Any other potentially harmful combination of experiments and agents
+                                                                                                                                                                                3

@@ -1,0 +1,338 @@
+(转录由TurboScribe完成。升级到无限以移除此消息。)
+
+[说话人 2] (0:00 - 0:03)
+Look at all the ones that have a saturation, for example.
+
+[说话人 1] (0:04 - 1:09)
+Yeah, I have also mixed slides of about... Sorry. This is also the example report for one pair.
+
+Maybe it could have some characteristics and some matrix evidence based on the previous tree. And it could have some decision. And this is the intermediate report.
+
+And next is about accepted final output table. And I think it's similar with what has been said. And I think that for each row, it has different pairs of system models.
+
+And for the column, it has different diagnostic characteristics. And maybe we can get to the very large table of these different characteristics in all pairings. And then based on the table, we can search the different variables and the different characteristics.
+
+I think this could be similar.
+
+[说话人 2] (1:11 - 1:41)
+Yeah, I mean, so Francesca, we had a bit of a chat, she and I, and also what we were saying was maybe it's good to think about what we want to get out. At the end, to figure out how we get there, no? And that is to be able to organise and group all the pairings that we have so that we can search them for interesting similarities.
+
+[说话人 1] (1:47 - 3:23)
+Yeah, yeah, this makes sense. And I assume what we are hypothesising is that actually here you have, for example, three are detectable and one is non-detectable. And maybe instead we are hypothesising if we apply this throughout a lot of data sets, it will probably be the opposite.
+
+There are more non-detectable and then we will only analyse those few rows where something comes up, no? So I think if you had a summary table like this, where you could then just extract the detectable ones, and then if you have two models, for example, you could compare Is the list of the detectable ones the same? And then go into the details of, okay, and what is it that is being detected?
+
+And so in a way, I think this is nice because there is also now a hierarchy, probably, no? Along the rows, left to right, by which you analyse and compare, no? Yeah, exactly.
+
+First of all, you know, do you get the same list of detectable relationships or not across two models? And then, you know, second, do they see the same amount of complexity in those relationships? And then, you know, do they get to the same classification?
+
+And also, do they detect the same level of strength? So the column left to right are also now maybe a hierarchy of analysis or expectation of consistency across models that you might or might not find, no?
+
+[说话人 2] (3:24 - 4:27)
+Yes, and we might, I mean, I would assume that, let's say, when we use it to compare models, we might not look at the whole table and compare the whole table between two models, but we might look at, okay, what is either by variables or what is controlling whatever stream flow, you know? And what relationships do we find with stream flow across the models? Does that vary?
+
+Are the types of relationships the same? Or we might ask, is there any threshold behaviour in the model, you know? And does some model have that and other models don't have that, for example?
+
+Or is there, when it comes to ET, for example, is there saturation effects, you know? So like that, you know? But at the moment, we wouldn't have the tool to organise this for us, you know?
+
+And that's what this would do.
+
+[说话人 1] (4:35 - 5:39)
+So I think the possible next step could be the two options. First is the matrix validation first, because as mentioned, there are different metrics to evaluate different characteristics. So for each characteristic, we need to decide which metrics are suitable for representing it.
+
+Although we have some expected candidate metrics, we still need to validate its effectiveness. And the second possible way is that without the matrix validation step, we can directly use the expected metrics and the reasonable threshold to test the effectiveness of the decision tree. And for the threshold, we can start with a theoretical range.
+
+Well, available, if no such range, we can define a reasonable range as a starting point. These are the two possible options.
+
+[说话人 2] (5:46 - 5:50)
+So these are two different things, two different questions. OK.
+
+[说话人 1] (5:50 - 6:30)
+Yeah. Because I think that based on that kind of tree, different levels of tree, it may have different characteristics. We need to select which metrics really evaluate that characteristics.
+
+Although we have some candidate metrics. Yeah. The first thing is we need to select suitable metrics.
+
+And the second is we can use the expected metrics directly to test whether the tree can go very well using the simulation scatter plots.
+
+[说话人 2] (6:33 - 6:49)
+Yeah. I mean, one issue might be that with the suitable metrics. So there might not be a unique way of doing this.
+
+There could still be different options for different things. Like there's so many different methods.
+
+[说话人 3] (6:49 - 6:49)
+Yeah.
+
+[说话人 2] (6:49 - 7:02)
+So we could keep that in mind and say, OK, we'll mostly test this and we find what we choose one. Like MIC, for example, has the first metric, but there could be two other options.
+
+[说话人 3] (7:03 - 7:03)
+Yes.
+
+[说话人 2] (7:03 - 7:31)
+We keep that in mind. That's what you mean. Oh, by.
+
+And then with the thresholds, I don't know what you think, Francesca, my intuition would be to just make some choices there and test out how this works rather than spending a lot of time now figuring out what the right number is.
+
+[说话人 1] (7:32 - 8:02)
+But threshold, do you mean, for example, to find the branches in the tree? Like what is the value of the of the metric that makes you go down? There is a relationship, global relationship or not, or what is the threshold value that tells you it's simplex, monotonic or something else?
+
+That's what you mean by threshold. Those are the threshold you're talking about.
+
+[说话人 2] (8:04 - 8:38)
+Because there might or might not be a good way of finding one. And so I was, she and I discussed this. There's one paper, for example, by this environmental statistician who looked at this for normal correlation metrics like Spearman and Pearson and things.
+
+And they essentially ended up using sort of rules of thumb, you know, because they said we don't, we're not aware of any way of doing this theoretically.
+
+[说话人 1] (8:39 - 8:47)
+To say theoretically a value of Spearman correlation above this means the relationship is strong enough or not.
+
+[说话人 2] (8:47 - 9:17)
+Yeah, exactly. But we find by, as a rule of thumb, that 0.7 or whatever they used is quite reasonable to separate out, because if it's below that, it's very unlikely that it's a relevant relationship. And what I'm suggesting is that we maybe we make some choices like that and then essentially test the sensitivity of the result to these choices.
+
+[说话人 1] (9:18 - 9:18)
+Yeah.
+
+[说话人 2] (9:19 - 9:47)
+You know, rather than now spending a lot of time trying to figure out whether we can think of a sensible exact value, because at least I'm not aware of any paper or so that has done that. And so I would rather do this, suggest to do this more brute force and then test the sensitivity of it.
+
+[说话人 1] (9:47 - 12:18)
+Maybe we can try this theoretical threshold at first step. And if that's not goes very well, we can still try to evaluate this threshold by ourselves. The question is, when you say test the effectiveness of the proposed decision tree, or, you know, when you talk about validation, how do you do that?
+
+How do you do that test? I mean, because we have selected, we have different expected metrics and the theoretical threshold, we can, we have different, a lot of synthetic plots and give them some labels and try to using this kind of tree to test whether this label, the scatterplot can be divided into the true group. So you will do a manual labelling.
+
+So you have, I don't know, 100 scatterplots, you manually label them based on your own visual assessment. And then you see how the trees, if the trees basically reproduce your labels. Yeah, because if you do that in that way, then you also have like, you know, you can define a mismatch, a classification, misclassification rate, for example, no?
+
+Yeah. How many out of 100 the tree misclassify. And then you can then reverse the problem and say, what are the thresholds, no?
+
+Yeah. Maximise that classification rate, no? Yeah, I understand.
+
+And it could even become something that, you know, gets updated and improved over time. So you start with some thresholds that you, you know, based on a ballpark estimate. And then, you know, you optimise with the, I don't know, 100 scatterplots you have now.
+
+And then as time progresses, you refine those thresholds as new scatterplots can pass through, no? So it becomes a training of the tree, basically, no?
+
+[说话人 3] (12:19 - 12:19)
+Yeah.
+
+[说话人 1] (12:19 - 12:31)
+Yeah. So that is possible, no? Yeah.
+
+And I think it's more effective than spending a lot of time in the literature to find good thresholds.
+
+[说话人 2] (12:32 - 13:06)
+Yeah. Yeah, and this other paper, which is actually, it's only a few years old. It's cited like 12,000 times, this collinearity paper.
+
+But we can use that to say, look, others have looked for this. Yeah. And they couldn't come up with something.
+
+So we're not going that path. We're just making a choice and then we're training it. So that's a good, I like that.
+
+So, and then it's a bit like they did in this paper on information criteria. I mean, they added more and more noise, for example, to the relationships.
+
+[说话人 1] (13:06 - 13:07)
+Yeah.
+
+[说话人 2] (13:07 - 13:11)
+And showed that eventually, okay, the algorithm says it couldn't find anything anymore.
+
+[说话人 1] (13:12 - 13:12)
+Yes, exactly.
+
+[说话人 2] (13:12 - 13:20)
+Which is what you would expect. So, and then we have to decide what is good enough, when should we see something. So that's part of the training.
+
+[说话人 1] (13:20 - 15:05)
+Yeah. So I have also still... Yeah, it's the other thing is, I think we mentioned this when we were talking about now the validation of the metrics themselves, that I also think it's, you know, it's useful to test things on this synthetic dataset that you have created.
+
+But ultimately, I mean, I would do that just to say, to get some confidence that, okay, this is working. But because if it fails on this synthetic dataset, then there is no point going any forward. But as soon as you get some reassurance with that, I think ultimately, you really need to test this on real data, or anyway, data produced by real models, because things will get much more messy and less well defined.
+
+And so, for example, around this also threshold issue, I wonder to what extent maybe if these methods work and get applied, it might be that you actually find that, you know, for certain problems, certain thresholds seem to work well. And in another case, instead, other thresholds work better. I wouldn't be surprised if then what you discover is that if you train the cart to classify well at certain type of dataset, then maybe instead the best training, the best threshold is different if you then move to a different one.
+
+So it might even be case dependent, no? I think it might be.
+
+[说话人 2] (15:05 - 15:10)
+Yeah, so we could use, we could use Gerard's models, for example, to try this.
+
+[说话人 1] (15:10 - 15:10)
+Yeah, yeah, yeah.
+
+[说话人 2] (15:11 - 16:00)
+But the, I mean, I guess the other thing with the synthetic examples is that we can test whether every different type of relationship ends up somewhere, you know, somewhere, it must end up in an end node where it's useful, you know? So if we have branching or X or sinusoidal or something, you know, it should end up somewhere where we want it and not end up somewhere where it's not helpful, you know? So I think we need to do this to figure out whether we have enough branches and the branches are meaningful to see whether the result is helpful.
+
+[说话人 1] (16:10 - 16:10)
+So…
+
+[说话人 2] (16:10 - 16:17)
+Did you have anything else for us to look at today or just to make sure because we're…
+
+[说话人 1] (16:17 - 16:52)
+Yeah, yeah. I still have a problem about this slide because I know that the threshold can be defined by the theoretical papers, but the matrix also needs to be selected. The matrix, of course, we have some expected matrix or the candidate matrix can be evaluated as characteristics, but I think we still need to validate the effectiveness of that matrix, and I think this could be the next step of our work.
+
+[说话人 2] (16:52 - 17:30)
+Yeah, but that's what I mean. If you select, as you said, if you select maybe not 100 immediately, but increasing number of synthetic examples, and you say, okay, I have a start with a simple one, a linear relationship or an exponential relationship or, you know, a sinusoidal relationship or so, and then you put that in with your first choice of matrix, and you see, you follow where does this end up, this relationship, and is that what you, where you think it should be?
+
+[说话人 1] (17:31 - 19:38)
+Yeah, I think so. Maybe I can show another slide about this kind of work. For example, this plot, because currently I have designed about 22 function families and with one no relationship family, and I have added the different noise to test whether they have the relationship or not, because when the signal to information rate is very low, it could be noisy even to no relationship, and what I tested here is some matrix may not sensitivity enough to distinguish the relationship or no relationship, because when we add the noise, we expected the matrix values to decrease from relatively high to lower values, but some matrix cannot do this.
+
+For example, the Pearson or the Spearman, but the distance correlation and the MIC or the R square or the MEV can do this, and so I think maybe, for example, we can define relationship or no relationship based on several these kind of matrix and give them the threshold. Some have the theoretical threshold, some are not, so I first defined it's 0.2 and to test if this matrix is lower than this value, maybe we can regard it as no relationship. Sorry, so the reason why you said that correlation doesn't work is because you still you have some relationship like the spike or quadratic which are never detected.
+
+[说话人 3] (19:39 - 19:39)
+Yeah.
+
+[说话人 1] (19:40 - 20:12)
+Okay. I have different, each colour represents one function family and I have used a different noise. Yeah, so you basically what you're saying is with low noise, so on the left, the value should be significantly above zero, yeah, and then they can go towards zero, but there are metrics like Pearson and Spearman where some of the functions start already at zero.
+
+Yeah. Yeah. Okay.
+
+[说话人 2] (20:13 - 20:37)
+And I agree. I think we need to be careful. So, for example, let's say MIC.
+
+Mm-hmm. In the first instance, we might say that, for example, a spike, what you have a spike might just be a local relationship. So, in the first instance for a global, it actually is okay if it gets kicked out.
+
+[说话人 1] (20:37 - 20:38)
+Oh, okay.
+
+[说话人 2] (20:38 - 21:04)
+Yeah. So, we don't want to, because we need to be careful if in the first instance, it accepts 90% of all samples, then it's not helping us very much. Yeah.
+
+So, we don't want to keep the, make the thresholds too low. I think in the beginning, we'd rather want to make them, we want to, if we make an error then because we make it too high and too difficult to find a relationship.
+
+[说话人 3] (21:04 - 21:04)
+Yeah.
+
+[说话人 2] (21:04 - 21:05)
+Not too easy.
+
+[说话人 3] (21:05 - 21:05)
+Yeah.
+
+[说话人 2] (21:06 - 21:08)
+You know? So, because otherwise we end up with lots and lots of things.
+
+[说话人 3] (21:09 - 21:09)
+Yeah.
+
+[说话人 2] (21:09 - 21:21)
+And so, for example, here, the MIC, we probably want to say, okay, if it's 0.7 or something, you know, not 0.2, because that's down here.
+
+[说话人 1] (21:21 - 21:22)
+Yeah.
+
+[说话人 2] (21:22 - 21:29)
+And then it will accept anything. Yeah, but... How do you, I don't, where's the...
+
+[说话人 1] (21:29 - 21:38)
+Do you mind if I show this? Oh, because this is, oh, sorry, this, yeah, yes, this is...
+
+[说话人 2] (21:38 - 21:40)
+I just can't use it. Sorry.
+
+[说话人 1] (21:40 - 21:56)
+This is a different level, which I set as a threshold. For example, this is 0.2, and here is 0.2. I hope that the no relationship could be, reflect the noise instead of reflect the...
+
+[说话人 2] (21:56 - 22:01)
+Yeah, but I'm still worried that we're accepting way too many things.
+
+[说话人 1] (22:01 - 22:02)
+Yeah.
+
+[说话人 2] (22:02 - 22:21)
+So, really, because what we want to separate out is where is it likely to be useful to look closer, you know? And if we only take out things that are completely random, then that's not helping us very much.
+
+[说话人 1] (22:21 - 22:49)
+Yeah, so I would like to separate this kind of relationship at first, and then we can analyse this kind of useful or meaningful relationship. I think the question is, can you go to the scatterplot? So, at the moment...
+
+A scatterplot? Yes, here, you are, yeah, you're calling this borderline. I think what Torsten is saying, we would like...
+
+These are not borderline enough. These are already too noisy.
+
+[说话人 3] (22:50 - 22:51)
+This should be noise.
+
+[说话人 1] (22:53 - 22:59)
+The borderline should be a case where the relationship is much more evident than this. Yeah.
+
+[说话人 2] (23:00 - 23:07)
+So, the thing is, let's start very high. We can always go lower, but...
+
+[说话人 1] (23:07 - 23:22)
+I understand it. So, you mean that we can give a relatively high point and separate some very simple or easy-to-diagnose relationship and then separate one by one?
+
+[说话人 2] (23:23 - 23:52)
+Because we can then say, look, let's say we have a hundred relationships. And we don't want the first step to say, well, 90 are meaningful. That's not helpful, you know?
+
+We might have set it too high and we find only three. And then we can say, okay, maybe this is too little, so let's go back. So, it's not a hard rule that we have to keep forever.
+
+It's an interactive tool to work with.
+
+[说话人 1] (23:52 - 24:21)
+Yeah, I understand. It's a bit what I was saying before, Shi, that in your summary table, you have put detectable in most rows. But we want the opposite, actually.
+
+It should be a minority of rows that get detectable. Yeah, I found that. Because otherwise, we spend a lot of time analysing very fuzzy things later on.
+
+Whereas what this is, is basically, tell me the ones that really stand out.
+
+[说话人 3] (24:21 - 24:22)
+Yeah, yeah, yeah.
+
+[说话人 1] (24:22 - 24:32)
+Maybe we have to go through the different directions, because you found the easy-to-know relationship. And I go through the no relationship to the relationship here.
+
+[说话人 2] (24:32 - 24:49)
+Because we're going to have lots and lots of pairings. And we can always go back and make it easier to get through. But if we start with something that doesn't really discriminate, then it's not helpful.
+
+[说话人 1] (24:51 - 25:22)
+Can I, can you go back to the initial scatter plot that you're testing here? This one? Yes.
+
+I wonder, I mean, this is a top, this is something we, I don't think we really spoke about so far. But now, as Tosin was showing the other shapes that are in that paper, I'm really thinking that maybe you really need another one that covers the case of branching.
+
+[说话人 2] (25:23 - 25:26)
+So these, we can borrow from these.
+
+[说话人 1] (25:26 - 25:42)
+Yeah, the second row, I think, is very, because not that branching that you have in the second row is something that I remember seeing, you know, in, like, that is a very common case.
+
+[说话人 2] (25:42 - 27:27)
+Yeah, but we can, I mean, even if it's, if it doesn't exist in reality, we can still use these as examples to just show that whatever we put in, it ends up somewhere meaningful. You know, so we can, that's why I like this, so we can create more. And then we can, we can organise it.
+
+And then the other thing that we then have to think about, for example, this spike here, that is probably something that's okay, if it gets kicked out in the first round, okay, because it really is a relationship that only interacts over a very small range, and not globally, you know. So but that's, that's for us to figure out now. So, but I like this.
+
+So I really like the other the other plots that you made. So I think this is also great. Because it shows the influence of noise.
+
+So we'll have a really nice way. And it also suggests that it doesn't, for the first instance, it doesn't matter so much whether we use MIC, or Lowe's R squared, or, you know, at least those two, maybe, eta squared, which one is this? Yeah, so, okay, so, so there are a few options.
+
+And then we might use the easiest or one where we, you know, find comfortable with. Yeah. But that's great.
+
+So let's, shall we, shall we continue on that? And then you organise your decision tree a bit more like we discussed? Yeah, add some numbers and play around with the synthetic examples.
+
+And then we'll see what you find.
+
+[说话人 1] (27:27 - 27:28)
+Yeah, okay.
+
+[说话人 2] (27:29 - 27:29)
+Yeah, Francesca?
+
+[说话人 1] (27:31 - 27:36)
+Yeah, yeah. Very good. Very good.
+
+Yeah. Nice.
+
+[说话人 2] (27:36 - 27:37)
+Yeah, that's very cool.
+
+[说话人 1] (27:38 - 27:44)
+I will. We are meeting now next Thursday. Yeah.
+
+Yeah. Yeah. Very good.
+
+Okay.
+
+[说话人 2] (27:45 - 27:48)
+Good to see you, Francesca.
+
+[说话人 1] (27:48 - 27:50)
+Nice to see you. Bye.
+
+[说话人 3] (27:52 - 27:53)
+Thank you, Torsten.
+
+(转录由TurboScribe完成。升级到无限以移除此消息。)
